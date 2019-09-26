@@ -210,38 +210,17 @@ h1, h2, h3 {
   background-repeat: no-repeat;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.form__input {
-  background-color: #0498e0;
-  border: 1px solid #fff;
-  color: #fff;
-  font-weight: 700;
-  margin: 0 60px;
-  font-size: 22px;
-  padding: 10px 20px;
-  text-align: center;
-}
-
-.form__label {
-  position: absolute;
-  top: 8%;
-  left: 33%;
-  font-size: 22px;
-}
-
 .send {
   background-color: #ff6000;
   color: #fff;
   font-weight: 700;
   border-color: #ff6000;
   margin: 20px 60px;
+  padding: 5px 25px;
   border-radius: 50px;
+  z-index: 1;
 }
+
 .communication {
   margin: 0;
   font-size: 22px; 
@@ -300,6 +279,10 @@ h1, h2, h3 {
     background-size: 100%;
   }
 
+  .rocket{
+    display: flex;
+  }
+
   .title__header {
     width: 450px;
     padding: 0 60px 120px 40px;
@@ -309,19 +292,6 @@ h1, h2, h3 {
       -webkit-text-fill-color: transparent;
     text-shadow: -7px 11px 1px rgba(180, 0, 255, 0.2);
     position: relative;
-  }
-
-  .title__header::after {
-    position: absolute;
-    content: "";      
-    width: 150px;      
-    height: 494px;      
-    right: 0;
-    bottom: 14%;   
-    background-image: url("../images/Rocket/rocket0.svg");      
-    background-repeat: no-repeat;      
-    background-position: center;      
-    background-size: 60%;
   }
 
   .description__header {
@@ -371,66 +341,45 @@ h1, h2, h3 {
 
   .footer {
     padding: 15px 0 30px;
+    background-image: url(../images/bg02.jpg);
+    background-position: bottom right;
+    background-size: 41%;
+    background-repeat: no-repeat;
     position: relative;
   }
-/*
+
   .footer::before {
     position: absolute;
     content: "";
     bottom: 0;
     left: 0;
-    width: 542px;
-    height: 704px;
+    width: 100%;
+    height: 785px;
     background-image: url(../images/bg02.jpg);
-    z-index: 1;
     background-position: bottom left;
     background-size: 41%;
     background-repeat: no-repeat;
-  }
-*/
-  .footer::after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    right: 0;
-    width: 542px;
-    height: 704px;
-    background-image: url(../images/bg02.jpg);
-    z-index: 1;
-    background-position: bottom right;
-    background-size: 41%;
-    background-repeat: no-repeat;
+    transform: scale(-1, 1) translate(59%, 0);
   }
 
   .title__footer {
     padding: 60px 40px 40px;
+    position: relative;
   }
 
   .description__footer {
     padding: 40px 240px 130px;
     background-size: 45%;
-  }
-
-  .form {
-    margin: 0 40px;
-  }
-
-  .form__input {
-    margin: 0 auto;
-  }
-
-  .form__label {
-    position: absolute;
-    top: 6%;
-    left: 40%;
-    font-size: 24px;
+    position: relative;
   }
 
   .send {
-    margin: 20px auto;
+    display: block;
+    margin: 40px auto;
+    padding: 10px 0;
     border-radius: 50px;
-    padding: 0 15px;
-    width: 290px;
+    width: 250px;
+    position: relative;
   }
 
   .communication {
@@ -460,17 +409,11 @@ h1, h2, h3 {
 
   .title__header {
     width: 800px;
-    padding: 160px 290px 0 90px;
+    padding: 160px 60px 0 90px;
     margin-bottom: 150px;
     font-weight: 700;
     font-size: 100px;
     text-shadow: -14px 20px 1px rgba(180, 0, 255, 0.2);
-  }
-
-  .title__header::after {
-    right: 8%;
-    top: -33%;
-    background-size: 90%;
   }
 
   .description__header {
@@ -545,15 +488,6 @@ h1, h2, h3 {
     font-size: 42px;
   }
 
-  .footer::before {
-    background-size: 100%;
-    transform: scale(-1, 1);
-  }
-
-  .footer::after {
-    background-size: 100%;
-  }
-
   .title__footer {
     font-size: 36px;
     padding: 49px 40px 12px;  
@@ -566,17 +500,9 @@ h1, h2, h3 {
     background-size: 43%;
   }
 
-  .form__input {
-    padding: 20px 30px;
-  }
-
-  .form__label {
-    font-size: 40px;
-    left: 42%;
-  }
-
   .send {
     font-size: 60px;
+    padding: 10px 35px;
   }
 
   .communication {
