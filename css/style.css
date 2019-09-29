@@ -536,3 +536,43 @@ h1, h2, h3 {
     left: 4%;
   }
 }
+
+.earth .signal1 {
+  animation: signal1 13s infinite;
+  opacity: 0;
+}
+
+.earth .signal2 {
+  animation: signal2 13s infinite;
+  opacity: 0;
+}
+
+.earth .signal3 {
+  animation: signal3 13s infinite;
+  opacity: 0;
+}
+
+@keyframes signal1 {
+  0% { opacity: 0; }
+  54% { opacity: 0; }
+  54.01% { opacity: 1; }
+  69% { opacity: 1; }
+  69.01% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes signal2 {
+  0% { opacity: 0; }
+  38% { opacity: 0; }
+  38.01% { opacity: 1; }
+  85% { opacity: 1; }
+  85.01% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes signal3 {
+  0% { opacity: 0; }
+  23% { opacity: 0; }
+  23.01% { opacity: 1; }
+  100% { opacity: 1; }
+}
