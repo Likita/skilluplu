@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Protocol} !=https
+RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
