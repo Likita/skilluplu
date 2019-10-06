@@ -507,7 +507,7 @@ h1, h2, h3 {
 }
 
 .rocket {
-  animation: rocket0 1.5s 3.8s ease-in;
+  animation: rocket0 1s 3.8s ease-in;
   animation-fill-mode: forwards;
 }
 
@@ -571,7 +571,7 @@ h1, h2, h3 {
   0% {
    transform: none;
   }
-  3% {
+  /* 3% {
     transform: translateY(-5px);
   }
   5% {
@@ -591,7 +591,7 @@ h1, h2, h3 {
   }
   15% {
     transform: translateY(-18px);
-  }
+  } */
   100% {
     transform: translateY(-500px);
   }
