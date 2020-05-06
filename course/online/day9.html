@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Готовые решения</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=792, user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="list" id="day4">
+  <header class="caption">
+    <h1>Веб-разработка для новичков. День 9</h1>
+    <p>Василика Климова</p>
+  </header>
+  <section class="slide cover" id="Cover"><div>
+    <h2>Готовые решения</h2>
+    <p>
+      <a href="http://vasilika.ru" target="_blank">Василика Климова</a>
+      <br>
+      Разработчик интерфейсов
+      <br>
+      <a href="https://www.artec3d.com">Artec 3D</a>
+    </p>
+    <div class="right-bottom">
+      <a href="https://twitter.com/Lik04ka" target="_blank">@lik04ka</a>
+    </div>
+    <img src="pictures/web.png" alt="Moscow Coding School">
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>День 9</h2>
+    <ul>
+      <li>Библиотека jQuery</li>
+      <li>Анимация средствами JavaScript и CSS</li>
+      <li>Взаимодействие с элементами на странице</li>
+      <li>Что такое фреймворк?</li>
+      <li>Bootstrap/Foundation</li>
+      <li>Модальные окна</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Библиотека</h2>
+    <p>Набор некоторых функциональных возможностей</p>
+    <p>Замена библиотеки не влияет на работу системы</p>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Библиотека jQuery</h2>
+    <ul>
+      <li>Упрощает поиск нужного элемента</li>
+      <li>Различные манипуляции с элементами</li>
+      <li>Готовые скрипты для работы с интерфейсами</li>
+    </ul>
+    <a href="http://jquery.com/">jQuery</a>
+    <p><a href="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">Google jQuery</a></p>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Селекторы jQuery</h2>
+    <ul>
+      <li>
+         <code>$('.class')</code>
+      </li>
+      <li>
+         <code>$('<mark>[name*="value"]</mark>')</code>
+      </li>
+      <li>
+        <code>$('div:<mark>first-child</mark>')</code>
+      </li>
+      <li>
+        <code>$('div<mark>:visible</mark>')</code>
+      </li>
+      <li>
+        <a href="http://api.jquery.com/category/selectors/">Все селекторы</a>
+      </li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Методы jQuery</h2>
+    <ul>
+      <li>
+         <code>.addClass("<i>myClass</i>")</code>
+      </li>
+      <li>
+         <code>.append()</code>
+      </li>
+      <li>
+         <code>.hasClass("<i>className</i>")</code>
+      </li>
+      <li>
+         <code>.slideDown(...)</code>
+      </li>
+      <li>
+         <code>.height()</code>
+      </li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Событие загрузки страницы</h2>
+    JavaScript
+    <pre>
+      <code>window.onload = function() {</code>
+      <code>  ... </code>
+      <code>};</code>
+    </pre>
+    jQuery
+    <pre>
+      <code>$(document).ready(function(){</code>
+      <code>  ... </code>
+      <code>});</code>
+    </pre>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Работа с событиями</h2>
+    <pre>
+      <code>$(document).ready(function(){</code>
+      <code>  $("input").click(function(event){</code>
+      <code>    alert("Ура!");</code>   
+      <code>  });</code>
+      <code>});</code>
+    </pre>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Анимация при изменении класса</h2>
+    <pre>
+      <code>$('.element').click( function(){</code>
+      <code>  $(this).<mark>addClass</mark>('active');</code>
+      <code>});</code>
+    </pre>
+    <pre>
+      <code><mark>.active</mark> {</code>
+      <code>  transform: translate(0, 50%);</code>
+      <code>}</code>
+    </pre>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Анимация по hover</h2>
+    <pre>
+      <code>$('.element').mouseover( function(){</code>
+      <code>  $(this).<mark>addClass</mark>('active');</code>
+      <code>});</code>
+    </pre>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Событие изменения размеров экрана</h2>
+    <pre>
+      <code>window.addEventListener("resize", onWindowResize);</code>
+      <code>function onWindowResize() {</code>
+      <code> ... </code>
+      <code>};</code>
+    </pre>
+  </div></section>
+
+  <section class="slide"><div>
+    <div class="text-center vertical-middle" style="top: 50%;">
+      <img src="pictures/youcan.jpg">
+    </div>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Фреймворки для вёрстки</h2>
+    <a href="http://nix-tips.ru/luchshie-5-frontend-frejmvorkov-2014-goda.html">
+      Обзор фреймворков для создания интерфейсов
+    </a>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Модальные окна Bootstrap</h2>
+    <div class="text-center vertical-middle big-size">
+      <a href="http://getbootstrap.com/javascript/#modals">Bootstrap 3 Modals</a>
+    </div>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Всплывающее окно</h2>
+    <div class="text-center vertical-middle big-size">
+      <a href="http://lokeshdhakar.com/projects/lightbox2/">Lightbox.js</a>
+    </div>
+  </div></section>
+
+  <section class="slide text-center"><div>
+    <h2>Василика Климова</h2>
+    <table class="table-contact table">
+      <tr>
+        <td><img src="pictures/vk.png" alt=""></td>
+        <td><a href="https://vk.com/likita" target="_blank">likita</a></td>
+      </tr>
+      <tr>
+        <td><img src="pictures/fb.png" alt=""></td>
+        <td><a href="https://www.facebook.com/vasilika.klimova" target="_blank">vasilika.klimova</a></td>
+      </tr>
+      <tr>
+        <td><img src="pictures/tw.png" alt=""></td>
+        <td><a href="https://twitter.com/Lik04ka" target="_blank">lik04ka</a></td>
+      </tr>
+    </table>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Навигация</h2>
+    <h1><a href="index.html">Список всех уроков</a></h1>
+  </div></section>
+  <p class="badge"><a href="https://github.com/shower/shower">Fork me on Github</a></p>
+  <div class="progress"><div></div></div>
+  <script src="shower/shower.min.js"></script>
+</body>
+</html>

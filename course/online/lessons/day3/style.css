@@ -1,0 +1,59 @@
+/*
+0123456789abcdef
+
+454923
+343acf
+
+#000 = #000000
+*/
+
+body {
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  background-color: #333333;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  padding: 20px;
+  margin: 0 20px;
+}
+
+section {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.animal {
+  background-image: url('animal.jpg');
+}
+
+.bird {
+  background-image: url('birds.jpg');
+}
+
+.insect {
+  background-image: url('insects.jpg');
+}
+
+a {
+  color: #ffffff;
+}
+
+.center {
+  margin: 0 auto;
+  width: 940px;
+  text-align: center;
+}

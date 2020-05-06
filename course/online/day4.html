@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Адаптивная верстка</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=792, user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="list">
+  <header class="caption">
+    <h1>Веб-разработка для новичков. День 4</h1>
+    <p>Василика Климова</p>
+  </header>
+  <section class="slide cover" id="Cover"><div>
+    <h2>Адаптивная<br>верстка</h2>
+    <p>
+      <a href="http://vasilika.ru" target="_blank">Василика Климова</a>
+      <br>
+      Разработчик интерфейсов
+      <br>
+      <a href="https://www.artec3d.com">Artec 3D</a>
+    </p>
+    <div class="right-bottom">
+      <a href="https://twitter.com/Lik04ka" target="_blank">@lik04ka</a>
+    </div>
+    <img src="pictures/web.png" alt="Moscow Coding School">
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>День 4</h2>
+    <ul>
+      <li>СSS свойства</li>
+      <li>Отзывчивая и адаптивная верстка</li>
+      <li>Позиционирование блоков</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Типы верстки</h2>
+    <ul>
+      <li>Фиксированная верстка</li>
+      <li>Резиновая верстка</li>
+      <li>Адаптивная верстка</li>
+      <li>Отзывчивая верстка</li>
+    </ul>
+    <div class="right-bottom">
+      <a href="http://shpargalkablog.ru/2013/06/layout.html" target="_blank">Разница между типами</a>
+    </div>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Фиксированная верстка</h2>
+    <p>Размеры блоков определены заранее.<br>
+    Верстка блоков в пикселях.</p>
+    <!-- <a href="http://diductio.ru/" target="_blank">Пример</a> -->
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Фиксированная верстка</h2>
+    <strong>Плюсы</strong> 
+    <ul>
+      <li>Достаточно одной версии макета</li>
+      <li>Предсказуемое поведение макета</li>
+      <li>Просто</li>
+    </ul>
+    <strong>Минусы</strong>
+    <ul>
+      <li>Маленькие экраны - горизонтальный скролл</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Резиновая верстка</h2>
+    <p>Ширина блоков зависит от размера окна браузера.<br>
+    Верстка блоков в процентах.</p>
+    <!-- <a href="http://rghost.ru/main" target="_blank">Пример</a> -->
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Резиновая верстка</h2>
+    <strong>Плюсы</strong>
+    <ul>
+      <li>Сайт по всей ширине экрана</li>
+    </ul>
+    <strong>Минусы</strong>
+    <ul>
+      <li>Непредсказуемость</li>
+      <li>Возможны длинные строки</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Адаптивная верстка</h2>
+    <p>
+      Сайт подстраивается под устройство пользователя.<br>
+      Может отображать контент по-разному.<br>
+      Используются CSS медиа-запросы.<br>
+    </p>
+    <a href="https://iconverticons.com/online/" target="_blank">Пример</a>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Адаптивная верстка</h2>
+    <strong>Плюсы</strong>
+    <ul>
+      <li>Отображение зависит от размеров устройства</li>
+      <li>Можно опционально скрывать контент</li>
+    </ul>
+    <strong>Минусы</strong>
+    <ul>
+      <li>Макет под каждый тип устройства</li>
+      <li>Разработка займет больше времени</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Отзывчивая верстка</h2>
+    <p>
+      Совмещение подходов резиновой и адаптивной верстки.<br>
+      Блоки зависят от размера браузера.<br>
+      Используются CSS медиа-запросы.<br>
+    </p>
+    <a href="http://responsivewebdesign.com/robot/" target="_blank">Пример</a>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Медиа-запросы</h2>
+    <p>Если ширина окна браузера меньше 650 пикселей</p>
+    <code>@media screen and (max-width: 650px) { }</code>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Отзывчивая верстка</h2>
+    <strong>Плюсы</strong> 
+    <ul>
+      <li>Сайт везде выглядит хорошо</li>
+      <li>Плавность при изменении размеров браузера</li>
+    </ul>
+    <strong>Минусы</strong> 
+    <ul>
+      <li>Макет под каждый тип устройства</li>
+      <li>Разработка трудозатратна</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Свойство position Static</h2>
+    <code>position: static;</code>
+    <ul>
+      <li>Элемент без особого позиционирования</li>
+      <li>Стандартное поведение всех элементов по умолчанию</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Свойство position Relative</h2>
+    <code>position: relative;</code>
+    <ul>
+      <li>Доступны свойства top, bottom, left, right</li>
+      <li>Элемент сдвигается относительно своего местоположения</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Свойство position Absolute</h2>
+    <code>position: absolute;</code>
+    <ul>
+      <li>Доступны свойства top, bottom, left, right</li>
+      <li>Элемент располагается относительно ближайшего спозиционированного родителя</li>
+      <li>Элемент не занимает место в общем потоке</li>
+      <li>Ширина элемента по содержимому</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Свойство position Fixed</h2>
+    <code>position: fixed;</code>
+    <ul>
+      <li>Доступны свойства top, bottom, left, right</li>
+      <li>Привязывается к координатам окна</li>
+      <li>При прокрутке элемент остаётся на том же месте</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Полезные ссылки</h2>
+    <ul>
+      <li><a href="https://habrahabr.ru/company/adv/blog/184864/">Веб-шрифты</a></li>
+      <li>
+        <a href="http://shpargalkablog.ru/2013/03/px-em-calc.html">Единицы измерения CSS</a>
+      </li>
+      <li><a href="https://css-tricks.com/viewport-sized-typography/">Viewport Sized Typography</a></li>
+      <li>
+        <a href="http://habrahabr.ru/post/157115/">Flex верстка</a>
+      </li>
+      <li>
+        <a href="https://habrahabr.ru/post/45296/">Сброс стилей</a>
+      </li>
+    </ul>
+  </div></section>
+ 
+  <section class="slide text-center"><div>
+    <h2>Василика Климова</h2>
+    <table class="table-contact table">
+      <tr>
+        <td><img src="pictures/vk.png" alt=""></td>
+        <td><a href="https://vk.com/likita" target="_blank">likita</a></td>
+      </tr>
+      <tr>
+        <td><img src="pictures/fb.png" alt=""></td>
+        <td><a href="https://www.facebook.com/vasilika.klimova" target="_blank">vasilika.klimova</a></td>
+      </tr>
+      <tr>
+        <td><img src="pictures/tw.png" alt=""></td>
+        <td><a href="https://twitter.com/Lik04ka" target="_blank">lik04ka</a></td>
+      </tr>
+    </table>
+  </div></section>
+  <section class="slide"><div>
+    <h2>Навигация</h2>
+    <h1><a href="index.html">Список всех уроков</a></h1>
+  </div></section>
+  <p class="badge"><a href="https://github.com/shower/shower">Fork me on Github</a></p>
+  <div class="progress"><div></div></div>
+  <script src="shower/shower.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="623" height="481" viewBox="0 0 623 481">
+  <defs>
+    <style>
+      .cls-1, .cls-8 {
+        fill: #ff6005;
+      }
+
+      .cls-2 {
+        fill: #0398df;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4, .cls-7 {
+        fill: #60f;
+      }
+
+      .cls-5, .cls-9 {
+        fill: #cec1e0;
+      }
+
+      .cls-6 {
+        fill: #ede1ff;
+      }
+
+      .cls-6, .cls-7, .cls-8, .cls-9 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" x="12" y="17" width="591" height="383" rx="6" ry="6"/>
+  <rect id="Rounded_Rectangle_2" data-name="Rounded Rectangle 2" class="cls-1" x="143" y="71" width="210" height="20" rx="6" ry="6"/>
+  <rect id="Rounded_Rectangle_2_copy_3" data-name="Rounded Rectangle 2 copy 3" class="cls-2" x="143" y="182" width="191.406" height="20" rx="6" ry="6"/>
+  <rect id="Rounded_Rectangle_2_copy_4" data-name="Rounded Rectangle 2 copy 4" class="cls-3" x="201" y="217" width="68" height="20" rx="6" ry="6"/>
+  <rect id="Rounded_Rectangle_2_copy_8" data-name="Rounded Rectangle 2 copy 8" class="cls-4" x="288" y="217" width="24.438" height="20" rx="6" ry="6"/>
+  <rect id="Rounded_Rectangle_2_copy_5" data-name="Rounded Rectangle 2 copy 5" class="cls-1" x="201" y="250" width="106.813" height="20" rx="6" ry="6"/>
+  <rect id="Rounded_Rectangle_2_copy_7" data-name="Rounded Rectangle 2 copy 7" class="cls-1" x="201" y="320" width="149.594" height="20" rx="6" ry="6"/>
+  <rect id="Rounded_Rectangle_2_copy_6" data-name="Rounded Rectangle 2 copy 6" class="cls-3" x="248" y="284" width="72.531" height="20" rx="6" ry="6"/>
+  <rect id="Rounded_Rectangle_2_copy" data-name="Rounded Rectangle 2 copy" class="cls-3" x="204" y="103" width="84" height="20" rx="6" ry="6"/>
+  <rect id="Rounded_Rectangle_2_copy_9" data-name="Rounded Rectangle 2 copy 9" class="cls-2" x="302" y="103" width="84" height="20" rx="6" ry="6"/>
+  <rect id="Rounded_Rectangle_2_copy_2" data-name="Rounded Rectangle 2 copy 2" class="cls-1" x="204" y="136" width="170" height="20" rx="6" ry="6"/>
+  <rect class="cls-5" x="277" y="416" width="82" height="42"/>
+  <path class="cls-6" d="M787.412,708.7H196.588A14.582,14.582,0,0,1,182,694.121V300.576A14.582,14.582,0,0,1,196.588,286H787.412A14.582,14.582,0,0,1,802,300.576V694.121A14.582,14.582,0,0,1,787.412,708.7ZM772.824,318.8a7.291,7.291,0,0,0-7.295-7.287H218.471a7.291,7.291,0,0,0-7.3,7.287V661.326a7.291,7.291,0,0,0,7.3,7.288H765.529a7.291,7.291,0,0,0,7.295-7.288V318.8ZM349.765,737.848H641.529a14.576,14.576,0,1,1,0,29.152H349.765A14.576,14.576,0,1,1,349.765,737.848Z" transform="translate(-182 -286)"/>
+  <path id="Rounded_Rectangle_2_copy_8-2" data-name="Rounded Rectangle 2 copy 8" class="cls-7" d="M507.951,478h59.3a6,6,0,0,1,6,6v18.369a6,6,0,0,1-6,6h-75.1Z" transform="translate(-182 -286)"/>
+  <path id="Rounded_Rectangle_2_copy_5-2" data-name="Rounded Rectangle 2 copy 5" class="cls-8" d="M487.414,528.052H624a6,6,0,0,1,6,6v18.369a6,6,0,0,1-6,6H489.388Z" transform="translate(-182 -286)"/>
+  <rect id="Rounded_Rectangle_2_copy_6-2" data-name="Rounded Rectangle 2 copy 6" class="cls-3" x="315.281" y="293.656" width="99.719" height="30.344" rx="6" ry="6"/>
+  <path id="Rounded_Rectangle_3_copy_2" data-name="Rounded Rectangle 3 copy 2" class="cls-9" d="M803.221,747.236l-8.485,8.485a6,6,0,0,1-8.486,0L656.537,626.008A109.97,109.97,0,1,1,673.568,609.1L803.221,738.751A6,6,0,0,1,803.221,747.236ZM679,540a91,91,0,1,0-91,91A91,91,0,0,0,679,540Z" transform="translate(-182 -286)"/>
+</svg>

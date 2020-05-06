@@ -1,0 +1,321 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Responsive markup</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../shower/node_modules/@shower/ribbon/styles/styles.css">
+  <link rel="stylesheet" href="./main.css">
+  <style>
+    .shower {
+      --slide-ratio: calc(16 / 9);
+    }
+  </style>
+</head>
+<body class="shower list">
+  <header class="caption">
+    <h1>Basic WEB development course</h1>
+    <p>Vasilika Klimova, SkillUp School Luxembourg</p>
+  </header>
+
+  <section class="slide" id="cover">
+    <h2>Responsive markup</h2>
+    <p><a href="https://vasilika.ru">Vasilika Klimova</a>, <a href="https://skillup.lu">SkillUp School
+      Luxembourg</a></p>
+    <div class="right-bottom">
+      <a href="https://twitter.com/Lik04ka" target="_blank">@lik04ka</a>
+    </div>
+    <img src="../../logo.png" alt="SkillUp School" class="logo">
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Contents</h2>
+    <ul>
+      <li>Hosting</li>
+      <li>What is Github?</li>
+      <li>Graceful degradation</li>
+      <li>Mobile First</li>
+      <li>Responsive and adaptive markup</li>
+      <li>CSS positioning</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Web Layout Approaches </h2>
+      <ul>
+        <li>Graceful degradation</li>
+        <li>Progressive Enhancement</li>
+        <li>Mobile first</li>
+      </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Graceful Degradation</h2>
+    <p>
+      Reduced functionality for users of older browsers
+      <br>
+      Complete refusal in support of old browsers
+    </p>
+    <!--<a href="">Пример</a>-->
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Graceful Degradation</h2> 
+    <strong>Pros +</strong> 
+    <ul>
+      <li>Easy</li>
+      <li>Fast</li>
+    </ul>
+    <strong>Cons -</strong>
+    <ul>
+      <li>Support just modern technologies</li>
+      <li>Loss of users --> clients</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Progressive Enhancement</h2>
+    <p>
+      Basic functional for all users
+    </p>
+    <!--<a href="">Пример</a>-->
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Progressive Enhancement</h2>
+    <strong>Pros +</strong>
+    <ul>
+      <li>Stability</li>
+      <li>Site is accessible for everybody</li>
+    </ul>
+    <strong>Cons -</strong>
+    <ul>
+      <li>More work hours</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Mobile First!</h2> 
+    <p>
+      Prototype and design from mobile version<br>
+      Just then for wider screens
+    </p>
+    <strong>When to use such method?</strong>
+    <p>
+      If we have a lot of users from mobile devices
+    </p>
+    <!-- statistics -->
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Hosting</h2>
+    <h3><a href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/">Git Pages</a></h3>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Version Control System</h2>
+    <div class="text-center">
+    <img src="img/git.jpg" alt="" width="500">
+    </div>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Git</h2>
+    <div class="flex">
+    <div>
+      <h3><a href="https://git-scm.com/download">Install Git</a></h3>
+      <h3><a href="https://git-scm.com/book/en/v2">Commands</a></h3>
+    </div>
+    <img src="img/codercat.jpg" alt="Octocat" width="400">
+    </div>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>GIT. Download the project</h2>
+    <code>git clone git@<mark>myproject</mark>.git</code><br>
+    <code>cd <mark>myproject</mark></code> - go to project folder<br>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>GIT. Installation</h2>
+    <code>git config --global user.name "<mark>MyName</mark>"</code><br>
+    <code>git config --global user.email myemail@example.com</mark></code><br>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>GIT. Save changes</h2>
+    <code>git add .</code> - add all files<br>
+    <code>git сommit -am 'My first commit'</code> - do image of the project<br>
+    <code>git push</code> - send changes to Github<br>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Markup types</h2>
+    <ul>
+      <li>Fixed layout</li>
+      <li>Rubber layout</li>
+      <li>Adaptive layout</li>
+      <li>Responsive layout</li>
+    </ul>
+    <div class="right-bottom">
+      <a href="http://shpargalkablog.ru/2013/06/layout.html" target="_blank">Difference</a>
+    </div>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Fixed layout</h2>
+    <p>Block sizes determined in advance.<br>
+      Layout of blocks in pixels.</p>
+    <!-- <a href="http://diductio.ru/" target="_blank">Пример</a> -->
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Fixed layout</h2>
+    <strong>Pros +</strong> 
+    <ul>
+      <li>One version of the layout is enough</li>
+      <li>Predictable layout behavior</li>
+      <li>Easy</li>
+    </ul>
+    <strong>Cons -</strong>
+    <ul>
+      <li>Small screens - horizontal scroll</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Rubber layout</h2>
+    <p>The width of the blocks depends on the size of the browser window.<br>
+      Layout of blocks in percent.</p>
+    <!-- <a href="http://rghost.ru/main" target="_blank">Пример</a> -->
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Rubber layout</h2>
+    <strong>Pros +</strong>
+    <ul>
+      <li>Full screen site</li>
+    </ul>
+    <strong>Cons -</strong>
+    <ul>
+      <li>Unpredictability</li>
+      <li>Long strings are possible</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Adaptive layout</h2>
+    <p>
+      The site adjusts to the user's device. <br>
+      Can display content in different ways. <br>
+      Use CSS @media queries.
+    </p>
+    <a href="https://iconverticons.com/online/" target="_blank">Example</a>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Adaptive layout</h2>
+    <strong>Pros +</strong>
+    <ul>
+      <li>Display depends on device size </li>
+      <li>You can optionally hide content </li>
+    </ul>
+    </ul>
+    <strong>Cons -</strong>
+    <ul>
+      <li>Layout for each type of device </li>
+      <li>Development takes more time </li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Responsive layout</h2>
+    <p>
+      Combining approaches of rubber and adaptive layout. <br>
+      Blocks depend on window size. <br>
+      Use CSS @media queries. <br>
+    </p>
+    <a href="https://responsivewebdesign.com/robot/" target="_blank">Example</a>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>@media queries</h2>
+    <p>If the width of window less than 650 pixels</p>
+    <code>@media screen and (max-width: 650px) { }</code>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Responsive layout</h2>
+    <strong>Pros +</strong> 
+    <ul>
+      <li>The site looks good everywhere </li>
+      <li>Smoothness for resizing the window</li>
+    </ul>
+    <strong>Cons -</strong> 
+    <ul>
+      <li>Layout for each type of device </li>
+      <li>Development takes more time and skills</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>CSS property position Static</h2>
+    <code>position: static;</code>
+    <ul>
+      <li>Element without special positioning </li>
+      <li>Standard default behavior of all elements</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>CSS property position Relative</h2>
+    <code>position: relative;</code>
+    <ul>
+      <li>New properties available: top, bottom, left, right</li>
+      <li>The element moves relative to its location.</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>CSS property position Absolute</h2>
+    <code>position: absolute;</code>
+    <ul>
+      <li>Properties available: top, bottom, left, right</li>
+      <li>The element is relative to the nearest positioned parent</li>
+      <li>The element does not occupy a place in the general flow</li>
+      <li>Element width depends on content</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>CSS property position Fixed</h2>
+    <code>position: fixed;</code>
+    <ul>
+      <li>Properties available: top, bottom, left, right</li>
+      <li>Binds to window coordinates </li>
+      <li>When scrolling, the element remains in the same place</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Useful links</h2>
+    <ul>
+      <li><a href="http://www.w3.org/TR/html/">HTML5</a></li>
+      <li><a href="https://css-tricks.com/snippets/css/using-font-face/">The css rule @font-face</a></li>
+      <li><a href="https://css-tricks.com/viewport-sized-typography/">Viewport Sized Typography</a></li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Navigation</h2>
+    <h1><a href="./index.html">List of all lessons</a></h1>
+  </div></section>
+  <footer class="badge">
+    <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+  </footer>
+
+  <div class="progress"></div>
+
+  <script src="../shower/node_modules/shower-core/shower.min.js"></script>
+</body>
+</html>
