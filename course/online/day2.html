@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Основы создания веб-странички</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=792, user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="list">
+  <header class="caption">
+    <h1>Веб-разработка для новичков. День 2</h1>
+    <p>Василика Климова</p>
+  </header>
+  <section class="slide cover" id="Cover"><div>
+    <h2>Основы создания веб-странички</h2>
+    <p>
+      <a href="http://vasilika.ru" target="_blank">Василика Климова</a>
+      <br>
+      Разработчик интерфейсов
+      <br>
+      <a href="https://www.artec3d.com">Artec 3D</a>
+    </p>
+    <div class="right-bottom">
+      <a href="https://twitter.com/Lik04ka" target="_blank">@lik04ka</a>
+    </div>
+    <img src="pictures/web.png" alt="Moscow Coding School">
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>День 2</h2>
+    <ul>
+      <li>Структура HTML документов: DOM дерево</li>
+      <li>Кирпичики веба: теги</li>
+      <li>Как вставить картинку?</li>
+      <li>Добавление ссылок на странице</li>
+      <li>Ссылки якоря</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Дерево DOM</h2>
+    <img src="pictures/dom.png">
+    <div><a href="https://developer.chrome.com/devtools">DevTools</a></div>   
+  </div></section>
+
+  <section class="slide top-threejs big-img shout"><div>
+    <h2>HTML</h2>
+    <img src="pictures/bricks.jpg" alt="">
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Основные понятия верстки</h2>
+    <p>Тег - HTML команды</p>
+    <p>Атрибут - различные свойства тегов</p>
+    <code>&lt;тег атрибут="значение"&gt;содержимое&lt;/тег&gt;</code>
+    <p>Элемент разметки - совокупность пары тегов, атрибутов и содержимого</p>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>HTML</h2>  
+    <code>&lt;!DOCTYPE html&gt;</code> 
+    <p>Тип текущего документа  и его синтаксис</p>
+    <div class="next">
+      <code>&lt;html&gt;</code> 
+      <p>Контейнер для всего содержимого веб-страницы</p>
+      <code>&lt;/html&gt;</code>
+    </div> 
+  </div></section>
+  <section class="slide"><div> 
+    <h2>Тег head</h2>
+    <code>&lt;head&gt;</code>
+    <p>
+      Включает заголовок страницы<br>и техническую информацию<br>
+      Не отображается напрямую на веб-странице
+    </p>
+    <code>&lt;/head&gt;</code>
+  </div></section>
+  <section class="slide"><div>
+    <h2>Тег body</h2> 
+    <code>&lt;body&gt;</code>
+    <p>Тег хранит содержимое веб-страницы</p>
+    <code>&lt;/body&gt;</code> 
+  </div></section>
+  <section class="slide"><div>
+    <h2>Head. Тег title</h2>  
+    <code>&lt;title&gt;</code>
+    <p>Заголовок страницы на вкладке браузера</p>
+    <code>&lt;/title&gt;</code>
+  </div></section>
+  <section class="slide"><div>
+    <h2>Head. Тег meta</h2>  
+    <code>&lt;meta&gt;</code>
+    <p>Хранит информацию для браузеров и поисковых систем</p>
+    <code>&lt;meta <mark>name</mark>="keywords" <mark>content</mark>="HTML, метатег, тег"&gt;</code>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Head. Тег style</h2>  
+      <p>Cтили элементов веб-страницы</p>
+      <pre>
+        <code>&lt;style <mark>type</mark>="text/css"&gt;</code>
+        <code>  h1 { </code>
+        <code>    font-size: 22px; </code>
+        <code>    color: #666666;  }</code>
+        <code>&lt;/style&gt;</code>
+      </pre>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Head. Тег link</h2>  
+    <code>&lt;link&gt;</code>
+    <p>Устанавливает связь с внешним документом вроде файла со стилями или со шрифтами.</p>
+    <code>&lt;link <mark>rel</mark>="stylesheet" <mark>href</mark>="ie.css"&gt;</code>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Head. Тег script</h2>  
+    <code>&lt;script&gt;</code>
+    <p>Описание скриптов JavaScript</p>
+    <code>&lt;/script&gt;</code>
+    <pre>
+      <code>&lt;script <mark>type</mark>="тип" <mark>src</mark>="URL"&gt;&lt;/script&gt;</code>
+    </pre>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Body. Блочные элементы</h2>  
+    <code>&lt;div&gt;</code>
+    <p>Выделяет часть документа для изменения ее вида</p>
+    <div class="next">
+      <code>&lt;h1&gt;&lt;/h1&gt;</code>
+      <code>&lt;h6&gt;&lt;/h6&gt;</code>
+      <p>Заголовки разного уровня</p>
+    </div>
+    <div class="next">
+      <code>&lt;p&gt;&lt;/p&gt;</code>
+      <p>Текстовый абзац</p>
+    </div>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Body. Строчные элементы</h2>
+    <code>&lt;span&gt;</code>
+    <p>Выделяет часть внутри блока для изменения ее вида</p>
+    <div class="next">
+      <code>&lt;a <mark>href</mark>="news.html"&gt;Новости&lt;/a&gt;</code>
+      <p>Ссылки</p>
+    </div>
+    <div class="next">
+      <code>&lt;img <mark>src</mark>="images/news1.png"&gt;</code>
+      <p>Изображения</p>
+    </div>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>HTML5</h2>
+    <code>&lt;header&gt;</code><br>
+    <code>&lt;footer&gt;</code><br>
+    <code>&lt;nav&gt;</code><br>
+    <code>&lt;aside&gt;</code><br>
+    <code>&lt;audio&gt;</code><br>
+    <code>&lt;video&gt;</code><br>
+    ...
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Практическая часть</h2>
+    <strong>Выводим на странице</strong>
+    <ul>
+      <li>Привет! Меня зовут <Имя> <Фамилия></li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Практическая часть</h2>
+    <strong>Выводим на странице</strong>
+    <ul>
+      <li>Добавляем странице заголовок: <b>День 1</b></li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Полезные ссылки</h2>
+    <ul>
+      <li><a href="https://css-tricks.com/">css-tricks.com</a></li>
+      <li><a href="http://css-live.ru/">css-live.ru</a></li>
+      <li><a href="http://html5book.ru/">html5book.ru</a></li>
+    </ul>
+  </div></section>
+
+  <section class="slide text-center"><div>
+    <h2>Василика Климова</h2>
+    <table class="table-contact table">
+      <tr>
+        <td><img src="pictures/vk.png" alt=""></td>
+        <td><a href="https://vk.com/likita" target="_blank">likita</a></td>
+      </tr>
+      <tr>
+        <td><img src="pictures/fb.png" alt=""></td>
+        <td><a href="https://www.facebook.com/vasilika.klimova" target="_blank">vasilika.klimova</a></td>
+      </tr>
+      <tr>
+        <td><img src="pictures/tw.png" alt=""></td>
+        <td><a href="https://twitter.com/Lik04ka" target="_blank">lik04ka</a></td>
+      </tr>
+    </table>
+  </div></section>
+  <section class="slide"><div>
+    <h2>Навигация</h2>
+    <h1><a href="index.html">Список всех уроков</a></h1>
+  </div></section>
+  <p class="badge"><a href="https://github.com/shower/shower">Fork me on Github</a></p>
+  <div class="progress"><div></div></div>
+  <script src="shower/shower.min.js"></script>
+</body>
+</html>

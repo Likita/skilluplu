@@ -1,0 +1,487 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title>JavaScript Basics</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../shower/node_modules/@shower/ribbon/styles/styles.css">
+  <link rel="stylesheet" href="./main.css">
+  <style>
+    .shower {
+      --slide-ratio: calc(16 / 9);
+    }
+  </style>
+</head>
+
+<body class="shower list">
+  <header class="caption">
+    <h1>Basic WEB development course</h1>
+    <p>Vasilika Klimova, SkillUp School Luxembourg</p>
+  </header>
+
+  <section class="slide" id="cover">
+    <h2>JavaScript Basics</h2>
+    <p><a href="https://vasilika.ru">Vasilika Klimova</a>, <a href="https://skillup.lu">SkillUp School
+        Luxembourg</a></p>
+    <div class="right-bottom">
+      <a href="https://twitter.com/Lik04ka" target="_blank">@lik04ka</a>
+    </div>
+    <img src="../../logo.png" alt="SkillUp School" class="logo">
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Contents</h2>
+      <ul>
+        <li>Different programming languages</li>
+        <li>JavaScript variables and types of variables</li>
+        <li>What is the operator? And types of it</li>
+        <li>Debugging via Chrome DevTools</li>
+        <li>Conditions</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Contents</h2>
+      <ul>
+        <li>Arrays & loops</li>
+        <li>Functions</li>
+        <li>Objects</li>
+        <li>Interaction with webpage elements</li>
+        <li>Animation by JavaScript + CSS</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Magic</h2>
+      <div class="text-center vertical-middle" style="top: 50%;">
+        <img src="img/magic-en.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>You can handle</h2>
+      <div class="text-center vertical-middle" style="top: 50%;">
+        <img src="img/muggle.png">
+      </div>
+    </div>
+  </section>
+
+  <section class="slide languages">
+    <div>
+      <div class="right-bottom text-with-background">
+        <a href="./img/languages.png">Link to the picture</a>
+        <br>
+        <a
+          href="https://www.lifehack.org/420776/learn-which-programming-language-to-choose-with-this-infographic-ap-pinterest-infographic">More
+          links</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>JavaScript</h2>
+      <ul>
+        <li>Element behavior</li>
+        <li>Dynamic interface</li>
+        <li>Interactivity</li>
+      </ul>
+      <a href="https://octoverse.github.com/">The most popular language</a>
+      <br>
+      <a href="https://www.youtube.com/watch?v=Og847HVwRSI">History video</a>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Last standard</h2>
+      <img src="./img/js-standards.png" alt="">
+      <!-- <ul>
+        <li><a href="http://kangax.github.io/compat-table/es6/">ES 2015</a></li>
+        <li><a href="https://learn.javascript.ru/es-modern">Описание последней версии</a></li>
+      </ul> -->
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Variable</h2>
+      <p>We need variables to store data</p>
+      <p>We can change the value of variables</p>
+      <img src="img/variable.png" width="600">
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Variable declaration</h2>
+
+      <code><mark>let count = 5</mark></code> - any variable<br>
+      <code><mark>const count = 5</mark></code> - only constant<br>
+      <code><mark>var count = 5</mark></code> - old syntax for any variable<br>
+      <p>count - the name of the variable</p>
+      <p>= - an assignment operator</p>
+      <p>5 - the value of the variable</p>
+
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Declaring a string variable</h2>
+
+      <code><mark>name = "Vasilika"</mark></code> - double quotes<br>
+      <code><mark>name = 'Vasilika'</mark></code> - single quotes<br>
+      <code><mark>name = `Vasilika`</mark></code> - template literals are enclosed by the back-tick ` (grave accent)
+      <br>
+      <p>name - the name of the variable</p>
+      <p>= - an assignment operator</p>
+      <p>"Vasilika" - the value of the variable</p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <div class="text-center">
+        <img src="img/how-to-name.jpg" width=600>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>How to find name for a variable?</h2>
+      <ul>
+        <li>The first character must not be a number</li>
+        <li>May consist of latin letters, numbers, symbols $ and _</li>
+        <li>Case of letters matters.
+          <span class="text-center" style="font-size: 40px;">
+            day ≠ Day
+          </span></li>
+        <li>There are <a href="https://www.w3schools.in/javascript-tutorial/keywords/" target="_blank">reserved</a>
+          words</li>
+        <li>The name should reflect the meaning of the content</li>
+        <li>Clear to everyone without any comments</li>
+        <li>As short as possible</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Variable notations</h2>
+      <ul>
+        <li><mark>camelCase</mark></li>
+        <li>UPPERCASE</li>
+        <li>PascalCase</li>
+        <li>under_score</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Data types</h2>
+      <ul>
+        <li>Number - integer and float - 6, 0.5</li>
+        <li>Boolean (logical type) - true, false</li>
+        <li>String - "Hi, world!", 'some text'</li>
+        <li>Object</li>
+        <li>Function</li>
+        <li>Special types: Infinity, -Infinity, NaN, null, undefined</li>
+      </ul>
+
+      <a href="https://javascript.info/types">Data types</a>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Check the type</h2>
+      <pre>
+      <code><mark>typeof</mark> "foo" // "string"</code>
+      <code><mark>typeof</mark> 35 // "number"</code>
+      <code><mark>typeof</mark> {} // "object"</code>
+    </pre>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Show something in the Browser console</h2>
+      <code>console.log("Hi, my name is" + myName)</code>
+      <code>console.log(`Hi, my name is ${myName}`)</code>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Operators</h2>
+      <pre>
+      <code><mark>-</mark>x // minus</code>
+      <code>7 <mark>+</mark> 3 // addition</code>
+      <code>2 <mark>*</mark> y // multiplication</code>
+      <code><mark>(</mark>x + 2<mark>)</mark>// grouping</code>
+      <code>x <mark>=</mark> 2 // assignment</code>
+    </pre>
+      <p><a href="https://developer.mozilla.org/en/JavaScript/Reference/operators/operator_precedence">Operator
+          precedence</a></p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Comparison operators</h2>
+      <pre>
+      <code>x <mark>==</mark> y // is it equal?</code>
+      <code>a <mark>></mark> b // is this number larger?</code>
+      <code>b <mark>!=</mark> d // check inequality</code>
+      <code>8 <mark>>=</mark> 5// more or equal</code>
+    </pre>
+      <p><a href="https://javascript.info/comparison">Read more</a></p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Duck typing</h2>
+      <pre>
+        <code>x <mark>==</mark> y // is it equal?</code>
+        <code>a <mark>></mark> b // is this number larger?</code>
+        <code>b <mark>!=</mark> d // check inequality</code>
+        <code>8 <mark>>=</mark> 5// more or equal</code>
+      </pre>
+      <p><a href="https://javascript.info/comparison">Read more</a></p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Condition if. Block diagram</h2>
+      <img src="img/if-en.png" width=600>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Condition if</h2>
+      <pre>
+      <code>if (i > 5) {</code>
+      <code> console.log("Variable " + i + " is larger than 5");</code>
+      <code> i++;</code>
+      <code>}</code>
+    </pre>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Variable Scope</h2>
+      <ul>
+        <li>Global variable</li>
+        <li>Local variable</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Variable declaration</h2>
+      <code>let userName;</code>
+      <p>The variable is available ONLY inside the block {...} where it was declared</p>
+      <pre>
+        <code>let name = 'Rita';</code>
+        <code>if (true) {</code>
+        <code>  let name = 'Raquel'; alert(name); // Raquel (inside block)</code>
+        <code>}</code>
+        <code>alert(name); // Rita (outside {}, the value has not changed)</code>
+      </pre>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Objects</h2>
+      <pre>
+        <code>let user = {</code>
+        <code>  name: "Ivan",</code>
+        <code>  isAdmin: true,</code>
+        <code>  writeName() {</code>
+        <code>    alert("Hi, " + this.name);</code>
+        <code>  }</code>
+        <code>};</code></pre>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Arrays</h2>
+      <p>A set of items accessed by index</p>
+      <div class="text-center">
+        <img src="img/array.png">
+      </div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Loop "for"</h2>
+      <pre>
+      <code>for (i = 0; i < 3; i++) {</code>
+      <code>    console.log( i );</code>
+      <code>}</code>
+    </pre>
+      <div class="right">
+        <img src="img/for.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Principle</h2>
+      <p><strong>Don’t repeat yourself</strong></p>
+      <p>Changing a single system element does not require changes others</p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Function</h2>
+      <ul>
+        <pre><code>function functionName(parameter1, parameter2, ...) {</code>
+      <code>   ...</code>
+      <code>}</code></pre>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Global objects</h2>
+      <code><mark>window</mark>.innerWidth</code><br>
+      <code><mark>navigator</mark>.userAgent</code><br>
+      <code><mark>document</mark>.body.scrollTop</code><br>
+      <code>...</code>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Element search</h2>
+      <code>document.<mark>getElementById("h1")</mark></code><br>
+      <code>document.<mark>getElementsByTagName("h1")[0]</mark></code><br>
+      <code>document.<mark>getElementsByClassName("class")[0]</mark></code><br>
+      <code>document.<mark>querySelector(".class")</mark></code><br>
+      <code>...</code>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Methods, Properties, and Events</h2>
+      <code>el.<mark>innerHTML</mark></code><br>
+      <code>el.<mark>style.color</mark></code><br>
+      <code>el.<mark>addEventListener</mark>("click", func)</code><br>
+      <code>...</code>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Page load event</h2>
+      <code>window.<mark>onload</mark> = function() { ... }</code><br>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Event handling</h2>
+      <pre>
+      <code>let el = document.querySelector('.button')</code><br>
+      <code>window.onload = function() {</code>
+      <code>  el.addEventListener('click', function {</code>
+      <code>    alert("Wow!");</code>
+      <code>  });</code>
+      <code>});</code>
+    </pre>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Change class animation</h2>
+      <pre>
+        <code>el.addEventListener('click', function {</code>
+        <code>  this.target.<mark>classList.add('active')</mark>;</code>
+        <code> });</code>
+      </pre>
+      <pre>
+      <code><mark>.active</mark> {</code>
+      <code>  transform: translate(0, 50%);</code>
+      <code>}</code>
+    </pre>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Screen Resize Event</h2>
+      <pre>
+      <code>window.addEventListener('resize', onWindowResize);</code>
+      <code>function onWindowResize() {</code>
+      <code> ... </code>
+      <code>};</code>
+    </pre>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <div class="text-center vertical-middle" style="top: 50%;">
+        <img src="img/youcan-en.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Useful links</h2>
+      <ul>
+        <li><a href="https://javascript.info/">Vocabulary JavaScript</a></li>
+        <li><a href="http://www.w3schools.com/jS/">Tutorial JS</a></li>
+        <li><a href="http://www.w3schools.com/jsref/dom_obj_event.asp">Event list</a></li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">Mozilla
+            about JavaScript</a>
+        </li>
+        <li><a href="https://www.javascript.com/">Try JS</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Navigation</h2>
+      <h1><a href="./index.html">List of all lessons</a></h1>
+    </div>
+  </section>
+  <footer class="badge">
+    <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+  </footer>
+
+  <div class="progress"></div>
+
+  <script src="../shower/node_modules/shower-core/shower.min.js"></script>
+</body>
+
+</html>

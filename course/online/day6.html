@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>CSS3 Анимация</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=792, user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="list" id="day4">
+  <header class="caption">
+    <h1>Веб-разработка для новичков. День 6</h1>
+    <p>Василика Климова</p>CSS3 Анимация
+  </header>
+  <section class="slide cover" id="Cover"><div>
+    <h2>CSS3 Анимация</h2>
+    <p>
+      <a href="http://vasilika.ru" target="_blank">Василика Климова</a>
+      <br>
+      Разработчик интерфейсов
+      <br>
+      <a href="https://www.artec3d.com">Artec 3D</a>
+    </p>
+    <div class="right-bottom">
+      <a href="https://twitter.com/Lik04ka" target="_blank">@lik04ka</a>
+    </div>
+    <img src="pictures/web.png" alt="Moscow Coding School">
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>День 6</h2>
+    <ul>
+      <li>Кастомные шрифты</li>
+      <li>Поиск элементов</li>
+      <li>Псевдоэлементы и псевдоклассы</li>
+      <li>Градиенты</li>
+      <li>CSS3 Анимация</li>
+      <li>Элементы формы</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Собственные шрифты</h2>
+    <ul>
+      <li><a href="http://webfont.ru/">Скачиваем нужный шрифт</a></li>
+      <li><a href="https://www.google.com/fonts/">Или находим на Google Fonts</a></li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Правило @font-face</h2>
+    <p>Формат WOFF самый легковесный</p>
+    <pre>
+      <code>@font-face { </code>
+      <code>   src: url(fonts/gentium.woff); </code>
+      <code>   font-family: Gentium; </code>
+      <code>   font-weight: 400; </code>
+      <code>}</code>
+    </pre>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Все CSS селекторы</h2>
+    <ul>
+      <li><code>[name="value"]</code> селектор по <mark>любому</mark> атрибуту</li>
+      <li><code>:first-child</code> первый дочерний элемент</li>
+      <li><code>:nth-child(n)</code>n-ый потомок</li>
+      <li><code>[attr*="val"]</code>атрибут содержит подстроку val</li>
+      <li>...</li>
+    </ul>
+    <a href="https://learn.javascript.ru/css-selectors">Описание селекторов</a>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Псевдоклассы</h2>
+    <ul>
+      <li><code>:hover</code></li>
+      <li><code>:visited</code></li>
+      <li><code>:focus</code></li>
+      <li><code>:checked</code></li>
+      <li><code>:not(селектор)</code></li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Псевдоэлементы</h2>
+    <ul>
+      <li><code>:first-letter</code></li>
+      <li><code>:first-line</code></li>
+      <li><code>:after</code></li>
+      <li><code>:before</code></li>
+      <li><code>::selection</code></li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Background Градиенты</h2>
+    <code>linear-gradient(white, lightblue);</code><br>
+    <code>radial-gradient(#38bac7, #324a56);</code><br>
+    <a href="http://www.colorzilla.com/gradient-editor/">Генератор</a>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Анимация</h2>
+    <ul>
+      <li><a href="https://css-tricks.com/almanac/properties/a/animation/">CSS animation en</a></li>
+      <li><a href="http://html5book.ru/css3-animation/#animation-play-state">CSS animation ru</a></li>
+      <li><a href="http://tobiasahlin.com/spinkit/">CSS loaders</a></li>
+      <li><a href="http://tympanus.net/Tutorials/CSS3RotatingWords/">Rotating Words</a></li>
+    </ul>   
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>CSS3 свойство animation</h2>
+    <code>animation: infinite myMove 3s alternate;</code><br>
+    <code>animation-name: myMove; <i>//имяАнимации</i></code><br>
+    <code>animation-iteration-count: infinite;</code><br>
+    <code><i>//количество итераций</i></code><br>
+    <code>animation-duration: 3s; </code><br>
+    <code><i>//продолжительность</i></code>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>CSS3 свойство animation</h2>
+    <code>animation-direction: alternate;</code><br>
+    <code><i>//направление</i></code><br>
+    <code>animation-delay: 5s; <i>//задержка</i></code><br>
+    <code>animation-timing-function: ease;</code><br>
+    <code><i>//функция скорости</i></code><br>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Правило @keyframes</h2>
+    <p>
+      0% - Оформление элемента в начале анимации<br>
+      100% - Оформление элемента в конце анимации
+    </p>
+    <pre>
+      <code> @keyframes <i>имяАнимации</i> {</code>
+      <code>    0%   { background: red; }</code>
+      <code>    50%  { background: blue; }</code>
+      <code>    100% { background: green; } }</code>
+    </pre> 
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Оси 2D</h2>
+    <div class="text-center"><img src="pictures/canvas_axes.jpg" alt=""></div>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>CSS3 2D поворот</h2>
+    <code>transform: rotate(15deg)</code>
+    <div class="text-center"><img src="pictures/rotate.png" alt=""></div>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>CSS3 2D смещение</h2>
+    <code>transform: translate(-50%)</code>
+    <div class="text-center"><img src="pictures/translate.png" alt=""></div>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>CSS3 2D масштабирование</h2>
+    <code>transform: scale(2)</code>
+    <div class="text-center"><img src="pictures/scale.png" alt=""></div>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>CSS3 transition</h2>
+    <p>Эффект перехода между состояниями элемента</p>
+    <code>transition: background 1s ease-out 2s</code>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Оси 3D</h2>
+    <div class="text-center"><img src="pictures/xyz.jpg" alt=""></div>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>CSS3 3D повороты</h2>
+    <code>transform: rotateX(<i>angle</i>)</code><br>
+    <code>transform: rotateY(<i>angle</i>)</code><br>
+    <code>transform: rotateZ(<i>angle</i>)</code><br>
+  </div></section>
+
+  <section class="slide text-center"><div>
+    <h2>Василика Климова</h2>
+    <table class="table-contact table">
+      <tr>
+        <td><img src="pictures/vk.png" alt=""></td>
+        <td><a href="https://vk.com/likita" target="_blank">likita</a></td>
+      </tr>
+      <tr>
+        <td><img src="pictures/fb.png" alt=""></td>
+        <td><a href="https://www.facebook.com/vasilika.klimova" target="_blank">vasilika.klimova</a></td>
+      </tr>
+      <tr>
+        <td><img src="pictures/tw.png" alt=""></td>
+        <td><a href="https://twitter.com/Lik04ka" target="_blank">lik04ka</a></td>
+      </tr>
+    </table>
+  </div></section>
+  <section class="slide"><div>
+    <h2>Навигация</h2>
+    <h1><a href="index.html">Список всех уроков</a></h1>
+  </div></section>
+  <p class="badge"><a href="https://github.com/shower/shower">Fork me on Github</a></p>
+  <div class="progress"><div></div></div>
+  <script src="shower/shower.min.js"></script>
+</body>
+</html>

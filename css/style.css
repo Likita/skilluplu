@@ -42,7 +42,7 @@ h1, h2, h3 {
 }
 
 .header {
-  background-image: url("../images/bg01.png");
+  background-image: url("../img/bg01.png");
   background-position: bottom;
   background-repeat: no-repeat; 
   background-size: cover;
@@ -88,12 +88,11 @@ h1, h2, h3 {
   width: 238px;
   height: 110px;
   padding-bottom: 20px;
-  opacity: 0
 }
 
 .description__header {
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.8;
 }
 
@@ -120,7 +119,7 @@ h1, h2, h3 {
   width: 496px;
   max-width: 100%;
   margin: 0 auto;
-  background-image: url("../images/arrow.svg");
+  background-image: url("../img/arrow.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
@@ -130,7 +129,7 @@ h1, h2, h3 {
 .footer {
   text-align: center;
   background-color:  #0498e0;
-  background-image: url(../images/bg02.jpg);
+  background-image: url(../img/bg02.jpg);
   background-position: bottom right;
   background-size: auto;
   background-repeat: no-repeat;
@@ -197,7 +196,7 @@ h1, h2, h3 {
   height: 40px;
   top: 15%;
   left: 0;
-  background-image: url("../images/Phone.svg");
+  background-image: url("../img/Phone.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -217,7 +216,7 @@ h1, h2, h3 {
   height: 40px;
   top: 15%;
   left: 0;
-  background-image: url("../images/mail.svg");
+  background-image: url("../img/mail.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -643,8 +642,13 @@ h1, h2, h3 {
   100%{
    opacity: 0;
   }
- }
+}
 
+@media (min-width: 500px) {
+  .description__header {
+    font-size: 20px;
+  }
+}
 @media (min-width: 768px) {
   .slogan {
     justify-content: flex-start;
@@ -738,7 +742,7 @@ h1, h2, h3 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../images/bg02.jpg);
+    background-image: url(../img/bg02.jpg);
     background-position: bottom right;
     background-size: auto;
     background-repeat: no-repeat;

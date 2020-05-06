@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="550" height="550" viewBox="0 0 550 550">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff6005;
+      }
+
+      .cls-2 {
+        fill: #0398df;
+      }
+
+      .cls-3 {
+        fill: #df0365;
+      }
+
+      .cls-4 {
+        fill: #60f;
+      }
+
+      .cls-5, .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="Rounded_Rectangle_5" data-name="Rounded Rectangle 5" class="cls-1" width="260" height="260" rx="40" ry="40"/>
+  <rect id="Rounded_Rectangle_5_copy" data-name="Rounded Rectangle 5 copy" class="cls-2" x="290" width="260" height="260" rx="40" ry="40"/>
+  <rect id="Rounded_Rectangle_5_copy_2" data-name="Rounded Rectangle 5 copy 2" class="cls-3" y="290" width="260" height="260" rx="40" ry="40"/>
+  <rect id="Rounded_Rectangle_5_copy_2-2" data-name="Rounded Rectangle 5 copy 2" class="cls-4" x="290" y="290" width="260" height="260" rx="40" ry="40"/>
+  <rect id="Rounded_Rectangle_6" data-name="Rounded Rectangle 6" class="cls-5" x="37" y="361" width="182" height="46" rx="6" ry="6"/>
+  <rect id="Rounded_Rectangle_6_copy" data-name="Rounded Rectangle 6 copy" class="cls-5" x="37" y="443" width="182" height="46" rx="6" ry="6"/>
+  <rect id="Rounded_Rectangle_6_copy_2" data-name="Rounded Rectangle 6 copy 2" class="cls-5" x="334" y="107" width="182" height="46" rx="6" ry="6"/>
+  <path id="Rounded_Rectangle_6_copy_3" data-name="Rounded Rectangle 6 copy 3" class="cls-6" d="M439,376H377v62a6,6,0,0,1-6,6H337a6,6,0,0,1-6-6V376H269a6,6,0,0,1-6-6V336a6,6,0,0,1,6-6h62V268a6,6,0,0,1,6-6h34a6,6,0,0,1,6,6v62h62a6,6,0,0,1,6,6v34A6,6,0,0,1,439,376Z" transform="translate(-226 -223)"/>
+  <path id="Rounded_Rectangle_6_copy_4" data-name="Rounded Rectangle 6 copy 4" class="cls-6" d="M682.527,649l43.84,43.841a6,6,0,0,1,0,8.485l-24.041,24.041a6,6,0,0,1-8.485,0L650,681.527l-43.841,43.84a6,6,0,0,1-8.485,0l-24.042-24.041a6,6,0,0,1,0-8.485L617.473,649l-43.841-43.841a6,6,0,0,1,0-8.485l24.042-24.042a6,6,0,0,1,8.485,0L650,616.473l43.841-43.841a6,6,0,0,1,8.485,0l24.041,24.042a6,6,0,0,1,0,8.485Z" transform="translate(-226 -223)"/>
+</svg>

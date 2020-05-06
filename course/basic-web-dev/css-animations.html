@@ -1,0 +1,421 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title>CSS Animations</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../shower/node_modules/@shower/ribbon/styles/styles.css">
+  <link rel="stylesheet" href="./main.css">
+  <style>
+    .shower {
+      --slide-ratio: calc(16 / 9);
+    }
+  </style>
+</head>
+
+<body class="shower list">
+  <header class="caption">
+    <h1>Basic WEB development course</h1>
+    <p>Vasilika Klimova, SkillUp School Luxembourg</p>
+  </header>
+
+  <section class="slide" id="cover">
+    <h2>CSS Animations</h2>
+    <p><a href="https://vasilika.ru">Vasilika Klimova</a>, <a href="https://skillup.lu">SkillUp School
+        Luxembourg</a></p>
+    <div class="right-bottom">
+      <a href="https://twitter.com/Lik04ka" target="_blank">@lik04ka</a>
+    </div>
+    <img src="../../logo.png" alt="SkillUp School" class="logo">
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Contents</h2>
+      <ul>
+        <li>Custom fonts</li>
+        <li>Cross-browser compatibility</li>
+        <li>Specially for mobile</li>
+        <li>SEO basics</li>
+        <li>Form elements</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Contents</h2>
+      <ul>
+        <li>CSS Selectors</li>
+        <li>Pseudo-elements & pseudo-classes</li>
+        <li>Accessibility</li>
+        <li>CSS3 Flexbox</li>
+        <li>Gradients</li>
+        <li>CSS3 Animation !</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Cross-browser compatibility</h2>
+      <p>The same view and behavior in all browsers</p>
+      <div><a href="http://caniuse.com/">Check property</a></div>
+      <img src="img/cross.jpg">
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>CSS prefix</h2>
+      <ul>
+        <li>-webkit- Safari and Chrome</li>
+        <li>-moz- Mozilla</li>
+        <li>-o- Opera</li>
+        <li>-ms- Microsoft</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Adaptation for any kind of device</h2>
+      <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code>
+      <br>
+      <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag">Meta Viewport</a>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Custom fonts</h2>
+      <ul>
+        <li><a href="https://fonts.google.com/">Google Fonts</a></li>
+      </ul>
+      <div class="text-center">
+        <img src="img/fonts.jpg" alt="Different fonts" width="500">
+      </div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>The rule @font-face</h2>
+      <p>WOFF (WOFF2) format is the lightest</p>
+      <pre>
+        <code>@font-face { </code>
+        <code>   src: url(fonts/gentium.woff); </code>
+        <code>   font-family: Gentium; </code>
+        <code>   font-weight: 400; </code>
+        <code>}</code>
+      </pre>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>All CSS selectors</h2>
+      <ul>
+        <li><code>[name="value"]</code> selector by<mark>any</mark> attribute</li>
+        <li><code>:first-child</code> first child element</li>
+        <li><code>:nth-child(n)</code>n-th child</li>
+        <li><code>[attr*="val"]</code>attribute value contains substring "val"</li>
+        <li>...</li>
+      </ul>
+      <a href="https://www.w3.org/TR/selectors-3/">The list of all selectors</a>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Pseudo-classes</h2>
+      <ul>
+        <li><code>:hover</code></li>
+        <li><code>:visited</code></li>
+        <li><code>:focus</code></li>
+        <li><code>:checked</code></li>
+        <li><code>:not(selectorName)</code></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Pseudo-elements</h2>
+      <ul>
+        <li><code>:first-letter</code></li>
+        <li><code>:first-line</code></li>
+        <li><code>:after</code></li>
+        <li><code>:before</code></li>
+        <li><code>::selection</code></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Accessibility</h2>
+      <!-- <ul>
+          <li>
+            <a href="http://clever-as.ru/solutions/dostupnaya-sreda-saytyi-dlya-slabovidyashhih.html">
+              Про доступность
+            </a>
+          </li>
+          <li>
+            <a href="http://docs.cntd.ru/document/1200103663">
+              ГОСТ Р 52872-2012
+            </a>
+          </li>
+          <li>
+            <a href="https://habrahabr.ru/company/netcat/blog/165697/">Советы</a>
+          </li>
+          <li>
+            <a href="http://www.ifap.ru/library/book442.pdf">Буклет</a>
+          </li>
+          <li>
+            <a href="http://genproc.gov.ru/special/">Пример версии для слабовидящих</a>
+          </li>
+        </ul> -->
+      <ul>
+        <li>
+          <a href="https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/">
+            What's about accessibility?
+          </a>
+        </li>
+        <li>
+          <a href="https://accessible-colors.com/">
+            Check colors
+          </a>
+        </li>
+        <li>
+          <a href="https://siteimprove.com/en-us/core-platform/integrations/browser-extensions/">Siteimprove Browser
+            Extensions</a>
+        </li>
+        <li>
+          <a href="https://accessibilityinsights.io/">Accessibility insights</a>
+        </li>
+        <li>
+          <a href="https://a11yproject.com/">A11y project</a>
+        </li>
+        <li>
+          <a href="https://developers.google.com/web/tools/lighthouse">Chrome lighthouse</a>
+        </li>
+        <li>
+        <li>
+          <a href="https://developers.google.com/speed">Check performance Page Speed</a>
+        </li>
+        <li>
+          <a href="https://guichet.public.lu/fr/support/accessibilite.html">Luxembourg rules</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>SEO basics</h2>
+      <ul>
+        <li>Unique content according keywords</li>
+        <li>Tag title</li>
+        <li><code>&lt;meta name="description" content="Small description"&gt;</code></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Good sharing</h2>
+      <code>&lt;meta property="og:type" content="article"&gt; <br>
+                &lt;meta property="og:title" content="SkillUp School"&gt;<br>
+                &lt;meta property="og:description" content="Descr"&gt;<br>
+                &lt;meta property="og:image" content="https://imageLink"&gt;<br>
+                &lt;meta property="og:url" content="https://skillup.lu/"&gt;<br>
+                &lt;meta property="og:site_name" content="SkillUp"&gt;
+            </code>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Markup with columns</h2>
+      <img src="img/grid.png">
+      <div><a href="http://foundation.zurb.com/docs/components/grid.html">Grid system</a></div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>FlexBox</h2>
+      <ul>
+        <li>
+          <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">Flexbox</a>
+        <li><a href="http://html5.by/blog/flexbox/">
+            CSS Flexible Box Layout Module
+          </a></li>
+        </li>
+        <li><a href="http://www.flexboxdefense.com/">Flexbox Game</a></li>
+        <li><a href="https://flexboxfroggy.com/">Flexbox Froggy Game</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Background Gradients</h2>
+      <code>background: linear-gradient(white, lightblue);</code><br>
+      <code>background: radial-gradient(#38bac7, #324a56);</code><br>
+      <a href="http://www.colorzilla.com/gradient-editor/">Gradients generator</a>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Animation</h2>
+      <ul>
+        <li><a href="https://css-tricks.com/almanac/properties/a/animation/">CSS animation en</a></li>
+        <!-- <li><a href="http://html5book.ru/css3-animation/#animation-play-state">CSS animation ru</a></li> -->
+        <li><a href="http://tobiasahlin.com/spinkit/">CSS loaders</a></li>
+        <li><a href="http://tympanus.net/Tutorials/CSS3RotatingWords/">Rotating Words</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>CSS3 property animation</h2>
+      <code>animation: infinite myMove 3s alternate;</code><br>
+      <code>animation-name: myMove; <i>// animationName</i></code><br>
+      <code>animation-iteration-count: infinite;</code><br>
+      <code><i>// count of iterations</i></code><br>
+      <code>animation-duration: 3s; </code><br>
+      <code><i>// duration</i></code>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>CSS3 property animation</h2>
+      <code>animation-direction: alternate;</code><br>
+      <code><i>// direction</i></code><br>
+      <code>animation-delay: 5s; <i>// delay</i></code><br>
+      <code>animation-timing-function: ease;</code><br>
+      <code><i>// acceleration function </i></code><br>
+      <a href="https://cssreference.io/property/animation-timing-function/">animation-timing-function examples</a>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>The rule @keyframes</h2>
+      <p>
+        0% - Element styles before animation<br>
+        100% - Element styles in the end of animation
+      </p>
+      <pre>
+        <code> @keyframes <i>animationName</i> {</code>
+        <code>    0%   { background: red; }</code>
+        <code>    50%  { background: blue; }</code>
+        <code>    100% { background: green; } }</code>
+      </pre>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Axis 2D</h2>
+      <div class="text-center"><img src="img/canvas_axes.jpg" alt=""></div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>CSS3 2D rotation</h2>
+      <code>transform: rotate(15deg)</code>
+      <div class="text-center"><img src="img/rotate.png" alt=""></div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>CSS3 2D translation</h2>
+      <code>transform: translate(-50%)</code>
+      <div class="text-center"><img src="img/translate.png" alt=""></div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Align in the viewport center absolute element</h2>
+      <code>top: 50%</code>
+      <code>left: 50%</code>
+      <code>transform: translate(-50%, -50%)</code>
+      <div class="text-center"><img src="img/translate.png" alt=""></div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>CSS3 2D scalability</h2>
+      <code>transform: scale(2)</code>
+      <div class="text-center"><img src="img/scale.png" alt=""></div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>CSS3 transition</h2>
+      <p>Nice effect between different states of the element</p>
+      <code>transition: background 1s ease-out 2s</code>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Axis 3D</h2>
+      <div class="text-center"><img src="img/xyz.jpg" alt=""></div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>CSS3 3D rotations</h2>
+      <code>transform: rotateX(<i>angle</i>)</code><br>
+      <code>transform: rotateY(<i>angle</i>)</code><br>
+      <code>transform: rotateZ(<i>angle</i>)</code><br>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Useful links</h2>
+      <ul>
+        <li><a href="https://css-tricks.com/the-shapes-of-css/">Different border-radius</a></li>
+        <li><a href="https://css-tricks.com/almanac/properties/p/position/">CSS Position property</a></li>
+        <li><a href="https://codepip.com/">CSS games</a></li>
+        <li>
+          <a href="https://pineco.de/a-brief-about-css-reset-and-normalize/">Reset vs Normalize</a>
+        </li>
+        <li><a class="https://www.wordstream.com/blog/ws/2015/04/30/seo-basics">Beginner’s Guide</a></li>
+        <li><a class="https://neilpatel.com/blog/seo-basics/">The 5 SEO Basics</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div>
+      <h2>Navigation</h2>
+      <h1><a href="./index.html">List of all lessons</a></h1>
+    </div>
+  </section>
+  <footer class="badge">
+    <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+  </footer>
+
+  <div class="progress"></div>
+
+  <script src="../shower/node_modules/shower-core/shower.min.js"></script>
+</body>
+
+</html>

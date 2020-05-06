@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Creation of a web page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../shower/node_modules/@shower/ribbon/styles/styles.css">
+  <link rel="stylesheet" href="./main.css">
+  <style>
+    .shower {
+      --slide-ratio: calc(16 / 9);
+    }
+  </style>
+</head>
+<body class="shower list">
+  <header class="caption">
+    <h1>Basic WEB development course</h1>
+    <p>Vasilika Klimova, SkillUp School Luxembourg</p>
+  </header>
+
+  <section class="slide" id="cover">
+    <h2>Creation of a web page</h2>
+    <p><a href="https://vasilika.ru">Vasilika Klimova</a>, <a href="https://skillup.lu">SkillUp School
+      Luxembourg</a></p>
+    <div class="right-bottom">
+      <a href="https://twitter.com/Lik04ka" target="_blank">@lik04ka</a>
+    </div>
+    <img src="../../logo.png" alt="SkillUp School" class="logo">
+  </div></section>
+  <section class="slide">
+    <div>
+      <h2>Presentation link</h2>
+      <div class="big-name">
+        <a href="./index.html" target="_blank">skillup.lu/course/basic-web-dev</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide"><div>
+    <h2>Contents</h2>
+    <ul>
+      <li>DOM</li>
+      <li>Important HTML tags</li>
+      <li>Block and Inline elements</li>
+      <li>Semantic tags HTML5</li>
+      <li>Practice</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>DOM tree</h2>
+    <!-- <div class="right-bottom">
+      <a href="https://developer.chrome.com/devtools">DevTools</a>
+    </div> -->
+    <img src="img/dom.png">
+  </div></section>
+
+  <section class="slide big-background"><div>
+    <h2 class="shout shrink">HTML</h2>
+    <img src="img/bricks.jpg" alt="">
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Basic layout concepts</h2>
+    <p>Tag – HTML command</p>
+    <p>Attribute – tag properties</p>
+    <code>&lt;tagName attribute="attributeValue"&gt;content&lt;/tagName&gt;</code>
+    <p>HTML Element – tag + attributes + content</p>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>HTML</h2>  
+    <code>&lt;!DOCTYPE html&gt;</code> 
+    <p>Type of current document and its syntax</p>
+    <div class="next">
+      <code>&lt;html&gt;</code> 
+      <span>Container for the entire contents of the web page</span>
+      <code>&lt;/html&gt;</code>
+    </div> 
+  </div></section>
+  <section class="slide"><div> 
+    <h2>Tag head</h2>
+    <code>&lt;head&gt;</code>
+    <p>
+      Includes Page Title and Technical Information<br>
+      Not displayed directly on the web page
+    </p>
+    <code>&lt;/head&gt;</code>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Tag body</h2> 
+    <code>&lt;body&gt;</code>
+    <p>The tag stores the contents of a web page.</p>
+    <code>&lt;/body&gt;</code> 
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Head. Tag title</h2>  
+    <code>&lt;title&gt;</code>
+    <p>Browser tab page title</p>
+    <code>&lt;/title&gt;</code>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Practical part</h2>
+    <strong>Show on page</strong>
+    <ul>
+      <li>Hi! My name is <Vasilika> <Klimova></li>
+      <li>Add a title: <b>Day 1</b></li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Head. Tag meta</h2>  
+    <code>&lt;meta&gt;</code>
+    <p>Stores information for browsers and search engines</p>
+    <code>&lt;meta <mark>name</mark>="keywords" <mark>content</mark>="HTML, metatag, tag"&gt;</code>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Head. Tag style</h2>  
+      <p>Element Styles</p>
+      <pre>
+        <code>&lt;style <mark>type</mark>="text/css"&gt;</code>
+        <code>  h1 { </code>
+        <code>    font-size: 22px; </code>
+        <code>    color: #666666;  }</code>
+        <code>&lt;/style&gt;</code>
+      </pre>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Head. Tag link</h2>  
+    <code>&lt;link&gt;</code>
+    <p>Links to an external document, such as a file with styles or fonts</p>
+    <code>&lt;link <mark>rel</mark>="stylesheet" <mark>href</mark>="ie.css"&gt;</code>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Head. Tag script</h2>  
+    <code>&lt;script&gt;</code>
+    <p>JavaScript code</p>
+    <code>&lt;/script&gt;</code>
+    <pre>
+      <code>&lt;script <mark>type</mark>="type" <mark>src</mark>="URL"&gt;&lt;/script&gt;</code>
+    </pre>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Body. Block elements</h2>  
+    <code>&lt;div&gt;</code>
+    <p>Some container to group some elements</p>
+    <div class="next">
+      <code>&lt;h1&gt;&lt;/h1&gt;</code>
+      <code>...</code>
+      <code>&lt;h6&gt;&lt;/h6&gt;</code>
+      <p>Headings of various levels</p>
+    </div>
+    <div class="next">
+      <code>&lt;p&gt;&lt;/p&gt;</code>
+      <p>Text paragraph</p>
+    </div>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Body. Inline elements</h2>
+    <code>&lt;span&gt;</code>
+    <p>Selects a <mark>part of content</mark> to change its appearance</p>
+    <div class="next">
+      <code>&lt;a <mark>href</mark>="news.html"&gt;News&lt;/a&gt;</code>
+      <p>Hyperlinks</p>
+    </div>
+    <div class="next">
+      <code>&lt;img <mark>src</mark>="images/news1.png"&gt;</code>
+      <p>Images</p>
+    </div>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>HTML5</h2>
+    <code>&lt;header&gt;</code><br>
+    <code>&lt;footer&gt;</code><br>
+    <code>&lt;nav&gt;</code><br>
+    <code>&lt;aside&gt;</code><br>
+    <code>&lt;audio&gt;</code><br>
+    <code>&lt;video&gt;</code><br>
+    ...
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Semantic markup</h2>  
+    <p>The approach of using tags according to their purpose</p>
+    <code>&lt;em&gt;</code>, <code>&lt;strong&gt;</code> - semantic selection of text<br>
+    <code>&lt;i&gt;</code>, <code>&lt;b&gt;</code> - just appearance
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Semantic markup. Advantages</h2>  
+    <ul>
+      <li>The code is better analyzed by search engines</li>
+      <li>Good positions in search engine results</li>
+      <li>Fewer items - faster to download</li>
+      <li>Correct recognition by voice browsers</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Useful links</h2>
+    <ul>
+      <li><a href="https://www.w3schools.com/html/">w3schools.com</a></li>
+      <li><a href="https://firstsiteguide.com/html-for-beginners/">firstsiteguide.com</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">developer.mozilla.org</a></li>
+      <li><a href="https://htmldog.com/guides/html/beginner/">htmldog.com</a></li>
+      <li><a href="https://html.com/">html.com</a></li>
+      <li><a href="https://www.w3.org/TR/html53/">HTML 5.3 Specification</a></li>
+    </ul>
+  </div></section>
+  
+  <section class="slide"><div>
+    <h2>Navigation</h2>
+    <h1><a href="./index.html#3">List of all lessons</a></h1>
+  </div></section>
+  <footer class="badge">
+    <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+  </footer>
+
+  <div class="progress"></div>
+
+  <script src="../shower/node_modules/shower-core/shower.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Markup: HTML + CSS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../shower/node_modules/@shower/ribbon/styles/styles.css">
+  <link rel="stylesheet" href="./main.css">
+  <style>
+    .shower {
+      --slide-ratio: calc(16 / 9);
+    }
+  </style>
+</head>
+<body class="shower list">
+  <header class="caption">
+    <h1>Basic WEB development course</h1>
+    <p>Vasilika Klimova, SkillUp School Luxembourg</p>
+  </header>
+
+  <section class="slide" id="cover">
+    <h2>Markup: HTML + CSS</h2>
+    <p><a href="https://vasilika.ru">Vasilika Klimova</a>, <a href="https://skillup.lu">SkillUp School
+      Luxembourg</a></p>
+    <div class="right-bottom">
+      <a href="https://twitter.com/Lik04ka" target="_blank">@lik04ka</a>
+    </div>
+    <img src="../../logo.png" alt="SkillUp School" class="logo">
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Contents</h2>
+    <ul>
+      <li>Cascading Style Sheets (CSS)</li>
+      <li>Selectors</li>
+      <li>Id & class</li>
+      <li>Properties & values</li>
+    </ul>
+  </div></section>
+
+  <section class="slide big-background css-slide"><div>
+      <h2 class="shout shrink">CSS</h2>
+      <img src="img/styles.jpg" alt="" class="small-img">
+    </div></section>
+
+    <section class="slide"><div>
+      <h2>Layout</h2>
+      <div class='text-center'>
+        <img src="img/verstka.jpg" alt="">
+      </div>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2>CSS properties</h2>
+      <code>color</code><br>
+      <code>background</code><br>
+      <code>font-size</code><br>
+      <code>text-align</code><br>
+      ...
+      <p><a href="https://cssreference.io/">All styles</a></p>
+    </div></section>
+  
+    <section class="slide"><div>
+      <h2>Cascading Style Sheets</h2>
+      <pre>
+        <code><mark class="important">p</mark> {</code>
+        <code>  <mark>color</mark>: <mark>#000</mark>;</code>
+        <code>  background: #fff;</code>
+        <code>}</code>
+      </pre>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2>Universal attributes</h2>
+      <code>id</code><br>
+      <code>class</code><br>
+      <code>title</code><br>
+      <code><mark class="important">style</mark></code><br>
+      ...
+    </div></section>
+  
+    <section class="slide"><div>
+      <h2>Difference between margin & padding</h2>
+      <img src="img/margin.png">
+    </div></section>
+  
+    <section class="slide"><div>
+      <h2>CSS selectors</h2>
+      <code>#id</code><br>
+      <code>.class</code><br>
+      <code>div</code><br>
+      <code>div > a</code> - all elements &lt;a&gt;, with a direct parent &lt;div&gt;<br>
+      <code>a:hover</code> - hover on &lt;a&gt;<br>
+      ...
+      <p>
+        <a href="https://css-tricks.com/specifics-on-css-specificity/">Specificity</a><br>
+        <a href="https://specificity.keegan.st/">Selector weight calculator</a>
+      </p>
+    </div></section>
+
+    <section class="slide practice"><div>
+      <h2>Practice</h2>
+      <div class="sk-cube-grid selected absolute-center">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+      </div>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2>Practice</h2>
+      <ul>
+        <li>Add block</li>
+        <li>Add class</li>
+        <li>Add background</li>
+        <li>Add margin, padding</li>
+      </ul>
+    </div></section>
+
+  <section class="slide"><div>
+    <h2>Useful links</h2>
+    <ul>
+      <li><a href="https://css-tricks.com/">css-tricks.com</a></li>
+      <li><a href="https://cssreference.io/">cssreference.io</a></li>
+      <li><a href="https://www.w3schools.com/cssref/">w3schools.com</a></li>
+      <li><a href="https://css-tricks.com/snippets/css/using-font-face/">Rule @font-face</a></li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Navigation</h2>
+    <h1><a href="./index.html">List of all lessons</a></h1>
+  </div></section>
+  <footer class="badge">
+    <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+  </footer>
+
+  <div class="progress"></div>
+
+  <script src="../shower/node_modules/shower-core/shower.min.js"></script>
+</body>
+</html>

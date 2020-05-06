@@ -1,0 +1,21 @@
+.myBtn {
+  background-color: yellow;
+  padding: 15px;
+  min-width: 150px;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.myActive {
+  background-color: red;
+  color: #ffffff;
+}
+
+.myImg {
+  width: 300px;
+  display: inline-block;
+}
+
+.myImg img {
+  max-width: 100%;
+}

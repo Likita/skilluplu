@@ -1,0 +1,29 @@
+.item {
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.discount {
+  background-color: pink;
+  padding: 15px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  box-sizing: border-box;
+  /*position: relative;
+  left: -20px;
+  bottom: -20px;*/
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

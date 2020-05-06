@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Взаимодействие с элементами</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=792, user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="list" id="day4">
+  <header class="caption">
+    <h1>Веб-разработка для новичковй. День 8</h1>
+    <p>Василика Климова</p>
+  </header>
+  <section class="slide cover" id="Cover"><div>
+    <h2>Взаимодействие с элементами</h2>
+    <p>
+      <a href="http://vasilika.ru" target="_blank">Василика Климова</a>
+      <br>
+      Разработчик интерфейсов
+      <br>
+      <a href="https://www.artec3d.com">Artec 3D</a>
+    </p>
+    <div class="right-bottom">
+      <a href="https://twitter.com/Lik04ka" target="_blank">@lik04ka</a>
+    </div>
+    <img src="pictures/web.png" alt="Moscow Coding School">
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>День 8</h2>
+    <ul>
+      <li>Мультимедиа элементы на сайте</li>
+      <li>Циклы</li>
+      <li>Массивы и функции</li>
+      <li>Объекты</li>
+      <li>Обработка кликов мыши и клавиш</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Мультимедиа</h2>
+    <ul>
+      <li>
+        <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/audio">
+          audio
+        </a>
+      </li>
+      <li>
+        <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/video">
+          video
+        </a>
+      </li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Цикл while</h2>
+    <pre>
+      <code>while (i < 10) {</code>
+      <code>  console.log( i );</code>
+      <code>  i++;</code>
+      <code>}</code>
+    </pre>
+    <img src="pictures/while.gif">
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Цикл for</h2>
+    <pre>
+      <code>for (i = 0; i < 3; i++) {</code>
+      <code>    console.log( i );</code>
+      <code>}</code>
+    </pre>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Массивы</h2>
+    <p>Набор элементов, доступ к которым осуществляется по индексу</p>
+    <div class="text-center">
+      <img src="pictures/array.gif">
+    </div>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Принцип</h2>
+    <p><strong>Don’t repeat yourself</strong></p>
+    <p>Изменение единственного элемента системы не требует внесения изменений в другие</p>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Функции</h2>
+    <ul>
+      <pre><code>function имяФункции(параметры) {</code>
+      <code>   ...</code>
+      <code>}</code></pre>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Область видимости переменной</h2>
+    <ul>
+      <li>Глобальные переменные</li>
+      <li>Локальные переменные</li>
+    </ul>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Объявление переменных</h2>
+    <code>let userName;</code>
+    <p>Переменная доступна ТОЛЬКО в рамках блока {...}, где была объявлена</p>
+    <pre>
+      <code>let name = 'Вася';</code>
+      <code>if (true) {</code>
+      <code>  let name = 'Оля';</code>
+      <code>  alert(name); // Оля (внутри блока)</code>
+      <code>}</code>
+      <code>alert(name); // Вася (снаружи блока значение не изменилось)</code>
+    </pre>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Объекты</h2>
+    <pre>
+    <code>let user = {</code>
+    <code>  name: "Василика",</code>
+    <code>  isAdmin: true,</code>
+    <code>  writeName() {</code>
+    <code>    alert("Привет, " + this.name);</code>
+    <code>  }</code>
+    <code>};</code></pre>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Глобальные объекты</h2>
+    <code><mark>window</mark>.innerWidth</code><br>
+    <code><mark>navigator</mark>.userAgent</code><br>
+    <code><mark>document</mark>.body.scrollTop</code><br>
+    <code>...</code>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Событие загрузки страницы</h2>
+    <code>window.<mark>onload</mark> = function() { ... }</code><br>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Поиск элемента</h2>
+    <code>document.<mark>getElementById("h1")</mark></code><br>
+    <code>document.<mark>getElementsByTagName("h1")[0]</mark></code><br>
+    <code>document.<mark>getElementsByClassName("class")[0]</mark></code><br>
+    <code>document.<mark>querySelector(".class")</mark></code><br>
+    <code>...</code>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Методы, свойства и события</h2>
+    <code>el.<mark>innerHTML</mark></code><br>
+    <code>el.<mark>style.color</mark></code><br>
+    <code>el.<mark>addEventListener</mark>("click", func)</code><br>
+    <code>...</code>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>Полезные ссылки</h2>
+    <ul>
+      <li><a href="https://learn.javascript.ru/introduction-browser-events">Работа с событиями</a></li>
+      <li><a href="http://www.w3schools.com/jsref/dom_obj_event.asp">Список событий</a></li>
+      <li><a href="https://learn.javascript.ru/settimeout-setinterval">Таймеры</a></li>
+      <li><a href="http://es5.javascript.ru/">Старый стандарт ES5</a></li>
+      <li><a href="http://www.w3schools.com/jS/">Tutorial JS</a></li>
+    </ul>
+  </div></section>
+
+  <section class="slide text-center"><div>
+    <h2>Василика Климова</h2>
+    <table class="table-contact table">
+      <tr>
+        <td><img src="pictures/vk.png" alt=""></td>
+        <td><a href="https://vk.com/likita" target="_blank">likita</a></td>
+      </tr>
+      <tr>
+        <td><img src="pictures/fb.png" alt=""></td>
+        <td><a href="https://www.facebook.com/vasilika.klimova" target="_blank">vasilika.klimova</a></td>
+      </tr>
+      <tr>
+        <td><img src="pictures/tw.png" alt=""></td>
+        <td><a href="https://twitter.com/Lik04ka" target="_blank">lik04ka</a></td>
+      </tr>
+    </table>
+  </div></section>
+  <section class="slide"><div>
+    <h2>Навигация</h2>
+    <h1><a href="index.html">Список всех уроков</a></h1>
+  </div></section>
+  <p class="badge"><a href="https://github.com/shower/shower">Fork me on Github</a></p>
+  <div class="progress"><div></div></div>
+  <script src="shower/shower.min.js"></script>
+</body>
+</html>
