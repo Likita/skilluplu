@@ -43,7 +43,7 @@ h2 {
 
 .header {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -62,6 +62,7 @@ h2 {
 }
 
 .menu {
+  width: 100%;
   margin: 0 auto 20px;
 }
 
@@ -72,11 +73,55 @@ h2 {
 }
 
 .social-contacts {
-  margin: 0 auto 20px;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .hashtag {
-  margin: 0 auto 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.lang {
+  width: 60px;
+  display: flex;
+  margin: 0 auto 10px;
+}
+
+.lang-item {
+  display: none;
+}
+
+.lang-item.active {
+  display: inline;
+  font-size: 36px;
+  color: #6600FF;
+  font-family: Oswald;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.lang__btn {
+  border: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: 8px;
+  background-color: transparent;
+}
+
+.lang__btn::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  background-color: red;
+  border-width: 10px 5px 0 5px;
+  border-color: #6600ff transparent transparent transparent;
 }
 
 .course-section {
