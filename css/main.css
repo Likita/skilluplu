@@ -682,9 +682,7 @@ footer nav::after {
   }
 
   .menu {
-    width: 51%;
-    margin: 0;
-    margin-right: 5px;
+    width: auto;
     padding-top: 36px;
   }
 
@@ -705,9 +703,8 @@ footer nav::after {
   }
 
   .social {
-    width: auto;
+    width: 169px;
     margin-left: auto;
-    margin-right: 24px;
   }
 
   .social-contacts {
@@ -734,7 +731,7 @@ footer nav::after {
 
   .lang {
     width: 38px;
-    margin: 34px 0 10px auto;
+    margin: 34px 0 10px;
   }
 
   .lang-item.active {
@@ -743,5 +740,49 @@ footer nav::after {
 
   .lang__btn::before {
     top: -3px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .social {
+    margin-top: 16px;
+    margin-right: 20px;
+  }
+
+  .lang {
+    margin-top: 36px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .logo {
+    padding-top: 13px;
+    margin-left: 40px; 
+  }
+
+  .logo img {
+    width: 148px;
+  }
+
+  .school {
+    width: 105px;
+    left: 30px;
+  }
+
+  .menu {
+    padding-top: 48px;
+  }
+
+  .menu__item {
+    margin-right: 43px;
+  }
+
+  .menu__item a {
+    font-size: 36px;
   }
 }
