@@ -184,7 +184,7 @@ h2 {
 .lang-item.active {
   display: inline;
   font-size: 36px;
-  color: #6600FF;
+  color: #DF0365;
   font-family: Oswald;
   font-weight: 700;
   text-transform: uppercase;
@@ -760,6 +760,10 @@ footer nav::after {
 }
 
 @media (min-width: 1920px) {
+  .header {
+    padding-bottom: 22px;
+  }
+  
   .logo {
     padding-top: 13px;
     margin-left: 40px; 
@@ -776,13 +780,49 @@ footer nav::after {
 
   .menu {
     padding-top: 48px;
+    margin-left: 209px;
   }
 
   .menu__item {
-    margin-right: 43px;
+    margin-right: 54px;
   }
 
   .menu__item a {
     font-size: 36px;
+  }
+
+  .social {
+    width: 201px;
+    margin-top: 24px;
+    margin-right: 47px;
+  }
+
+  .social-contacts {
+    width: 201px;
+  }
+
+  .social-contacts a {
+    width: 44.28px;
+    height: 44.28px;
+  }
+
+  .header .hashtag {
+    font-size: 36px;
+    text-align: center;
+    bottom: 8px;
+  }
+
+  .lang {
+    margin-top: 47px;
+    margin-right: 37px;
+  }
+
+  .lang-item.active {
+    font-size: 36px;
+  }
+
+  .lang__btn {
+    top: 19px;
+    left: 4px;
   }
 }
