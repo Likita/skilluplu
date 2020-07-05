@@ -212,7 +212,6 @@ h2 {
   border-color: #6600ff transparent transparent transparent;
 }
 
-
 .php-parallax,
 .java-parallax,
 .css-parallax,
@@ -423,13 +422,81 @@ h2 {
   background-size: 60%;
 }
 
-.header-section,
-.header-section > div {
-  height: 100vh;
+.progress-section {
+  background-image: url('../img/progress.png');
+  background-color: #6500FF;
+  background-size: 100%;
+  padding: 10px 15px;
+}
+
+.progress-section h2 {
+  color: #ffffff;
+}
+
+.progress__item {
+  margin-bottom: 30px;
+  padding: 10px;
+  position: relative;
+  border-left: 4px dashed #ffffff;
+}
+
+.progress__description {
+  margin: 0;
+}
+
+.progress__item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -17px;
+  left: -9px;
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-size: 15px;
+}
+
+.progress__item--paw::before {
+  background-image: url('../img/svg/icon-paw.svg');
+}
+
+.progress__item--droid::before {
+  background-image: url('../img/svg/icon-droid.svg');
+}
+
+.progress__item--rocket::before {
+  background-image: url('../img/svg/icon-rocket.svg');
+}
+
+.progress__item--study::before {
+  background-image: url('../img/svg/icon-study.svg');
+}
+
+.progress__item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #FF6005;
+}
+
+.progress__description {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.progress__week {
+  color: #ffffff;
 }
 
 .freelance-section {
   position: relative;
+  background-image: url()
 }
 
 .freelance-section .freelance-text {
@@ -568,10 +635,6 @@ footer h4 {
   font-size: 36px;
   line-height: 53px;
 }
-/* 
-.communication a {
-  
-} */
 
 .tel {
   display: block;
@@ -705,6 +768,7 @@ footer nav::after {
   .social {
     width: 169px;
     margin-left: auto;
+    margin-top: 10px;
   }
 
   .social-contacts {
