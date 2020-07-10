@@ -580,6 +580,48 @@ h2 {
   bottom: 0;
 }
 
+.review-section {
+  padding: 25px 15px;
+}
+
+.review__title {
+  margin: 0 0 10px;
+}
+
+.review__name {
+  margin: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  color: #6600FF;
+  padding-left: 5px;
+  margin-bottom: 5px;
+}
+
+.review__photo {
+  float: left;
+  margin-right: 10px;
+}
+
+.review__controls {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.review__btn {
+  font-size: 0;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background-color: inherit;
+  background-image: url('../img/review-arrow.svg');
+}
+
+.review__prev {
+  transform: rotate(180deg);
+}
+
 .for-screen-readers {
   overflow: hidden;
   position: absolute;
