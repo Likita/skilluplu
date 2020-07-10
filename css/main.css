@@ -559,7 +559,7 @@ h2 {
 
 .instructor__info {
   width: 100%;
-  min-height: 281px;
+  min-height: 246px;
   position: relative;
 }
 
@@ -616,10 +616,30 @@ h2 {
   border: none;
   background-color: inherit;
   background-image: url('../img/review-arrow.svg');
+  outline: none;
 }
 
 .review__prev {
   transform: rotate(180deg);
+}
+
+.mentor__photo {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.mentor__title {
+  width: 100%;
+  margin: 0;
+}
+
+.mentor__title::before {
+  content: "";
+  width: 100%;
+  height: 12px;
+  display: block;
+  background-color: #0398DF;
+  margin-bottom: 10px;
 }
 
 .for-screen-readers {
