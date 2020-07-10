@@ -628,6 +628,10 @@ h2 {
   margin-bottom: 10px;
 }
 
+.mentor-sectoon {
+  padding-bottom: 10px;
+}
+
 .mentor__title {
   width: 100%;
   margin: 0;
@@ -640,6 +644,22 @@ h2 {
   display: block;
   background-color: #0398DF;
   margin-bottom: 10px;
+}
+
+.location-section {
+  padding: 10px 0;
+}
+
+.location__title {
+  color: #6600FF;
+  margin: 10px;
+}
+
+.location__address {
+  color: #6600FF;
+  padding-left: 15px;
+  font-style: normal;
+  font-weight: bold;
 }
 
 .for-screen-readers {
@@ -674,27 +694,6 @@ h2 {
   background-color: #FF6005;
   height: 30px;
   width: 80%;
-}
-
-.location-section {
-  color: #6600FF;
-}
-
-.location-section h2,
-.location-section h3 {
-  display: inline-block;
-  color: #6600FF;
-}
-
-.location-section h2 {
-  font-size: 96px;
-}
-
-.location-section h3 {
-  font-size: 36px;
-  line-height: 42px;
-  font-weight: bold;
-  margin-left: 26px;
 }
 
 footer {
