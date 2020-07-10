@@ -540,6 +540,46 @@ h2 {
   border-color: transparent transparent transparent #0398DF;
 }
 
+.instructor-section {
+  background-color: #EDE1FF;
+  padding: 25px 15px;
+}
+
+.instructor__title {
+  margin: 0;
+  color: #6600FF;
+}
+
+.instructor__description {
+  font-family: "Robot", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #6600FF;
+  text-align: center;
+}
+
+.instructor__info {
+  width: 100%;
+  min-height: 281px;
+  position: relative;
+}
+
+.instructor__photo {
+  width: 100%;
+}
+
+.instructor__name {
+  width: 100%;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 24px 0 14px;
+  background-image: linear-gradient(180deg, rgba(102, 0, 255, 0) 0%, #6600FF 100%);
+  position: absolute;
+  bottom: 0;
+}
+
 .for-screen-readers {
   overflow: hidden;
   position: absolute;
@@ -572,10 +612,6 @@ h2 {
   background-color: #FF6005;
   height: 30px;
   width: 80%;
-}
-
-.instructor-section {
-  background-color: #EDE1FF;
 }
 
 .location-section {
