@@ -673,7 +673,7 @@ h2 {
   clip: rect(0,0,0,0);
   clip-path: inset(100%);
 }
-
+/* 
 .process-section {
   background-image: url(../img/progress.png);
   background-repeat: no-repeat;
@@ -688,7 +688,7 @@ h2 {
 .process-section h2 {
   color: #ffffff;
   margin-left: 335px;
-}
+} */
 
 .process-progress-bar {
   background-color: #FF6005;
