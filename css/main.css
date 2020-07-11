@@ -660,6 +660,7 @@ h2 {
   padding-left: 15px;
   font-style: normal;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .for-screen-readers {
@@ -673,6 +674,7 @@ h2 {
   clip: rect(0,0,0,0);
   clip-path: inset(100%);
 }
+
 /* 
 .process-section {
   background-image: url(../img/progress.png);
@@ -688,15 +690,71 @@ h2 {
 .process-section h2 {
   color: #ffffff;
   margin-left: 335px;
-} */
+}
 
 .process-progress-bar {
   background-color: #FF6005;
   height: 30px;
   width: 80%;
 }
+*/
 
-footer {
+.footer .menu {
+  margin-bottom: 0;
+}
+
+.footer .hashtag {
+  margin-bottom: 10px;
+}
+
+.footer__contacts {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__contacts a {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+  color: #6600FF;
+}
+
+.footer__contacts a::before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin-right: 12px;
+}
+
+.footer__tel::before {
+  background-image: url('../img/svg/phone.svg');
+}
+
+.footer__email::before {
+  background-image: url('../img/svg/email.svg');
+}
+
+.footer .location__title {
+  color: #0398DF;
+}
+
+.footer .location__address {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 28px;
+}
+
+.current-year {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 27px;
+  color: #FF6005;
+  position: relative;
+  right: 21px;
+}
+
+/* footer {
   padding: 60px 100px;
 }
 
@@ -798,7 +856,14 @@ footer nav::after {
   margin: 20px 0 40px;
   height: 6px;
   background-color: #0398DF;
-}
+} */
+
+
+
+
+
+
+
 
 @media (min-width: 425px) {
   .freelance-section {
