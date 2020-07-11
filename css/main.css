@@ -254,6 +254,26 @@ h2 {
   background-image: url(../img/svg/html.svg);
 }
 
+.parallax {
+  height: 100%;
+  border-radius: 60px 0px 0px 0px;
+  overflow: hidden;
+}
+
+.parallax:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/mask1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
 .main-section {
   text-align: right;
   position: relative;
@@ -276,26 +296,6 @@ h2 {
 }
 
 .main-img {
-  z-index: 1;
-}
-
-.parallax {
-  height: 100%;
-  border-radius: 60px 0px 0px 0px;
-  overflow: hidden;
-}
-
-.parallax:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  height: 100%;
-  width: 100%;
-  background-image: url(../img/mask1.png);
-  background-size: contain;
-  background-repeat: no-repeat;
   z-index: 1;
 }
 
@@ -677,30 +677,6 @@ h2 {
   clip-path: inset(100%);
 }
 
-/* 
-.process-section {
-  background-image: url(../img/progress.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 576px;
-}
-
-.process-section:before {
-  background: linear-gradient(270deg, #6600FF 24.03%, rgba(102, 0, 255, 0) 50%);
-}
-
-.process-section h2 {
-  color: #ffffff;
-  margin-left: 335px;
-}
-
-.process-progress-bar {
-  background-color: #FF6005;
-  height: 30px;
-  width: 80%;
-}
-*/
-
 .footer .menu {
   margin-bottom: 0;
 }
@@ -755,117 +731,6 @@ h2 {
   position: relative;
   right: 21px;
 }
-
-/* footer {
-  padding: 60px 100px;
-}
-
-footer h4 {
-  font-size: 36px;
-  color: #6600FF;
-}
-
-.footer-menu__item a {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 53px;
-}
-
-.tel {
-  display: block;
-  position: relative;
-  color: #6600FF;
-  padding: 0 0 0 55px;
-  z-index: 1;
-  text-decoration: none;
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 53px;
-}
-
-.tel::before {
-  position: absolute;
-  content: "";
-  width: 40px;
-  height: 40px;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  background-image: url("../img/svg/phone.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.email {
-  display: block;
-  position: relative;
-  color: #6600FF;
-  padding: 0 0 0 55px;
-  z-index: 1;
-  text-decoration: none;
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 53px;
-}
-
-.email::before {
-  position: absolute;
-  content: "";
-  width: 40px;
-  height: 40px;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  background-image: url("../img/svg/email.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.current-year {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 53px;
-  color: #FF6005;
-  margin-left: 32px;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: 24% 24% 24% 24%;
-}
-
-.footer-info {
-  flex-grow: 1;
-}
-
-footer nav::after {
-  content: "";
-  display: block;
-  margin: 20px 0 40px;
-  height: 6px;
-  background-color: #0398DF;
-} */
-
-
-
-
-
-
-
 
 @media (min-width: 425px) {
   .freelance-section {
