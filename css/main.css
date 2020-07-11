@@ -797,7 +797,8 @@ h2 {
   .social {
     width: 169px;
     margin-left: auto;
-    margin-top: 10px;
+    margin-top: 1px;
+    margin-right: 24px;
   }
 
   .social-contacts {
@@ -847,14 +848,25 @@ h2 {
     margin-right: 20px;
   }
 
+  .menu__item a {
+    font-size: 22px;
+  }
+
   .lang {
     margin-top: 36px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .menu__item a {
+    font-size: 28px;
   }
 }
 
 @media (min-width: 1920px) {
   .header {
     padding-bottom: 22px;
+    padding-right: 37px;
   }
   
   .logo {
@@ -877,7 +889,7 @@ h2 {
   }
 
   .menu__item {
-    margin-right: 54px;
+    margin-right: 58px;
   }
 
   .menu__item a {
@@ -903,6 +915,8 @@ h2 {
     font-size: 36px;
     text-align: center;
     bottom: 8px;
+    letter-spacing: 2px;
+    right: -1px;
   }
 
   .lang {
