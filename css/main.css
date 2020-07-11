@@ -360,6 +360,7 @@ h2 {
   justify-content: center;
   padding: 0 15px;
   margin-bottom: 15px;
+  width: 100%;
 }
 
 .feature-img {
@@ -423,9 +424,10 @@ h2 {
 }
 
 .progress-section {
-  background-image: url('../img/progress.png');
+  background-image: url(../img/progress-mask.png), linear-gradient(270deg, #6600FF 24.03%, rgba(102, 0, 255, 0) 50%), url('../img/progress.jpg');
   background-color: #6500FF;
-  background-size: 100%;
+  background-repeat: no-repeat, repeat, repeat;
+  background-size: 16%, 100%, 100%;
   padding: 10px 15px;
 }
 
