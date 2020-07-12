@@ -428,7 +428,7 @@ h2 {
   background-image: url(../img/progress-mask.png), linear-gradient(270deg, #6600FF 24.03%, rgba(102, 0, 255, 0) 50%), url('../img/progress.jpg');
   background-color: #6500FF;
   background-repeat: no-repeat, repeat, repeat;
-  background-size: 16%, 100%, 100%;
+  background-size: 19%, 100%, 110%;
   padding: 10px 15px;
 }
 
@@ -870,6 +870,81 @@ h2 {
     width: 50%;
     font-size: 16px;
     margin-left: 5px;
+  }
+
+  .progress-section {
+    padding: 41px 15px 27px;
+  }
+
+  .progress-section h2 {
+    font-size: 34px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 55px;
+    padding-left: 106px;
+    letter-spacing: 0.7px;
+  }
+
+  .progress__list {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  .progress__list::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 49px;
+    left: 0;
+    width: 100%;
+    height: 14px;
+    background-color: #FF6005;
+  }
+
+  .progress__item {
+    width: 19.65%;
+    padding: 0 3px;
+  }
+
+  .progress__item::before {
+    width: 19px;
+    height: 19px;
+    top: -22px;
+    background-size: 19px;
+  }
+
+  .progress__item::after {
+    bottom: 19px;
+    height: 14px;
+  }
+
+  .progress__description {
+    position: relative;
+    bottom: 6px;
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+    margin-bottom: 35px;
+  }
+
+  .progress__week {
+    font-size: 17px;
+    position: absolute;
+    left: -59px;
+    bottom: -4px;
+  }
+
+  .progress__week::before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    right: -6px;
+    width: 4px;
+    height: 14px;
+    display: block;
+    background-color: #5500DE;
+    z-index: 1;
   }
 }
 
