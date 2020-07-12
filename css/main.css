@@ -966,6 +966,10 @@ h2 {
   .lang {
     margin-top: 36px;
   }
+
+  .progress-section {
+    padding-top: 81px;
+  }
 }
 
 @media (min-width: 1366px) {
@@ -985,6 +989,15 @@ h2 {
   .feature-item:nth-child(5n + 5) {
     width: 50%;
   } 
+
+  .progress-section {
+    background-size: 13%, 100%, 110%;
+  }
+
+  .progress__description {
+    font-size: 24px;
+    margin: 0 10px 35px;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -1088,5 +1101,54 @@ h2 {
   .feature-text {
     font-size: 24px;
     margin-left: 23px;
+  }
+
+  .progress-section {
+    background-size: 16%, 100%, 110%;
+    padding: 73px 124px 103px 104px;
+  }
+
+  .progress-section h2 {
+    font-size: 64px;
+    padding-left: 247px;
+    margin-bottom: 166px;
+  }
+
+  .progress__item::before {
+    width: 31px;
+    height: 31px;
+    top: -44px;
+    background-size: 31px;
+    left: -17px;
+  }
+
+  .progress__list::after {
+    bottom: 58px;
+    height: 30px;
+  }
+
+  .progress__item::after {
+    bottom: 28px;
+    height: 30px;
+  }
+
+  .progress__description {
+    font-size: 36px;
+    line-height: 53px;
+    bottom: 14px;
+    margin-bottom: 66px;
+  }
+
+  .progress__week {
+    font-size: 24px;
+    line-height: 28px;
+    left: -89px;
+    bottom: -6px;
+  }
+
+  .progress__week::before {
+    top: -36px;
+    height: 30px;
+    right: -14px;
   }
 }
