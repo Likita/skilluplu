@@ -735,8 +735,9 @@ h2 {
 
 @media (min-width: 425px) {
   .freelance-section {
-    background-size: 110%,82%;
+    background-size: 107%, 100%;
     height: 48.4vw;
+    padding-bottom: 0;
   }
 
   .freelance__title {
@@ -946,6 +947,15 @@ h2 {
     background-color: #5500DE;
     z-index: 1;
   }
+
+  .freelance-section {
+    background-size: 108%, 80%;
+    height: 49.7vw;
+  }
+
+  .freelance__title {
+    letter-spacing: .3px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -969,6 +979,10 @@ h2 {
 
   .progress-section {
     padding-top: 81px;
+  }
+
+  .freelance__btn {
+    font-size: 18px;
   }
 }
 
@@ -997,6 +1011,16 @@ h2 {
   .progress__description {
     font-size: 24px;
     margin: 0 10px 35px;
+  }
+
+  .freelance__btn {
+    font-size: 28px;
+    padding: 2px 2.8vw;
+  }
+
+  .freelance__btn::after {
+    right: -12px;
+    border-width: 18px 0 18px 12px;
   }
 }
 
@@ -1150,5 +1174,31 @@ h2 {
     top: -36px;
     height: 30px;
     right: -14px;
+  }
+
+  .freelance-section {
+    background-size: 100.1%, 80%;
+    height: 47vw;
+  }
+
+  .freelance__title {
+    font-size: 64px;
+    line-height: 150%;
+    margin-top: 61px;
+    margin-left: 99px;
+    margin-bottom: 127px;
+    letter-spacing: 0.9px;
+  }
+
+  .freelance__btn {
+    font-size: 36px;
+    margin-left: 100px;
+    width: 392px;
+    padding: 9px 2.8vw;
+  }
+
+  .freelance__btn::after {
+    right: -16px;
+    border-width: 30px 0 30px 16px;
   }
 }
