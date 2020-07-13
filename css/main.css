@@ -589,16 +589,23 @@ h2 {
 
 .review__title {
   margin: 0 0 10px;
+  color: #C299FF;
 }
 
 .review__item {
   display: none;
+  min-height: 470px;
+  padding: 0 15px;
 }
 
 .review__item.active {
   display: block;
-  min-height: 470px;
-  padding: 0 15px;
+  animation: reviewAnimation .5s;
+}
+
+@keyframes reviewAnimation {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
 }
 
 .review__name {
@@ -624,8 +631,8 @@ h2 {
 
 .review__btn {
   font-size: 0;
-  width: 36px;
-  height: 36px;
+  width: 35px;
+  height: 35px;
   border: none;
   background-color: inherit;
   background-image: url('../img/review-arrow.svg');
@@ -1052,6 +1059,77 @@ h2 {
     font-size: 17px;
     line-height: 20px;
   }
+  
+  .review-section {
+    padding: 43px 10px 40px;
+    display: flex;
+    position: relative;
+  }
+
+  .review-section::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 102px 102px 0;
+    border-color: transparent #EDE1FF transparent transparent;
+
+  }
+
+  .review__name {
+    margin-bottom: 4px;
+  }
+
+  .review__title {
+    text-align: left;
+    font-size: 45px;
+    margin-top: 4px;
+    margin-right: 12px;
+  }
+
+  .review__item {
+    border-left: 11px solid #C299FF;
+    padding: 80px 12px 19px;
+    min-height: 300px;
+    position: relative;
+  }
+
+  .review__item::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    display: block;
+    width: 11px;
+    height: 100%;
+    background-color: #C299FF;
+    top: 0;
+    left: -11px;
+  }
+
+  .review__content {
+    margin: 0;
+    margin-left: 3px;
+    line-height: 150%;
+  }
+
+  .review__photo {
+    width: 169px;
+    margin-right: 22px;
+  }
+
+  .review__controls {
+    position: absolute;
+    left: 112px;
+    bottom: 52px;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 105px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1121,6 +1199,10 @@ h2 {
 
   .instructor__item {
     width: 329px;
+  }
+
+  .review__content {
+    font-size: 20px;
   }
 }
 
@@ -1357,5 +1439,42 @@ h2 {
     font-size: 24px;
     line-height: 28px;
     margin: 18px 0;
+  }
+
+  .review-section {
+    padding: 57px 100px 155px;
+  }
+
+  .review__title {
+    font-size: 110px;
+    line-height: 100px;
+    letter-spacing: -2.2px;
+    margin-right: 41px;
+  }
+
+  .review__item {
+    padding: 134px 16px 111px;
+  }
+
+  .review__name {
+    font-size: 36px;
+    line-height: 53px;
+  }
+
+  .review__photo {
+    width: 260px;
+    margin-right: 30px;
+  }
+
+  .review__content {
+    font-size: 24px;
+    line-height: 140%;
+    width: 80%;
+  }
+
+  .review__controls {
+    left: 434px;
+    bottom: 174px;
+    height: 127px;
   }
 }
