@@ -6,12 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SkillUp School Luxembourg</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description"
-    content="Get the Profession of the Future! SkillUp School web course will help you enter the IT field very easily. You will learn how to create a website. It is very interesting and it could be your future job!">
-  <title>SkillUp School Luxembourg</title>
   <link rel="canonical" href="https://skillup.lu/" />
   <meta name="robots" content="index, follow">
   <link rel="stylesheet" type="text/css" href="./css/normalize.css">
@@ -27,6 +21,7 @@
   <meta property="og:site_name" content="SkillUp School" />
   <link rel="icon" type="image/png" href="./favicon.png">
   <meta property="fb:app_id" content="233972957843366" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   <script src="./js/parallax.js">
   </script>
@@ -35,45 +30,50 @@
 <body>
   <div></div>
   <header class="header">
-    <div>
       <div class="logo">
         <img src="./img/svg/logo.svg" alt="logo">
         <span class="school"></span>
       </div>
       <nav class="menu">
-        <ul>
-          <li>
+        <ul class="menu__items">
+          <li class="menu__item">
             <a href="#courses">Our courses</a>
           </li>
-          <li>
+          <li class="menu__item">
             <a href="#about">About us</a>
           </li>
-          <li>
+          <li class="menu__item">
             <a href="#instructors">Instructors</a>
           </li>
-          <li>
+          <li class="menu__item">
             <a href="#contacts">Contacts</a>
           </li>
         </ul>
       </nav>
-    </div>
-    <div>
-      <ul class="social-contacts">
-        <li><a class="facebook" href="https://facebook.com/skilluplu" target="_blank" rel="noopener nofollow"
-            title="Our Facebook"><span class="for-screen-readers">Our Facebook</span></a></li>
-        <li><a class="twitter" href="https://twitter.com/skilluplu" target="_blank" rel="noopener nofollow"
-            title="Our Twitter"><span class="for-screen-readers">Our Twitter</span></a></li>
-        <li><a class="instagram" href="https://instagram.com/skilluplu" target="_blank" rel="noopener nofollow"
-            title="Our Instagram"><span class="for-screen-readers">Our Instagram</span></a></li>
-        <li><a class="youtube" href="https://www.youtube.com/channel/UCYVcLTKHkfeSgcghu6xY1eg" target="_blank"
-            rel="noopener nofollow" title="Our Youtube"><span class="for-screen-readers">Our Youtube</span></a></li>
-        <!-- <li><a class="linkdin" href="https://www.linkedin.com/company/skilluplu" target="_blank" title="Our LinkdIn" rel="noopener nofollow"><span class="for-screen-readers">Our LinkdIn</span></a></li> -->
-      </ul>
-      <div class="hashtag">#SkillUpLu</div>
-    </div>
+      <div class="social">
+        <ul class="social-contacts">
+          <li><a class="facebook" href="https://facebook.com/skilluplu" target="_blank" rel="noopener nofollow"
+              title="Our Facebook"><span class="for-screen-readers">Our Facebook</span></a></li>
+          <li><a class="twitter" href="https://twitter.com/skilluplu" target="_blank" rel="noopener nofollow"
+              title="Our Twitter"><span class="for-screen-readers">Our Twitter</span></a></li>
+          <li><a class="instagram" href="https://instagram.com/skilluplu" target="_blank" rel="noopener nofollow"
+              title="Our Instagram"><span class="for-screen-readers">Our Instagram</span></a></li>
+          <li><a class="youtube" href="https://www.youtube.com/channel/UCYVcLTKHkfeSgcghu6xY1eg" target="_blank"
+              rel="noopener nofollow" title="Our Youtube"><span class="for-screen-readers">Our Youtube</span></a></li>
+          <!-- <li><a class="linkdin" href="https://www.linkedin.com/company/skilluplu" target="_blank" title="Our LinkdIn" rel="noopener nofollow"><span class="for-screen-readers">Our LinkdIn</span></a></li> -->
+        </ul>
+        <div class="hashtag">#SkillUpLu</div>
+      </div>
     <!-- <button class="menu-btn">
         -
       </button> -->
+     <div class="lang">
+       <ul class="lang__items">
+         <li class="lang-item active">eng</li>
+         <li class="lang-item">rus</li>
+       </ul>
+       <button class="lang__btn"></button>
+     </div>
   </header>
   <main>
     <section class="main-section">
@@ -168,81 +168,134 @@
         </li>
       </ul>
     </section>
-    <section class="process-section">
+    <section class="progress-section">
       <h2>Progress</h2>
-
+      <ul class="progress__list">
+        <li class="progress__item progress__item--paw">
+          <p class="progress__description">Lorem ipsum dolor sit amet</p>
+          <span class="progress__week">1 week</span>
+        </li>
+        <li class="progress__item progress__item--droid">
+          <p class="progress__description">Lorem ipsum dolor sit amet</p>
+          <span class="progress__week">2 week</span>
+        </li>
+        <li class="progress__item progress__item--rocket">
+          <p class="progress__description">Lorem ipsum dolor sit amet</p>
+          <span class="progress__week">3 week</span>
+        </li>
+        <li class="progress__item progress__item--study">
+          <p class="progress__description">Lorem ipsum dolor sit amet</p>
+          <span class="progress__week">4 week</span>
+        </li>
+      </ul>
     </section>
     <section class="freelance-section">
-      <div class="freelance-text">
-        <h2 class="big-text">Work from any&nbsp;point in the&nbsp;world!</h2>
-        <button class="subscribe-btn">Sign in</button>
-      </div>
-      <div class="freelance-img">
-        <img src="./img/freelance.jpg" alt="Freelance. Work near the Sea view">
-      </div>
+      <h2 class="freelance__title">Пройди курс и работай из любой точки мира</h2>
+      <button class="freelance__btn">Записаться</button>
     </section>
-
     <section class="instructor-section" id="instructors">
-      <h2>Instructors</h2>
+      <h2 class="instructor__title">Instructors</h2>
+      <p class="instructor__description">Все наши преподаватели, это успешные специалисты в своей сфере.</p>
+      <ul class="instructor__list">
+        <li class="instructor__item">
+          <div class="instructor__info">
+            <img src="img/instructor-1.jpg" alt="Alfred Steinberg" class="instructor__photo">
+            <p class="instructor__name">Alfred Steinberg</p>
+          </div>
+          <p class="instructor__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti maxime consectetur, perferendis iusto ut ullam velit</p>
+        </li>
+        <li class="instructor__item">
+          <div class="instructor__info">
+            <img src="img/instructor-2.jpg" alt="Alfred Steinberg" class="instructor__photo">
+            <p class="instructor__name">Alfred Steinberg</p>
+          </div>
+          <p class="instructor__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti maxime consectetur, perferendis iusto ut ullam velit</p>
+        </li>
+        <li class="instructor__item">
+          <div class="instructor__info">
+            <img src="img/instructor-3.jpg" alt="Alfred Steinberg" class="instructor__photo">
+            <p class="instructor__name">Alfred Steinberg</p>
+          </div>
+          <p class="instructor__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti maxime consectetur, perferendis iusto ut ullam velit</p>
+        </li>
+        <li class="instructor__item">
+          <div class="instructor__info">
+            <img src="img/instructor-4.jpg" alt="Alfred Steinberg" class="instructor__photo">
+            <p class="instructor__name">Alfred Steinberg</p>
+          </div>
+          <p class="instructor__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti maxime consectetur, perferendis iusto ut ullam velit</p>
+        </li>
+      </ul>
     </section>
     <section class="review-section">
-      <h2>Reviews</h2>
+      <h2 class="review__title">Reviews</h2>
+      <ul class="review__list">
+        <li class="review__item">
+          <p class="review__name">Tom Jonson</p>
+          <p class="review__content"><img src="img/review-1.jpg" alt="Tom Jonson" class="review__photo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, ed  eiusmod tempor incididunt ut labore et dolore magna aliqua. rem ipsum dolor sit amet, consetetur adipiscing elit, sed do eiumod tempor incididunt ut labore et dolore magna aliqua. orem ipsum dolor sit amet, cnsectetur adipiscing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </li>
+      </ul>
+      <div class="review__controls">
+        <button class="review__btn review__prev">Prev</button>
+        <button class="review__btn review__next">Next</button>
+      </div>
     </section>
+    <sectuon class="mentor-section">
+      <img src="img/mentor.jpg" alt="Vasilika Klimova" class="mentor__photo">
+      <h2 class="mentor__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+    </sectuon>
     <section class="location-section" id="contacts">
-      <h2>Location:</h2>
-      <h3>Artec3D office<br>2 Rue Jean Engling, L-1466 Luxembourg</h3>
+      <h2 class="location__title">Location:</h2>
+      <address class="location__address">Artec3D office<br>2 Rue Jean Engling, L-1466 Luxembourg</address>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2583.816527132077!2d6.142964216208111!3d49.63891247937171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47954f11b1ae4ea5%3A0x552259a834da8f6e!2s2%20Rue%20Jean%20Engling%2C%201466%20Luxembourg!5e0!3m2!1sen!2slu!4v1587080339501!5m2!1sen!2slu&key=AIzaSyBy4tUSq5RU7UdJ1KNeewM4Ha3a0RAE8t8"
         width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
         tabindex="0"></iframe>
     </section>
   </main>
-  <footer>
-    <div class="flex">
-      <div class="footer-info">
-        <nav>
-          <ul class="menu footer-grid">
-            <li>
+  <footer class="footer">
+        <nav class="menu">
+          <ul class="menu__items">
+            <li class="menu__item">
               <a href="#courses">Our courses</a>
             </li>
-            <li>
+            <li class="menu__item">
               <a href="#about">About us</a>
             </li>
-            <li>
+            <li class="menu__item">
               <a href="#instructors">Instructors</a>
             </li>
-            <li>
+            <li class="menu__item">
               <a href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
-        <div class="footer-grid">
-          <ul class="social-contacts">
-            <li><a class="facebook" href="https://facebook.com/skilluplu" target="_blank" rel="noopener nofollow"
-                title="Our Facebook"><span class="for-screen-readers">Our Facebook</span></a></li>
-            <li><a class="twitter" href="https://twitter.com/skilluplu" target="_blank" rel="noopener nofollow"
-                title="Our Twitter"><span class="for-screen-readers">Our Twitter</span></a></li>
-            <li><a class="instagram" href="https://instagram.com/skilluplu" target="_blank" rel="noopener nofollow"
-                title="Our Instagram"><span class="for-screen-readers">Our Instagram</span></a></li>
-            <li><a class="youtube" href="https://www.youtube.com/channel/UCYVcLTKHkfeSgcghu6xY1eg" target="_blank"
-                rel="noopener nofollow" title="Our Youtube"><span class="for-screen-readers">Our Youtube</span></a></li>
-            <!-- <li><a class="linkdin" href="https://www.linkedin.com/company/skilluplu" target="_blank" title="Our LinkdIn" rel="noopener nofollow"><span class="for-screen-readers">Our LinkdIn</span></a></li> -->
-          </ul>
-          <div class="hashtag">#SkillUpLu</div>
-          <!-- <p class="communication">
-      
-      
-    </p> -->
-          <a class="tel" href="tel:+352661101603">+352 661 101 603</a>
-          <a class="email" href="mailto:info@skillup.lu">info@skillup.lu</a>
+        <div class="hashtag">#SkillUpLu</div>
+        <ul class="social-contacts">
+          <li><a class="facebook" href="https://facebook.com/skilluplu" target="_blank" rel="noopener nofollow"
+              title="Our Facebook"><span class="for-screen-readers">Our Facebook</span></a></li>
+          <li><a class="twitter" href="https://twitter.com/skilluplu" target="_blank" rel="noopener nofollow"
+              title="Our Twitter"><span class="for-screen-readers">Our Twitter</span></a></li>
+          <li><a class="instagram" href="https://instagram.com/skilluplu" target="_blank" rel="noopener nofollow"
+              title="Our Instagram"><span class="for-screen-readers">Our Instagram</span></a></li>
+          <li><a class="youtube" href="https://www.youtube.com/channel/UCYVcLTKHkfeSgcghu6xY1eg" target="_blank"
+              rel="noopener nofollow" title="Our Youtube"><span class="for-screen-readers">Our Youtube</span></a></li>
+          <!-- <li><a class="linkdin" href="https://www.linkedin.com/company/skilluplu" target="_blank" title="Our LinkdIn" rel="noopener nofollow"><span class="for-screen-readers">Our LinkdIn</span></a></li> -->
+        </ul>
+          <!-- <p class="communication"></p> -->
+        <div class="footer__contacts">
+          <a class="footer__tel" href="tel:+352661101603">+352 661 101 603</a>
+          <a class="footer__email" href="mailto:info@skillup.lu">info@skillup.lu</a>
+        </div>
+        <div class="footer__location">
+          <h2 class="location__title">Location:</h2>
+      <address class="location__address">Artec3D office<br>2 Rue Jean Engling, L-1466 Luxembourg</address>
         </div>
       </div>
       <div class="logo">
         <img src="./img/svg/logo.svg" alt="logo">
         <span class="school"></span>
         <span class="current-year">2020</span>
-      </div>
-    </div>
   </footer>
   </div>
 </body>
