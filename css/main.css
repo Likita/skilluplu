@@ -978,7 +978,7 @@ h2 {
   .instructor__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .instructor__item {
@@ -1107,6 +1107,10 @@ h2 {
   .freelance__btn::after {
     right: -12px;
     border-width: 18px 0 18px 12px;
+  }
+
+  .instructor__item {
+    width: 329px;
   }
 }
 
@@ -1286,5 +1290,60 @@ h2 {
   .freelance__btn::after {
     right: -16px;
     border-width: 30px 0 30px 16px;
+  }
+
+  .instructor-section {
+    padding: 58px 100px 73px;
+  }
+
+  .instructor__title {
+    font-size: 64px;
+    line-height: 95px;
+    margin-bottom: 1px;
+  }
+
+  .instructor__description {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 60px;
+  }
+
+  .instructor__list {
+    justify-content: space-between;
+  }
+
+  .instructor__item {
+    width: 408px;
+  }
+  
+  .instructor__item:nth-child(4n + 1) .instructor__info::before {
+    border-width: 0 0 60px 60px;
+  }
+
+  .instructor__item:nth-child(4n + 2) .instructor__info::before {
+    border-width: 60px 60px 0 0;
+  }
+
+  .instructor__item:nth-child(4n + 3) .instructor__info::before {
+    border-width: 60px 0 0 60px;
+  }
+
+  .instructor__item:nth-child(4n + 4) .instructor__info::before {
+    border-width: 0 60px 60px 0;
+  }
+
+  .instructor__photo {
+    width: 408px;
+    height: 358px;
+  }
+
+  .instructor__name {
+    padding-bottom: 7px;
+  }
+
+  .instructor__about {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 18px 0;
   }
 }
