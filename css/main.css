@@ -1,11 +1,11 @@
 @font-face {
-  src: local('Oswald'), url(../fonts/oswald.woff2) format('woff2');
+  src: local("Oswald"), url(../fonts/oswald.woff2) format("woff2");
   font-family: Oswald;
   font-weight: 700;
 }
 
 @font-face {
-  src: local('Roboto'), url(../fonts/roboto.woff2) format('woff2');
+  src: local("Roboto"), url(../fonts/roboto.woff2) format("woff2");
   font-family: Roboto;
   font-weight: 400;
 }
@@ -42,52 +42,24 @@ h2 {
   font-size: 72px;
   line-height: 107px;
   text-transform: uppercase;
-  color: #0398DF;
+  color: #0398df;
   margin: 0;
   margin-left: 100px;
 }
 
 .course-section {
-  background: #F5F5F5;
+  background: #f5f5f5;
   box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 200px 0px 0px 0px;
   padding: 100px 50px;
 }
 
 .course-item {
-	width: 150px;
-	height: 85px;
-	background: #ffffff;
   position: relative;
-  border: 2px solid red;
 }
 
 .course-item + .course-item {
   margin-top: 100px;
-}
-
-.course-item:before {
-	content: "";
-	position: absolute;
-	top: -25px; 
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 75px solid transparent;
-	border-right: 75px solid transparent;
-	border-bottom: 37px solid white;
-}
-
-.course-item:after {
-	content: "";
-	position: absolute;
-	bottom: -25px; 
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-top: 25px solid red;
 }
 
 .feature-list {
@@ -108,7 +80,7 @@ h2 {
 .feature-img {
   height: 238px;
   width: 238px;
-  background-color: #6600FF;
+  background-color: #6600ff;
   box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   background-position: center;
@@ -120,22 +92,22 @@ h2 {
 }
 
 .feature-item-project .feature-img {
-  background-image: url('../img/svg/project.svg');
+  background-image: url("../img/svg/project.svg");
   background-size: 45%;
 }
 
 .feature-item-task .feature-img {
-  background-image: url('../img/svg/puzzle.svg');
+  background-image: url("../img/svg/puzzle.svg");
   background-size: 60%;
 }
 
 .feature-item-beginner .feature-img {
-  background-image: url('../img/svg/calc.svg');
+  background-image: url("../img/svg/calc.svg");
   background-size: 40%;
 }
 
 .feature-item-expert .feature-img {
-  background-image: url('../img/svg/expert.svg');
+  background-image: url("../img/svg/expert.svg");
   background-size: 40%;
 }
 
@@ -144,34 +116,33 @@ h2 {
 }
 
 .feature-item-certificate .feature-img {
-  background-image: url('../img/svg/certif.svg');
+  background-image: url("../img/svg/certif.svg");
   background-size: 50%;
 }
 
 .feature-item-modern .feature-img {
-  background-image: url('../img/svg/rocket.svg');
+  background-image: url("../img/svg/rocket.svg");
   background-size: 35%;
 }
 
 .feature-item-modern .feature-img {
-  background-image: url('../img/svg/rocket.svg');
+  background-image: url("../img/svg/rocket.svg");
   background-size: 35%;
 }
 
 .feature-item-test .feature-img {
-  background-image: url('../img/svg/test.svg');
+  background-image: url("../img/svg/test.svg");
   background-size: 40%;
 }
 
 .feature-item-review .feature-img {
-  background-image: url('../img/svg/review.svg');
+  background-image: url("../img/svg/review.svg");
   background-size: 60%;
 }
 
 .feature-item-review {
   width: 49%;
 }
-
 
 /* .menu-btn {
   position: absolute;
@@ -198,7 +169,7 @@ header .menu a {
 
 .menu a {
   font-size: 36px;
-  color: #6600FF;
+  color: #6600ff;
   font-family: Oswald;
   font-weight: 700;
   text-decoration: none;
@@ -212,7 +183,7 @@ header .menu a {
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #6600FF;
+  background-color: #6600ff;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.2s ease-in-out 0s;
@@ -229,7 +200,7 @@ header .menu a {
   font-size: 36px;
   font-family: Oswald;
   font-weight: 700;
-  color: #0398DF;
+  color: #0398df;
 }
 
 header .menu li + li {
@@ -237,7 +208,7 @@ header .menu li + li {
 }
 
 .school {
-  background-image: url('../img/svg/school.svg');
+  background-image: url("../img/svg/school.svg");
   width: 105px;
   height: 33px;
   display: block;
@@ -270,7 +241,7 @@ header .menu li + li {
 }
 
 .freelance-section .subscribe-btn {
-  background-color: #0398DF;
+  background-color: #0398df;
   font-weight: bold;
   font-size: 36px;
   line-height: 150%;
@@ -289,7 +260,7 @@ header .menu li + li {
   height: 0;
   border-top: 30px solid transparent;
   border-bottom: 30px solid transparent;
-  border-left: 30px solid #0398DF;
+  border-left: 30px solid #0398df;
   right: -30px;
   position: absolute;
   top: 0;
@@ -312,7 +283,7 @@ header .menu li + li {
   left: 0;
   content: "";
   display: block;
-  background-image: url('../img/bg-lilac.png');
+  background-image: url("../img/bg-lilac.png");
 }
 
 .social-contacts li {
@@ -366,7 +337,7 @@ header .menu li + li {
   margin: -1px;
   padding: 0;
   border: 0;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   clip-path: inset(100%);
 }
 
@@ -426,7 +397,7 @@ header .menu li + li {
   font-size: 72px;
   line-height: 107px;
   text-transform: uppercase;
-  color: #FF6005;
+  color: #ff6005;
   text-shadow: 0px 8px 24px rgba(0, 0, 0, 0.8);
   text-align: left;
   top: 160px;
@@ -473,7 +444,7 @@ header .menu li + li {
 }
 
 .process-section:before {
-  background: linear-gradient(270deg, #6600FF 24.03%, rgba(102, 0, 255, 0) 50%);
+  background: linear-gradient(270deg, #6600ff 24.03%, rgba(102, 0, 255, 0) 50%);
 }
 
 .process-section h2 {
@@ -482,23 +453,23 @@ header .menu li + li {
 }
 
 .process-progress-bar {
-  background-color: #FF6005;
+  background-color: #ff6005;
   height: 30px;
   width: 80%;
 }
 
 .instructor-section {
-  background-color: #EDE1FF;
+  background-color: #ede1ff;
 }
 
 .location-section {
-  color: #6600FF;
+  color: #6600ff;
 }
 
 .location-section h2,
 .location-section h3 {
   display: inline-block;
-  color: #6600FF;
+  color: #6600ff;
 }
 
 .location-section h2 {
@@ -518,7 +489,7 @@ footer {
 
 footer h4 {
   font-size: 36px;
-  color: #6600FF;
+  color: #6600ff;
 }
 
 .footer-menu a {
@@ -536,7 +507,7 @@ footer h4 {
 .tel {
   display: block;
   position: relative;
-  color: #6600FF;
+  color: #6600ff;
   padding: 0 0 0 55px;
   z-index: 1;
   text-decoration: none;
@@ -563,7 +534,7 @@ footer h4 {
 .email {
   display: block;
   position: relative;
-  color: #6600FF;
+  color: #6600ff;
   padding: 0 0 0 55px;
   z-index: 1;
   text-decoration: none;
@@ -599,7 +570,7 @@ footer h4 {
   font-weight: bold;
   font-size: 36px;
   line-height: 53px;
-  color: #FF6005;
+  color: #ff6005;
   margin-left: 32px;
 }
 
@@ -617,9 +588,8 @@ footer nav::after {
   display: block;
   margin: 20px 0 40px;
   height: 6px;
-  background-color: #0398DF;
+  background-color: #0398df;
 }
 
 @media screen and (max-width: 900px) {
-
 }
