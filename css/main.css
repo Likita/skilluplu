@@ -584,11 +584,20 @@ h2 {
 }
 
 .review-section {
-  padding: 25px 15px;
+  padding: 25px 0;
 }
 
 .review__title {
   margin: 0 0 10px;
+}
+
+.review__item {
+  display: none;
+}
+
+.review__item.active {
+  display: block;
+  min-height: 430px;
 }
 
 .review__name {
