@@ -956,6 +956,92 @@ h2 {
   .freelance__title {
     letter-spacing: .3px;
   }
+
+  .instructor-section {
+    padding: 38px 14px 1px;
+  }
+
+  .instructor__title {
+    text-align: left;
+    font-size: 35px;
+    letter-spacing: 0.2px;
+    margin-bottom: 11px;
+  }
+
+  .instructor__description {
+    text-align: left;
+    margin: 0;
+    letter-spacing: .26px;
+    margin-bottom: 29px;
+  }
+
+  .instructor__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .instructor__item {
+    width: 355px;
+    margin-bottom: 14px;
+  }
+  
+  .instructor__info {
+    position: relative;
+    background-color: #EDE1FF;
+  }
+
+  .instructor__info::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    display: block;
+    border-style: solid;
+    z-index: 1;
+  }
+  
+  .instructor__item:nth-child(4n + 1) .instructor__info::before {
+    right: -1px;
+    bottom: -1px;
+    border-width: 0 0 55px 55px;
+    border-color: transparent transparent #EDE1FF transparent;
+  }
+
+  .instructor__item:nth-child(4n + 2) .instructor__info::before {
+    left: -1px;
+    top: -1px;
+    border-width: 55px 55px 0 0;
+    border-color: #EDE1FF transparent transparent transparent;
+  }
+
+  .instructor__item:nth-child(4n + 3) .instructor__info::before {
+    left: -1px;
+    bottom: -1px;
+    border-width: 55px 0 0 55px;
+    border-color: transparent transparent transparent #EDE1FF;
+  }
+
+  .instructor__item:nth-child(4n + 4) .instructor__info::before {
+    right: -1px;
+    top: -1px;
+    border-width: 0 55px 55px;
+    border-color: transparent #EDE1FF transparent transparent;
+  }
+
+  .instructor__photo {
+    height: 311px;
+  }
+
+  .instructor__name {
+    font-size: 36px;
+  }
+
+  .instructor__about {
+    margin: 15px 0;
+    font-size: 17px;
+    line-height: 20px;
+  }
 }
 
 @media (min-width: 1024px) {
