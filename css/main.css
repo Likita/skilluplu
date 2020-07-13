@@ -1454,6 +1454,7 @@ h2 {
 
   .review__item {
     padding: 134px 16px 111px;
+    min-height: 321px;
   }
 
   .review__name {
