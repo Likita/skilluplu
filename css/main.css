@@ -597,7 +597,8 @@ h2 {
 
 .review__item.active {
   display: block;
-  min-height: 430px;
+  min-height: 470px;
+  padding: 0 15px;
 }
 
 .review__name {
