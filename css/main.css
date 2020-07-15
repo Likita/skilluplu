@@ -703,6 +703,12 @@ h2 {
   margin-bottom: 0;
 }
 
+.footer .menu__items,
+.footer .social-contacts,
+.footer .footer__contacts {
+  padding-bottom: 20px;
+}
+
 .footer .hashtag {
   margin-bottom: 10px;
 }
