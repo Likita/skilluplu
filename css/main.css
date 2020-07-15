@@ -1288,6 +1288,26 @@ h2 {
     line-height: 95px;
     letter-spacing: 0.7px;
   }
+
+  .location-section {
+    padding-top: 89px;
+  }
+
+  .location__title {
+    font-size: 96px;
+    line-height: 142px;
+    padding-left: 92px;
+  }
+
+  .location__address {
+    font-size: 36px;
+    line-height: 42px;
+    padding-left: 29px;
+  }
+
+  .location-section iframe {
+    height: 800px;
+  }
 }
 
 @media (min-width: 1920px) {
