@@ -1091,7 +1091,6 @@ h2 {
     border-style: solid;
     border-width: 0 102px 102px 0;
     border-color: transparent #EDE1FF transparent transparent;
-
   }
 
   .review__name {
@@ -1143,6 +1142,52 @@ h2 {
     display: flex;
     flex-direction: column-reverse;
     height: 105px;
+  }
+
+  .mentor-section {
+    display: flex;
+    padding: 52px 11px 21px;
+    background-color: #E5E5E5;
+    position: relative;
+  }
+
+  .mentor-section::before,
+  .mentor-section::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-style: solid;
+  }
+  
+  .mentor-section::before {
+    left: 0;
+    top: 0;
+    border-width: 40px 40px 0 0;
+    border-color: #ffffff transparent transparent transparent;
+  }
+
+  .mentor-section::after {
+    right: 0;
+    bottom: 0;
+    border-width: 0 0 82px 82px;
+    border-color: transparent transparent #ffffff transparent; 
+  }
+
+  .mentor__photo {
+    width: 31.6%;
+    height: 100%;
+  }
+
+  .mentor__title {
+    padding: 48px 63px 0 19px;
+    font-size: 47px;
+    text-align: left;
+    line-height: 68px;
+  }
+
+  .mentor__title::before {
+    margin-bottom: 9px;
   }
 }
 
@@ -1217,6 +1262,12 @@ h2 {
 
   .review__content {
     font-size: 20px;
+  }
+
+  .mentor__title {
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: 0.7px;
   }
 }
 
@@ -1491,5 +1542,30 @@ h2 {
     left: 434px;
     bottom: 174px;
     height: 127px;
+  }
+
+  .mentor-section {
+    padding: 54px 100px 46px;
+  }
+  
+  .mentor-section::before {
+    border-width: 60px 60px 0 0;
+  }
+
+  .mentor-section {
+    border-width: 0 0 116px 116px; 
+  }
+
+  .mentor__photo {
+    width: 32.15%;
+  }
+
+  .mentor__title {
+    padding: 195px 0 0 176px;
+    width: 40.65%;
+  }
+
+  .mentor__title::before {
+    margin-bottom: 0;
   }
 }
