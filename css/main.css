@@ -351,21 +351,22 @@ h2 {
 .feature-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .feature-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0 15px;
   margin-bottom: 15px;
-  width: 100%;
+  width: 300px;
 }
 
 .feature-img {
-  height: 50px;
-  width: 50px;
+  width: 200px;
+  height: 200px;
   background-color: #6600FF;
   box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.5);
   border-radius: 50%;
@@ -374,8 +375,8 @@ h2 {
 }
 
 .feature-text {
-  width: calc(100% - 50px);
-  margin-left: 15px;
+  width: 90%;
+  text-align: center;
   color: #6600FF;
 }
 
@@ -873,6 +874,7 @@ h2 {
   }
 
   .feature-item {
+    flex-direction: row;
     padding: 0;
     width: 50%;
     justify-content: flex-start;
@@ -888,6 +890,7 @@ h2 {
     width: 50%;
     font-size: 16px;
     margin-left: 5px;
+    text-align: left;
   }
 
   .progress-section {
