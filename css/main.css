@@ -77,6 +77,7 @@ h2 {
 
 .menu__item {
   display: inline-block;
+  margin-bottom: 10px;
 }
 
 .menu__item a {
@@ -805,6 +806,7 @@ h2 {
 
   .menu__item {
     margin-right: 17px;
+    margin-bottom: 0;
   }
 
   .menu__item:last-child {
