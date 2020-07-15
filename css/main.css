@@ -1189,6 +1189,25 @@ h2 {
   .mentor__title::before {
     margin-bottom: 9px;
   }
+
+  .location-section {
+    padding: 26px 0 0;
+  }
+
+  .location__title {
+    display: inline-block;
+    margin: 0;
+    font-size: 46px;
+    margin-left: 9px;
+    letter-spacing: .5px;
+  }
+
+  .location__address {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 1024px) {
