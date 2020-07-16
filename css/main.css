@@ -1484,6 +1484,48 @@ h2 {
   .location-section iframe {
     height: 800px;
   }
+
+  .footer .menu__item a {
+    font-size: 36px;
+  }
+  
+  .footer__online-contacts {
+    padding-top: 30px;
+  }
+
+  .footer .social-contacts {
+    width: 231px;
+  }
+
+  .footer .hashtag {
+    font-size: 36px;
+  }
+
+  .footer__offline-contacts {
+    padding-left: 0;
+    display: flex;
+    width: calc(100% - 334px);
+  }
+
+  .footer .footer__contacts {
+    width: 40%;
+    padding-top: 7px;
+  }
+
+  .footer__contacts a {
+    font-size: 36px;
+  }
+
+  .footer .location__address {
+    font-size: 36px;
+    line-height: 53px;
+  }
+
+  .footer .location__title {
+    font-size: 36px;
+    padding-left: 0;
+    line-height: 53px;
+  }
 }
 
 @media (min-width: 1920px) {
