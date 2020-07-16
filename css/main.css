@@ -1508,12 +1508,18 @@ h2 {
   }
 
   .footer .footer__contacts {
-    width: 40%;
+    width: 500px;
     padding-top: 7px;
   }
 
   .footer__contacts a {
     font-size: 36px;
+  }
+
+  .footer__contacts a::before {
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
   }
 
   .footer .location__address {
@@ -1824,5 +1830,70 @@ h2 {
 
   .mentor__title::before {
     margin-bottom: 0;
+  }
+
+  .footer {
+    padding: 41px 100px 0;
+  }
+
+  .footer .menu {
+    width: calc(100% - 155px);
+    padding-top: 25px;
+    border-width: 6px;
+    padding-bottom: 18px;
+  }
+
+  .footer .menu__item {
+    margin-right: 92px;
+  }
+
+  .footer .logo {
+    right: 123px;
+    top: 48px;
+  }
+
+  .footer .logo img {
+    width: 150px; 
+  }
+
+  .footer .logo .school {
+    width: 110px;
+    left: 32px;
+    bottom: 0;
+  }
+
+  .footer .logo .current-year {
+    font-size: 36px;
+    right: -15px;
+    bottom: -11px;
+  }
+
+  .footer__online-contacts {
+    padding-top: 37px;
+  }
+
+  .footer .hashtag {
+    margin-bottom: 11px;
+  }
+
+  .footer .social-contacts a {
+    width: 42.5px;
+    height: 42.5px;
+    margin-right: 9.8px;
+  }
+
+  .footer__offline-contacts {
+    padding-top: 37px;
+    width: calc(100% - 534px);
+  }
+  
+  .footer .footer__contacts {
+    width: 534px;
+    padding-top: 6px;
+    padding-left: 61px;
+  }
+
+  .footer__contacts a {
+    margin-bottom: 10px;
   }
 }
