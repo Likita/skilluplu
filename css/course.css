@@ -1,0 +1,141 @@
+.course-item {
+  height: 400px;
+  width: 400px;
+  text-align: center;
+  max-width: 100%;
+}
+
+.course-list svg {
+  max-width: 100%;
+}
+
+.course-design .course-color {
+  fill: #fb6b3e;
+}
+
+.course-front1 .course-color {
+  fill: #0398df;
+}
+
+.course-front2 .course-color {
+  fill: #2479c7;
+}
+
+.course-wordpress .course-color {
+  fill: #6600ff;
+}
+
+.course-back1 .course-color {
+  fill: #777082;
+}
+
+.course-back2 .course-color {
+  fill: #484054;
+}
+
+.course-kid .course-color {
+  fill: #e32d7c;
+}
+
+.course-item-content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+.course-item-title {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.course-item-tag-list {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.course-item-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #484054;
+  margin-bottom: 50px;
+}
+
+.course-item-left {
+  width: 50%;
+  text-align: right;
+  padding-top: 100px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.course-item-right {
+  text-align: left;
+  padding-top: 100px;
+  padding-left: 10px;
+}
+
+.course-item-price {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+  color: #0398df;
+}
+
+.course-item-discount-price {
+  font-family: Oswald;
+  font-weight: bold;
+  font-size: 36px;
+  color: rgb(223, 3, 101);
+}
+
+.course-item-more {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #0398df;
+}
+
+@media screen and (min-width: 700px) {
+  .course-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .course-item:first-child,
+  .course-item:nth-child(2),
+  .course-item:nth-child(3) {
+    width: 33%;
+  }
+
+  .course-item:last-child,
+  .course-item:nth-child(4),
+  .course-item:nth-child(5) {
+    width: 25%;
+  }
+}
