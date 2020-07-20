@@ -3,13 +3,15 @@
   width: 400px;
   text-align: center;
   max-width: 100%;
+  margin: 0 auto;
 }
 
 .course-list svg {
   max-width: 100%;
 }
 
-.course-design .course-color {
+.course-ux .course-color,
+.course-ui .course-color {
   fill: #fb6b3e;
 }
 
@@ -121,21 +123,49 @@
   color: #0398df;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 770px) {
   .course-list {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .course-item:first-child,
-  .course-item:nth-child(2),
-  .course-item:nth-child(3) {
+  .course-item {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .course-item {
     width: 33%;
   }
 
-  .course-item:last-child,
-  .course-item:nth-child(4),
-  .course-item:nth-child(5) {
-    width: 25%;
+  .course-front1 {
+    order: 1;
+  }
+
+  .course-back1 {
+    order: 2;
+  }
+
+  .course-kid {
+    order: 3;
+  }
+
+  .course-back2 {
+    order: 6;
+  }
+
+  .course-ui,
+  .course-ux {
+    order: 4;
+    width: 50%;
+  }
+
+  .course-front2 {
+    order: 5;
+  }
+
+  .course-wordpress {
+    order: 7;
   }
 }
