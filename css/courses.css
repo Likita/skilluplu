@@ -10,50 +10,50 @@ p, li {
   font-size: 14px;
 }
 
-.java {
+.course {
 	background-image: url('../images/java-bg2.png'), url('../images/java-bg1.png');
 	background-size: 100vw, auto;
 	background-repeat: no-repeat, repeat;
 }
 
-.java__wrapper {
+.course__wrapper {
 	padding: 10px 25px 15px;
 }
 
-.java__header {
+.course__header {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 10px;
 }
 
-.java__caption {
+.course__caption {
 	text-transform: uppercase;
 	font-size: 60px;
 	color: #FF6005;
 }
 
-.java__logo {
+.course__logo {
   width: 70px;
   margin-left: 10px;
 }
 
-.java__info {
+.course__info {
   color: #fff;
 }
 
-.java__description {
+.course__description {
   padding-bottom: 12px;
 }
 
-.java__date {
+.course__date {
 	font-family: 'Oswald', Arial, sans-serif;
   font-weight: 700;
 	text-transform: uppercase;
   padding-bottom: 15px;
 }
 
-.java__sign-up {
+.course__sign-up {
 	display: block;
   width: 100%;
   background-color: #FF6005;
@@ -232,39 +232,39 @@ p, li {
     margin: 0 auto;
   }
 
-  .java__wrapper {
+  .course__wrapper {
     display: flex;
     justify-content: space-between;
     padding-top: 8px;
     padding-bottom: 9px;
   }
 
-  .java__header {
+  .course__header {
     margin-left: 13.671875%;
     padding-bottom: 0;
   }
 
-  .java__caption {
+  .course__caption {
     letter-spacing: 4px;
   }
 
-  .java__logo {
+  .course__logo {
     width: 109px;
     margin-left: 2px;
     padding-top: 7px;
   }
 
-  .java__info {
+  .course__info {
     width: 217px;
     margin-right: 9.24479167%;
     padding-top: 17px;
   }
 
-  .java__date {
+  .course__date {
     letter-spacing: 1.5px;
   }
 
-  .java__sign-up {
+  .course__sign-up {
     padding: 6px 0;
   }
 
@@ -431,50 +431,50 @@ p, li {
 }
 
 @media (min-width: 1920px) {
-  .java {
+  .course {
     padding-bottom: 11px;
   }
 
-  .java__wrapper {
+  .course__wrapper {
     max-width: 1920px;
     justify-content: flex-start;
   }
 
-  .java__header {
+  .course__header {
     padding-top: 23px;
     margin: 0;
     margin-left: 311px;
   }
 
-  .java__caption {
+  .course__caption {
     font-size: 140px;
     letter-spacing: 16px;
   }
 
-  .java__logo {
+  .course__logo {
     width: 280px;
     margin-left: 7px;
   }
 
-  .java__info {
+  .course__info {
     width: 550px;
     margin: 0;
     margin-left: 167px;
     padding-top: 64px;
   }
 
-  .java__description {
+  .course__description {
     font-size: 30px;
     line-height: 40px;
     padding-bottom: 27px;
   }
 
-  .java__date {
+  .course__date {
     font-size: 45px;
     padding-bottom: 39px;
   }
 
-  .java__sign-up {
+  .course__sign-up {
     font-size: 36px;
     padding: 13px 0;
   }
