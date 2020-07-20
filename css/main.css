@@ -1548,6 +1548,12 @@ h2 {
   }
 }
 
+@media (min-width: 1440px) {
+  .feature-section {
+    padding: 91px 100px 244px;
+  }
+}
+
 @media (min-width: 1920px) {
   .header {
     padding-bottom: 22px;
@@ -1616,10 +1622,6 @@ h2 {
   .lang__btn {
     top: 19px;
     left: 4px;
-  }
-
-  .feature-section {
-    padding: 91px 100px 244px;
   }
 
   .feature-section h2 {
