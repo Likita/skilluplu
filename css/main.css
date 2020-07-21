@@ -967,7 +967,6 @@ h2 {
   .feature-section h2 {
     text-align: left;
     margin: 0;
-    font-size: 35px;
     color: #6600ff;
     letter-spacing: 3.7px;
     margin-bottom: 38px;
@@ -988,7 +987,7 @@ h2 {
 
   .feature-text {
     width: 50%;
-    font-size: 16px;
+    font-size: 18px;
     margin-left: 5px;
     text-align: left;
   }
@@ -998,7 +997,6 @@ h2 {
   }
 
   .progress-section h2 {
-    font-size: 34px;
     text-align: left;
     margin: 0;
     margin-bottom: 55px;
@@ -1093,12 +1091,12 @@ h2 {
 
   .instructor__title {
     text-align: left;
-    font-size: 35px;
     letter-spacing: 0.2px;
     margin-bottom: 11px;
   }
 
   .instructor__description {
+    font-size: 18px;
     text-align: left;
     margin: 0;
     letter-spacing: 0.26px;
@@ -1453,6 +1451,11 @@ h2 {
     font-size: 28px;
   }
 
+  .feature-section h2 {
+    padding-left: 106px;
+
+  }
+
   .feature-item {
     width: 33%;
   }
@@ -1483,6 +1486,14 @@ h2 {
   .freelance__btn::after {
     right: -16px;
     border-width: 26px 0 26px 17px;
+  }
+
+  .instructor-section {
+    padding: 38px 20px 1px;
+  }
+
+  .instructor-section h2 {
+    padding-left: 106px;
   }
 
   .instructor__item {
