@@ -670,7 +670,6 @@ h2 {
 
 .review__item {
   display: none;
-  min-height: 470px;
   padding: 0 15px;
 }
 
@@ -707,6 +706,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  clear: both;
 }
 
 .review__btn {
@@ -856,8 +856,13 @@ h2 {
 
   .freelance__btn {
     margin-left: 2.1vw;
-    padding: 0 2.8vw;
-    font-size: 2.1vw;
+    padding: 8px 14px;
+    font-size: 9px;
+  }
+
+  .freelance__btn::after {
+    right: -8px;
+    border-width: 13px 0 13px 8px;
   }
 }
 
@@ -962,7 +967,6 @@ h2 {
   .feature-section h2 {
     text-align: left;
     margin: 0;
-    font-size: 35px;
     color: #6600ff;
     letter-spacing: 3.7px;
     margin-bottom: 38px;
@@ -983,7 +987,7 @@ h2 {
 
   .feature-text {
     width: 50%;
-    font-size: 16px;
+    font-size: 18px;
     margin-left: 5px;
     text-align: left;
   }
@@ -993,7 +997,6 @@ h2 {
   }
 
   .progress-section h2 {
-    font-size: 34px;
     text-align: left;
     margin: 0;
     margin-bottom: 55px;
@@ -1072,18 +1075,28 @@ h2 {
     letter-spacing: 0.3px;
   }
 
+  .freelance__btn {
+    padding: 10px 24px;
+    font-size: 16px;
+  }
+
+  .freelance__btn::after {
+    border-width: 19px 0 19px 12px;
+    right: -12px;
+  }
+
   .instructor-section {
     padding: 38px 14px 1px;
   }
 
   .instructor__title {
     text-align: left;
-    font-size: 35px;
     letter-spacing: 0.2px;
     margin-bottom: 11px;
   }
 
   .instructor__description {
+    font-size: 18px;
     text-align: left;
     margin: 0;
     letter-spacing: 0.26px;
@@ -1212,6 +1225,7 @@ h2 {
     margin: 0;
     margin-left: 3px;
     line-height: 150%;
+    margin-right: 20%;
   }
 
   .review__photo {
@@ -1426,11 +1440,20 @@ h2 {
   .freelance__btn {
     font-size: 18px;
   }
+
+  .freelance__btn::after {
+    border-width: 20px 0 20px 12px;
+  }
 }
 
 @media (min-width: 1366px) {
   .menu__item a {
     font-size: 28px;
+  }
+
+  .feature-section h2 {
+    padding-left: 106px;
+
   }
 
   .feature-item {
@@ -1457,12 +1480,20 @@ h2 {
 
   .freelance__btn {
     font-size: 28px;
-    padding: 2px 2.8vw;
+    padding: 10px 50px;
   }
 
   .freelance__btn::after {
-    right: -12px;
-    border-width: 18px 0 18px 12px;
+    right: -16px;
+    border-width: 26px 0 26px 17px;
+  }
+
+  .instructor-section {
+    padding: 38px 20px 1px;
+  }
+
+  .instructor-section h2 {
+    padding-left: 106px;
   }
 
   .instructor__item {
@@ -1548,6 +1579,12 @@ h2 {
   }
 }
 
+@media (min-width: 1440px) {
+  .feature-section {
+    padding: 91px 100px 244px;
+  }
+}
+
 @media (min-width: 1920px) {
   .header {
     padding-bottom: 22px;
@@ -1616,10 +1653,6 @@ h2 {
   .lang__btn {
     top: 19px;
     left: 4px;
-  }
-
-  .feature-section {
-    padding: 91px 100px 244px;
   }
 
   .feature-section h2 {
@@ -1702,7 +1735,7 @@ h2 {
 
   .freelance-section {
     background-size: 100.1%, 80%;
-    height: 47vw;
+    height: 895px;
   }
 
   .freelance__title {
@@ -1718,7 +1751,6 @@ h2 {
     font-size: 36px;
     margin-left: 100px;
     width: 392px;
-    padding: 9px 2.8vw;
   }
 
   .freelance__btn::after {
