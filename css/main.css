@@ -1416,8 +1416,8 @@ h2 {
 
 @media (min-width: 1024px) {
   .header {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .social {
@@ -1433,16 +1433,45 @@ h2 {
     margin-top: 36px;
   }
 
+  .feature-section {
+    padding: 26px 50px 82px;
+  }
+
   .progress-section {
     padding-top: 81px;
   }
 
+  .freelance__title {
+    margin-left: 50px;
+  }
+
   .freelance__btn {
     font-size: 18px;
+    margin-left: 50px;
   }
 
   .freelance__btn::after {
     border-width: 20px 0 20px 12px;
+  }
+
+  .instructor-section {
+    padding: 38px 50px 1px;
+  }
+
+  .review-section {
+    padding: 43px 50px 40px;
+  }
+
+  .mentor-section {
+    padding: 52px 50px 21px;
+  }
+
+  .location__title {
+    margin-left: 50px;
+  }
+
+  .footer {
+    padding: 41px 50px 0;
   }
 }
 
