@@ -112,7 +112,7 @@
   color: rgb(223, 3, 101);
 }
 
-.course-item-more {
+.course-item-link {
   font-family: Oswald;
   font-style: normal;
   font-weight: bold;
@@ -120,6 +120,26 @@
   line-height: 36px;
   text-transform: uppercase;
   color: #0398df;
+  text-decoration: none;
+  position: relative;
+}
+
+.course-item-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #0398df;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.course-item-link:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
 }
 
 @media screen and (min-width: 770px) {

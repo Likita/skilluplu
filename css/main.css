@@ -659,6 +659,7 @@ h2 {
 
 .instructor__photo {
   width: 100%;
+  object-fit: cover;
 }
 
 .instructor__name {
@@ -715,8 +716,10 @@ h2 {
 }
 
 .review__photo {
+  width: 169px;
   float: left;
   margin-right: 10px;
+  object-fit: cover;
 }
 
 .review__controls {
