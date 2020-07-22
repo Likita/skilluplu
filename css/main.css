@@ -1022,6 +1022,7 @@ h2 {
   .progress__item {
     width: 19.65%;
     padding: 0 3px;
+    min-height: 87px;
   }
 
   .progress__item::before {
@@ -1741,12 +1742,6 @@ h2 {
     line-height: 28px;
     left: -89px;
     bottom: -6px;
-  }
-
-  .progress__week::before {
-    top: -36px;
-    height: 30px;
-    right: -14px;
   }
 
   .freelance-section {
