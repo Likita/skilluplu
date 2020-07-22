@@ -736,6 +736,7 @@ h2 {
   background-image: url("../img/review-arrow.svg");
   outline: none;
   border-radius: 50%;
+  transition: .3s all;
 }
 
 .review__btn:hover {
