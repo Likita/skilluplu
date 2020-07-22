@@ -1033,7 +1033,11 @@ h2 {
 
   .progress__item::after {
     bottom: 19px;
+    left: -4px;
+    width: 4px;
     height: 14px;
+    background-color: #5500de;
+    z-index: 1;
   }
 
   .progress__description {
@@ -1050,18 +1054,6 @@ h2 {
     position: absolute;
     left: -59px;
     bottom: -4px;
-  }
-
-  .progress__week::before {
-    content: "";
-    position: absolute;
-    top: -18px;
-    right: -6px;
-    width: 4px;
-    height: 14px;
-    display: block;
-    background-color: #5500de;
-    z-index: 1;
   }
 
   .freelance-section {
