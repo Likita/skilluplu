@@ -1480,11 +1480,6 @@ h2 {
     font-size: 28px;
   }
 
-  .feature-section h2 {
-    padding-left: 106px;
-
-  }
-
   .feature-item {
     width: 33%;
   }
@@ -1521,8 +1516,9 @@ h2 {
     padding: 38px 20px 1px;
   }
 
-  .instructor-section h2 {
-    padding-left: 106px;
+  .instructor__title,
+  .instructor__description {
+    margin-left: 30px;
   }
 
   .instructor__item {
@@ -1546,7 +1542,6 @@ h2 {
   .location__title {
     font-size: 96px;
     line-height: 142px;
-    padding-left: 92px;
   }
 
   .location__address {
@@ -1608,21 +1603,13 @@ h2 {
   }
 }
 
-@media (min-width: 1440px) {
-  .feature-section {
-    padding: 91px 100px 244px;
-  }
-}
-
 @media (min-width: 1920px) {
   .header {
-    padding-bottom: 22px;
-    padding-right: 37px;
+    padding: 15px 100px 22px;
   }
 
   .logo {
     padding-top: 13px;
-    margin-left: 40px;
   }
 
   .logo img {
@@ -1682,6 +1669,10 @@ h2 {
   .lang__btn {
     top: 19px;
     left: 4px;
+  }
+
+  .feature-section {
+    padding: 26px 100px 82px;
   }
 
   .feature-section h2 {
@@ -1796,6 +1787,7 @@ h2 {
     line-height: 95px;
     margin-bottom: 1px;
     letter-spacing: 0.6px;
+    margin-left: 0;
   }
 
   .instructor__description {
@@ -1803,6 +1795,7 @@ h2 {
     line-height: 28px;
     margin-bottom: 60px;
     letter-spacing: -0.79px;
+    margin-left: 0;
   }
 
   .instructor__list {
@@ -1905,6 +1898,10 @@ h2 {
 
   .mentor__title::before {
     margin-bottom: 0;
+  }
+
+  .location__title {
+    margin-left: 100px;
   }
 
   .footer {
