@@ -469,6 +469,80 @@ h2 {
     background-image: url("../images/timetable-bg.jpg");
 }
 
+.footer .menu {
+  margin-bottom: 0;
+}
+
+.footer .menu__items,
+.footer .social-contacts,
+.footer .footer__contacts {
+  padding-bottom: 20px;
+}
+
+.footer .hashtag {
+  margin-bottom: 10px;
+}
+
+.footer .footer__contacts {
+  padding: 0 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__contacts a {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #6600ff;
+}
+
+.footer__contacts a::before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin-right: 12px;
+}
+
+.location__address {
+  color: #6600ff;
+  padding-left: 22px;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.footer__tel::before {
+  background-image: url("../img/svg/phone.svg");
+}
+
+.footer__email::before {
+  background-image: url("../img/svg/email.svg");
+}
+
+.footer .location__title {
+  color: #0398df;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 22.4px;
+}
+
+.footer .location__address {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 28px;
+}
+
+.current-year {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 27px;
+  color: #ff6005;
+  position: relative;
+  right: 21px;
+}
+
 @media (min-width: 768px) {
   .wrapper {
     max-width: 1024px;
@@ -760,6 +834,119 @@ h2 {
     padding: 12px 0;
     margin-top: 35px;
   }
+
+  .location__address {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .footer {
+    padding: 41px 30px 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer .menu {
+    width: calc(100% - 103px);
+    border-bottom: 3px solid #0398df;
+    padding-bottom: 7px;
+    margin-left: 0;
+  }
+
+  .footer .menu__items {
+    padding-bottom: 0;
+  }
+
+  .footer .menu__item {
+    margin-right: 47.6px;
+  }
+
+  .footer .menu__item a {
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: none;
+  }
+
+  .footer .logo {
+    position: absolute;
+    right: -9px;
+    top: 75px;
+  }
+
+  .footer .logo img {
+    width: 100px;
+  }
+
+  .footer .logo .school {
+    width: 70px;
+    left: 5px;
+    bottom: 3px;
+  }
+
+  .footer .logo .current-year {
+    font-size: 18px;
+    right: 11px;
+    bottom: 13px;
+  }
+
+  .footer__online-contacts {
+    padding-top: 15px;
+  }
+
+  .footer .hashtag {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+
+  .footer .social-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    width: 111px;
+  }
+
+  .footer .social-contacts a {
+    width: 44.4px;
+    height: 44.4px;
+    margin-right: 11px;
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+
+  .footer .social-contacts li + li {
+    margin: 0;
+  }
+
+  .footer__offline-contacts {
+    width: calc(100% - 300px);
+    padding-top: 20px;
+    padding-left: 67px;
+  }
+
+  .footer .footer__contacts {
+    padding-bottom: 6px;
+  }
+
+  .footer__contacts a {
+    font-size: 23px;
+    margin-bottom: 8px;
+  }
+
+  .footer__contacts a::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+  }
+
+  .footer .location__address {
+    font-size: 23.4px;
+    line-height: 34px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -780,7 +967,10 @@ h2 {
   .lang {
     margin-top: 36px;
   }
-
+  
+  .footer {
+    padding: 41px 50px 0;
+  }
 }
 
 @media (min-width: 1366px) {
@@ -790,6 +980,60 @@ h2 {
 
   .menu__item a {
     font-size: 28px;
+  }
+  
+  .location__address {
+    font-size: 36px;
+    line-height: 42px;
+    padding-left: 29px;
+  }
+  
+  .footer .menu__item a {
+    font-size: 36px;
+  }
+
+  .footer__online-contacts {
+    padding-top: 30px;
+  }
+
+  .footer .social-contacts {
+    width: 231px;
+  }
+
+  .footer .hashtag {
+    font-size: 36px;
+  }
+
+  .footer__offline-contacts {
+    padding-left: 0;
+    display: flex;
+    width: calc(100% - 334px);
+  }
+
+  .footer .footer__contacts {
+    width: 500px;
+    padding-top: 7px;
+  }
+
+  .footer__contacts a {
+    font-size: 36px;
+  }
+
+  .footer__contacts a::before {
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+  }
+
+  .footer .location__address {
+    font-size: 36px;
+    line-height: 53px;
+  }
+
+  .footer .location__title {
+    font-size: 36px;
+    padding-left: 0;
+    line-height: 53px;
   }
 }
 
@@ -1062,5 +1306,70 @@ h2 {
     padding: 12px 0;
     margin-top: 85px;
     background-color: #0398DF;
+  }
+  
+  .footer {
+    padding: 41px 100px 0;
+  }
+
+  .footer .menu {
+    width: calc(100% - 155px);
+    padding-top: 25px;
+    border-width: 6px;
+    padding-bottom: 18px;
+  }
+
+  .footer .menu__item {
+    margin-right: 92px;
+  }
+
+  .footer .logo {
+    right: 123px;
+    top: 48px;
+  }
+
+  .footer .logo img {
+    width: 150px;
+  }
+
+  .footer .logo .school {
+    width: 110px;
+    left: 32px;
+    bottom: 0;
+  }
+
+  .footer .logo .current-year {
+    font-size: 36px;
+    right: -15px;
+    bottom: -11px;
+  }
+
+  .footer__online-contacts {
+    padding-top: 37px;
+  }
+
+  .footer .hashtag {
+    margin-bottom: 11px;
+  }
+
+  .footer .social-contacts a {
+    width: 42.5px;
+    height: 42.5px;
+    margin-right: 9.8px;
+  }
+
+  .footer__offline-contacts {
+    padding-top: 37px;
+    width: calc(100% - 534px);
+  }
+
+  .footer .footer__contacts {
+    width: 534px;
+    padding-top: 6px;
+    padding-left: 61px;
+  }
+
+  .footer__contacts a {
+    margin-bottom: 10px;
   }
 }
