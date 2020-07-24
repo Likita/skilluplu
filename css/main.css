@@ -41,6 +41,12 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 700;
+}
+
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -764,6 +770,12 @@ h2 {
   margin-bottom: 10px;
 }
 
+.mentor__description {
+  padding: 48px 63px 0 19px;
+  font-size: 30px;
+  color: #0398df;
+}
+
 .mentor-sectoon {
   padding-bottom: 10px;
 }
@@ -1324,6 +1336,11 @@ h2 {
     line-height: 68px;
   }
 
+  .mentor__description {
+    padding: 48px 63px 0 19px;
+    font-size: 30px;
+  }
+
   .mentor__title::before {
     margin-bottom: 9px;
   }
@@ -1577,6 +1594,10 @@ h2 {
     font-size: 64px;
     line-height: 95px;
     letter-spacing: 0.7px;
+  }
+
+  .mentor__description {
+    font-size: 45px;
   }
 
   .location-section {
@@ -1930,12 +1951,16 @@ h2 {
   }
 
   .mentor__title {
-    padding: 195px 0 0 176px;
-    width: 40.65%;
+    padding: 100px 0 0 100px;
+    width: 70%;
   }
 
   .mentor__title::before {
     margin-bottom: 0;
+  }
+
+  .mentor__description {
+    padding: 100px 0 0 100px;
   }
 
   .location__title {
