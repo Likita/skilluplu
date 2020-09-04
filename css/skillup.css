@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerRegular.woff') format('woff'),
+       url('../fonts/MullerRegular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerBold.woff') format('woff'),
+       url('../fonts/MullerBold.woff2') format('woff2');
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  background-color: #e5e5e5;
+  font-family: 'Muller';
+}
+
+.logo {
+  width: 70px;
+  height: 49px;)
+}
+
+.nav {
+  background-color: #ffffff;
+}
+
+.nav__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav__container {
+  margin-bottom: 15px;
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav__item {
+  margin-bottom: 10px;
+}
+
+.nav__item-link {
+  font-size: 19px;
+  line-height: 19px;
+}
+
+.nav__register {
+  border: 2px solid #6600ff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #6600ff;
+  min-height: 49px;
+  border-radius: 25px;
+  background-color: transparent;
+  padding: 0 43px;
+}
+
+@media (min-width: 768px) {
+  .nav__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav__container {
+    margin-bottom: 0;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 500px;
+  }
+
+  .nav__item {
+    margin-right: 2%;
+    margin-bottom: 0;
+  }
+
+  .nav__item:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav__wrapper {
+    padding: 15px 50px;
+    justify-content: flex-start;
+  }
+
+  .nav__list {
+    margin-left: 71.04px;
+  }
+
+  .nav__register {
+    margin-left: auto;
+  }
+}
