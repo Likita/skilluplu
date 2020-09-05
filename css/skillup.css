@@ -107,6 +107,30 @@ ul {
   display: block;
 }
 
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #6600FF;
+  min-height: 245px;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.description__title {
+  margin: 0;
+  font-size: 26px;
+  line-height: 33px;
+}
+
+.description__description {
+  margin: 0;
+  font-size: 22px;
+  line-height: 33px;
+}
+
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
