@@ -13,8 +13,8 @@
 
 body {
   margin: 0;
-  background-color: #E5E5E5;
   font-family: 'Muller';
+  background-color: #fcfcfc;
 }
 
 ul {
@@ -112,7 +112,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #6600FF;
+  background-color: #6600ff;
   min-height: 245px;
   padding: 10px;
   color: #ffffff;
@@ -142,6 +142,43 @@ ul {
   font-size: 22px;
   line-height: 28px;
   border-left: 4px solid #6600ff;
+}
+
+.technology {
+  padding: 15px;
+}
+
+.technology__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.technology__item-title {
+  position: relative;
+  width: 140px;
+  padding-bottom: 7px;
+  font-size: 24px;
+  line-height: 21px;
+  color: #6600ff;
+}
+
+.technology__item-title::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 11px;
+  height: 4px;
+  background-color: #ff9900;
+}
+
+.technology__item-description {
+  width: 148px;
+  font-size: 17px;
+  line-height: 21px;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
@@ -208,6 +245,18 @@ ul {
   .roadmap__description {
     margin-bottom: 116px;
   }
+
+  .technology {
+    padding: 35px;
+  }
+
+  .technology__list {
+    max-width: 748px;
+  }
+
+  .technology__item {
+    margin-right: 40px;
+  }
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
@@ -226,15 +275,15 @@ ul {
     padding: 15px 90px;
     justify-content: flex-start;
   }
-
+  
   .nav__list {
     margin-left: 71.04px;
   }
-
+  
   .nav__register {
     margin-left: auto;
   }
-
+  
   .header__wrapper {
     max-width: 1280px;
     margin: 0 auto;
@@ -242,11 +291,11 @@ ul {
     padding-top: 166px;
     padding-bottom: 67px;
   }
-
+  
   .header__list {
     margin-bottom: 106px;
   }
-
+  
   .description__wrapper {
     max-width: 1280px;
   }
@@ -254,5 +303,45 @@ ul {
   .roadmap__wrapper {
     margin: 0 auto;
     max-width: 1280px;
+  }
+  
+  .technology {
+    padding-left: 150px;
+  }
+  
+  .technology__list {
+    justify-content: space-between;
+    margin: 0;
+  }
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
+
+@media (min-width: 1440px) {
+  .technology {
+    background-image: url('../img/skillup/triangles-technology-left.png'), url('../img/skillup/triangles-technology-right.png');
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-size: auto;
+  }
+
+  .technology__wrapper {
+    max-width: 1440px;
+    display: flex;
+  }
+
+  .technology__title {
+    width: 350px;
+    font-size: 50px;
+    margin-right: 104px;
   }
 }
