@@ -131,6 +131,19 @@ ul {
   line-height: 33px;
 }
 
+.roadmap {
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+.roadmap__description {
+  max-width: 1106px;
+  padding-left: 26px;
+  font-size: 22px;
+  line-height: 28px;
+  border-left: 4px solid #6600ff;
+}
+
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
@@ -184,6 +197,17 @@ ul {
     font-size: 20px;
     margin-bottom: 26px;
   }
+
+  .roadmap {
+    background-image: url('../img/skillup/triangles-roadmap.png');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    padding-left: 150px;
+  }
+
+  .roadmap__description {
+    margin-bottom: 116px;
+  }
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
@@ -221,5 +245,14 @@ ul {
 
   .header__list {
     margin-bottom: 106px;
+  }
+
+  .description__wrapper {
+    max-width: 1280px;
+  }
+  
+  .roadmap__wrapper {
+    margin: 0 auto;
+    max-width: 1280px;
   }
 }
