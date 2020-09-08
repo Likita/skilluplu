@@ -93,6 +93,10 @@ ul {
   margin-bottom: 10px;
 }
 
+.header__place-counter {
+  color: #ff9900;
+}
+
 .header__register {
   width: 233px;
   height: 54px;
@@ -101,6 +105,7 @@ ul {
   border: none;
   font-size: 15px;
   line-height: 20px;
+  font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
   margin: 0 auto;
@@ -149,6 +154,7 @@ ul {
 }
 
 .technology__list {
+  max-width: 590px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -181,6 +187,41 @@ ul {
   line-height: 21px;
 }
 
+.learning__title {
+  font-size: 30px;
+  margin: 0;
+  text-align: center;
+}
+
+.learning__list {
+  list-style: none;
+  counter-reset: counter;
+}
+
+.learning__item {
+  position: relative;
+  margin-left: 30px;
+  margin-bottom: 15px;
+  counter-increment: counter;
+}
+
+@font-face {
+  src: url('../fonts/Arialic-Hollow.ttf') format('ttf');
+  font-family: 'Arialic-Hollow';
+}
+@font-face {
+  src: url('../fonts/Gloucest.ttf') format('ttf');
+  font-family: 'Gloucest';
+}
+
+.learning__item::before {
+  content: counter(counter);
+  position: absolute;
+  font-family: 'Arialic-Hollow';
+  left: -50px;
+  font-size: 60px;
+  font-weight: 900;
+}
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
@@ -235,13 +276,6 @@ ul {
     margin-bottom: 26px;
   }
 
-  .roadmap {
-    background-image: url('../img/skillup/triangles-roadmap.png');
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    padding-left: 150px;
-  }
-
   .roadmap__description {
     margin-bottom: 116px;
   }
@@ -256,6 +290,10 @@ ul {
 
   .technology__item {
     margin-right: 40px;
+  }
+
+  .learning__wrapper {
+    max-width: 988px;
   }
 }
 
@@ -283,6 +321,12 @@ ul {
   .nav__register {
     margin-left: auto;
   }
+
+  .header {
+    background-image: url('../img/skillup/triangles-header.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
   
   .header__wrapper {
     max-width: 1280px;
@@ -300,11 +344,26 @@ ul {
     max-width: 1280px;
   }
   
+  .roadmap {
+    background-image: url('../img/skillup/triangles-roadmap.png');
+    background-repeat: no-repeat;
+    padding-left: 150px;
+    padding-bottom: 120px;
+    margin-bottom: 39px;
+  }
+
   .roadmap__wrapper {
     margin: 0 auto;
     max-width: 1280px;
   }
-  
+
+  .technology {
+    background-image: url('../img/skillup/triangles-technology-left.png'), url('../img/skillup/triangles-technology-right.png');
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-size: auto;
+  }
+
   .technology {
     padding-left: 150px;
   }
@@ -327,21 +386,16 @@ ul {
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
 
 @media (min-width: 1440px) {
-  .technology {
-    background-image: url('../img/skillup/triangles-technology-left.png'), url('../img/skillup/triangles-technology-right.png');
-    background-repeat: no-repeat;
-    background-position: top left, bottom right;
-    background-size: auto;
-  }
-
+  
   .technology__wrapper {
-    max-width: 1440px;
+    margin: 0 auto;
+    max-width: 1100px;
     display: flex;
   }
 
   .technology__title {
     width: 350px;
     font-size: 50px;
-    margin-right: 104px;
+    margin-right: 54px;
   }
 }
