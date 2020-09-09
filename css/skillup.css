@@ -291,6 +291,52 @@ ul {
   width: 100%;
 }
 
+.mentor {
+  padding: 15px;
+  background-color: #0398df;
+  color: #ffffff;
+}
+
+.mentor__title {
+  font-size: 30px;
+  line-height: 33px;
+}
+
+.mentor__description {
+  font-size: 20px;
+  line-height: 147.7%;
+}
+
+.mentor__photo {
+  border-radius: 50%;
+  border: 11px solid #6600ff;
+  display: block;
+  margin: 0 auto;
+}
+
+.mentor__social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.mentor__social-link {
+  display: block;
+  width: 48px;
+  height: 48px;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 15px;
+}
+
+.mentor__social-link--facebook {
+  background-image: url('../img/skillup/icon-fb.svg');
+}
+
+.mentor__social-link--linkedin {
+  background-image: url('../img/skillup/icon-in.svg');
+}
+
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
@@ -512,12 +558,25 @@ ul {
     background-image: url('../img/skillup/triangles-zoom-left.png'), url('../img/skillup/triangles-zoom-right.png');
     background-repeat: no-repeat;
     background-position: left bottom, right bottom;
-    margin-bottom:200px;
   }
 
   .zoom__description {
     width: 59.84375%;
     margin: 0 auto;
+  }
+
+  .mentor {
+    padding: 90px 0;
+    background-image: url('../img/skillup/triangles-mentor-left.png'), url('../img/skillup/triangles-mentor-right.png');
+    background-repeat: no-repeat;
+    background-position: left top, right top;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mentor__wrapper {
+    display: flex;
+    max-width: 1228px;
   }
 }
 
