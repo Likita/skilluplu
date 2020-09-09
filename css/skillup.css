@@ -23,9 +23,17 @@ ul {
   padding: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .logo {
   width: 70px;
-  height: 49px;)
+  height: 49px;
 }
 
 .nav {
@@ -187,41 +195,79 @@ ul {
   line-height: 21px;
 }
 
+.learning__wrapper {
+  padding: 15px;
+}
+
 .learning__title {
   font-size: 30px;
   margin: 0;
+  margin-bottom: 15px;
   text-align: center;
 }
 
 .learning__list {
+  max-width: 400px;
+  margin: 0 auto;
   list-style: none;
   counter-reset: counter;
 }
 
 .learning__item {
   position: relative;
+  min-height: 60px;
   margin-left: 30px;
   margin-bottom: 15px;
   counter-increment: counter;
 }
 
-@font-face {
-  src: url('../fonts/Arialic-Hollow.ttf') format('ttf');
-  font-family: 'Arialic-Hollow';
-}
-@font-face {
-  src: url('../fonts/Gloucest.ttf') format('ttf');
-  font-family: 'Gloucest';
-}
-
 .learning__item::before {
   content: counter(counter);
   position: absolute;
-  font-family: 'Arialic-Hollow';
+  font-family: 'Londrina Outline', cursive;
   left: -50px;
   font-size: 60px;
   font-weight: 900;
 }
+
+.learning__item:nth-child(1n+10)::before {
+  left: -63px;
+}
+
+.learning__item:nth-child(3n+1)::before {
+  color: #6600ff;
+}
+
+.learning__item:nth-child(3n+2)::before {
+  color: #ff7a00;
+}
+
+.learning__item:nth-child(3n+3)::before {
+  color: #0398df;
+}
+
+.certificate {
+  padding: 15px;
+}
+
+.certificate__container {
+  max-width: 748px;
+  margin: 0 auto;
+}
+
+.certificate__image {
+  width: 100%;
+  display: block;
+}
+
+.certificate__description {
+  border-left: 5px solid #6600ff;
+  border-radius: 1px;
+  padding-left: 14px;
+  width: 200px;
+  margin: 0 auto;
+}
+
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
@@ -292,8 +338,16 @@ ul {
     margin-right: 40px;
   }
 
-  .learning__wrapper {
-    max-width: 988px;
+  .learning__list {
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .learning__item {
+    max-width: 250px;
+    margin: 0 10px 15px;
   }
 }
 
@@ -365,12 +419,69 @@ ul {
   }
 
   .technology {
-    padding-left: 150px;
+    display: flex;
+    justify-content: center;
   }
   
   .technology__list {
     justify-content: space-between;
     margin: 0;
+  }
+
+  .learning {
+    background-image: url('../img/skillup/triangles-learning.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  .learning__wrapper {
+    max-width: 988px;
+    margin: 0 auto;
+    padding: 74px 150px 0;
+  }
+
+  .learning__title {
+    margin-bottom: 50px;
+    font-size: 40px;
+    line-height: 33px;
+    text-align: left;
+  }
+
+  .learning__list {
+    max-width: 749px;
+  }
+
+  .learning__item {
+    margin: 0;
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .learning__item::before {
+    font-size: 110px;
+    top: 40px;
+    left: -80px;
+  }
+
+  .learning__item:nth-child(1n+10)::before {
+    left: -103px;
+  }
+
+  .certificate {
+    background-image: url('../img/skillup/triangles-certificate-left.png'), url('../img/skillup/triangles-certificate-right.png');
+    background-repeat: no-repeat;
+    background-position: left top, 87% bottom;
+  }
+
+  .certificate__container {
+    position: relative;
+  }
+
+  .certificate__description {
+    position: absolute;
+    top: 120px;
+    right: -178px;
   }
 }
 
@@ -397,5 +508,17 @@ ul {
     width: 350px;
     font-size: 50px;
     margin-right: 54px;
+  }
+
+  .learning__list {
+    max-width: 908px;
+  }
+
+  .learning__item {
+    max-width: 338px;
+  }
+
+  .learning__item:nth-child(odd) {
+    margin-right: 160px;
   }
 }
