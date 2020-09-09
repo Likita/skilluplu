@@ -108,7 +108,7 @@ ul {
 .header__register {
   width: 233px;
   height: 54px;
-  background-color: #FF9900;
+  background-color: #ff9900;
   border-radius: 27px;
   border: none;
   font-size: 15px;
@@ -337,6 +337,61 @@ ul {
   background-image: url('../img/skillup/icon-in.svg');
 }
 
+.ad {
+  padding: 15px;
+}
+
+.ad__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 469px;
+  background-color: #ff9900;
+  border-radius: 10px;
+  padding: 34px 15px;
+}
+
+.ad__title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 31px;
+  color: #ffffff;
+}
+
+.ad__old-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6600ff;
+  border-radius: 10px;
+  color: #ffffff;
+  min-height: 58px;
+  font-size: 20px;
+  line-height: 37px;
+  font-weight: bold;
+  padding: 0 15px;
+}
+
+.ad__subtitle {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0 auto 15px;
+}
+
+.ad__current-button {
+  border: none;
+  background-color: #ffffff;
+  color: #ff9900;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 27px;
+  padding: 14px;
+}
+
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
@@ -417,6 +472,34 @@ ul {
   .learning__item {
     max-width: 250px;
     margin: 0 10px 15px;
+  }
+
+  .ad__wrapper {
+    box-sizing: border-box;
+    padding: 68px 60px 75px;
+  }
+
+  .ad__title {
+    font-size: 40px;
+    line-height: 41px;
+    margin-bottom: 17px;
+  }
+
+  .ad__old-button {
+    margin: 0;
+    margin-bottom: 36px;
+    font-size: 25px;
+    width: 100%;
+  }
+
+  .ad__subtitle {
+    margin: 0;
+    margin-bottom: 9px;
+  }
+
+  .ad__current-button {
+    width: 100%;
+    max-width: 287px;
   }
 }
 
@@ -577,6 +660,13 @@ ul {
   .mentor__wrapper {
     display: flex;
     max-width: 1228px;
+  }
+
+  .ad {
+    padding: 119px 0;
+    background-image: url('../img/skillup/triangles-ad-left.png'), url('../img/skillup/triangles-ad-right.png');
+    background-repeat: no-repeat;
+    background-position: left bottom, right bottom;
   }
 }
 
