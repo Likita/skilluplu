@@ -264,8 +264,31 @@ ul {
   border-left: 5px solid #6600ff;
   border-radius: 1px;
   padding-left: 14px;
-  width: 200px;
+  width: 248px;
   margin: 0 auto;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.zoom {
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.zoom__description {
+  margin: 0;
+  font-size: 22px;
+  line-height: 147.7%;
+}
+
+.zoom__description--bold {
+  margin-bottom: 10px;
+  font-size: 26px;
+  line-height: 33px;
+}
+
+.zoom__logo {
+  width: 100%;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
@@ -481,7 +504,20 @@ ul {
   .certificate__description {
     position: absolute;
     top: 120px;
-    right: -178px;
+    right: -220px;
+  }
+  
+  .zoom {
+    padding: 90px 0;
+    background-image: url('../img/skillup/triangles-zoom-left.png'), url('../img/skillup/triangles-zoom-right.png');
+    background-repeat: no-repeat;
+    background-position: left bottom, right bottom;
+    margin-bottom:200px;
+  }
+
+  .zoom__description {
+    width: 59.84375%;
+    margin: 0 auto;
   }
 }
 
