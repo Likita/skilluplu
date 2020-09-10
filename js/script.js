@@ -18,10 +18,21 @@ let slideChange = function(side, sideChange, count) {
   }
 }
 
-btnNext.onclick = function() {
-  slideChange(lastSlide, 0, 1);
-}
+// btnNext.onclick = function() {
+//   slideChange(lastSlide, 0, 1);
+// }
 
-btnPrev.onclick = function() {
-  slideChange(0, lastSlide, -1);
+// btnPrev.onclick = function() {
+//   slideChange(0, lastSlide, -1);
+// }
+
+//skillup last page, faq buttons
+const question = document.querySelectorAll('.faq__question')
+const answer = document.querySelectorAll('.faq__answer')
+
+for (let i = 0; i < question.length; i++) {
+  console.log('govno');
+  question[i].addEventListener('click', function() {
+    answer[i].classList.toggle('active')
+  })
 }

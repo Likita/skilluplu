@@ -392,6 +392,48 @@ ul {
   padding: 14px;
 }
 
+.faq {
+  max-width: 846px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.faq__title {
+  font-size: 40px;
+}
+
+.faq__question {
+  position: relative;
+  font-size: 26px;
+  line-height: 33px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.faq__question::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -20px;
+  display: block;
+  width: 15px;
+  height: 22px;
+  background-image: url('../img/skillup/icon-arrow.svg');
+  background-repeat: no-repeat;
+}
+
+.faq__answer {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  height: 0;
+}
+
+.faq__answer.active {
+  height: auto;
+}
+
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
@@ -667,6 +709,15 @@ ul {
     background-image: url('../img/skillup/triangles-ad-left.png'), url('../img/skillup/triangles-ad-right.png');
     background-repeat: no-repeat;
     background-position: left bottom, right bottom;
+  }
+
+  .faq {
+    display: flex;
+  }
+
+  .faq__title {
+    margin: 0;
+    margin-right: 40px;
   }
 }
 
