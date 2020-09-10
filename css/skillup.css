@@ -434,6 +434,69 @@ ul {
   height: auto;
 }
 
+.contacts {
+  position: relative;
+}
+
+.contacts__wrapper {
+  max-width: 846px;
+  margin: 0 auto;
+  padding: 15px;
+  padding-top: 90px;
+}
+
+.contacts__title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 75%;
+  padding: 0 20px;
+  font-size: 30px;
+  line-height: 58px;
+  text-align: right;
+  color: #ffffff;
+  background-color: #6600ff;
+  border-radius: 0 6px 6px 0;
+}
+
+.contacts__description {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.contacts__item {
+  padding: 4px 0 4px 30px;
+}
+
+.contacts__link {
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+}
+
+.contacts__link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.contacts__link--phone::before {
+  background-image: url('../img/skillup/icon-phone.svg');
+}
+
+.contacts__link--email::before {
+  background-image: url('../img/skillup/icon-email.svg');
+}
+
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
@@ -542,6 +605,21 @@ ul {
   .ad__current-button {
     width: 100%;
     max-width: 287px;
+  }
+
+  .contacts__title {
+    width: 25%;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    padding-top: 100px;
+  }
+
+  .contacts__description {
+    width: 200px;
+    margin: 0;
+    margin-right: 
   }
 }
 
@@ -719,6 +797,30 @@ ul {
     margin: 0;
     margin-right: 40px;
   }
+
+  .contacts__title {
+    width: 31%;
+    font-size: 40px;
+  }
+
+  .contacts__description {
+    width: 300px;
+    font-size: 40px;
+  }
+
+  .contacts__item {
+    padding-left: 40px;
+  }
+
+  .contacts__link {
+    font-size: 30px;
+  }
+
+  .contacts__link::before {
+    width: 30px;
+    height: 30px;
+    left: -40px;
+  }
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
@@ -756,5 +858,14 @@ ul {
 
   .learning__item:nth-child(odd) {
     margin-right: 160px;
+  }
+
+  .contacts__title {
+    width: 40%;
+  }
+
+  .contacts__wrapper {
+    padding-top: 150px;
+    padding-bottom: 40px;
   }
 }
