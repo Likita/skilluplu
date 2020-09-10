@@ -624,10 +624,6 @@ ul {
     margin-bottom: 118px;
   }
 
-  .technology {
-    padding: 35px;
-  }
-
   .technology__list {
     max-width: 748px;
   }
@@ -719,8 +715,8 @@ ul {
 
   .header {
     background-image: url('../img/skillup/header-picture.png'), url('../img/skillup/triangles-header.png');
-    background-position: 78% 34%, 93% 100%;
-    background-size: auto;
+    background-position: 103% 34%, 93% 100%;
+    background-size: 35%, auto;
   }
   
   .header__wrapper {
@@ -769,14 +765,14 @@ ul {
     background-image: url('../img/skillup/triangles-technology-left.png'), url('../img/skillup/triangles-technology-right.png');
     background-repeat: no-repeat;
     background-position: top left, bottom right;
-    background-size: auto;
+    background-size: 15%, 30%;
   }
 
-  .technology {
-    display: flex;
-    justify-content: center;
+  .technology__wrapper {
+    max-width: 748px;
+    margin: 0 auto;
   }
-  
+
   .technology__list {
     justify-content: space-between;
     margin: 0;
@@ -906,28 +902,63 @@ ul {
     min-width: 580px;
   }
 
-  .technology__wrapper {
-    margin: 0 auto;
-    max-width: 1100px;
-    display: flex;
+  .header {
+    background-position: 78% 34%, 93% 100%;
+    background-size: auto;
   }
-
+  
   .roadmap__title {
     font-size: 40px;
     line-height: 33px;
     margin: 0;
   }
-
+  
   .roadmap__roadmap {
     position: relative;
     bottom: 30px;
     right: -6px;
   }
 
+  .technology {
+    background-position: top left, 87% 100%;
+    background-size: auto, auto;
+    padding-bottom: 70px;
+  }
+
+  .technology__wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
   .technology__title {
     width: 350px;
     font-size: 50px;
-    margin-right: 54px;
+    margin: 33px 62px 0 117px
+  }
+
+  .technology__list {
+    padding-top: 33px;
+  }
+
+  .technology__item {
+    margin-right: 32px;
+    margin-bottom: 17px;
+  }
+
+  .technology__item-title {
+    width: 160px;
+    margin: 0 0 14px 0;
+  }
+
+  .technology__item-title::before {
+    bottom: -4px;
+    left: 1px;
+  }
+
+  .technology__item-description {
+    width: 183px;
   }
 
   .learning__list {
