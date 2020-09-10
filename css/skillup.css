@@ -77,10 +77,10 @@ ul {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #6600ff;
-  min-height: 49px;
+  min-height: 45px;
   border-radius: 25px;
   background-color: transparent;
-  padding: 0 43px;
+  padding: 0 34px;
 }
 
 .header__wrapper {
@@ -103,6 +103,23 @@ ul {
 
 .header__list-item {
   margin-bottom: 10px;
+}
+
+.header__list-item::before {
+  margin-right: 10px;
+}
+
+.header__list-item:nth-child(1)::before {
+  content: '💎';
+}
+.header__list-item:nth-child(2)::before {
+  content: '📅';
+}
+.header__list-item:nth-child(3)::before {
+  content: '💻';
+}
+.header__list-item:nth-child(4)::before {
+  content: '🏁';
 }
 
 .header__place-counter {
@@ -159,6 +176,10 @@ ul {
   font-size: 22px;
   line-height: 28px;
   border-left: 4px solid #6600ff;
+}
+
+.roadmap__roadmap {
+  width: 100%;
 }
 
 .technology {
@@ -341,11 +362,11 @@ ul {
   background-image: url('../img/skillup/icon-in.svg');
 }
 
-.ad {
+.buy {
   padding: 15px;
 }
 
-.ad__wrapper {
+.buy__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -356,14 +377,14 @@ ul {
   padding: 34px 15px;
 }
 
-.ad__title {
+.buy__title {
   margin: 0;
   font-size: 30px;
   line-height: 31px;
   color: #ffffff;
 }
 
-.ad__old-button {
+.buy__old-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -377,14 +398,14 @@ ul {
   padding: 0 15px;
 }
 
-.ad__subtitle {
+.buy__subtitle {
   color: #ffffff;
   font-size: 20px;
   line-height: 30px;
   margin: 0 auto 15px;
 }
 
-.ad__current-button {
+.buy__current-button {
   border: none;
   background-color: #ffffff;
   color: #ff9900;
@@ -576,12 +597,15 @@ ul {
     margin-right: 0;
   }
 
-  .header__wrapper {
-    padding: 55px;
+  .header {
     background-image: url('../img/skillup/header-picture.png');
     background-repeat: no-repeat;
-    background-position: 100% 100%;
-    background-size: 300px;
+    background-position: right bottom;
+    background-size: 30%;
+  }
+
+  .header__wrapper {
+    padding: 55px;
   }
 
   .header__title {
@@ -592,6 +616,7 @@ ul {
 
   .header__description {
     font-size: 20px;
+    margin-top: 10px;
     margin-bottom: 26px;
   }
 
@@ -623,30 +648,30 @@ ul {
     margin: 0 10px 15px;
   }
 
-  .ad__wrapper {
+  .buy__wrapper {
     box-sizing: border-box;
     padding: 68px 60px 75px;
   }
 
-  .ad__title {
+  .buy__title {
     font-size: 40px;
     line-height: 41px;
     margin-bottom: 17px;
   }
 
-  .ad__old-button {
+  .buy__old-button {
     margin: 0;
     margin-bottom: 36px;
     font-size: 25px;
     width: 100%;
   }
 
-  .ad__subtitle {
+  .buy__subtitle {
     margin: 0;
     margin-bottom: 9px;
   }
 
-  .ad__current-button {
+  .buy__current-button {
     width: 100%;
     max-width: 287px;
   }
@@ -679,7 +704,7 @@ ul {
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
 @media (min-width: 1024px) {
   .nav__wrapper {
-    max-width: 1280px;
+    max-width: 1204px;
     padding: 15px 90px;
     justify-content: flex-start;
   }
@@ -693,21 +718,31 @@ ul {
   }
 
   .header {
-    background-image: url('../img/skillup/triangles-header.png');
-    background-repeat: no-repeat;
-    background-position: right bottom;
+    background-image: url('../img/skillup/header-picture.png'), url('../img/skillup/triangles-header.png');
+    background-position: 78% 34%, right bottom;
+    background-size: auto;
   }
   
   .header__wrapper {
-    max-width: 1280px;
+    max-width: 1060px;
     margin: 0 auto;
     background-size: 465px;
-    padding-top: 166px;
+    padding-top: 170px;
     padding-bottom: 67px;
   }
   
+  .header__description {
+    margin-bottom: 36px;
+  }
+  
   .header__list {
-    margin-bottom: 106px;
+    margin-bottom: 133px;
+  }
+
+  .header__list-item {
+    margin-bottom: 0;
+    font-size: 19px;
+    line-height: 29px;
   }
   
   .description__wrapper {
@@ -784,22 +819,6 @@ ul {
     left: -103px;
   }
 
-  .certificate {
-    background-image: url('../img/skillup/triangles-certificate-left.png'), url('../img/skillup/triangles-certificate-right.png');
-    background-repeat: no-repeat;
-    background-position: left top, 87% bottom;
-  }
-
-  .certificate__container {
-    position: relative;
-  }
-
-  .certificate__description {
-    position: absolute;
-    top: 120px;
-    right: -220px;
-  }
-  
   .zoom {
     padding: 90px 0;
     background-image: url('../img/skillup/triangles-zoom-left.png'), url('../img/skillup/triangles-zoom-right.png');
@@ -826,9 +845,9 @@ ul {
     max-width: 1228px;
   }
 
-  .ad {
+  .buy {
     padding: 119px 0;
-    background-image: url('../img/skillup/triangles-ad-left.png'), url('../img/skillup/triangles-ad-right.png');
+    background-image: url('../img/skillup/triangles-buy-left.png'), url('../img/skillup/triangles-buy-right.png');
     background-repeat: no-repeat;
     background-position: left bottom, right bottom;
   }
@@ -880,6 +899,10 @@ ul {
 
 @media (min-width: 1440px) {
   
+  .nav__list {
+    min-width: 580px;
+  }
+
   .technology__wrapper {
     margin: 0 auto;
     max-width: 1100px;
@@ -904,6 +927,22 @@ ul {
     margin-right: 160px;
   }
 
+  .certificate {
+    background-image: url('../img/skillup/triangles-certificate-left.png'), url('../img/skillup/triangles-certificate-right.png');
+    background-repeat: no-repeat;
+    background-position: left top, 87% bottom;
+  }
+
+  .certificate__container {
+    position: relative;
+  }
+
+  .certificate__description {
+    position: absolute;
+    top: 120px;
+    right: -220px;
+  }
+  
   .contacts__title {
     width: 40%;
   }
