@@ -1030,21 +1030,31 @@ ul {
   }
 
   .certificate {
+    padding: 85px;
     background-image: url('../img/skillup/triangles-certificate-left.png'), url('../img/skillup/triangles-certificate-right.png');
     background-repeat: no-repeat;
-    background-position: left top, 87% bottom;
+    background-position: 0 0, 80.5% 92.6%;
+    padding-bottom: 15px;
   }
 
   .certificate__container {
+    display: flex;
+    max-width: 960px;
+  }
+
+  .certificate__image {
     position: relative;
+    right: 11px;
   }
 
   .certificate__description {
-    position: absolute;
-    top: 120px;
-    right: -220px;
+    position: relative;
+    right: 50px;
+    margin-top: 102px;
+    min-width: 300px;
+    height: 105px;
   }
-  
+
   .contacts__title {
     width: 40%;
   }
