@@ -235,7 +235,7 @@ ul {
   max-width: 400px;
   margin: 0 auto;
   list-style: none;
-  counter-reset: counter;
+  /* counter-reset: counter; */
 }
 
 .learning__item {
@@ -243,16 +243,37 @@ ul {
   min-height: 60px;
   margin-left: 30px;
   margin-bottom: 15px;
-  counter-increment: counter;
+  /* counter-increment: counter; */
 }
 
 .learning__item::before {
-  content: counter(counter);
+  /* content: counter(counter); */
+  content: '';
   position: absolute;
-  font-family: 'Londrina Outline', cursive;
-  left: -50px;
-  font-size: 60px;
-  font-weight: 900;
+  left: -77px;
+  display: block;
+  width: 77px;
+  height: 77px;
+  background-repeat: no-repeat;
+  background-size: 57%;
+  background-position: center top;
+}
+
+.learning__item--first::before {
+  background-image: url('../img/skillup/number-1.svg');
+  background-size: 47%;
+}
+
+.learning__item--second::before {
+  background-image: url('../img/skillup/number-2.svg');
+}
+
+.learning__item--third::before {
+  background-image: url('../img/skillup/number-3.svg');
+}
+
+.learning__item--fourth::before {
+  background-image: url('../img/skillup/number-4.svg');
 }
 
 .learning__item:nth-child(1n+10)::before {
@@ -633,14 +654,14 @@ ul {
   }
 
   .learning__list {
-    max-width: 700px;
+    width: 700px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 
   .learning__item {
-    max-width: 250px;
+    width: 250px;
     margin: 0 10px 15px;
   }
 
@@ -798,7 +819,7 @@ ul {
   }
 
   .learning__list {
-    max-width: 749px;
+    width: 749px;
   }
 
   .learning__item {
@@ -809,7 +830,7 @@ ul {
   }
 
   .learning__item::before {
-    font-size: 110px;
+    /* font-size: 110px; */
     top: 40px;
     left: -80px;
   }
@@ -961,16 +982,51 @@ ul {
     width: 183px;
   }
 
+  .learning {
+    background-position: 87% 0;
+    padding-bottom: 16px;
+  }
+
+  .learning__wrapper {
+    max-width: 1208px;
+    width: 1208px;
+  }
+
   .learning__list {
-    max-width: 908px;
+    max-width: 1208px;
+    width: 1208px;
+    justify-content: flex-start;
+    padding: 0 104px;
   }
 
   .learning__item {
-    max-width: 338px;
+    width: 350px;
+    margin-right: 254px;
   }
 
-  .learning__item:nth-child(odd) {
-    margin-right: 160px;
+  .learning__item::before {
+    height: 104px;
+    top: 3px;
+    left: -110px;
+    background-size: 100%;
+  }
+  
+  .learning__item--first::before {
+    background-size: 80%;
+  }
+
+  .learning__item--second::before {
+    left: -119px;
+  }
+
+  .learning__item--third::before {
+    left: -102px;
+  }
+
+  .learning__item--fourth::before {
+    width: 90px;
+    top: 7px;
+    left: -122px;
   }
 
   .certificate {
