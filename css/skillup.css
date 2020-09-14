@@ -840,15 +840,27 @@ ul {
   }
 
   .zoom {
-    padding: 90px 0;
+    padding: 93px 0;
     background-image: url('../img/skillup/triangles-zoom-left.png'), url('../img/skillup/triangles-zoom-right.png');
     background-repeat: no-repeat;
-    background-position: left bottom, right bottom;
+    background-position: 0% 100%, 95.7% 100%;
+    background-size: 20.8%, 51.7%;
   }
 
   .zoom__description {
-    width: 59.84375%;
+    width: 62.84375%;
     margin: 0 auto;
+    letter-spacing: .3px;
+  }
+
+  .zoom__description--bold {
+    letter-spacing: .6px;
+  }
+
+  .zoom__logo {
+    position: relative;
+    left: 10px;
+    top: 3px;
   }
 
   .mentor {
