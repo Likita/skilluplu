@@ -406,17 +406,36 @@ ul {
 }
 
 .buy__old-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #6600ff;
-  border-radius: 10px;
-  color: #ffffff;
-  min-height: 58px;
-  font-size: 20px;
-  line-height: 37px;
-  font-weight: bold;
-  padding: 0 15px;
+    background-color: #6600ff;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 19px;
+    line-height: 37px;
+    font-weight: bold;
+    padding: 9px 13px 10px 16px;
+    text-align: center;
+}
+
+.buy__price-old {
+  position: relative;
+  padding: 5px;
+}
+
+.buy__price-old::before {
+  content: '';
+  position: absolute;
+  top: 41%;
+  left: -9%;
+  display: block;
+  width: 120%;
+  height: 3px;
+  background-color: white;
+  transform: rotate(-45deg);
+}
+
+.buy__price-current {
+  font-size: 1.3em;
+  padding: 0 5px;
 }
 
 .buy__subtitle {
@@ -665,32 +684,41 @@ ul {
     margin: 0 10px 15px;
   }
 
+  .buy {
+    padding: 85px;
+  }
+
   .buy__wrapper {
     box-sizing: border-box;
-    padding: 68px 60px 75px;
+    padding: 69px 63px 74px;
   }
 
   .buy__title {
     font-size: 40px;
     line-height: 41px;
-    margin-bottom: 17px;
+    margin-bottom: 19px;
   }
 
   .buy__old-button {
+    width: 320px;
     margin: 0;
     margin-bottom: 36px;
     font-size: 25px;
-    width: 100%;
   }
 
   .buy__subtitle {
-    margin: 0;
-    margin-bottom: 9px;
+    margin: 0 0 12px 0;
+    letter-spacing: .3px;
   }
 
   .buy__current-button {
     width: 100%;
-    max-width: 287px;
+    max-width: 307px;
+  }
+
+  .buy__current-button {
+    padding: 12px 14px;
+    letter-spacing: .9px;
   }
 
   .contacts__title {
@@ -875,7 +903,7 @@ ul {
   }
 
   .buy {
-    padding: 119px 0;
+    padding: 119px 0 156px;
     background-image: url('../img/skillup/triangles-buy-left.png'), url('../img/skillup/triangles-buy-right.png');
     background-repeat: no-repeat;
     background-position: left bottom, right bottom;
