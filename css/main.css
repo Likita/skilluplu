@@ -669,6 +669,11 @@ h3 {
   object-position: top;
 }
 
+.instructor__link {
+  display: inline-block;
+  width: 100%;
+}
+
 .instructor__link:active {
   position: relative;
   top: 1px;
@@ -709,6 +714,12 @@ h3 {
 .review__item.active {
   display: block;
   animation: reviewAnimation 0.5s;
+}
+
+.review__content a {
+  text-decoration: none;
+  color: #484054;
+  display: inline-block;
 }
 
 @keyframes reviewAnimation {
@@ -774,6 +785,12 @@ h3 {
   padding: 48px 63px 0 19px;
   font-size: 30px;
   color: #0398df;
+}
+
+.mentor__about {
+  padding: 48px 63px 0 19px;
+  font-size: 26px;
+  font-weight: 400;
 }
 
 .mentor-sectoon {
@@ -1205,11 +1222,14 @@ h3 {
 
   .instructor__link {
     transition: .3s all;
+    outline: none;
+    border: none;
   }
 
-  .instructor__link:hover .instructor__photo {
+  .instructor__link:hover .instructor__photo,
+  .instructor__link:focus .instructor__photo {
     transition: .3s all;
-    box-shadow: 0 0 25px 0.8px red;
+    box-shadow: 0 0 25px 0.8px #6600ff;
     text-decoration: none;
   }
 
@@ -1255,7 +1275,7 @@ h3 {
 
   .review__item {
     border-left: 11px solid #c299ff;
-    padding: 80px 12px 19px;
+    padding: 80px 12px 5px;
     min-height: 300px;
     position: relative;
   }
@@ -1339,6 +1359,12 @@ h3 {
   .mentor__description {
     padding: 48px 63px 0 19px;
     font-size: 30px;
+  }
+
+  .mentor__about {
+    padding: 48px 63px 0 19px;
+    font-size: 26px;
+    font-weight: 400;
   }
 
   .mentor__title::before {
@@ -1718,8 +1744,6 @@ h3 {
     font-size: 36px;
     text-align: center;
     bottom: 8px;
-    letter-spacing: 2px;
-    right: -1px;
   }
 
   .lang {
@@ -1908,7 +1932,7 @@ h3 {
   }
 
   .review__item {
-    padding: 134px 16px 111px;
+    padding: 134px 16px 5px;
     min-height: 321px;
   }
 
@@ -1961,6 +1985,10 @@ h3 {
 
   .mentor__description {
     padding: 100px 0 0 100px;
+  }
+
+  .mentor__about {
+    padding: 48px 0 0 100px;
   }
 
   .location__title {
