@@ -31,8 +31,8 @@ const question = document.querySelectorAll('.faq__question')
 const answer = document.querySelectorAll('.faq__answer')
 
 for (let i = 0; i < question.length; i++) {
-  console.log('govno');
   question[i].addEventListener('click', function() {
+    question[i].classList.toggle('faq__question--open')
     answer[i].classList.toggle('active')
   })
 }

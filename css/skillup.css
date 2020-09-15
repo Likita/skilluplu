@@ -12,7 +12,8 @@
 }
 
 body {
-  margin: 0;
+  max-width: 1920px;
+  margin: 0 auto;
   font-family: 'Muller';
   background-color: #fcfcfc;
 }
@@ -479,56 +480,81 @@ ul {
 .faq__question::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: -20px;
+  top: 4px;
+  left: -23px;
   display: block;
   width: 15px;
   height: 22px;
   background-image: url('../img/skillup/icon-arrow.svg');
   background-repeat: no-repeat;
+  transition: transform .3s;
+}
+
+.faq__question--open::before {
+  transform: rotate(90deg);
+  transition: transform .3s;
 }
 
 .faq__answer {
   margin-left: 20px;
   margin-bottom: 20px;
+  transform: scale(0);
+  transform-origin: top;
+  transition: transform .3s;
   overflow: hidden;
   height: 0;
 }
 
 .faq__answer.active {
+  transform: scale(1);
+  transition: transform .3s;
   height: auto;
-}
 
+}
 .contacts {
   position: relative;
+  padding: 6px 0;
 }
 
-.contacts__wrapper {
-  max-width: 846px;
-  margin: 0 auto;
-  padding: 15px;
-  padding-top: 90px;
+.contacts__title-container {
+  max-width: 1248px;
+  margin: 0 auto 15px;
 }
 
 .contacts__title {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: block;
-  width: 75%;
-  padding: 0 20px;
-  font-size: 30px;
+  position: relative;
+  display: inline-block;
+  padding: 0 31px 0 20px;
+  margin: 0;
+  font-size: 40px;
   line-height: 58px;
-  text-align: right;
+  text-align: left;
   color: #ffffff;
   background-color: #6600ff;
   border-radius: 0 6px 6px 0;
 }
 
+.contacts__title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -537px;
+  display: block;
+  width: 537px;
+  height: 100%;
+  background-color: #6600ff;
+}
+
+.contacts__wrapper {
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .contacts__description {
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin: 0;
 }
 
 .contacts__item {
@@ -540,6 +566,10 @@ ul {
   text-decoration: none;
   font-size: 20px;
   color: #000000;
+}
+
+.contacts__link--phone {
+  margin-bottom: 10px;
 }
 
 .contacts__link::before {
@@ -720,21 +750,6 @@ ul {
     padding: 12px 14px;
     letter-spacing: .9px;
   }
-
-  .contacts__title {
-    width: 25%;
-  }
-
-  .contacts__wrapper {
-    display: flex;
-    padding-top: 100px;
-  }
-
-  .contacts__description {
-    width: 200px;
-    margin: 0;
-    margin-right: 
-  }
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////  */
@@ -911,35 +926,53 @@ ul {
 
   .faq {
     display: flex;
+    padding: 70px;
   }
 
   .faq__title {
     margin: 0;
     margin-right: 40px;
   }
+  
+  .contacts {
+    padding-top: 39px;
+  }
+  
+  .contacts__title-container {
+    margin-bottom: 27px;
+  }
 
-  .contacts__title {
-    width: 31%;
-    font-size: 40px;
+  .contacts__wrapper {
+    display: flex;
+    align-items: center;
   }
 
   .contacts__description {
     width: 300px;
+    margin-left: 20px;
     font-size: 40px;
+    line-height: 38px;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
   }
 
   .contacts__item {
-    padding-left: 40px;
+    padding-left: 24px;
+    margin: 7px 0;
   }
 
   .contacts__link {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .contacts__link::before {
-    width: 30px;
-    height: 30px;
-    left: -40px;
+    left: -43px;
+    width: 29px;
+    height: 29px;
   }
 }
 
@@ -1126,13 +1159,31 @@ ul {
     margin: 22px auto 12px;
   }
 
-  .contacts__title {
-    width: 40%;
+  .faq {
+    padding: 115px 0 58px;
+    max-width: 1206px;
   }
 
-  .contacts__wrapper {
-    padding-top: 150px;
-    padding-bottom: 40px;
+  .faq__title {
+    margin-right: 70px;
+  }
+
+  .faq__wrapper {
+    margin-top: 5px;
+  }
+
+  .faq__question {
+    margin: 0;
+  }
+
+  .faq__question::before {
+    left: -33px;
+  }
+
+  .faq__answer {
+    margin: 5px 0 13px;
+    font-size: 20px;
+    line-height: 147.7%;
   }
 
   .footer {
