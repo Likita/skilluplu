@@ -1,0 +1,1185 @@
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerRegular.woff') format('woff'),
+       url('../fonts/MullerRegular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerBold.woff') format('woff'),
+       url('../fonts/MullerBold.woff2') format('woff2');
+  font-weight: bold;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: 'Muller';
+  font-size: 18px;
+  background-color: #fcfcfc;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.logo {
+  width: 100%;
+}
+
+.nav {
+  background-color: #ffffff;
+}
+
+.nav__wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav__container {
+  margin-bottom: 15px;
+}
+
+.nav__logo {
+  width: 70px;
+  height: 49px;
+}
+
+.nav__list {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav__item {
+  margin-bottom: 10px;
+}
+
+.nav__item-link {
+  font-size: 19px;
+  line-height: 19px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav__register {
+  border: 2px solid #6600ff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #6600ff;
+  min-height: 45px;
+  border-radius: 25px;
+  background-color: transparent;
+  padding: 0 34px;
+}
+
+.header__wrapper {
+  padding: 15px;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.header__description span {
+  color: #6600ff;
+}
+
+.header__list {
+  margin-bottom: 30px;
+}
+
+.header__list-item {
+  margin-bottom: 10px;
+}
+
+.header__list-item::before {
+  margin-right: 10px;
+}
+
+.header__list-item:nth-child(1)::before {
+  content: '💎';
+}
+.header__list-item:nth-child(2)::before {
+  content: '📅';
+}
+.header__list-item:nth-child(3)::before {
+  content: '💻';
+}
+.header__list-item:nth-child(4)::before {
+  content: '🏁';
+}
+
+.header__place-counter {
+  color: #ff9900;
+}
+
+.header__register {
+  width: 233px;
+  height: 54px;
+  background-color: #ff9900;
+  border-radius: 27px;
+  border: none;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0 auto;
+  display: block;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #6600ff;
+  min-height: 225px;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.description__title {
+  margin: 0;
+  font-size: 26px;
+  line-height: 33px;
+}
+
+.description__description {
+  margin: 0;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.roadmap {
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+.roadmap__description {
+  max-width: 1106px;
+  padding-left: 26px;
+  font-size: 22px;
+  line-height: 28px;
+  border-left: 4px solid #6600ff;
+}
+
+.roadmap__roadmap {
+  width: 95%;
+}
+
+.technology {
+  padding: 15px;
+}
+
+.technology__list {
+  max-width: 590px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.technology__item-title {
+  position: relative;
+  width: 250px;
+  padding-bottom: 7px;
+  font-size: 24px;
+  line-height: 21px;
+  color: #6600ff;
+}
+
+.technology__item-title::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 11px;
+  height: 4px;
+  background-color: #ff9900;
+}
+
+.technology__item-description {
+  width: 250px;
+  font-size: 17px;
+  line-height: 21px;
+}
+
+.learning__wrapper {
+  padding: 15px;
+}
+
+.learning__title {
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.learning__list {
+  max-width: 400px;
+  margin: 0 auto;
+  list-style: none;
+  /* counter-reset: counter; */
+}
+
+.learning__item {
+  position: relative;
+  min-height: 60px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  line-height: 20px;
+  /* counter-increment: counter; */
+}
+
+.learning__item::before {
+  /* content: counter(counter); */
+  content: '';
+  position: absolute;
+  left: -77px;
+  display: block;
+  width: 77px;
+  height: 77px;
+  background-repeat: no-repeat;
+  background-size: 57%;
+  background-position: center top;
+}
+
+.learning__item--first::before {
+  background-image: url('../img/skillup/number-1.svg');
+  background-size: 47%;
+}
+
+.learning__item--second::before {
+  background-image: url('../img/skillup/number-2.svg');
+}
+
+.learning__item--third::before {
+  background-image: url('../img/skillup/number-3.svg');
+}
+
+.learning__item--fourth::before {
+  background-image: url('../img/skillup/number-4.svg');
+}
+
+.learning__item:nth-child(1n+10)::before {
+  left: -63px;
+}
+
+.learning__item:nth-child(3n+1)::before {
+  color: #6600ff;
+}
+
+.learning__item:nth-child(3n+2)::before {
+  color: #ff7a00;
+}
+
+.learning__item:nth-child(3n+3)::before {
+  color: #0398df;
+}
+
+.certificate {
+  padding: 15px;
+}
+
+.certificate__container {
+  max-width: 748px;
+  margin: 0 auto;
+}
+
+.certificate__image {
+  width: 100%;
+  display: block;
+}
+
+.certificate__description {
+  border-left: 5px solid #6600ff;
+  border-radius: 1px;
+  padding-left: 14px;
+  width: 248px;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.zoom {
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.zoom__description {
+  margin: 0;
+  font-size: 22px;
+  line-height: 147.7%;
+}
+
+.zoom__description--bold {
+  margin-bottom: 10px;
+  font-size: 26px;
+  line-height: 33px;
+}
+
+.zoom__logo {
+  width: 100%;
+}
+
+.mentor {
+  padding: 15px;
+  background-color: #0398df;
+  color: #ffffff;
+}
+
+.mentor__title {
+  font-size: 30px;
+  line-height: 33px;
+}
+
+.mentor__description {
+  font-size: 20px;
+  line-height: 147.7%;
+}
+
+.mentor__photo {
+  border-radius: 50%;
+  border: 11px solid #6600ff;
+  display: block;
+  margin: 0 auto;
+}
+
+.mentor__social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.mentor__social-link {
+  display: block;
+  width: 48px;
+  height: 48px;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 15px;
+}
+
+.mentor__social-link--facebook {
+  background-image: url('../img/skillup/icon-fb.svg');
+}
+
+.mentor__social-link--linkedin {
+  background-image: url('../img/skillup/icon-in.svg');
+}
+
+.buy {
+  padding: 15px;
+}
+
+.buy__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 469px;
+  background-color: #ff9900;
+  border-radius: 10px;
+  padding: 34px 15px;
+}
+
+.buy__title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 31px;
+  color: #ffffff;
+}
+
+.buy__old-button {
+    background-color: #6600ff;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 19px;
+    line-height: 37px;
+    font-weight: bold;
+    padding: 9px 13px 10px 16px;
+    text-align: center;
+}
+
+.buy__price-old {
+  position: relative;
+  padding: 5px;
+}
+
+.buy__price-old::before {
+  content: '';
+  position: absolute;
+  top: 41%;
+  left: -9%;
+  display: block;
+  width: 120%;
+  height: 3px;
+  background-color: white;
+  transform: rotate(-45deg);
+}
+
+.buy__price-current {
+  font-size: 1.3em;
+  padding: 0 5px;
+}
+
+.buy__subtitle {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0 auto 15px;
+}
+
+.buy__current-button {
+  border: none;
+  background-color: #ffffff;
+  color: #ff9900;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 27px;
+  padding: 14px;
+}
+
+.faq {
+  max-width: 846px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.faq__title {
+  font-size: 40px;
+}
+
+.faq__question {
+  position: relative;
+  font-size: 26px;
+  line-height: 33px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.faq__question::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: -23px;
+  display: block;
+  width: 15px;
+  height: 22px;
+  background-image: url('../img/skillup/icon-arrow.svg');
+  background-repeat: no-repeat;
+  transition: transform .3s;
+}
+
+.faq__question--open::before {
+  transform: rotate(90deg);
+  transition: transform .3s;
+}
+
+.faq__answer {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  transform: scale(0);
+  transform-origin: top;
+  transition: transform .3s;
+  overflow: hidden;
+  height: 0;
+}
+
+.faq__answer.active {
+  transform: scale(1);
+  transition: transform .3s;
+  height: auto;
+
+}
+.contacts {
+  position: relative;
+  padding: 6px 0;
+}
+
+.contacts__title-container {
+  max-width: 1248px;
+  margin: 0 auto 15px;
+}
+
+.contacts__title {
+  position: relative;
+  display: inline-block;
+  padding: 0 31px 0 20px;
+  margin: 0;
+  font-size: 40px;
+  line-height: 58px;
+  text-align: left;
+  color: #ffffff;
+  background-color: #6600ff;
+  border-radius: 0 6px 6px 0;
+}
+
+.contacts__title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -537px;
+  display: block;
+  width: 537px;
+  height: 100%;
+  background-color: #6600ff;
+}
+
+.contacts__wrapper {
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.contacts__description {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.contacts__item {
+  padding: 4px 0 4px 30px;
+}
+
+.contacts__link {
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+}
+
+.contacts__link--phone {
+  margin-bottom: 10px;
+}
+
+.contacts__link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.contacts__link--phone::before {
+  background-image: url('../img/skillup/icon-phone.svg');
+}
+
+.contacts__link--email::before {
+  background-image: url('../img/skillup/icon-email.svg');
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.footer__logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer__social-list {
+  display: flex;
+}
+
+.footer__social-item {
+  margin: 0 20px;
+}
+
+.footer__social-link {
+  display: block;
+  font-size: 0;
+  width: 42px;
+  height: 42px;
+  background-repeat: no-repeat;
+}
+
+.footer__social-link--facebook {
+  background-image: url('../img/skillup/icon-facebook.svg');
+}
+
+.footer__social-link--instagram {
+  background-image: url('../img/skillup/icon-instagram.svg');
+}
+
+.footer__social-link--youtube {
+  background-image: url('../img/skillup/icon-youtube.svg');
+}
+
+@media (min-width: 768px) {
+  .nav__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav__container {
+    margin-bottom: 0;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 500px;
+  }
+
+  .nav__item {
+    margin-right: 2%;
+    margin-bottom: 0;
+  }
+
+  .nav__item:last-child {
+    margin-right: 0;
+  }
+
+  .header {
+    background-image: url('../img/skillup/header-picture.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 30%;
+  }
+
+  .header__wrapper {
+    padding: 55px;
+  }
+
+  .header__title {
+    width: 643px;
+    font-size: 50px;
+    text-align: left;
+  }
+
+  .header__description {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 26px;
+  }
+
+  .roadmap__description {
+    margin-bottom: 118px;
+  }
+
+  .technology__list {
+    max-width: 748px;
+  }
+
+  .technology__item {
+    margin-right: 40px;
+  }
+
+  .learning__list {
+    max-width: none;
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .learning__item {
+    width: 250px;
+    margin: 0 10px 15px;
+  }
+
+  .buy {
+    padding: 85px;
+  }
+
+  .buy__wrapper {
+    box-sizing: border-box;
+    padding: 69px 63px 74px;
+  }
+
+  .buy__title {
+    font-size: 40px;
+    line-height: 41px;
+    margin-bottom: 19px;
+  }
+
+  .buy__old-button {
+    width: 320px;
+    margin: 0;
+    margin-bottom: 36px;
+    font-size: 25px;
+  }
+
+  .buy__subtitle {
+    margin: 0 0 12px 0;
+    letter-spacing: .3px;
+  }
+
+  .buy__current-button {
+    width: 100%;
+    max-width: 307px;
+  }
+
+  .buy__current-button {
+    padding: 12px 14px;
+    letter-spacing: .9px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav__wrapper {
+    max-width: 1204px;
+    padding: 15px 90px;
+    justify-content: flex-start;
+  }
+  
+  .nav__list {
+    margin-left: 71.04px;
+  }
+  
+  .nav__register {
+    margin-left: auto;
+  }
+
+  .header {
+    background-image: url('../img/skillup/header-picture.png'), url('../img/skillup/triangles-header.png');
+    background-position: 103% 34%, 93% 100%;
+    background-size: 35%, auto;
+  }
+  
+  .header__wrapper {
+    max-width: 1060px;
+    margin: 0 auto;
+    background-size: 465px;
+    padding-top: 170px;
+    padding-bottom: 67px;
+  }
+  
+  .header__description {
+    margin-bottom: 36px;
+  }
+  
+  .header__list {
+    margin-bottom: 133px;
+  }
+
+  .header__list-item {
+    margin-bottom: 0;
+    font-size: 19px;
+    line-height: 29px;
+  }
+  
+  .description__wrapper {
+    max-width: 1280px;
+  }
+  
+  .roadmap {
+    background-image: url('../img/skillup/triangles-roadmap.png');
+    background-repeat: no-repeat;
+    padding: 116px 0 62px 88px;
+    margin-bottom: 39px;
+  }
+
+  .roadmap__wrapper {
+    margin: 0 auto;
+    max-width: 1294px;
+  }
+
+  .roadmap__paragraph {
+    margin: 0 0 11px 0;
+  }
+
+  .technology {
+    background-image: url('../img/skillup/triangles-technology-left.png'), url('../img/skillup/triangles-technology-right.png');
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-size: 15%, 30%;
+  }
+
+  .technology__wrapper {
+    max-width: 748px;
+    margin: 0 auto;
+  }
+
+  .technology__list {
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .technology__item-title {
+    width: 148px;
+  }
+
+  .technology__item-description {
+    width: 148px;
+  }
+
+  .learning {
+    background-image: url('../img/skillup/triangles-learning.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  .learning__wrapper {
+    max-width: 988px;
+    margin: 0 auto;
+    padding: 74px 150px 0;
+  }
+
+  .learning__title {
+    margin-bottom: 50px;
+    font-size: 40px;
+    line-height: 33px;
+    text-align: left;
+  }
+
+  .learning__list {
+    width: 749px;
+  }
+
+  .learning__item {
+    margin: 0;
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .learning__item::before {
+    /* font-size: 110px; */
+    top: 40px;
+    left: -80px;
+  }
+
+  .learning__item:nth-child(1n+10)::before {
+    left: -103px;
+  }
+
+  .zoom {
+    padding: 93px 0;
+    background-image: url('../img/skillup/triangles-zoom-left.png'), url('../img/skillup/triangles-zoom-right.png');
+    background-repeat: no-repeat;
+    background-position: 0% 100%, 95.7% 100%;
+    background-size: 20.8%, 51.7%;
+  }
+
+  .zoom__description {
+    width: 62.84375%;
+    margin: 0 auto;
+    letter-spacing: .3px;
+  }
+
+  .zoom__description--bold {
+    letter-spacing: .6px;
+  }
+
+  .zoom__logo {
+    position: relative;
+    left: 10px;
+    top: 3px;
+  }
+
+  .mentor {
+    display: flex;
+    justify-content: center;
+    padding: 90px 0;
+  }
+
+  .mentor__wrapper {
+    display: flex;
+    max-width: 1228px;
+  }
+
+  .buy {
+    padding: 119px 0 156px;
+    background-image: url('../img/skillup/triangles-buy-left.png'), url('../img/skillup/triangles-buy-right.png');
+    background-repeat: no-repeat;
+    background-position: left bottom, right bottom;
+  }
+
+  .faq {
+    display: flex;
+    padding: 70px;
+  }
+
+  .faq__title {
+    margin: 0;
+    margin-right: 40px;
+  }
+  
+  .contacts {
+    padding-top: 39px;
+  }
+  
+  .contacts__title-container {
+    margin-bottom: 27px;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .contacts__description {
+    width: 300px;
+    margin-left: 20px;
+    font-size: 40px;
+    line-height: 38px;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+  }
+
+  .contacts__item {
+    padding-left: 24px;
+    margin: 7px 0;
+  }
+
+  .contacts__link {
+    font-size: 20px;
+  }
+
+  .contacts__link::before {
+    left: -43px;
+    width: 29px;
+    height: 29px;
+  }
+}
+
+@media (min-width: 1440px) {
+  
+  .nav__list {
+    min-width: 580px;
+  }
+
+  .header {
+    background-position: 78% 34%, 93% 100%;
+    background-size: auto;
+  }
+  
+  .roadmap__title {
+    font-size: 40px;
+    line-height: 33px;
+    margin: 0;
+  }
+  
+  .roadmap__roadmap {
+    position: relative;
+    bottom: 30px;
+    right: -6px;
+  }
+
+  .technology {
+    background-position: top left, 87% 100%;
+    background-size: auto, auto;
+    padding-bottom: 70px;
+  }
+
+  .technology__wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .technology__title {
+    width: 350px;
+    font-size: 50px;
+    margin: 33px 62px 0 117px
+  }
+
+  .technology__list {
+    padding-top: 33px;
+  }
+
+  .technology__item {
+    margin-right: 32px;
+    margin-bottom: 17px;
+  }
+
+  .technology__item-title {
+    width: 160px;
+    margin: 0 0 14px 0;
+  }
+
+  .technology__item-title::before {
+    bottom: -4px;
+    left: 1px;
+  }
+
+  .technology__item-description {
+    width: 183px;
+  }
+
+  .learning {
+    background-position: 87% 0;
+    padding-bottom: 16px;
+  }
+
+  .learning__wrapper {
+    max-width: 1208px;
+    width: 1208px;
+  }
+
+  .learning__list {
+    max-width: 1208px;
+    width: 1208px;
+    justify-content: flex-start;
+    padding: 0 104px;
+  }
+
+  .learning__item {
+    width: 350px;
+    margin-right: 254px;
+  }
+
+  .learning__item::before {
+    height: 104px;
+    top: 3px;
+    left: -110px;
+    background-size: 100%;
+  }
+  
+  .learning__item--first::before {
+    background-size: 80%;
+  }
+
+  .learning__item--second::before {
+    left: -119px;
+  }
+
+  .learning__item--third::before {
+    left: -102px;
+  }
+
+  .learning__item--fourth::before {
+    width: 90px;
+    top: 7px;
+    left: -122px;
+  }
+
+  .certificate {
+    padding: 85px;
+    background-image: url('../img/skillup/triangles-certificate-left.png'), url('../img/skillup/triangles-certificate-right.png');
+    background-repeat: no-repeat;
+    background-position: 0 0, 80.5% 92.6%;
+    padding-bottom: 15px;
+  }
+
+  .certificate__container {
+    display: flex;
+    max-width: 960px;
+  }
+
+  .certificate__image {
+    position: relative;
+    right: 11px;
+  }
+
+  .certificate__description {
+    position: relative;
+    right: 50px;
+    margin-top: 102px;
+    min-width: 300px;
+    height: 105px;
+  }
+
+  .zoom__description {
+    max-width: 1440px;
+  }
+
+  .mentor {
+    background-image: url('../img/skillup/triangles-mentor-left.png'), url('../img/skillup/triangles-mentor-right.png');
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 0;
+    background-size: 12%, auto;
+    padding: 55px 0 123px;
+  }
+
+  .mentor__description-container {
+    width: 758px;
+    margin-right: 148px;
+  }
+
+  .mentor__title {
+    font-size: 40px;
+    line-height: 33px;
+    letter-spacing: .3px;
+    margin-bottom: 18px;
+  }
+
+  .mentor__description {
+    margin: 0;
+    letter-spacing: .3px;
+    line-height: 30px;
+  }
+
+  .mentor__photo {
+    margin: 22px auto 12px;
+  }
+
+  .faq {
+    padding: 115px 0 58px;
+    max-width: 1206px;
+  }
+
+  .faq__title {
+    margin-right: 70px;
+  }
+
+  .faq__wrapper {
+    margin-top: 5px;
+  }
+
+  .faq__question {
+    margin: 0;
+  }
+
+  .faq__question::before {
+    left: -33px;
+  }
+
+  .faq__answer {
+    margin: 5px 0 13px;
+    font-size: 20px;
+    line-height: 147.7%;
+  }
+
+  .footer {
+    padding: 80px 0;
+  }
+
+  .footer__logo {
+    width: 176px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .mentor {
+    background-size: auto, auto;
+  }
+}
