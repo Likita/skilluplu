@@ -15,6 +15,7 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   font-family: 'Muller';
+  font-size: 18px;
   background-color: #fcfcfc;
 }
 
@@ -71,6 +72,8 @@ ul {
 .nav__item-link {
   font-size: 19px;
   line-height: 19px;
+  color: #000000;
+  text-decoration: none;
 }
 
 .nav__register {
@@ -197,7 +200,7 @@ ul {
 
 .technology__item-title {
   position: relative;
-  width: 140px;
+  width: 250px;
   padding-bottom: 7px;
   font-size: 24px;
   line-height: 21px;
@@ -216,7 +219,7 @@ ul {
 }
 
 .technology__item-description {
-  width: 148px;
+  width: 250px;
   font-size: 17px;
   line-height: 21px;
 }
@@ -243,7 +246,8 @@ ul {
   position: relative;
   min-height: 60px;
   margin-left: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  line-height: 20px;
   /* counter-increment: counter; */
 }
 
@@ -821,6 +825,14 @@ ul {
   .technology__list {
     justify-content: space-between;
     margin: 0;
+  }
+
+  .technology__item-title {
+    width: 148px;
+  }
+
+  .technology__item-description {
+    width: 148px;
   }
 
   .learning {

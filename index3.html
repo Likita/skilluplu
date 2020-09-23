@@ -3,9 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description"
+  content="Get the Profession of the Future! SkillUp School web course will help you enter the IT field very easily. You will learn how to create a website. It is very interesting and it could be your future job!">
+  <title>SkillUp page</title>
+  <link rel="canonical" href="https://skillup.lu/" />
+  <meta name="robots" content="index, follow">
   <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/skillup.css">
-  <title>SkillUp page</title>
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="SkillUp School Luxembourg" />
+  <meta property="og:description"
+    content="Get the Profession of the Future! SkillUp School web course will help you enter the IT field very easily. You will learn how to create a website. It is very interesting and it could be your future job!" />
+  <meta property="og:image" content="https://skillup.lu/share.png" />
+  <meta property="og:url" content="https://skillup.lu/" />
+  <meta property="og:site_name" content="SkillUp School" />
+  <link rel="icon" type="image/png" href="./favicon.png">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149137072-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-149137072-1');
+  </script>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+    m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(55567165, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/55567165" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
 </head>
 <body>
   <nav class="nav">
@@ -15,17 +55,17 @@
       </div>
       <ul class="nav__container nav__list">
         <li class="nav__item">
-          <a class="nav__item-link">About SkillUp</a>
+          <a class="nav__item-link" href="#description">About SkillUp</a>
           </li>
         <li class="nav__item">
-          <a class="nav__item-link">About Course</a>
+          <a class="nav__item-link" href="#course">About Course</a>
           </li>
         <li class="nav__item">
-          <a class="nav__item-link">Instructors</a>
+          <a class="nav__item-link" href="#instructors">Instructors</a>
           </li>
         <li class="nav__item">
-          <a class="nav__item-link">Contacts</a>
-          </li>
+          <a class="nav__item-link" href="#contacts">Contacts</a>
+        </li>
       </ul>
       <button class="nav__container nav__register">Register</button>
     </div>
@@ -44,7 +84,7 @@
     </div>
   </header>
   <main class="main">
-    <section class="description">
+    <section class="description" id="description">
       <div class="description__wrapper">
         <h2 class="description__title">SkillUp — это онлайн IT курсы для тех, кто хочет освоить IT специальноcть в режиме интенсива.</h2>
         <p class="description__description"><b>«Входим в IT»</b> c помощью курсов web development, backend, frontend, UI/UX design и спецкурса по WordPress.</p>
@@ -52,7 +92,7 @@
     </section>
     <section class="roadmap">
       <div class="roadmap__wrapper">
-        <div class="roadmap__description">
+        <div class="roadmap__description" id="course">
           <p class="roadmap__paragraph">Курс web-development —  это 20 часов онлайн интенсива с преподавателем, у которого 10+ лет опыта 
             в разработке. Мы научимся создавать сайты с нуля, делать для них классные анимации и расскажем фишки как выводить свои сайты в топ выдачи Google.</p>
           <p class="roadmap__paragraph">Наша главная цель —  научить думать как разработчик, чтобы находить лучшие решения для проектов.</p>
@@ -130,7 +170,7 @@
     </section>
     <section class="mentor">
       <div class="mentor__wrapper">
-        <div class="mentor__description-container">
+        <div class="mentor__description-container" id="instructors">
           <h2 class="mentor__title">Instructor and mentor - Vasilika Klimova</h2>
           <p class="mentor__description"><b>Vasilika Klimova</b> is an author of several courses, collaborating for many years as an instructor and mentor, in well-known online and offline schools, such as <b>HTMLAcademy, Netology, Moscow Coding School, GeekBrains school and Loftschool.</b> 
           Also she is a regular speaker at different Frontend Europe Conferences.</p>
@@ -141,10 +181,10 @@
           <img src="img/skillup/mentor-photo.jpg" alt="Vasilika Klimova" class="mentor__photo">
           <ul class="mentor__social-list">
             <li class="mentor__social-item">
-              <a href="https://www.facebook.com/vasilika.klimova" class="mentor__social-link mentor__social-link--facebook">facebook</a>
+              <a href="https://www.facebook.com/vasilika.klimova" class="mentor__social-link mentor__social-link--facebook" target="_blank">facebook</a>
             </li>
             <li class="mentor__social-item">
-              <a href="https://lu.linkedin.com/in/likita" class="mentor__social-link mentor__social-link--linkedin">linked in</a>
+              <a href="https://lu.linkedin.com/in/likita" class="mentor__social-link mentor__social-link--linkedin" target="_blank">linked in</a>
             </li>
           </ul>
         </div>
@@ -171,7 +211,7 @@
         <li class="faq__answer">Ага</li>
       </ul>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="contacts__title-container">
         <h2 class="contacts__title">Есть вопрос?</h2>
       </div>
@@ -179,10 +219,10 @@
         <p class="contacts__description">Напиши или позвони нам:</p>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <a href="tel:+352661101603" class="contacts__link contacts__link--phone">+352 661 101 603</a>
+            <a href="tel:+352661101603" class="contacts__link contacts__link--phone" target="_blank">+352 661 101 603</a>
           </li>
           <li class="contacts__item">
-            <a href="mailto:info@skillup.lu" class="contacts__link contacts__link--email">info@skillup.lu</a>
+            <a href="mailto:info@skillup.lu" class="contacts__link contacts__link--email" target="_blank">info@skillup.lu</a>
           </li>
         </ul>
       </div>
@@ -194,13 +234,16 @@
     </div>
     <ul class="footer__social-list">
       <li class="footer__social-item">
-        <a href="#" class="footer__social-link footer__social-link--facebook">facebook</a>
+        <a href="#" class="footer__social-link footer__social-link--facebook" target="_blank">facebook</a>
       </li>
       <li class="footer__social-item">
-        <a href="#" class="footer__social-link footer__social-link--instagram">instagram</a>
+        <a href="#" class="footer__social-link footer__social-link--instagram" target="_blank">instagram</a>
       </li>
       <li class="footer__social-item">
-        <a href="#" class="footer__social-link footer__social-link--youtube">youtube</a>
+        <a href="#" class="footer__social-link footer__social-link--youtube" target="_blank">youtube</a>
+      </li>
+      <li class="footer__social-item">
+        <a href="#" class="footer__social-link footer__social-link--twitter" target="_blank">twitter</a>
       </li>
     </ul>
   </footer>
