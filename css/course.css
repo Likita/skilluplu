@@ -97,7 +97,9 @@
   font-size: 16px;
   line-height: 19px;
   color: #484054;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  width: 160px;
+  margin-top: 5px;
 }
 
 .course-item-left {
@@ -131,6 +133,7 @@
   font-weight: bold;
   font-size: 36px;
   color: rgb(223, 3, 101);
+  width: 160px;
 }
 
 .course-item-link {
