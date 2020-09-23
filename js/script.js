@@ -18,10 +18,37 @@ let slideChange = function(side, sideChange, count) {
   }
 }
 
-btnNext.onclick = function() {
-  slideChange(lastSlide, 0, 1);
+// btnNext.onclick = function() {
+//   slideChange(lastSlide, 0, 1);
+// }
+
+// btnPrev.onclick = function() {
+//   slideChange(0, lastSlide, -1);
+// }
+
+//skillup last page, faq buttons
+const question = document.querySelectorAll('.faq__question')
+const answer = document.querySelectorAll('.faq__answer')
+
+for (let i = 0; i < question.length; i++) {
+  question[i].addEventListener('click', function() {
+    question[i].classList.toggle('faq__question--open')
+    answer[i].classList.toggle('active')
+  })
 }
 
-btnPrev.onclick = function() {
-  slideChange(0, lastSlide, -1);
+// animated scroll for anchors
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
 }
