@@ -3,50 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Form to Google Sheet</title>
 </head>
 <body>
-  <form id="test-form">
+  <form class="subscription-form">
     <div>
-      <label>Field 1</label>
-      <input type="text" name="form_field_1" placeholder="Field 1"/>
+      <label>Email</label>
+      <input type="email" name="email" placeholder="Email" />
     </div>
   
     <div>
       <label>Field 2</label>
       <input type="text" name="form_field_2" placeholder="Field 2"/>
     </div>
-    
-    <div>
-      <label>Field 3</label>
-      <input type="text" name="form_field_3" placeholder="Field 3"/>
-    </div>
-    
-    <div>
-      <label>Field 4</label>
-      <input type="text" name="form_field_4" placeholder="Field 4"/>
-    </div>
-  
+
     <div>
       <button type="submit"id="submit-form">Submit</button>
     </div>
   
   </form>
-  <script>
-    var $form = $('form#test-form'),
-    url = 'https://script.google.com/macros/s/abcdefghijklmnopqrstuvwxyz1234567890/exec'
-
-    $('#submit-form').on('click', function(e) {
-      e.preventDefault();
-      var jqxhr = $.ajax({
-        url: url,
-        method: "GET",
-        dataType: "json",
-        data: $form.serializeObject()
-      }).success(
-        // do something
-      );
-    })
-  </script>
+  <script src="./js/form.js"></script>
 </body>
 </html>
