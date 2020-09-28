@@ -50,9 +50,14 @@ ul {
   padding: 0 15px;
 }
 
+.list__item {
+  text-align: center;
+}
+
 .list__item-title {
   position: relative;
   display: block;
+  margin: 0 auto;
 }
 
 .list__item-title::before {
@@ -311,6 +316,14 @@ ul {
   display: block;
   width: 100%;
   max-width: 500px;
+  margin: 0 auto;
+}
+
+.course-for {
+  padding: 15px;
+}
+
+.course-for__list {
   margin: 0 auto;
 }
 
@@ -900,6 +913,10 @@ ul {
     margin-right: 40px;
   }
 
+  .learning__title {
+    margin-bottom: 50px;
+  }
+
   .learning__list {
     max-width: none;
     width: 700px;
@@ -910,7 +927,7 @@ ul {
 
   .learning__item {
     width: 250px;
-    margin: 0 10px 15px;
+    margin: 0 10px 35px;
   }
 
   .buy {
@@ -954,7 +971,7 @@ ul {
 @media (min-width: 1024px) {
   .nav__wrapper {
     max-width: 1204px;
-    padding: 15px 90px;
+    padding: 15px 55px;
     justify-content: flex-start;
   }
   
@@ -999,8 +1016,10 @@ ul {
   }
   
   .roadmap {
-    background-image: url('../img/skillup/triangles-roadmap.png');
+    background-image: url('../img/skillup/triangles-roadmap-left-top.png'), url('../img/skillup/triangles-roadmap-left-bottom.png');
     background-repeat: no-repeat;
+    background-position: left top, left bottom;
+    background-size: 17%;
     padding: 116px 0 62px 88px;
     margin-bottom: 39px;
   }
@@ -1057,7 +1076,6 @@ ul {
   }
 
   .learning__title {
-    margin-bottom: 50px;
     font-size: 40px;
     line-height: 33px;
     text-align: left;
