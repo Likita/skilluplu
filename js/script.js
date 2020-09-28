@@ -70,3 +70,7 @@ closePopup.addEventListener('click', () => {
   popup.classList.add('visually-hidden')
     body.classList.remove('body__overlay')
 })
+
+document.addEventListener('click', (e) => {
+  console.log(e.target)
+})

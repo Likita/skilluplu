@@ -136,6 +136,7 @@ ul {
   outline: none;
   box-shadow: 0 4px 5px rgba(102, 0, 255, 0.15);
   transition: box-shadow .2s;
+  cursor: pointer;
 }
 
 .nav__register:hover {
@@ -205,6 +206,7 @@ ul {
   display: block;
   box-shadow: 0 4px 5px rgba(255, 153, 0, 0.15);
   transition: box-shadow .2s;
+  cursor: pointer;
 }
 
 .header__register:hover {
@@ -409,24 +411,24 @@ ul {
   line-height: 28px;
 }
 
-.zoom {
+.meet {
   padding: 15px;
   margin: 0 auto;
 }
 
-.zoom__description {
+.meet__description {
   margin: 0;
   font-size: 22px;
   line-height: 147.7%;
 }
 
-.zoom__description--bold {
+.meet__description--bold {
   margin-bottom: 10px;
   font-size: 26px;
   line-height: 33px;
 }
 
-.zoom__logo {
+.meet__logo {
   width: 100%;
 }
 
@@ -551,6 +553,7 @@ ul {
   padding: 14px;
   box-shadow: 0 4px 5px rgba(102, 0, 255, 0.15);
   transition: box-shadow .2s;
+  cursor: pointer;
 }
 
 .buy__current-button:hover {
@@ -578,6 +581,7 @@ ul {
   font-weight: bold;
   margin-left: 20px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .faq__question::before {
@@ -657,7 +661,7 @@ ul {
 .contacts__description {
   font-size: 30px;
   font-weight: bold;
-  margin: 0;
+  margin: 0 0 15px 0;
 }
 
 .contacts__item {
@@ -810,6 +814,7 @@ ul {
   font-weight: bold;
   outline: none;
   border: none;
+  cursor: pointer;
   background-color: #ffffff;
   box-shadow: 0px 4px 17px rgba(137, 62, 255, 0.2);
   transition: box-shadow .3s;
@@ -832,6 +837,7 @@ ul {
   justify-content: center;
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -1078,25 +1084,25 @@ ul {
     left: -103px;
   }
 
-  .zoom {
+  .meet {
     padding: 93px 0;
-    background-image: url('../img/skillup/triangles-zoom-left.png'), url('../img/skillup/triangles-zoom-right.png');
+    background-image: url('../img/skillup/triangles-meet-left.png'), url('../img/skillup/triangles-meet-right.png');
     background-repeat: no-repeat;
     background-position: 0% 100%, 95.7% 100%;
     background-size: 20.8%, 51.7%;
   }
 
-  .zoom__description {
+  .meet__description {
     width: 62.84375%;
     margin: 0 auto;
     letter-spacing: .3px;
   }
 
-  .zoom__description--bold {
+  .meet__description--bold {
     letter-spacing: .6px;
   }
 
-  .zoom__logo {
+  .meet__logo {
     position: relative;
     left: 10px;
     top: 3px;
@@ -1332,7 +1338,7 @@ ul {
     height: 105px;
   }
 
-  .zoom__description {
+  .meet__description {
     max-width: 1440px;
   }
 
