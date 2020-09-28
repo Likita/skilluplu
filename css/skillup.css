@@ -50,28 +50,21 @@ ul {
   padding: 0 15px;
 }
 
-.list__item {
-  text-align: center;
-}
-
 .list__item-title {
   position: relative;
-  display: block;
-  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .list__item-title::before {
   content: '';
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   left: 0;
   display: block;
   width: 11px;
   height: 4px;
   background-color: #ff9900;
 }
-
-
 
 .visually-hidden {
   position: absolute;
@@ -321,6 +314,8 @@ ul {
 
 .course-for {
   padding: 15px;
+  background-color: #0398df;
+  color: #ffffff;
 }
 
 .course-for__list {
@@ -854,6 +849,19 @@ ul {
 }
 
 @media (min-width: 768px) {
+  .list {
+    width: 100%;
+    max-width: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+  }
+
+  .list__item {
+    max-width: 250px;
+  }
+
   .nav__wrapper {
     flex-direction: row;
     justify-content: space-between;
@@ -969,6 +977,19 @@ ul {
 }
 
 @media (min-width: 1024px) {
+  .list__item {
+    max-width: 200px;
+  }
+
+  .list__item-title {
+    width: 60px;
+  }
+
+  .list__item__description {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
   .nav__wrapper {
     max-width: 1204px;
     padding: 15px 55px;
@@ -1061,6 +1082,20 @@ ul {
   .web-is__title {
     font-size: 40px;
     line-height: 44px;
+  }
+
+  .course-for {
+    padding-left: 100px;
+    background-image: url('../img/skillup/triangles-course-for-left.png'), url('../img/skillup/triangles-course-for-right.png');
+    background-repeat: no-repeat;
+    background-position: 0% 100%, 100% -40px;
+    background-size: 12%, 15%;
+  }
+
+  .course-for__title {
+    margin-left: 24px;
+    font-size: 40px;
+    line-height: 33px;
   }
 
   .learning {
@@ -1219,6 +1254,9 @@ ul {
 }
 
 @media (min-width: 1440px) {
+  .list {
+    max-width: 1480px;
+  }
   
   .nav__list {
     min-width: 580px;
@@ -1243,7 +1281,7 @@ ul {
 
   .technology {
     background-position: top left, 87% 100%;
-    background-size: auto, auto;
+    background-size: 18%, 22%;
     padding-bottom: 70px;
   }
 
@@ -1328,6 +1366,10 @@ ul {
     width: 90px;
     top: 7px;
     left: -122px;
+  }
+
+  .course-for__wrapper {
+    max-width: 1440px;
   }
 
   .certificate {
