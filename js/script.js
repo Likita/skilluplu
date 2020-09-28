@@ -1,7 +1,7 @@
-let slider = document.querySelectorAll('.review__item');
+let slider = document.querySelectorAll('.review__item')
 let btnPrev = document.querySelector('.review__prev')
 let btnNext = document.querySelector('.review__next')
-let lastSlide = slider.length - 1;
+let lastSlide = slider.length - 1
 
 let slideChange = function(side, sideChange, count) {
   for (let i = 0; i <= lastSlide; i++) {
@@ -52,3 +52,21 @@ for (let anchor of anchors) {
     })
   })
 }
+
+// работа попапа
+const enterEmailBtn = document.querySelectorAll('.enter-email')
+const popup = document.getElementById('popup')
+const body = document.querySelector('.body')
+const closePopup = document.querySelector('.popup__close')
+
+for(let i = 0; i < enterEmailBtn.length; i++) {
+  enterEmailBtn[i].addEventListener('click', () => {
+    popup.classList.remove('visually-hidden')
+    body.classList.add('body__overlay')
+  })
+}
+
+closePopup.addEventListener('click', () => {
+  popup.classList.add('visually-hidden')
+    body.classList.remove('body__overlay')
+})
