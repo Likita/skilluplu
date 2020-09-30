@@ -486,6 +486,14 @@ ul {
   background-image: url('../img/skillup/icon-in.svg');
 }
 
+.course-join {
+  padding: 15px;
+}
+
+.course-join__list {
+  margin: 0 auto;
+}
+
 .buy {
   padding: 15px;
 }
@@ -653,9 +661,9 @@ ul {
   content: '';
   position: absolute;
   top: 0;
-  left: -537px;
+  left: -335px;
   display: block;
-  width: 537px;
+  width: 335px;
   height: 100%;
   background-color: #6600ff;
 }
@@ -856,10 +864,11 @@ ul {
     flex-wrap: wrap;
     justify-content: space-around;
     box-sizing: border-box;
+    padding: 0;
   }
 
   .list__item {
-    max-width: 250px;
+    width: 250px;
   }
 
   .nav__wrapper {
@@ -977,8 +986,13 @@ ul {
 }
 
 @media (min-width: 1024px) {
+  .list {
+    justify-content: flex-start;
+  }
+
   .list__item {
     max-width: 200px;
+    margin-right: 75px;
   }
 
   .list__item-title {
@@ -1085,7 +1099,7 @@ ul {
   }
 
   .course-for {
-    padding-left: 100px;
+    padding-left: 150px;
     background-image: url('../img/skillup/triangles-course-for-left.png'), url('../img/skillup/triangles-course-for-right.png');
     background-repeat: no-repeat;
     background-position: 0% 100%, 100% -40px;
@@ -1093,15 +1107,8 @@ ul {
   }
 
   .course-for__title {
-    margin-left: 24px;
     font-size: 40px;
     line-height: 33px;
-  }
-
-  .learning {
-    background-image: url('../img/skillup/triangles-learning.png');
-    background-repeat: no-repeat;
-    background-position: right top;
   }
 
   .learning__wrapper {
@@ -1172,11 +1179,21 @@ ul {
     max-width: 1228px;
   }
 
+  .course-join {
+    padding-left: 150px;
+  }
+
+  .course-join__title {
+    font-size: 40px;
+    line-height: 33px;
+  }
+
   .buy {
     padding: 119px 0 156px;
     background-image: url('../img/skillup/triangles-buy-left.png'), url('../img/skillup/triangles-buy-right.png');
     background-repeat: no-repeat;
     background-position: left bottom, right bottom;
+    background-size: 50%;
   }
 
   .faq {
@@ -1205,6 +1222,7 @@ ul {
   .contacts__description {
     width: 300px;
     margin-left: 20px;
+    margin-right: 60px;
     font-size: 40px;
     line-height: 38px;
   }
@@ -1255,7 +1273,7 @@ ul {
 
 @media (min-width: 1440px) {
   .list {
-    max-width: 1480px;
+    max-width: 1240px;
   }
   
   .nav__list {
@@ -1322,7 +1340,6 @@ ul {
   }
 
   .learning {
-    background-position: 87% 0;
     padding-bottom: 16px;
   }
 
@@ -1431,6 +1448,15 @@ ul {
 
   .mentor__photo {
     margin: 22px auto 12px;
+  }
+
+  .course__wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .buy {
+    background-size: auto;
   }
 
   .faq {
