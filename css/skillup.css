@@ -617,9 +617,9 @@ ul {
   content: '';
   position: absolute;
   top: 0;
-  left: -335px;
+  left: -356px;
   display: block;
-  width: 335px;
+  width: 356px;
   height: 100%;
   background-color: #6600ff;
 }
