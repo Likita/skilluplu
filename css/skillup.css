@@ -1053,13 +1053,9 @@ ul {
   }
   
   .description {
-    padding: 10px 67px;
+    padding: 35px 88px;
   }
 
-  .description__wrapper {
-    max-width: 1280px;
-  }
-  
   .roadmap {
     background-image: url('../img/skillup/triangles-roadmap-left-top.png'), url('../img/skillup/triangles-roadmap-left-bottom.png');
     background-repeat: no-repeat;
@@ -1206,12 +1202,13 @@ ul {
   }
 
   .contacts__title {
-    padding: 15px 31px 15px 20px;
+    padding: 15px 31px 15px 0;
   }
 
   .contacts__wrapper {
     display: flex;
     align-items: center;
+    padding: 0;
   }
 
   .contacts__description {
@@ -1264,6 +1261,11 @@ ul {
 }
 
 @media (min-width: 1440px) {
+  h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
   .list {
     max-width: 1240px;
   }
@@ -1277,9 +1279,15 @@ ul {
     background-size: auto;
   }
   
+  .description {
+    padding: 35px 118px;
+  }
+
+  .roadmap {
+    padding: 55px 118px;
+  }
+
   .roadmap__title {
-    font-size: 40px;
-    line-height: 33px;
     margin: 0;
   }
   
@@ -1292,7 +1300,7 @@ ul {
   .technology {
     background-position: top left, 87% 100%;
     background-size: 18%, 22%;
-    padding-bottom: 70px;
+    padding: 35px 118px 70px;
   }
 
   .technology__wrapper {
@@ -1305,7 +1313,7 @@ ul {
   .technology__title {
     width: 350px;
     font-size: 50px;
-    margin: 33px 62px 0 117px
+    margin: 30px 0;
   }
 
   .technology__list {
@@ -1331,8 +1339,16 @@ ul {
     width: 183px;
   }
 
+  .web-is {
+    padding: 35px 118px;
+  }
+
+  .course-for {
+    padding: 35px 118px;
+  }
+
   .learning {
-    padding-bottom: 16px;
+    padding: 35px 118px;
   }
 
   .learning__wrapper {
@@ -1342,14 +1358,13 @@ ul {
   }
 
   .learning__list {
-    max-width: 1208px;
-    width: 1208px;
-    justify-content: flex-start;
+    width: 1280px;
+    padding-left: 0;
   }
 
   .learning__item {
     width: 350px;
-    margin-right: 254px;
+    margin: 0 173px 96px 102px;
   }
 
   .learning__item::before {
@@ -1408,8 +1423,12 @@ ul {
     height: 105px;
   }
 
+  .meet {
+    padding: 35px 118px;
+  }
+
   .meet__description {
-    max-width: 1440px;
+    max-width: 1280px;
   }
 
   .mentor {
@@ -1426,9 +1445,6 @@ ul {
   }
 
   .mentor__title {
-    font-size: 40px;
-    line-height: 33px;
-    letter-spacing: .3px;
     margin-bottom: 18px;
   }
 
@@ -1442,9 +1458,8 @@ ul {
     margin: 22px auto 12px;
   }
 
-  .course__wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
+  .course-join {
+    padding: 35px 118px;
   }
 
   .buy {
@@ -1476,6 +1491,10 @@ ul {
     margin: 5px 0 13px;
     font-size: 20px;
     line-height: 147.7%;
+  }
+
+  .contacts {
+    padding: 35px 118px;
   }
 
   .footer {
