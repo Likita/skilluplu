@@ -46,8 +46,7 @@ ul {
 }
 
 .list {
-  max-width: 300px;
-  padding: 0 15px;
+  max-width: 280px;
 }
 
 .list__item-title {
@@ -111,8 +110,6 @@ ul {
 }
 
 .nav__item-link {
-  font-size: 19px;
-  line-height: 19px;
   color: #000000;
   text-decoration: none;
   transition: color .3s;
@@ -147,12 +144,6 @@ ul {
 
 .header__wrapper {
   padding: 15px;
-}
-
-.header__title {
-  margin: 0;
-  font-size: 30px;
-  text-align: center;
 }
 
 .header__description span {
@@ -227,12 +218,6 @@ ul {
   text-align: center;
 }
 
-.description__title {
-  margin: 0;
-  font-size: 26px;
-  line-height: 33px;
-}
-
 .description__description {
   margin: 0;
   font-size: 22px;
@@ -261,11 +246,8 @@ ul {
 }
 
 .technology__list {
-  max-width: 590px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0 auto;
 }
 
 .technology__item-title {
@@ -295,14 +277,8 @@ ul {
 }
 
 .web-is {
-  max-width: 748px;
   margin: 0 auto;
   padding: 15px;
-}
-
-.web-is__title {
-  font-size: 24px;
-  line-height: 30px;
 }
 
 .web-is__image {
@@ -318,19 +294,8 @@ ul {
   color: #ffffff;
 }
 
-.course-for__list {
-  margin: 0 auto;
-}
-
-.learning__wrapper {
+.learning {
   padding: 15px;
-}
-
-.learning__title {
-  font-size: 30px;
-  margin: 0;
-  margin-bottom: 15px;
-  text-align: center;
 }
 
 .learning__list {
@@ -343,7 +308,7 @@ ul {
 .learning__item {
   position: relative;
   min-height: 60px;
-  margin-left: 30px;
+  margin-left: 20px;
   margin-bottom: 30px;
   line-height: 20px;
   /* counter-increment: counter; */
@@ -421,7 +386,6 @@ ul {
 
 .meet {
   padding: 15px;
-  margin: 0 auto;
 }
 
 .meet__description {
@@ -488,10 +452,6 @@ ul {
 
 .course-join {
   padding: 15px;
-}
-
-.course-join__list {
-  margin: 0 auto;
 }
 
 .buy {
@@ -647,11 +607,7 @@ ul {
 .contacts__title {
   position: relative;
   display: inline-block;
-  padding: 0 31px 0 20px;
-  margin: 0;
-  font-size: 40px;
-  line-height: 58px;
-  text-align: left;
+  padding: 5px 31px 5px 20px;
   color: #ffffff;
   background-color: #6600ff;
   border-radius: 0 6px 6px 0;
@@ -858,17 +814,18 @@ ul {
 
 @media (min-width: 768px) {
   .list {
-    width: 100%;
     max-width: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    box-sizing: border-box;
-    padding: 0;
   }
 
   .list__item {
     width: 250px;
+    margin-right: 50px;
+  }
+
+  .nav {
+    padding: 0 35px;
   }
 
   .nav__wrapper {
@@ -883,7 +840,7 @@ ul {
   .nav__list {
     flex-direction: row;
     justify-content: space-between;
-    min-width: 500px;
+    min-width: 440px;
   }
 
   .nav__item {
@@ -903,7 +860,7 @@ ul {
   }
 
   .header__wrapper {
-    padding: 55px;
+    padding: 55px 35px;
   }
 
   .header__title {
@@ -918,8 +875,20 @@ ul {
     margin-bottom: 26px;
   }
 
+  .description {
+    padding: 10px 35px;
+  }
+
+  .roadmap {
+    padding: 35px;
+  }
+
   .roadmap__description {
     margin-bottom: 118px;
+  }
+
+  .technology {
+    padding: 35px;
   }
 
   .technology__list {
@@ -930,25 +899,51 @@ ul {
     margin-right: 40px;
   }
 
+  .web-is {
+    padding: 35px;
+  }
+
+  .course-for {
+    padding: 35px;
+  }
+
+  .learning {
+    padding: 35px;
+  }
+
   .learning__title {
     margin-bottom: 50px;
   }
 
   .learning__list {
     max-width: none;
-    width: 700px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
   }
 
   .learning__item {
     width: 250px;
-    margin: 0 10px 35px;
+    margin: 0 59px 50px 20px;
+  }
+
+  .certificate {
+    padding: 35px;
+  }
+
+  .meet {
+    padding: 35px;
+  }
+
+  .mentor {
+    padding: 35px;
+  }
+
+  .course-join {
+    padding: 35px;
   }
 
   .buy {
-    padding: 85px;
+    padding: 35px;
   }
 
   .buy__wrapper {
@@ -983,6 +978,18 @@ ul {
     padding: 12px 14px;
     letter-spacing: .9px;
   }
+
+  .faq {
+    padding: 35px;
+  }
+
+  .contacts {
+    padding: 35px;
+  }
+
+  .footer {
+    padding: 35px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -991,27 +998,27 @@ ul {
   }
 
   .list__item {
-    max-width: 200px;
-    margin-right: 75px;
+    max-width: 180px;
+    margin-right: 30px;
   }
 
   .list__item-title {
     width: 60px;
   }
 
-  .list__item__description {
-    font-size: 20px;
-    line-height: 28px;
+  .list__item-description {
+    line-height: 23px;
   }
 
   .nav__wrapper {
     max-width: 1204px;
-    padding: 15px 55px;
+    padding: 15px 0;
     justify-content: flex-start;
   }
   
   .nav__list {
     margin-left: 71.04px;
+    min-width: 490px;
   }
   
   .nav__register {
@@ -1028,8 +1035,7 @@ ul {
     max-width: 1060px;
     margin: 0 auto;
     background-size: 465px;
-    padding-top: 170px;
-    padding-bottom: 67px;
+    padding: 100px 88px 67px;
   }
   
   .header__description {
@@ -1046,6 +1052,10 @@ ul {
     line-height: 29px;
   }
   
+  .description {
+    padding: 10px 67px;
+  }
+
   .description__wrapper {
     max-width: 1280px;
   }
@@ -1055,7 +1065,7 @@ ul {
     background-repeat: no-repeat;
     background-position: left top, left bottom;
     background-size: 17%;
-    padding: 116px 0 62px 88px;
+    padding: 116px 88px 62px;
     margin-bottom: 39px;
   }
 
@@ -1073,6 +1083,7 @@ ul {
     background-repeat: no-repeat;
     background-position: top left, bottom right;
     background-size: 15%, 30%;
+    padding: 35px 168px;
   }
 
   .technology__wrapper {
@@ -1093,59 +1104,38 @@ ul {
     width: 148px;
   }
 
-  .web-is__title {
-    font-size: 40px;
-    line-height: 44px;
+  .web-is {
+    padding: 35px 88px;
   }
 
   .course-for {
-    padding-left: 150px;
+    padding: 35px 88px;
     background-image: url('../img/skillup/triangles-course-for-left.png'), url('../img/skillup/triangles-course-for-right.png');
     background-repeat: no-repeat;
     background-position: 0% 100%, 100% -40px;
-    background-size: 12%, 15%;
+    background-size: 11%, 15%;
   }
 
-  .course-for__title {
-    font-size: 40px;
-    line-height: 33px;
-  }
-
-  .learning__wrapper {
-    max-width: 988px;
-    margin: 0 auto;
-    padding: 74px 150px 0;
-  }
-
-  .learning__title {
-    font-size: 40px;
-    line-height: 33px;
-    text-align: left;
-  }
-
-  .learning__list {
-    width: 749px;
+  .learning {
+    padding: 35px 88px;
   }
 
   .learning__item {
-    margin: 0;
+    width: 290px;
     margin-bottom: 66px;
-    font-size: 20px;
-    line-height: 28px;
-  }
-
-  .learning__item::before {
-    /* font-size: 110px; */
-    top: 40px;
-    left: -80px;
+    line-height: 23px;
   }
 
   .learning__item:nth-child(1n+10)::before {
     left: -103px;
   }
 
+  .certificate {
+    padding: 35px 88px;
+  }
+
   .meet {
-    padding: 93px 0;
+    padding: 93px 88px;
     background-image: url('../img/skillup/triangles-meet-left.png'), url('../img/skillup/triangles-meet-right.png');
     background-repeat: no-repeat;
     background-position: 0% 100%, 95.7% 100%;
@@ -1153,8 +1143,6 @@ ul {
   }
 
   .meet__description {
-    width: 62.84375%;
-    margin: 0 auto;
     letter-spacing: .3px;
   }
 
@@ -1171,7 +1159,7 @@ ul {
   .mentor {
     display: flex;
     justify-content: center;
-    padding: 90px 0;
+    padding: 35px 35px 35px 88px;
   }
 
   .mentor__wrapper {
@@ -1179,17 +1167,20 @@ ul {
     max-width: 1228px;
   }
 
+  .mentor__description-container {
+    margin-right: 15px;
+  }
+
   .course-join {
-    padding-left: 150px;
+    padding: 35px 88px;
   }
 
   .course-join__title {
-    font-size: 40px;
-    line-height: 33px;
+    margin-bottom: 50px;
   }
 
   .buy {
-    padding: 119px 0 156px;
+    padding: 35px 88px;
     background-image: url('../img/skillup/triangles-buy-left.png'), url('../img/skillup/triangles-buy-right.png');
     background-repeat: no-repeat;
     background-position: left bottom, right bottom;
@@ -1198,20 +1189,24 @@ ul {
 
   .faq {
     display: flex;
-    padding: 70px;
+    padding: 35px 88px;
   }
 
   .faq__title {
     margin: 0;
-    margin-right: 40px;
+    margin-right: 20px;
   }
   
   .contacts {
-    padding-top: 39px;
+    padding: 35px 88px;
   }
   
   .contacts__title-container {
     margin-bottom: 27px;
+  }
+
+  .contacts__title {
+    padding: 15px 31px 15px 20px;
   }
 
   .contacts__wrapper {
@@ -1221,10 +1216,7 @@ ul {
 
   .contacts__description {
     width: 300px;
-    margin-left: 20px;
     margin-right: 60px;
-    font-size: 40px;
-    line-height: 38px;
   }
 
   .contacts__list {
