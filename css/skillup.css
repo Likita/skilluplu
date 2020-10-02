@@ -247,6 +247,7 @@ ul {
 
 .technology__list {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -711,6 +712,10 @@ ul {
   background-image: url('../img/skillup/icon-youtube.svg');
 }
 
+.footer__social-link--twitter {
+  background-image: url('../img/skillup/icon-twitter.svg');
+}
+
 .popup {
   position: fixed;
   padding-top: 60px;
@@ -1113,6 +1118,14 @@ ul {
     background-size: 11%, 15%;
   }
 
+  .course-for__list {
+    justify-content: space-around;
+  }
+
+  .course-for .list__item {
+    margin-right: 90px;
+  }
+
   .learning {
     padding: 35px 88px;
   }
@@ -1129,13 +1142,18 @@ ul {
 
   .certificate {
     padding: 35px 88px;
+    background-image: url('../img/skillup/triangles-certificate-left.png'), url('../img/skillup/triangles-certificate-right.png');
+    background-repeat: no-repeat;
+    background-size: 294px, 220px;
+    background-position: left bottom, right bottom;
   }
 
   .meet {
     padding: 93px 88px;
     background-image: url('../img/skillup/triangles-meet-left.png'), url('../img/skillup/triangles-meet-right.png');
     background-repeat: no-repeat;
-    background-position: 0% 100%, 95.7% 100%;
+    /* background-position: 0% 100.6%, 95.7% 100.6%; */
+    background-position: 0 0, 100% 102%;
     background-size: 20.8%, 51.7%;
   }
 
@@ -1178,10 +1196,16 @@ ul {
 
   .buy {
     padding: 35px 88px;
-    background-image: url('../img/skillup/triangles-buy-left.png'), url('../img/skillup/triangles-buy-right.png');
+    background-image: url('../img/skillup/triangles-buy-left-top.png'), 
+                      url('../img/skillup/triangles-buy-right-top.png'), 
+                      url('../img/skillup/triangles-buy-right-bottom.png'),
+                      url('../img/skillup/triangles-buy-left-bottom.png');
     background-repeat: no-repeat;
-    background-position: left bottom, right bottom;
-    background-size: 50%;
+    background-position:  0 0, 
+                          calc(100% - 190px) 0, 
+                          100% 100%, 
+                          0 100%;
+    background-size: auto;
   }
 
   .faq {
@@ -1365,6 +1389,7 @@ ul {
   .learning__wrapper {
     max-width: 1208px;
     width: 1208px;
+    margin: 0 auto;
     padding: 74px 0 0;
   }
 
@@ -1408,12 +1433,14 @@ ul {
     margin: 0 auto;
   }
 
+  .learning {
+    padding-bottom: 13px;
+  }
+
   .certificate {
     padding: 85px;
-    background-image: url('../img/skillup/triangles-certificate-left.png'), url('../img/skillup/triangles-certificate-right.png');
-    background-repeat: no-repeat;
-    background-position: 0 0, 80.5% 92.6%;
-    padding-bottom: 15px;
+    padding-top: 22px;
+    background-position: -1px 0, 80.5% 92.6%;
   }
 
   .certificate__container {
@@ -1436,6 +1463,7 @@ ul {
 
   .meet {
     padding: 35px 118px;
+    background-size: auto;
   }
 
   .meet__description {
@@ -1445,7 +1473,7 @@ ul {
   .mentor {
     background-image: url('../img/skillup/triangles-mentor-left.png'), url('../img/skillup/triangles-mentor-right.png');
     background-repeat: no-repeat;
-    background-position: 0 0, 100% 0;
+    background-position: 0 0, calc(100% + 38px) 0;
     background-size: 12%, auto;
     padding: 55px 0 123px;
   }
@@ -1471,8 +1499,16 @@ ul {
 
   .course-join {
     padding: 35px 118px;
+    background-image: url('../img/skillup/triangles-course-join-left.png'), url('../img/skillup/triangles-course-join-right.png');
+    background-repeat: no-repeat;
+    background-position: left top, right top;
   }
 
+  .course-join__wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  
   .buy {
     background-size: auto;
   }
@@ -1535,10 +1571,13 @@ ul {
   .web-is,
   .course-for,
   .learning,
-  .meet,
   .course-join,
   .contacts {
     padding: 35px 356px;
+  }
+
+  .meet {
+    padding: 66px 356px;
   }
 
   .mentor {
