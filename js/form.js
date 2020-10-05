@@ -3,7 +3,6 @@ const form = document.querySelector('.subscription-form'),
 
 form.addEventListener('submit', function(e) {
   e.preventDefault();
-  console.log(1);
   const xmlhttp = new XMLHttpRequest();
   console.log(form.email.value)
   const email = form.email.value
