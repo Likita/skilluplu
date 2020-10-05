@@ -130,20 +130,39 @@ ul {
   padding: 0 34px;
   outline: none;
   box-shadow: 0 4px 5px rgba(102, 0, 255, 0.15);
-  transition: box-shadow .2s;
+  transition: all .2s;
   cursor: pointer;
 }
 
 .nav__register:hover {
-  box-shadow: 0 6px 15px rgba(102, 0, 255, 0.3);
+  background-color: #ff9900;
+  border-color: #ff9900;
+  color: #ffffff;
+}
+
+.nav__register:focus {
+  border-color: blue;
 }
 
 .nav__register:active {
-  box-shadow: 0 1px 5px rgba(102, 0, 255, 0.15);
+  transform: scale(.95);
+  background-color: #ff9900;
+  border-color: #ff9900;
+  color: #ffffff;
 }
 
 .header__wrapper {
   padding: 15px;
+}
+
+.header__course-format {
+  background-color: #ff9900;
+  max-width: 90px;
+  padding: 7px 5px;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .header__description span {
@@ -184,7 +203,7 @@ ul {
   height: 54px;
   background-color: #ff9900;
   border-radius: 27px;
-  border: none;
+  border: 2px solid #ff9900;
   font-size: 15px;
   line-height: 20px;
   font-weight: 700;
@@ -194,16 +213,22 @@ ul {
   margin: 0 auto;
   display: block;
   box-shadow: 0 4px 5px rgba(255, 153, 0, 0.15);
-  transition: box-shadow .2s;
+  transition: all .2s;
   cursor: pointer;
 }
 
 .header__register:hover {
-  box-shadow: 0 6px 15px rgba(255, 153, 0, 0.3);
+  background-color: #6600ff;
+  border-color: #6600ff;
 }
 
 .header__register:active {
-  box-shadow: 0 1px 5px rgba(255, 153, 0, 0.15);
+  background-color: #6600ff;
+  transform: scale(.95);
+}
+
+.header__register:focus {
+  border-color: blue;
 }
 
 .description {
@@ -478,9 +503,8 @@ ul {
 }
 
 .buy__old-button {
-    background-color: #6600ff;
+    background-color: #ffffff;
     border-radius: 10px;
-    color: #ffffff;
     font-size: 19px;
     line-height: 37px;
     font-weight: bold;
@@ -501,7 +525,7 @@ ul {
   display: block;
   width: 120%;
   height: 3px;
-  background-color: white;
+  background-color: #6600ff;
   transform: rotate(-45deg);
 }
 
@@ -518,7 +542,7 @@ ul {
 }
 
 .buy__current-button {
-  border: none;
+  border: 2px solid #ffffff;
   background-color: #ffffff;
   color: #ff9900;
   font-size: 16px;
@@ -529,16 +553,23 @@ ul {
   outline: 0;
   padding: 14px;
   box-shadow: 0 4px 5px rgba(102, 0, 255, 0.15);
-  transition: box-shadow .2s;
+  transition: all .2s;
   cursor: pointer;
 }
 
 .buy__current-button:hover {
-  box-shadow: 0 6px 15px rgba(102, 0, 255, 0.3);
+  background-color: #6600ff;
+  color: #ffffff;
 }
 
 .buy__current-button:active {
-  box-shadow: 0 1px 5px rgba(102, 0, 255, 0.15);
+  background-color: #6600ff;
+  color: #ffffff;
+  transform: scale(.95);
+}
+
+.buy__current-button:focus {
+  border-color: blue;
 }
 
 .faq {
@@ -794,15 +825,22 @@ ul {
   cursor: pointer;
   background-color: #ffffff;
   box-shadow: 0px 4px 17px rgba(137, 62, 255, 0.2);
-  transition: box-shadow .3s;
+  transition: all .3s;
 }
 
 .popup__button:hover {
-  box-shadow: 0px 4px 20px 10px rgba(137, 62, 255, 0.2);
+  background-color: #6600ff;
+  color: #ffffff;
 }
 
 .popup__button:active {
-  box-shadow: 0px 1px 20px 2px rgba(137, 62, 255, 0.2);
+  background-color: #6600ff;
+  color: #ffffff;
+  transform: scale(.95);
+}
+
+.popup__button:focus {
+  border-color: blue;
 }
 
 .popup__close {
@@ -1081,10 +1119,10 @@ ul {
   }
 
   .technology {
-    background-image: url('../img/skillup/triangles-technology-left.png'), url('../img/skillup/triangles-technology-right.png');
+    background-image: url('../img/skillup/triangles-technology-left-top.png'), url('../img/skillup/triangles-technology-right.png'), url('../img/skillup/triangles-technology-left-bottom.png');
     background-repeat: no-repeat;
-    background-position: top left, bottom right;
-    background-size: 15%, 30%;
+    background-position: left top, right bottom, left bottom;
+    background-size: 15%, 30%, 12%;
     padding: 35px 168px;
   }
 
@@ -1108,14 +1146,18 @@ ul {
 
   .web-is {
     padding: 35px 88px;
+    background-image: url('../img/skillup/triangles-web-is-left-top.png'), url('../img/skillup/triangles-web-is-right.png'), url('../img/skillup/triangles-web-is-left-bottom.png');
+    background-repeat: no-repeat;
+    background-position: 16px 0, 100% 0, 0 100%;
+    background-size: 12%, 30%, 30%;
   }
 
   .course-for {
     padding: 35px 88px;
     background-image: url('../img/skillup/triangles-course-for-left.png'), url('../img/skillup/triangles-course-for-right.png');
     background-repeat: no-repeat;
-    background-position: 0% 100%, 100% -40px;
-    background-size: 11%, 15%;
+    background-position: 0% 100%, 100% -99px;
+    background-size: 11%, auto;
   }
 
   .course-for__list {
@@ -1333,8 +1375,8 @@ ul {
   }
 
   .technology {
-    background-position: top left, 87% 100%;
-    background-size: 18%, 22%;
+    background-position: top left, right bottom, left bottom;
+    background-size: 18%, 30%, 12%;
     padding: 35px 118px 70px;
   }
 
@@ -1376,6 +1418,7 @@ ul {
 
   .web-is {
     padding: 35px 118px;
+    background-position: 22px 0, 100% 0, 0 100%;
   }
 
   .course-for {
@@ -1566,6 +1609,16 @@ ul {
 
   .technology {
     padding: 35px 356px 70px;
+    background-size: auto, auto, auto;
+  }
+
+  .web-is {
+    background-size: auto, auto, auto;
+    background-position: 37px 0, 100% 0, 0 100%;
+  }
+
+  .course-for {
+    background-size: auto, auto;
   }
 
   .web-is,
