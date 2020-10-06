@@ -126,14 +126,11 @@ ul {
   cursor: pointer;
 }
 
-.nav__register:hover {
+.nav__register:hover,
+.nav__register:focus {
   background-color: #ff9900;
   border-color: #ff9900;
   color: #ffffff;
-}
-
-.nav__register:focus {
-  border-color: blue;
 }
 
 .nav__register:active {
@@ -210,7 +207,8 @@ ul {
   cursor: pointer;
 }
 
-.header__register:hover {
+.header__register:hover,
+.header__register:focus {
   background-color: #6600ff;
   border-color: #6600ff;
 }
@@ -218,10 +216,6 @@ ul {
 .header__register:active {
   background-color: #6600ff;
   transform: scale(0.95);
-}
-
-.header__register:focus {
-  border-color: blue;
 }
 
 .description {
@@ -551,7 +545,8 @@ ul {
   cursor: pointer;
 }
 
-.buy__current-button:hover {
+.buy__current-button:hover,
+.buy__current-button:focus {
   background-color: #6600ff;
   color: #ffffff;
 }
@@ -560,10 +555,6 @@ ul {
   background-color: #6600ff;
   color: #ffffff;
   transform: scale(0.95);
-}
-
-.buy__current-button:focus {
-  border-color: blue;
 }
 
 .faq {
@@ -741,7 +732,103 @@ ul {
 }
 
 .footer__social-link--facebook {
-  background-image: url("../img/skillup/icon-facebook.svg");
+  background-image: url('../img/skillup/icon-facebook.svg');
+}
+
+.footer__social-link--instagram {
+  background-image: url('../img/skillup/icon-instagram.svg');
+}
+
+.footer__social-link--youtube {
+  background-image: url('../img/skillup/icon-youtube.svg');
+}
+
+.footer__social-link--twitter {
+  background-image: url('../img/skillup/icon-twitter.svg');
+}
+
+.popup {
+  position: fixed;
+  padding-top: 60px;
+  padding-bottom: 55px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  max-width: 1017px;
+  min-height: 360px;
+  overflow-y: auto;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.popup__title {
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: .2px;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.popup__description {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 66px;
+}
+
+.popup__form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup__input {
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid lightgrey;
+  padding-bottom: 6px;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 40px;
+  outline: none;
+  transition: border .3s;
+}
+
+.popup__input::placeholder {
+  color: lightgrey;
+}
+
+.popup__input:hover,
+.popup__input:focus {
+  border-color: #6600ff;
+}
+
+.popup__button {
+  width: 307px;
+  height: 54px;
+  border-radius: 27px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6600ff;
+  text-transform: uppercase;
+  font-weight: bold;
+  outline: none;
+  border: 2px solid #6600ff;
+  cursor: pointer;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 17px rgba(137, 62, 255, 0.2);
+  transition: all .3s;
+}
+
+.popup__button:hover,
+.popup__button:focus {
+  background-color: #6600ff;
+  color: #ffffff;
 }
 
 .footer__social-link--instagram {
@@ -754,6 +841,18 @@ ul {
 
 .footer__social-link--twitter {
   background-image: url("../img/skillup/icon-twitter.svg");
+}
+
+.popup__close {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
