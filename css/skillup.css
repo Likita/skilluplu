@@ -65,12 +65,21 @@ ul {
   background-color: #ff9900;
 }
 
-.logo {
-  width: 100%;
+.nav__logo {
+  position: absolute;
+  left: 15px;
+  transform: translateX(0) translateY(0);
+  transition: all .2s;
+}
+
+.nav__wrapper--open-menu .nav__logo {
+  left: 50%;
+  transform: translateX(-50%) translateY(25px);
 }
 
 .nav {
   background-color: #ffffff;
+  padding-top: 3px;
 }
 
 .nav__wrapper {
@@ -82,27 +91,87 @@ ul {
 }
 
 .nav__container {
-  margin-bottom: 15px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
 }
 
-.nav__logo {
-  width: 70px;
-  height: 49px;
+.nav__wrapper--open-menu .nav__container {
+  margin-bottom: 79px;
+}
+
+.nav__mobile-menu,
+.nav__mobile-menu::before,
+.nav__mobile-menu::after {
+  display: block;
+  background-color: #ff9900;
+  width: 32px;
+  height: 3px;
+  border-radius: 1px;
+  transition: transform .2s;
+}
+
+.nav__mobile-menu {
+  position: relative;
+  border: none;
+  font-size: 0;
+  outline: none;
+  margin: 20px 14px;
+  transition: background-color .2s;
+}
+
+.nav__mobile-menu::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0;
+}
+
+.nav__mobile-menu::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 0;
+}
+
+.nav__wrapper--open-menu .nav__mobile-menu {
+  background-color: inherit;
+}
+
+.nav__wrapper--open-menu .nav__mobile-menu::before {
+  transform: rotate(43deg) translate(10px, -2px) rotateY(45deg)
+}
+
+.nav__wrapper--open-menu .nav__mobile-menu::after {
+  transform: rotate(-43deg) translate(10px, 2px) rotateY(45deg)
 }
 
 .nav__list {
-  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: all .2s;
+}
+
+.nav__wrapper--open-menu .nav__list {
+  margin-bottom: 55px;
+  height: 210px;
+  opacity: 1;
 }
 
 .nav__item {
-  margin-bottom: 10px;
+  margin: 19px 0;
 }
 
 .nav__item-link {
   color: #000000;
+  font-size: 19px;
+  line-height: 19px;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -112,11 +181,13 @@ ul {
 }
 
 .nav__register {
+  overflow: hidden;
+  opacity: 0;
   border: 2px solid #6600ff;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #6600ff;
-  min-height: 45px;
+  height: 0;
   border-radius: 25px;
   background-color: transparent;
   padding: 0 34px;
@@ -138,6 +209,11 @@ ul {
   background-color: #ff9900;
   border-color: #ff9900;
   color: #ffffff;
+}
+
+.nav__wrapper--open-menu .nav__register {
+  opacity: 1;
+  height: 45px;
 }
 
 .header__wrapper {
@@ -367,7 +443,7 @@ ul {
 }
 
 .learning__item:nth-child(3n + 2)::before {
-  color: #ff7a00;
+  color: #ff9900;
 }
 
 .learning__item:nth-child(3n + 3)::before {
@@ -760,6 +836,10 @@ ul {
   overflow-y: auto;
   border-radius: 10px;
   background-color: #ffffff;
+  background-image: url('../img/skillup/triangle-mobile-popup-left.png'), url('../img/skillup/triangle-mobile-popup-right.png');
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  box-shadow: 0px 5px 50px 1px rgba(102, 0, 255, 0.1);
 }
 
 .popup__title {
@@ -774,6 +854,7 @@ ul {
   width: 90%;
   margin: 0 auto;
   font-size: 18px;
+  line-height: 28px;
   text-align: center;
   margin-bottom: 66px;
 }
@@ -877,22 +958,51 @@ ul {
   }
 
   .nav__container {
+    width: auto;
+  }
+
+  .nav__wrapper--open-menu .nav__container {
     margin-bottom: 0;
+  }
+
+  .nav__mobile-menu {
+    display: none;
+  }
+
+  .nav__logo {
+    position: static;
+  }
+
+  .nav__wrapper--open-menu .nav__logo {
+    transform: none;
   }
 
   .nav__list {
     flex-direction: row;
     justify-content: space-between;
     min-width: 440px;
+    opacity: 1;
+    min-height: 50px;
+  }
+
+  .nav__wrapper--open-menu .nav__list {
+    height: auto;
+    margin-bottom: 0;
   }
 
   .nav__item {
-    margin-right: 2%;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .nav__item:last-child {
     margin-right: 0;
+  }
+
+  .nav__register {
+    opacity: 1;
+    height: 46px;
+    padding: 0 10px;
+    max-width: 150px;
   }
 
   .header {
@@ -1067,6 +1177,7 @@ ul {
 
   .nav__register {
     margin-left: auto;
+    padding: 0 35px;
   }
 
   .header {

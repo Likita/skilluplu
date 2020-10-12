@@ -73,4 +73,12 @@ closePopup.addEventListener('click', () => {
     body.classList.remove('body__overlay')
 })
 
+// nav burger
+const burgerMenu = document.querySelector('.nav__mobile-menu')
+const navWrapper = document.querySelector('.nav__wrapper')
+
+burgerMenu.addEventListener('click', () => {
+  navWrapper.classList.toggle('nav__wrapper--open-menu')
+})
+
 
