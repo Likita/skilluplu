@@ -95,7 +95,6 @@ ul {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0 15px;
 }
 
 .nav__wrapper--open-menu .nav__container {
@@ -216,6 +215,12 @@ ul {
   height: 45px;
 }
 
+.header {
+  background-image: url('../img/skillup/triangle-mobile-header-right-middle.png'), url('../img/skillup/triangle-mobile-header-right-bottom.png'), url("../img/skillup/header-picture-mobile.png");
+  background-repeat: no-repeat;
+  background-position: right center, right bottom, right 180px;
+}
+
 .header__wrapper {
   padding: 15px;
 }
@@ -231,6 +236,12 @@ ul {
   border-radius: 3px;
 }
 
+.header__description {
+  width: calc(100% - 130px);
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
 .header__description span {
   color: #6600ff;
 }
@@ -240,7 +251,7 @@ ul {
 }
 
 .header__list-item {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .header__list-item::before {
@@ -314,15 +325,28 @@ ul {
 
 .roadmap {
   background-color: #ffffff;
-  padding: 15px;
+  padding: 65px 15px 15px;
+  background-image: url('../img/skillup/triangle-mobile-roadmap-right-top.png');
+  background-repeat: no-repeat;
+  background-position: 100% -44px;
 }
 
 .roadmap__description {
+  position: relative;
   max-width: 1106px;
-  padding-left: 26px;
   font-size: 22px;
   line-height: 28px;
-  border-left: 4px solid #6600ff;
+}
+
+.roadmap__description::before {
+  content: '';
+  position: absolute;
+  top: -25px;
+  left: 0;
+  display: block;
+  width: 110px;
+  height: 4px;
+  background-color: #6600ff;
 }
 
 .roadmap__roadmap {
@@ -332,6 +356,9 @@ ul {
 .technology {
   padding: 15px;
   background-color: #ffffff;
+  background-image: url('../img/skillup/triangle-mobile-technology-right-bottom.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .technology__list {
@@ -369,6 +396,9 @@ ul {
 .web-is {
   margin: 0 auto;
   padding: 15px;
+  background-image: url('../img/skillup/triangle-mobile-web-is-right-top.png');
+  background-repeat: no-repeat;
+  background-position: right top;
 }
 
 .web-is__image {
@@ -452,6 +482,9 @@ ul {
 
 .certificate {
   padding: 15px;
+  background-image: url('../img/skillup/triangle-mobile-certificate-left-middle.png');
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 
 .certificate__container {
@@ -462,20 +495,36 @@ ul {
 .certificate__image {
   width: 100%;
   display: block;
+  margin-bottom: 40px;
 }
 
 .certificate__description {
-  border-left: 5px solid #6600ff;
+  position: relative;
   border-radius: 1px;
-  padding-left: 14px;
   width: 248px;
   margin: 0 auto;
   font-size: 20px;
   line-height: 28px;
 }
 
+.certificate__description::before {
+  content: '';
+  positioN: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 110px;
+  height: 4px;
+  background-color: #6600ff;
+  text-align: center;
+}
+
 .meet {
-  padding: 15px;
+  padding: 15px 15px 45px;
+  background-image: url('../img/skillup/triangle-mobile-meet-right-bottom.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .meet__description {
@@ -498,6 +547,9 @@ ul {
   padding: 15px;
   background-color: #0398df;
   color: #ffffff;
+  background-image: url('../img/skillup/triangle-mobile-mentor-right-top.png'), url('../img/skillup/triangle-mobile-mentor-right-bottom.png');
+  background-repeat: no-repeat;
+  background-position: right top, right bottom;
 }
 
 .mentor__title {
@@ -771,6 +823,7 @@ ul {
 }
 
 .footer__logo {
+  text-align: center;
   width: 150px;
   margin-bottom: 20px;
 }
@@ -1003,13 +1056,6 @@ ul {
     height: 46px;
     padding: 0 10px;
     max-width: 150px;
-  }
-
-  .header {
-    background-image: url("../img/skillup/header-picture.png");
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 30%;
   }
 
   .header__wrapper {
