@@ -47,6 +47,7 @@ ul {
 
 .list {
   max-width: 280px;
+  text-align: center;
 }
 
 .list__item-title {
@@ -1056,6 +1057,11 @@ ul {
     height: 46px;
     padding: 0 10px;
     max-width: 150px;
+  }
+
+  .header {
+    background-image: url("../img/skillup/header-picture.png"), url('../img/skillup/triangle-mobile-header-right-bottom.png');
+    background-size: 270px;
   }
 
   .header__wrapper {
