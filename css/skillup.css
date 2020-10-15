@@ -1090,6 +1090,12 @@ ul {
 
   .roadmap__description {
     margin-bottom: 118px;
+    padding-left: 25px;
+    border-left: 4px solid #6600ff;
+  }
+
+  .roadmap__description::before {
+    display: none;
   }
 
   .technology {
