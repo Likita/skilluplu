@@ -364,13 +364,18 @@ ul {
 
 .technology__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
   flex-wrap: wrap;
+}
+
+.technology__item {
+  width: 50%;
+  padding-right: 10px;
+  box-sizing: border-box;
 }
 
 .technology__item-title {
   position: relative;
-  width: 250px;
   padding-bottom: 7px;
   font-size: 24px;
   line-height: 21px;
@@ -389,7 +394,6 @@ ul {
 }
 
 .technology__item-description {
-  width: 250px;
   font-size: 17px;
   line-height: 21px;
 }
@@ -1107,7 +1111,7 @@ ul {
   }
 
   .technology__item {
-    margin-right: 40px;
+    padding-right: 90px;
   }
 
   .web-is {
@@ -1306,6 +1310,10 @@ ul {
   .technology__list {
     justify-content: space-between;
     margin: 0;
+  }
+
+  .technology__item {
+    width: 33%;
   }
 
   .technology__item-title {
@@ -1550,7 +1558,6 @@ ul {
   }
 
   .technology__item {
-    margin-right: 32px;
     margin-bottom: 17px;
   }
 
