@@ -47,6 +47,7 @@ ul {
 
 .list {
   max-width: 280px;
+  text-align: center;
 }
 
 .list__item-title {
@@ -65,12 +66,21 @@ ul {
   background-color: #ff9900;
 }
 
-.logo {
-  width: 100%;
+.nav__logo {
+  position: absolute;
+  left: 15px;
+  transform: translateX(0) translateY(0);
+  transition: all .2s;
+}
+
+.nav__wrapper--open-menu .nav__logo {
+  left: 50%;
+  transform: translateX(-50%) translateY(25px);
 }
 
 .nav {
   background-color: #ffffff;
+  padding-top: 3px;
 }
 
 .nav__wrapper {
@@ -82,27 +92,86 @@ ul {
 }
 
 .nav__container {
-  margin-bottom: 15px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.nav__logo {
-  width: 70px;
-  height: 49px;
+.nav__wrapper--open-menu .nav__container {
+  margin-bottom: 79px;
+}
+
+.nav__mobile-menu,
+.nav__mobile-menu::before,
+.nav__mobile-menu::after {
+  display: block;
+  background-color: #ff9900;
+  width: 32px;
+  height: 3px;
+  border-radius: 1px;
+  transition: transform .2s;
+}
+
+.nav__mobile-menu {
+  position: relative;
+  border: none;
+  font-size: 0;
+  outline: none;
+  margin: 20px 14px;
+  transition: background-color .2s;
+}
+
+.nav__mobile-menu::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0;
+}
+
+.nav__mobile-menu::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 0;
+}
+
+.nav__wrapper--open-menu .nav__mobile-menu {
+  background-color: inherit;
+}
+
+.nav__wrapper--open-menu .nav__mobile-menu::before {
+  transform: rotate(43deg) translate(10px, -2px) rotateY(45deg)
+}
+
+.nav__wrapper--open-menu .nav__mobile-menu::after {
+  transform: rotate(-43deg) translate(10px, 2px) rotateY(45deg)
 }
 
 .nav__list {
-  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: all .2s;
+}
+
+.nav__wrapper--open-menu .nav__list {
+  margin-bottom: 55px;
+  height: 210px;
+  opacity: 1;
 }
 
 .nav__item {
-  margin-bottom: 10px;
+  margin: 19px 0;
 }
 
 .nav__item-link {
   color: #000000;
+  font-size: 19px;
+  line-height: 19px;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -112,11 +181,13 @@ ul {
 }
 
 .nav__register {
+  overflow: hidden;
+  opacity: 0;
   border: 2px solid #6600ff;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #6600ff;
-  min-height: 45px;
+  height: 0;
   border-radius: 25px;
   background-color: transparent;
   padding: 0 34px;
@@ -126,14 +197,11 @@ ul {
   cursor: pointer;
 }
 
-.nav__register:hover {
+.nav__register:hover,
+.nav__register:focus {
   background-color: #ff9900;
   border-color: #ff9900;
   color: #ffffff;
-}
-
-.nav__register:focus {
-  border-color: blue;
 }
 
 .nav__register:active {
@@ -141,6 +209,17 @@ ul {
   background-color: #ff9900;
   border-color: #ff9900;
   color: #ffffff;
+}
+
+.nav__wrapper--open-menu .nav__register {
+  opacity: 1;
+  height: 45px;
+}
+
+.header {
+  background-image: url('../img/skillup/triangle-mobile-header-right-middle.png'), url('../img/skillup/triangle-mobile-header-right-bottom.png'), url("../img/skillup/header-picture-mobile.png");
+  background-repeat: no-repeat;
+  background-position: right center, right bottom, right 180px;
 }
 
 .header__wrapper {
@@ -158,6 +237,12 @@ ul {
   border-radius: 3px;
 }
 
+.header__description {
+  width: calc(100% - 130px);
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
 .header__description span {
   color: #6600ff;
 }
@@ -167,7 +252,7 @@ ul {
 }
 
 .header__list-item {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .header__list-item::before {
@@ -210,7 +295,8 @@ ul {
   cursor: pointer;
 }
 
-.header__register:hover {
+.header__register:hover,
+.header__register:focus {
   background-color: #6600ff;
   border-color: #6600ff;
 }
@@ -218,10 +304,6 @@ ul {
 .header__register:active {
   background-color: #6600ff;
   transform: scale(0.95);
-}
-
-.header__register:focus {
-  border-color: blue;
 }
 
 .description {
@@ -244,15 +326,28 @@ ul {
 
 .roadmap {
   background-color: #ffffff;
-  padding: 15px;
+  padding: 65px 15px 15px;
+  background-image: url('../img/skillup/triangle-mobile-roadmap-right-top.png');
+  background-repeat: no-repeat;
+  background-position: 100% -44px;
 }
 
 .roadmap__description {
+  position: relative;
   max-width: 1106px;
-  padding-left: 26px;
   font-size: 22px;
   line-height: 28px;
-  border-left: 4px solid #6600ff;
+}
+
+.roadmap__description::before {
+  content: '';
+  position: absolute;
+  top: -25px;
+  left: 0;
+  display: block;
+  width: 110px;
+  height: 4px;
+  background-color: #6600ff;
 }
 
 .roadmap__roadmap {
@@ -262,17 +357,25 @@ ul {
 .technology {
   padding: 15px;
   background-color: #ffffff;
+  background-image: url('../img/skillup/triangle-mobile-technology-right-bottom.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .technology__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
   flex-wrap: wrap;
+}
+
+.technology__item {
+  width: 50%;
+  padding-right: 10px;
+  box-sizing: border-box;
 }
 
 .technology__item-title {
   position: relative;
-  width: 250px;
   padding-bottom: 7px;
   font-size: 24px;
   line-height: 21px;
@@ -291,7 +394,6 @@ ul {
 }
 
 .technology__item-description {
-  width: 250px;
   font-size: 17px;
   line-height: 21px;
 }
@@ -299,6 +401,9 @@ ul {
 .web-is {
   margin: 0 auto;
   padding: 15px;
+  background-image: url('../img/skillup/triangle-mobile-web-is-right-top.png');
+  background-repeat: no-repeat;
+  background-position: right top;
 }
 
 .web-is__image {
@@ -373,7 +478,7 @@ ul {
 }
 
 .learning__item:nth-child(3n + 2)::before {
-  color: #ff7a00;
+  color: #ff9900;
 }
 
 .learning__item:nth-child(3n + 3)::before {
@@ -382,6 +487,9 @@ ul {
 
 .certificate {
   padding: 15px;
+  background-image: url('../img/skillup/triangle-mobile-certificate-left-middle.png');
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 
 .certificate__container {
@@ -392,20 +500,36 @@ ul {
 .certificate__image {
   width: 100%;
   display: block;
+  margin-bottom: 40px;
 }
 
 .certificate__description {
-  border-left: 5px solid #6600ff;
+  position: relative;
   border-radius: 1px;
-  padding-left: 14px;
   width: 248px;
   margin: 0 auto;
   font-size: 20px;
   line-height: 28px;
 }
 
+.certificate__description::before {
+  content: '';
+  positioN: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 110px;
+  height: 4px;
+  background-color: #6600ff;
+  text-align: center;
+}
+
 .meet {
-  padding: 15px;
+  padding: 15px 15px 45px;
+  background-image: url('../img/skillup/triangle-mobile-meet-right-bottom.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .meet__description {
@@ -428,6 +552,9 @@ ul {
   padding: 15px;
   background-color: #0398df;
   color: #ffffff;
+  background-image: url('../img/skillup/triangle-mobile-mentor-right-top.png'), url('../img/skillup/triangle-mobile-mentor-right-bottom.png');
+  background-repeat: no-repeat;
+  background-position: right top, right bottom;
 }
 
 .mentor__title {
@@ -551,7 +678,8 @@ ul {
   cursor: pointer;
 }
 
-.buy__current-button:hover {
+.buy__current-button:hover,
+.buy__current-button:focus {
   background-color: #6600ff;
   color: #ffffff;
 }
@@ -560,10 +688,6 @@ ul {
   background-color: #6600ff;
   color: #ffffff;
   transform: scale(0.95);
-}
-
-.buy__current-button:focus {
-  border-color: blue;
 }
 
 .faq {
@@ -704,6 +828,7 @@ ul {
 }
 
 .footer__logo {
+  text-align: center;
   width: 150px;
   margin-bottom: 20px;
 }
@@ -741,7 +866,108 @@ ul {
 }
 
 .footer__social-link--facebook {
-  background-image: url("../img/skillup/icon-facebook.svg");
+  background-image: url('../img/skillup/icon-facebook.svg');
+}
+
+.footer__social-link--instagram {
+  background-image: url('../img/skillup/icon-instagram.svg');
+}
+
+.footer__social-link--youtube {
+  background-image: url('../img/skillup/icon-youtube.svg');
+}
+
+.footer__social-link--twitter {
+  background-image: url('../img/skillup/icon-twitter.svg');
+}
+
+.popup {
+  position: fixed;
+  padding-top: 60px;
+  padding-bottom: 55px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  max-width: 1017px;
+  min-height: 360px;
+  overflow-y: auto;
+  border-radius: 10px;
+  background-color: #ffffff;
+  background-image: url('../img/skillup/triangle-mobile-popup-left.png'), url('../img/skillup/triangle-mobile-popup-right.png');
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  box-shadow: 0px 5px 50px 1px rgba(102, 0, 255, 0.1);
+}
+
+.popup__title {
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: .2px;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.popup__description {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 66px;
+}
+
+.popup__form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup__input {
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid lightgrey;
+  padding-bottom: 6px;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 40px;
+  outline: none;
+  transition: border .3s;
+}
+
+.popup__input::placeholder {
+  color: lightgrey;
+}
+
+.popup__input:hover,
+.popup__input:focus {
+  border-color: #6600ff;
+}
+
+.popup__button {
+  width: 307px;
+  height: 54px;
+  border-radius: 27px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6600ff;
+  text-transform: uppercase;
+  font-weight: bold;
+  outline: none;
+  border: 2px solid #6600ff;
+  cursor: pointer;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 17px rgba(137, 62, 255, 0.2);
+  transition: all .3s;
+}
+
+.popup__button:hover,
+.popup__button:focus {
+  background-color: #6600ff;
+  color: #ffffff;
 }
 
 .footer__social-link--instagram {
@@ -754,6 +980,18 @@ ul {
 
 .footer__social-link--twitter {
   background-image: url("../img/skillup/icon-twitter.svg");
+}
+
+.popup__close {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -778,29 +1016,56 @@ ul {
   }
 
   .nav__container {
+    width: auto;
+  }
+
+  .nav__wrapper--open-menu .nav__container {
     margin-bottom: 0;
+  }
+
+  .nav__mobile-menu {
+    display: none;
+  }
+
+  .nav__logo {
+    position: static;
+  }
+
+  .nav__wrapper--open-menu .nav__logo {
+    transform: none;
   }
 
   .nav__list {
     flex-direction: row;
     justify-content: space-between;
     min-width: 440px;
+    opacity: 1;
+    min-height: 50px;
+  }
+
+  .nav__wrapper--open-menu .nav__list {
+    height: auto;
+    margin-bottom: 0;
   }
 
   .nav__item {
-    margin-right: 2%;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .nav__item:last-child {
     margin-right: 0;
   }
 
+  .nav__register {
+    opacity: 1;
+    height: 46px;
+    padding: 0 10px;
+    max-width: 150px;
+  }
+
   .header {
-    background-image: url("../img/skillup/header-picture.png");
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 30%;
+    background-image: url("../img/skillup/header-picture.png"), url('../img/skillup/triangle-mobile-header-right-bottom.png');
+    background-size: 270px;
   }
 
   .header__wrapper {
@@ -829,6 +1094,12 @@ ul {
 
   .roadmap__description {
     margin-bottom: 118px;
+    padding-left: 25px;
+    border-left: 4px solid #6600ff;
+  }
+
+  .roadmap__description::before {
+    display: none;
   }
 
   .technology {
@@ -840,7 +1111,7 @@ ul {
   }
 
   .technology__item {
-    margin-right: 40px;
+    padding-right: 90px;
   }
 
   .web-is {
@@ -968,6 +1239,7 @@ ul {
 
   .nav__register {
     margin-left: auto;
+    padding: 0 35px;
   }
 
   .header {
@@ -1038,6 +1310,10 @@ ul {
   .technology__list {
     justify-content: space-between;
     margin: 0;
+  }
+
+  .technology__item {
+    width: 33%;
   }
 
   .technology__item-title {
@@ -1282,7 +1558,6 @@ ul {
   }
 
   .technology__item {
-    margin-right: 32px;
     margin-bottom: 17px;
   }
 

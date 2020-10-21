@@ -52,3 +52,33 @@ for (let anchor of anchors) {
     })
   })
 }
+
+// работа попапа
+const enterEmailBtn = document.querySelectorAll('.enter-email')
+const popup = document.getElementById('popup')
+const body = document.querySelector('.body')
+const closePopup = document.querySelector('.popup__close')
+const emailInput = document.getElementById('popup-enter-email')
+
+for(let i = 0; i < enterEmailBtn.length; i++) {
+  enterEmailBtn[i].addEventListener('click', () => {
+    popup.classList.remove('visually-hidden')
+    body.classList.add('body__overlay')
+    emailInput.focus()
+  })
+}
+
+closePopup.addEventListener('click', () => {
+  popup.classList.add('visually-hidden')
+    body.classList.remove('body__overlay')
+})
+
+// nav burger
+const burgerMenu = document.querySelector('.nav__mobile-menu')
+const navWrapper = document.querySelector('.nav__wrapper')
+
+burgerMenu.addEventListener('click', () => {
+  navWrapper.classList.toggle('nav__wrapper--open-menu')
+})
+
+
