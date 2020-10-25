@@ -46,7 +46,6 @@ ul {
 }
 
 .list {
-  max-width: 280px;
   text-align: center;
 }
 
@@ -999,11 +998,13 @@ ul {
     max-width: none;
     display: flex;
     flex-wrap: wrap;
+    text-align: left;
   }
 
   .list__item {
-    width: 250px;
-    margin-right: 50px;
+    width: 50%;
+    padding-right: 50px;
+    box-sizing: border-box;
   }
 
   .nav {
@@ -1208,13 +1209,10 @@ ul {
 }
 
 @media (min-width: 1024px) {
-  .list {
-    justify-content: space-between;
-  }
-
   .list__item {
-    max-width: 200px;
-    margin-right: 60px;
+    width: 50%;
+    padding-right: 60px;
+    box-sizing: border-box;
     margin-bottom: 50px;
   }
 
@@ -1340,15 +1338,7 @@ ul {
       url("../img/skillup/triangles-course-for-right.png");
     background-repeat: no-repeat;
     background-position: 0% 100%, 100% -99px;
-    background-size: 11%, auto;
-  }
-
-  .course-for__list {
-    justify-content: space-around;
-  }
-
-  .course-for .list__item {
-    margin-right: 90px;
+    background-size: 16%, 21%;
   }
 
   .learning {
@@ -1582,7 +1572,7 @@ ul {
   }
 
   .course-for {
-    padding: 35px 118px;
+    padding: 35px 118px 200px;
   }
 
   .learning {
