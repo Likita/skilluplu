@@ -5,9 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-K3RX3K9');</script>
+  <!-- End Google Tag Manager -->
+
   <meta name="description"
     content="Get the Profession of the Future! SkillUp School web course will help you enter the IT field very easily. You will learn how to create a website. It is very interesting and it could be your future job!">
-  <title>SkillUp page</title>
+  <title>Web Basics course</title>
   <link rel="canonical" href="https://skillup.lu/" />
   <meta name="robots" content="index, follow">
   <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
@@ -21,15 +32,6 @@
   <meta property="og:url" content="https://skillup.lu/" />
   <meta property="og:site_name" content="SkillUp School" />
   <link rel="icon" type="image/png" href="../favicon.png">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149137072-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-149137072-1');
-  </script>
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript">
     (function (m, e, t, r, i, k, a) {
@@ -51,6 +53,10 @@
 </head>
 
 <body class="body">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3RX3K9" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <div class="wrapper">
     <nav class="nav">
       <div class="nav__wrapper">
@@ -82,7 +88,7 @@
         <p class="header__description"><span>*Benefit:</span> you get to choose WHERE and HOW to work</p>
         <ul class="header__list">
           <li class="header__list-item">HTML + CSS + JavaScript from scratch</li>
-          <li class="header__list-item"><b>Course launch:</b> November 10</li>
+          <li class="header__list-item"><b>Course launch:</b> November 23</li>
           <li class="header__list-item"><b>Supervisor:</b> Senior Frontend Developer with 10+ years' experience</li>
           <li class="header__list-item"><b>Open Course!</b> <span class="header__place-counter"><b>10</b></span> spots
             left
@@ -433,16 +439,42 @@
             title="Our Youtube"><span class="for-screen-readers">Our Youtube</span></a></li>
       </ul>
     </footer>
-    <section class="popup visually-hidden" id='popup'>
+    <section class="popup visually-hidden" id='discount-popup'>
       <h2 class="popup__title">🎁 We got a small surprise for you!</h2>
       <p class="popup__description">Leave your e-mail and catch your 10% off promo code not to put new skills off any
         longer!</p>
-      <form action="#" class="popup__form subscription-form">
-        <input class="popup__input" type="email" name="email" placeholder="Email">
+      <form action="#" class="popup__form discount-form">
+        <input required class="popup__input" type="email" name="email" placeholder="Email">
+        <input required class="popup__input" type="tel" name="phone" placeholder="Phone">
         <p class="popup__success hidden">Thank you for subscribing to our course. We will contact you shortly!</p>
         <button type="submit" class="popup__button">Send</button>
       </form>
       <div class="popup__close">&#10006;</div>
+    </section>
+    <section class="popup visually-hidden" id='signup-popup'>
+      <h2 class="popup__title">Yeah, great choice!</h2>
+      <p class="popup__description">Please fill the quick form and we'll get back to you as soon a possible.</p>
+      <form action="#" class="popup__form signup-form">
+        <input required class="popup__input" type="text" name="fullname" placeholder="FullName">
+        <input required class="popup__input" type="email" name="email" placeholder="Email">
+        <input required class="popup__input" type="tel" name="phone" placeholder="Phone">
+        <input class="popup__input" type="text" name="promocode" placeholder="Promo code">
+        <p class="popup__success hidden">Thank you for subscribing to our course. We will contact you shortly!</p>
+        <button type="submit" class="popup__button">Send</button>
+      </form>
+      <div class="popup__close">&#10006;</div>
+    </section>
+    <section class="cookie">
+      <div>
+        <div class="flex">
+          <div class="cookie__logo">🍪</div>
+          <h2 class="cookie__title">This website uses cookies</h2>
+        </div>
+        <p class="cookie__description">We use cookies to personalize your experience. By continuing to visit this
+          website you agree to our use of cookies.</p>
+      </div>
+      <button class="cookie__button">Got it</button>
+      <a href="../privacy-policy.html" class="cookie__policy">Read our cookie policy</a>
     </section>
     <script src="../js/script.js"></script>
     <script src="../js/popup.js"></script>
