@@ -52,6 +52,8 @@ ul {
 }
 
 .list {
+  margin: 0 auto;
+  max-width: 280px;
   text-align: center;
 }
 
@@ -1084,11 +1086,10 @@ ul {
     max-width: none;
     display: flex;
     flex-wrap: wrap;
-    text-align: left;
   }
 
   .list__item {
-    width: 48%;
+    width: 27%;
     margin-right: 2%;
   }
 
@@ -1295,10 +1296,13 @@ ul {
 }
 
 @media (min-width: 1024px) {
+  .list {
+    justify-content: space-between;
+  }
+
   .list__item {
-    width: 50%;
-    padding-right: 60px;
-    box-sizing: border-box;
+    max-width: 200px;
+    margin-right: 60px;
     margin-bottom: 50px;
   }
 
@@ -1428,7 +1432,15 @@ ul {
       url("../img/skillup/triangles-course-for-right.png");
     background-repeat: no-repeat;
     background-position: 0% 100%, 100% -99px;
-    background-size: 16%, 21%;
+    background-size: 11%, auto;
+  }
+
+  .course-for__list {
+    justify-content: space-around;
+  }
+
+  .course-for .list__item {
+    margin-right: 90px;
   }
 
   .learning {
@@ -1455,13 +1467,16 @@ ul {
   }
 
   .meet {
-    padding: 93px 88px;
+    padding: 93px 168px;
     background-image: url("../img/skillup/triangles-meet-left.png"),
       url("../img/skillup/triangles-meet-right.png");
     background-repeat: no-repeat;
-    /* background-position: 0% 100.6%, 95.7% 100.6%; */
-    background-position: 0 0, 100% 102%;
-    background-size: 20.8%, 51.7%;
+    background-position: 0% 100.6%, 95.7% 100.6%;
+    background-size: 15%, 60%;
+  }
+
+  .meet__wrapper {
+    max-width: 848px;
   }
 
   .meet__description {
@@ -1662,7 +1677,7 @@ ul {
   }
 
   .course-for {
-    padding: 35px 118px 200px;
+    padding: 35px 118px;
   }
 
   .learning {
@@ -1745,8 +1760,7 @@ ul {
   }
 
   .meet {
-    padding: 35px 118px;
-    background-size: auto;
+    padding: 35px 218px;
   }
 
   .meet__description {
@@ -1754,12 +1768,8 @@ ul {
   }
 
   .mentor {
-    background-image: url("../img/skillup/triangles-mentor-left.png"),
-      url("../img/skillup/triangles-mentor-right.png");
-    background-repeat: no-repeat;
-    background-position: 0 0, calc(100% + 38px) 0;
-    background-size: 12%, auto;
     padding: 55px 0 123px;
+    background-image: none;
   }
 
   .mentor__description-container {
@@ -1891,9 +1901,14 @@ ul {
 
   .meet {
     padding: 66px 356px;
+    background-position: auto, auto;
   }
 
   .mentor {
+    background-image: url("../img/skillup/triangles-mentor-left.png"),
+      url("../img/skillup/triangles-mentor-right.png");
+    background-repeat: no-repeat;
+    background-position: 0 0, calc(100% + 38px) 0;
     background-size: auto, auto;
   }
 }
