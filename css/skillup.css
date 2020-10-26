@@ -1630,7 +1630,7 @@ ul {
   .technology__title {
     width: 350px;
     font-size: 50px;
-    margin: 30px 0;
+    margin: 300px 0 0;
   }
 
   .technology__list {
@@ -1866,6 +1866,10 @@ ul {
   .technology {
     padding: 75px 356px 70px;
     background-size: auto, auto, auto;
+  }
+
+  .technology__title {
+    margin: 30px 0;
   }
 
   .web-is {
