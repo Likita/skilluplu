@@ -1372,6 +1372,10 @@ ul {
     max-width: 1294px;
   }
 
+  .roadmap__description {
+    margin-left: 120px;
+  }
+
   .roadmap__paragraph {
     margin: 0 0 11px 0;
   }
@@ -1853,6 +1857,10 @@ ul {
 
   .roadmap {
     padding: 55px 356px;
+  }
+
+  .roadmap__description {
+    margin-left: 0;
   }
 
   .technology {
