@@ -52,6 +52,8 @@ ul {
 }
 
 .list {
+  margin: 0 auto;
+  max-width: 280px;
   text-align: center;
 }
 
@@ -1087,7 +1089,7 @@ ul {
   }
 
   .list__item {
-    width: 48%;
+    width: 27%;
     margin-right: 2%;
   }
 
@@ -1374,6 +1376,10 @@ ul {
     max-width: 1294px;
   }
 
+  .roadmap__description {
+    margin-left: 120px;
+  }
+
   .roadmap__paragraph {
     margin: 0 0 11px 0;
   }
@@ -1461,13 +1467,16 @@ ul {
   }
 
   .meet {
-    padding: 93px 88px;
+    padding: 93px 168px;
     background-image: url("../img/skillup/triangles-meet-left.png"),
       url("../img/skillup/triangles-meet-right.png");
     background-repeat: no-repeat;
-    /* background-position: 0% 100.6%, 95.7% 100.6%; */
-    background-position: 0 0, 100% 102%;
-    background-size: 20.8%, 51.7%;
+    background-position: 0% 100.6%, 95.7% 100.6%;
+    background-size: 15%, 60%;
+  }
+
+  .meet__wrapper {
+    max-width: 848px;
   }
 
   .meet__description {
@@ -1636,7 +1645,7 @@ ul {
   .technology__title {
     width: 350px;
     font-size: 50px;
-    margin: 30px 0;
+    margin: 300px 0 0;
   }
 
   .technology__list {
@@ -1751,8 +1760,7 @@ ul {
   }
 
   .meet {
-    padding: 35px 118px;
-    background-size: auto;
+    padding: 35px 218px;
   }
 
   .meet__description {
@@ -1760,12 +1768,8 @@ ul {
   }
 
   .mentor {
-    background-image: url("../img/skillup/triangles-mentor-left.png"),
-      url("../img/skillup/triangles-mentor-right.png");
-    background-repeat: no-repeat;
-    background-position: 0 0, calc(100% + 38px) 0;
-    background-size: 12%, auto;
     padding: 55px 0 123px;
+    background-image: none;
   }
 
   .mentor__description-container {
@@ -1865,9 +1869,17 @@ ul {
     padding: 55px 356px;
   }
 
+  .roadmap__description {
+    margin-left: 0;
+  }
+
   .technology {
     padding: 75px 356px 70px;
     background-size: auto, auto, auto;
+  }
+
+  .technology__title {
+    margin: 30px 0;
   }
 
   .web-is {
@@ -1889,9 +1901,14 @@ ul {
 
   .meet {
     padding: 66px 356px;
+    background-position: auto, auto;
   }
 
   .mentor {
+    background-image: url("../img/skillup/triangles-mentor-left.png"),
+      url("../img/skillup/triangles-mentor-right.png");
+    background-repeat: no-repeat;
+    background-position: 0 0, calc(100% + 38px) 0;
     background-size: auto, auto;
   }
 }
