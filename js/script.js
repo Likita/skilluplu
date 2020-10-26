@@ -60,3 +60,9 @@ const navWrapper = document.querySelector('.nav__wrapper')
 burgerMenu.addEventListener('click', () => {
   navWrapper.classList.toggle('nav__wrapper--open-menu')
 })
+
+const closeCookie = document.querySelector('.cookie__button')
+
+closeCookie.addEventListener('click', () => {
+  document.querySelector('.cookie').classList.add('hidden')
+})
