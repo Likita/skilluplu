@@ -15,7 +15,7 @@
   
   <meta name="description"
     content="Get the Profession of the Future! SkillUp School web course will help you enter the IT field very easily. You will learn how to create a website. It is very interesting and it could be your future job!">
-  <title>SkillUp page</title>
+  <title>Web Basics course</title>
   <link rel="canonical" href="https://skillup.lu/" />
   <meta name="robots" content="index, follow">
   <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
@@ -85,7 +85,7 @@
         <p class="header__description"><span>*Benefit:</span> you get to choose WHERE and HOW to work</p>
         <ul class="header__list">
           <li class="header__list-item">HTML + CSS + JavaScript from scratch</li>
-          <li class="header__list-item"><b>Course launch:</b> November 10</li>
+          <li class="header__list-item"><b>Course launch:</b> November 23</li>
           <li class="header__list-item"><b>Supervisor:</b> Senior Frontend Developer with 10+ years' experience</li>
           <li class="header__list-item"><b>Open Course!</b> <span class="header__place-counter"><b>10</b></span> spots
             left
@@ -436,14 +436,26 @@
             title="Our Youtube"><span class="for-screen-readers">Our Youtube</span></a></li>
       </ul>
     </footer>
-    <section class="popup visually-hidden" id='popup'>
+    <section class="popup visually-hidden" id='discount-popup'>
       <h2 class="popup__title">🎁 We got a small surprise for you!</h2>
       <p class="popup__description">Leave your e-mail and catch your 10% off promo code not to put new skills off any
         longer!</p>
-      <form action="#" class="popup__form subscription-form">
-        <input class="popup__input" type="email" name="email" placeholder="Email">
-        <input class="popup__input" type="tel" name="phone" placeholder="Phone">
-
+      <form action="#" class="popup__form discount-form">
+        <input required class="popup__input" type="email" name="email" placeholder="Email">
+        <input required class="popup__input" type="tel" name="phone" placeholder="Phone">
+        <p class="popup__success hidden">Thank you for subscribing to our course. We will contact you shortly!</p>
+        <button type="submit" class="popup__button">Send</button>
+      </form>
+      <div class="popup__close">&#10006;</div>
+    </section>
+    <section class="popup visually-hidden" id='signup-popup'>
+      <h2 class="popup__title">Yeah, great choice!</h2>
+      <p class="popup__description">Please fill the quick form and we'll get back to you as soon a possible.</p>
+      <form action="#" class="popup__form signup-form">
+        <input required class="popup__input" type="text" name="fullname" placeholder="FullName">
+        <input required class="popup__input" type="email" name="email" placeholder="Email">
+        <input required class="popup__input" type="tel" name="phone" placeholder="Phone">
+        <input class="popup__input" type="text" name="promocode" placeholder="Promo code">
         <p class="popup__success hidden">Thank you for subscribing to our course. We will contact you shortly!</p>
         <button type="submit" class="popup__button">Send</button>
       </form>
