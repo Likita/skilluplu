@@ -994,6 +994,62 @@ ul {
   cursor: pointer;
 }
 
+.cookie {
+  text-align: center;
+}
+
+.cookie__logo {
+  font-size: 48px;
+}
+
+.cookie__title {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.cookie__button {
+  border: none;
+  display: block;
+  width: 240px;
+  font-size: 20px;
+  padding: 10px 0;
+  border-radius: 30px;
+  margin: 0 auto;
+  background-color: #ff9900;
+  color: #ffffff;
+  transition: all .2s;
+  margin-bottom: 30px;
+  outline: none;
+}
+
+.cookie__button:hover {
+  background-color: #6600ff;
+}
+
+.cookie__button:active {
+  background-color: #6600ff;
+  transform: scale(0.95);
+}
+
+.cookie__policy {
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: #6600ff;
+  background-color: inherit;
+  transition: all .2s;
+  margin-bottom: 30px;
+  outline: none;
+}
+
+.cookie__policy:hover {
+  text-decoration: underline;
+}
+
+.cookie__policy:active {
+  transform: scale(0.95);
+}
+
 @media (min-width: 768px) {
   .list {
     max-width: none;
