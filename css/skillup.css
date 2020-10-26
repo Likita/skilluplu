@@ -46,7 +46,6 @@ ul {
 }
 
 .list {
-  max-width: 280px;
   text-align: center;
 }
 
@@ -401,6 +400,7 @@ ul {
 .web-is {
   margin: 0 auto;
   padding: 15px;
+  background-color: #ffffff;
   background-image: url('../img/skillup/triangle-mobile-web-is-right-top.png');
   background-repeat: no-repeat;
   background-position: right top;
@@ -506,7 +506,6 @@ ul {
 .certificate__description {
   position: relative;
   border-radius: 1px;
-  width: 248px;
   margin: 0 auto;
   font-size: 20px;
   line-height: 28px;
@@ -515,7 +514,7 @@ ul {
 .certificate__description::before {
   content: '';
   positioN: absolute;
-  top: -15px;
+  top: -20px;
   left: 50%;
   transform: translateX(-50%);
   display: block;
@@ -842,6 +841,7 @@ ul {
 }
 
 .footer__social-link {
+  cursor: pointer;
   display: block;
   font-size: 0;
   width: 42px;
@@ -1002,8 +1002,8 @@ ul {
   }
 
   .list__item {
-    width: 250px;
-    margin-right: 50px;
+    width: 48%;
+    margin-right: 2%;
   }
 
   .nav {
@@ -1648,7 +1648,7 @@ ul {
 
   .certificate__container {
     display: flex;
-    max-width: 960px;
+    max-width: 660px;
   }
 
   .certificate__image {
@@ -1658,8 +1658,8 @@ ul {
 
   .certificate__description {
     position: relative;
-    right: 50px;
-    margin-top: 102px;
+    right: 20px;
+    top: 142px;
     min-width: 300px;
     height: 105px;
   }
