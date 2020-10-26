@@ -29,6 +29,11 @@ ul {
   list-style: none;
 }
 
+a,
+button {
+  cursor: pointer;
+}
+
 h2 {
   font-family: Oswald;
   font-style: normal;
