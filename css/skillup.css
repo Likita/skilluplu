@@ -1081,6 +1081,35 @@ ul {
   transform: scale(0.95);
 }
 
+.policy {
+  font-size: 18px;
+}
+
+.policy p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.policy ul {
+  list-style: square;
+}
+
+.policy li {
+  line-height: 1.5;
+}
+
+.policy-page {
+  background-color: #ffffff;
+}
+
+.policy-page .contacts {
+ padding-top: 0;
+}
+
+.policy-page .contacts__title {
+  margin: 0;
+}
+
 @media (min-width: 768px) {
   .list {
     max-width: none;
