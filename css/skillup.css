@@ -91,6 +91,7 @@ ul {
   position: fixed;
   width: 100%;
   top: 0;
+  left: 0;
   box-shadow: 0px 10px 14px rgba(102, 0, 255, 0.02);
   box-sizing: border-box;
   z-index: 999;
@@ -365,6 +366,10 @@ ul {
 .webinar__advantage-title {
   font-weight: bold;
   font-size: 20px;
+}
+
+.webinar__advantage-list {
+  list-style: disc;
 }
 
 .webinar__advantage-item {
@@ -1104,6 +1109,7 @@ ul {
 }
 
 .cookie {
+  max-width: 1920px;
   text-align: center;
   position: fixed;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -1291,6 +1297,30 @@ ul {
     margin-bottom: 26px;
   }
 
+  .webinar {
+    padding: 35px;
+  }
+
+  .webinar__top-content {
+    margin: 0 -35px;
+    padding: 20px 35px;
+    background-image: url('../img/skillup/free.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+  
+  .webinar__title-descr {
+    display: inline-block;
+  }
+
+  .webinar__presenter {
+    display: flex;
+  }
+
+  .webinar__photo-container {
+    flex-shrink: 0;
+  }
+
   .description {
     padding: 10px 35px;
   }
@@ -1475,6 +1505,21 @@ ul {
     margin-bottom: 0;
     font-size: 19px;
     line-height: 29px;
+  }
+
+  .webinar {
+    max-width: 1314px;
+    margin: 0 auto;
+    background-image: url('../img/skillup/triangles-webinar-right-top.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  .webinar__top-content {
+    background-position: calc(100% - 100px) 50%;
+    position: relative;
+    z-index: -1;
+
   }
 
   .description {
