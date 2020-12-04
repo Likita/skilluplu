@@ -39,6 +39,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
   display: block;
   width: 100%;
   height: 100%;
@@ -94,7 +95,7 @@ ul {
   left: 0;
   box-shadow: 0px 10px 14px rgba(102, 0, 255, 0.02);
   box-sizing: border-box;
-  z-index: 999;
+  z-index: 1;
 }
 
 .nav__wrapper {
@@ -116,37 +117,35 @@ ul {
   margin-bottom: 79px;
 }
 
-.nav__mobile-menu,
-.nav__mobile-menu::before,
-.nav__mobile-menu::after {
-  display: block;
-  background-color: #ff9900;
-  width: 32px;
-  height: 3px;
-  border-radius: 1px;
-  transition: transform 0.2s;
-}
-
 .nav__mobile-menu {
   position: relative;
   border: none;
   font-size: 0;
   outline: none;
-  margin: 20px 14px;
-  transition: background-color 0.2s;
+  margin: 0;
+  padding: 20px 14px;
+  background: none;
+  transition: 0.2s;
 }
 
-.nav__mobile-menu::before {
-  content: "";
-  position: absolute;
-  top: -12px;
+.nav__mobile-menu span {
+  display: block;
+  background-color: #ff9900;
+  width: 32px;
+  height: 3px;
+  border-radius: 1px;
+  transition: 0.2s;
+}
+
+.nav__mobile-menu span:first-child {
+  position: relative;
+  top: -9px;
   left: 0;
 }
 
-.nav__mobile-menu::after {
-  content: "";
-  position: absolute;
-  top: 12px;
+.nav__mobile-menu span:last-child {
+  position: relative;
+  top: 9px;
   left: 0;
 }
 
@@ -154,11 +153,16 @@ ul {
   background-color: inherit;
 }
 
-.nav__wrapper--open-menu .nav__mobile-menu::before {
+.nav__wrapper--open-menu .nav__mobile-menu span:first-child {
   transform: rotate(43deg) translate(10px, -2px) rotateY(45deg);
 }
 
-.nav__wrapper--open-menu .nav__mobile-menu::after {
+.nav__wrapper--open-menu .nav__mobile-menu span:nth-child(2) {
+  transform-origin: right;
+  transform: rotateY(90deg);
+}
+
+.nav__wrapper--open-menu .nav__mobile-menu span:last-child {
   transform: rotate(-43deg) translate(10px, 2px) rotateY(45deg);
 }
 
@@ -1050,13 +1054,13 @@ ul {
   transition: border 0.3s;
 }
 
-.popup__input::placeholder {
-  color: lightgrey;
-}
-
 .popup__input:hover,
 .popup__input:focus {
   border-color: #6600ff;
+}
+
+input.popup__input::placeholder {
+  color: #bbb;
 }
 
 .popup__button {
