@@ -39,6 +39,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
   display: block;
   width: 100%;
   height: 100%;
@@ -91,9 +92,10 @@ ul {
   position: fixed;
   width: 100%;
   top: 0;
+  left: 0;
   box-shadow: 0px 10px 14px rgba(102, 0, 255, 0.02);
   box-sizing: border-box;
-  z-index: 999;
+  z-index: 1;
 }
 
 .nav__wrapper {
@@ -115,37 +117,35 @@ ul {
   margin-bottom: 79px;
 }
 
-.nav__mobile-menu,
-.nav__mobile-menu::before,
-.nav__mobile-menu::after {
-  display: block;
-  background-color: #ff9900;
-  width: 32px;
-  height: 3px;
-  border-radius: 1px;
-  transition: transform 0.2s;
-}
-
 .nav__mobile-menu {
   position: relative;
   border: none;
   font-size: 0;
   outline: none;
-  margin: 20px 14px;
-  transition: background-color 0.2s;
+  margin: 0;
+  padding: 20px 14px;
+  background: none;
+  transition: 0.2s;
 }
 
-.nav__mobile-menu::before {
-  content: "";
-  position: absolute;
-  top: -12px;
+.nav__mobile-menu span {
+  display: block;
+  background-color: #ff9900;
+  width: 32px;
+  height: 3px;
+  border-radius: 1px;
+  transition: 0.2s;
+}
+
+.nav__mobile-menu span:first-child {
+  position: relative;
+  top: -9px;
   left: 0;
 }
 
-.nav__mobile-menu::after {
-  content: "";
-  position: absolute;
-  top: 12px;
+.nav__mobile-menu span:last-child {
+  position: relative;
+  top: 9px;
   left: 0;
 }
 
@@ -153,11 +153,16 @@ ul {
   background-color: inherit;
 }
 
-.nav__wrapper--open-menu .nav__mobile-menu::before {
+.nav__wrapper--open-menu .nav__mobile-menu span:first-child {
   transform: rotate(43deg) translate(10px, -2px) rotateY(45deg);
 }
 
-.nav__wrapper--open-menu .nav__mobile-menu::after {
+.nav__wrapper--open-menu .nav__mobile-menu span:nth-child(2) {
+  transform-origin: right;
+  transform: rotateY(90deg);
+}
+
+.nav__wrapper--open-menu .nav__mobile-menu span:last-child {
   transform: rotate(-43deg) translate(10px, 2px) rotateY(45deg);
 }
 
@@ -319,6 +324,100 @@ ul {
 .header__register:active {
   background-color: #6600ff;
   transform: scale(0.95);
+}
+
+.webinar {
+  padding: 15px 0;
+}
+
+.webinar__top-content {
+  background-color: #E0F2FB;
+  padding: 15px 0;
+}
+
+.webinar__title-descr {
+  font-size: 26px;
+  line-height: 26px;
+  background-color: #6600ff;
+  color: #ffffff;
+  padding: 4px 12px;
+  margin: 0;
+}
+
+.webinar__title {
+  padding: 15px;
+  margin: 0;
+}
+
+.webinar__description,
+.webinar__date,
+.webinar__duration,
+.webinar__advantage-title {
+  margin: 0 0 15px 0;
+  padding: 0 15px;
+}
+
+.webinar__question {
+  font-size: 24px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #6600ff;
+  border-left: 4px solid #6600ff;
+  margin-left: 15px;
+  padding: 12px 15px;
+}
+
+.webinar__advantage-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.webinar__advantage-list {
+  list-style: disc;
+}
+
+.webinar__advantage-item {
+  margin-bottom: 6px;
+  padding: 0 15px;
+  font-size: 20px;
+}
+
+.webinar__result {
+  padding: 0 15px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.webinar__result span {
+  display: block;
+  color: #6600ff;
+}
+
+.webinar__photo-container {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+  border: 5px solid #6600ff;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.webinar__photo {
+  width: 100%;
+}
+
+.webinar__presenter-about {
+  font-size: 24px;
+  font-weight: bold;
+  color: #6600ff;
+  padding: 0 15px;
+}
+
+.webinar__presenter-description {
+  font-size: 18px;
+  line-height: 28px;
+  padding: 0 15px;
 }
 
 .description {
@@ -955,13 +1054,13 @@ ul {
   transition: border 0.3s;
 }
 
-.popup__input::placeholder {
-  color: lightgrey;
-}
-
 .popup__input:hover,
 .popup__input:focus {
   border-color: #6600ff;
+}
+
+input.popup__input::placeholder {
+  color: #bbb;
 }
 
 .popup__button {
@@ -1014,6 +1113,7 @@ ul {
 }
 
 .cookie {
+  max-width: 1920px;
   text-align: center;
   position: fixed;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -1201,6 +1301,30 @@ ul {
     margin-bottom: 26px;
   }
 
+  .webinar {
+    padding: 35px;
+  }
+
+  .webinar__top-content {
+    margin: 0 -35px;
+    padding: 20px 35px;
+    background-image: url('../img/skillup/free.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+  
+  .webinar__title-descr {
+    display: inline-block;
+  }
+
+  .webinar__presenter {
+    display: flex;
+  }
+
+  .webinar__photo-container {
+    flex-shrink: 0;
+  }
+
   .description {
     padding: 10px 35px;
   }
@@ -1385,6 +1509,21 @@ ul {
     margin-bottom: 0;
     font-size: 19px;
     line-height: 29px;
+  }
+
+  .webinar {
+    max-width: 1314px;
+    margin: 0 auto;
+    background-image: url('../img/skillup/triangles-webinar-right-top.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  .webinar__top-content {
+    background-position: calc(100% - 100px) 50%;
+    position: relative;
+    z-index: -1;
+
   }
 
   .description {

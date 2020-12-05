@@ -19,8 +19,8 @@ for(let i = 0; i < closePopup.length; i++) {
   })
 }
 
-setTimeout(function() {
-  discountPopup.classList.remove('visually-hidden');
-  body.classList.add('body__overlay');
-  discountPopup.querySelector('input').focus();
-}, 40000)
+// setTimeout(function() {
+//   discountPopup.classList.remove('visually-hidden');
+//   body.classList.add('body__overlay');
+//   discountPopup.querySelector('input').focus();
+// }, 40000)
