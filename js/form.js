@@ -62,4 +62,37 @@ if (discountForm) {
   });
 }
 
+const webinarForm = document.querySelector(".webinar-form");
+const webinarUrl =
+  "https://script.google.com/macros/s/AKfycbxSKrp82GXu8afBjtPB6gN7Df0NWlIbww3vvXLwZg/exec";
+
+if (webinarForm) {
+  webinarForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const xmlhttp = new XMLHttpRequest();
+    const email = webinarForm.email.value;
+    const phone = webinarForm.phone.value;
+    const fullname = webinarForm.fullname.value;
+    xmlhttp.open(
+      "GET",
+      `${webinarUrl}?email=${email}&phone=${phone}&fullname=${fullname}`,
+      true
+    );
+    xmlhttp.send();
+
+    xmlhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        let response = JSON.parse(this.responseText);
+        webinarPopup.querySelector(".popup__success").classList.remove("hidden");
+        setTimeout(function () {
+          webinarPopup.classList.add("visually-hidden");
+          body.classList.remove("body__overlay");
+          webinarPopup.querySelector(".popup__success").classList.add("hidden");
+        }, 3000);
+      }
+    };
+  });
+}
+
+
 // https://medium.com/@dmccoy/how-to-submit-an-html-form-to-google-sheets-without-google-forms-b833952cc175
