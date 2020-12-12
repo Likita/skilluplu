@@ -23,6 +23,7 @@
   <meta name="robots" content="index, follow">
   <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/skillup.css">
+  <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/popup.css">
   <meta property="og:type" content="article" />
   <meta property="og:title" content="SkillUp School Luxembourg" />
@@ -78,7 +79,6 @@
             <a class="nav__item-link" href="#contacts">Contacts</a>
           </li>
         </ul>
-        <button class="nav__register enter-email">Register</button>
       </div>
     </nav>
     <header class="header">
@@ -88,13 +88,13 @@
         <p class="header__description"><span>*Benefit:</span> you get to choose WHERE and HOW to work</p>
         <ul class="header__list">
           <li class="header__list-item">HTML + CSS + JavaScript from scratch</li>
-          <li class="header__list-item"><b>Course launch:</b> November 23</li>
+          <li class="header__list-item"><b>Course launch:</b> February 8</li>
           <li class="header__list-item"><b>Supervisor:</b> Senior Frontend Developer with 10+ years' experience</li>
           <li class="header__list-item"><b>Open Course!</b> <span class="header__place-counter"><b>10</b></span> spots
             left
           </li>
         </ul>
-        <button class="header__register enter-email">Sign up to course</button>
+        <button class="header__register js-open-popup" data-popup="webinar">Register to the first free lesson</button>
       </div>
     </header>
     <main class="main">
@@ -103,8 +103,8 @@
           <p class="webinar__title-descr">Free Live Webinar for Starters</p>
           <h2 class="webinar__title">How To Break Into Web Development</h2>
           <p class="webinar__description">Even if you know nothing about tech.</p>
-          <p class="webinar__date"><b>December, 15th</b></p>
-          <p class="webinar__duration"><b>Duration:</b> 1,5 - 2 hours</p>
+          <p class="webinar__date"><b>December, 17th, 18:30 (GMT+1)</b></p>
+          <p class="webinar__duration"><b>Duration:</b> 1.5 - 2 hours</p>
         </div>
         <div class="webinar__descr-content">
           <p class="webinar__question">Who should attend this free webinar?</p>
@@ -128,7 +128,7 @@
                 </p>
             </div>
           </div>
-          <button class="header__register enter-email">Register (it's free)</button>
+          <button class="header__register js-open-popup" data-popup="webinar">Register (it's free)</button>
         </div>
       </section>
       <section class="description" id="description">
@@ -369,7 +369,7 @@
           <p class="buy__old-button">Price <span class="buy__price buy__price-old">75</span><span
               class="buy__price buy__price-current">65€</span> per lesson.</p>
           <span class="buy__subtitle">Full course — 10 lessons</span>
-          <button class="buy__current-button enter-email">Start your career now</button>
+          <button class="buy__current-button js-open-popup" data-popup="signup">Start your career now</button>
         </div>
       </section>
       <section class="faq">
@@ -488,13 +488,25 @@
     </section>
     <section class="popup visually-hidden" id='signup-popup'>
       <h2 class="popup__title">Yeah, great choice!</h2>
-      <p class="popup__description">Please fill the quick form and we'll get back to you as soon a possible.</p>
+      <p class="popup__description">Please fill the quick form to attend frontend course and we'll get back to you as soon a possible.</p>
       <form action="#" class="popup__form signup-form">
         <input required class="popup__input" type="text" name="fullname" placeholder="FullName">
         <input required class="popup__input" type="email" name="email" placeholder="Email">
         <input required class="popup__input" type="tel" name="phone" placeholder="Phone">
         <input class="popup__input" type="text" name="promocode" placeholder="Promo code">
         <p class="popup__success hidden">Thank you for subscribing to our course. We will contact you shortly!</p>
+        <button type="submit" class="popup__button">Send</button>
+      </form>
+      <div class="popup__close">&#10006;</div>
+    </section>
+    <section class="popup visually-hidden" id='webinar-popup'>
+      <h2 class="popup__title">Yeah, great choice!</h2>
+      <p class="popup__description">Please fill the quick form to attend a free webinar and we'll get back to you as soon a possible.</p>
+      <form action="#" class="popup__form webinar-form">
+        <input required class="popup__input" type="text" name="fullname" placeholder="FullName">
+        <input required class="popup__input" type="email" name="email" placeholder="Email">
+        <input required class="popup__input" type="tel" name="phone" placeholder="Phone">
+        <p class="popup__success hidden">Thank you for subscribing to our free webinar. We will contact you shortly!</p>
         <button type="submit" class="popup__button">Send</button>
       </form>
       <div class="popup__close">&#10006;</div>
