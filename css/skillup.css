@@ -1,20 +1,7 @@
-@font-face {
-  font-family: "Muller";
-  src: url("../fonts/MullerRegular.woff") format("woff"),
-    url("../fonts/MullerRegular.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Muller";
-  src: url("../fonts/MullerBold.woff") format("woff"),
-    url("../fonts/MullerBold.woff2") format("woff2");
-  font-weight: bold;
-}
-
 body {
   position: relative;
   margin: 0;
-  font-family: "Muller";
+  font-family: "Muller", sans-serif;
   font-size: 18px;
   background-color: #fcfcfc;
   padding-top: 83px;
@@ -294,130 +281,6 @@ ul {
 
 .header__place-counter {
   color: #ff9900;
-}
-
-.header__register {
-  width: 233px;
-  height: 54px;
-  background-color: #ff9900;
-  border-radius: 27px;
-  border: 2px solid #ff9900;
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: 700;
-  outline: 0;
-  color: #ffffff;
-  text-transform: uppercase;
-  margin: 0 auto;
-  display: block;
-  box-shadow: 0 4px 5px rgba(255, 153, 0, 0.15);
-  transition: all 0.2s;
-  cursor: pointer;
-}
-
-.header__register:hover,
-.header__register:focus {
-  background-color: #6600ff;
-  border-color: #6600ff;
-}
-
-.header__register:active {
-  background-color: #6600ff;
-  transform: scale(0.95);
-}
-
-.webinar {
-  padding: 15px 0;
-}
-
-.webinar__top-content {
-  background-color: #E0F2FB;
-  padding: 15px 0;
-}
-
-.webinar__title-descr {
-  font-size: 26px;
-  line-height: 26px;
-  background-color: #6600ff;
-  color: #ffffff;
-  padding: 4px 12px;
-  margin: 0;
-}
-
-.webinar__title {
-  padding: 15px;
-  margin: 0;
-}
-
-.webinar__description,
-.webinar__date,
-.webinar__duration,
-.webinar__advantage-title {
-  margin: 0 0 15px 0;
-  padding: 0 15px;
-}
-
-.webinar__question {
-  font-size: 24px;
-  line-height: 21px;
-  font-weight: bold;
-  color: #6600ff;
-  border-left: 4px solid #6600ff;
-  margin-left: 15px;
-  padding: 12px 15px;
-}
-
-.webinar__advantage-title {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.webinar__advantage-list {
-  list-style: disc;
-}
-
-.webinar__advantage-item {
-  margin-bottom: 6px;
-  padding: 0 15px;
-  font-size: 20px;
-}
-
-.webinar__result {
-  padding: 0 15px;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.webinar__result span {
-  display: block;
-  color: #6600ff;
-}
-
-.webinar__photo-container {
-  width: 140px;
-  height: 140px;
-  margin: 0 auto;
-  border: 5px solid #6600ff;
-  border-radius: 50%;
-  object-fit: cover;
-  overflow: hidden;
-}
-
-.webinar__photo {
-  width: 100%;
-}
-
-.webinar__presenter-about {
-  font-size: 24px;
-  font-weight: bold;
-  color: #6600ff;
-  padding: 0 15px;
-}
-
-.webinar__presenter-description {
-  font-size: 18px;
-  line-height: 28px;
-  padding: 0 15px;
 }
 
 .description {
@@ -1301,30 +1164,6 @@ input.popup__input::placeholder {
     margin-bottom: 26px;
   }
 
-  .webinar {
-    padding: 35px;
-  }
-
-  .webinar__top-content {
-    margin: 0 -35px;
-    padding: 20px 35px;
-    background-image: url('../img/skillup/free.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-  }
-  
-  .webinar__title-descr {
-    display: inline-block;
-  }
-
-  .webinar__presenter {
-    display: flex;
-  }
-
-  .webinar__photo-container {
-    flex-shrink: 0;
-  }
-
   .description {
     padding: 10px 35px;
   }
@@ -1509,21 +1348,6 @@ input.popup__input::placeholder {
     margin-bottom: 0;
     font-size: 19px;
     line-height: 29px;
-  }
-
-  .webinar {
-    max-width: 1314px;
-    margin: 0 auto;
-    background-image: url('../img/skillup/triangles-webinar-right-top.png');
-    background-repeat: no-repeat;
-    background-position: right top;
-  }
-
-  .webinar__top-content {
-    background-position: calc(100% - 100px) 50%;
-    position: relative;
-    z-index: -1;
-
   }
 
   .description {
