@@ -11,6 +11,22 @@
   font-weight: bold;
 }
 
+.align-center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+mark {
+  font-weight: bold;
+  color: #ff9900;
+  background: transparent;
+}
+
+[href*="mailto:"] {
+  font-weight: bold;
+  color: #6600ff;
+}
+
 .flex {
   display: flex;
 }
@@ -114,8 +130,7 @@
 }
 
 .header__register {
-  min-width: 233px;
-  height: 54px;
+  height: 52px;
   background-color: #ff9900;
   border-radius: 27px;
   border: 2px solid #ff9900;
@@ -125,8 +140,7 @@
   outline: 0;
   color: #ffffff;
   text-transform: uppercase;
-  margin: 0 auto;
-  display: block;
+  display: inline-block;
   box-shadow: 0 4px 5px rgba(255, 153, 0, 0.15);
   transition: all 0.2s;
   cursor: pointer;
