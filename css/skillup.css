@@ -193,6 +193,7 @@ ul {
   cursor: pointer;
   display: inline-block;
   height: 52px;
+  min-width: 150px;
 }
 
 .nav__register:hover,
@@ -1064,8 +1065,8 @@ input.popup__input::placeholder {
     margin-right: 0;
   }
 
-  .nav__register {
-    opacity: 1;
+  .nav .nav__register {
+    display: block;
     padding: 0 10px;
   }
 
