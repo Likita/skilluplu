@@ -148,7 +148,7 @@ ul {
 }
 
 .nav__wrapper--open-menu .nav__list {
-  margin-bottom: 55px;
+  margin-bottom: 25px;
   height: 210px;
   opacity: 1;
 }
@@ -169,14 +169,21 @@ ul {
   color: #6600ff;
 }
 
+.nav .nav__register {
+  display: none;
+}
+
+.header .nav__register,
+.header .header__register{
+  margin-bottom: 5px;
+}
+
 .nav__register {
   overflow: hidden;
-  opacity: 0;
   border: 2px solid #6600ff;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #6600ff;
-  height: 0;
   border-radius: 25px;
   background-color: transparent;
   padding: 0 34px;
@@ -184,6 +191,9 @@ ul {
   box-shadow: 0 4px 5px rgba(102, 0, 255, 0.15);
   transition: all 0.2s;
   cursor: pointer;
+  display: inline-block;
+  height: 52px;
+  min-width: 150px;
 }
 
 .nav__register:hover,
@@ -201,7 +211,7 @@ ul {
 }
 
 .nav__wrapper--open-menu .nav__register {
-  opacity: 1;
+  display: block;
   height: 45px;
 }
 
@@ -211,6 +221,10 @@ ul {
     url("../img/skillup/header-picture-mobile.png");
   background-repeat: no-repeat;
   background-position: right center, right bottom, right 180px;
+}
+
+.header .nav__register + .header__register {
+  margin-left: 20px;
 }
 
 .header__wrapper {
@@ -626,8 +640,8 @@ ul {
 
 .buy__current-button {
   border: 2px solid #ffffff;
-  background-color: #ffffff;
-  color: #ff9900;
+  background-color: #6600ff;
+  color: #ffffff;
   font-size: 16px;
   line-height: 30px;
   font-weight: bold;
@@ -642,8 +656,8 @@ ul {
 
 .buy__current-button:hover,
 .buy__current-button:focus {
-  background-color: #6600ff;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #ff9900;
 }
 
 .buy__current-button:active {
@@ -698,6 +712,7 @@ ul {
   transition: transform 0.3s;
   overflow: hidden;
   height: 0;
+  line-height: 1.5;
 }
 
 .faq__answer.active {
@@ -1050,11 +1065,9 @@ input.popup__input::placeholder {
     margin-right: 0;
   }
 
-  .nav__register {
-    opacity: 1;
-    height: 46px;
+  .nav .nav__register {
+    display: block;
     padding: 0 10px;
-    max-width: 150px;
   }
 
   .header {
