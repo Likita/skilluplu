@@ -8,7 +8,7 @@ if (document.querySelector(".frontend-course-page")) {
     for (let i = 0; i <= lastSlide; i++) {
       if (slider[i].classList.contains("active")) {
         slider[i].classList.remove("active");
-
+        
         if (i === side) {
           slider[sideChange].classList.add("active");
         } else {
@@ -18,14 +18,14 @@ if (document.querySelector(".frontend-course-page")) {
       }
     }
   };
-
-  // btnNext.onclick = function() {
-  //   slideChange(lastSlide, 0, 1);
-  // }
-
-  // btnPrev.onclick = function() {
-  //   slideChange(0, lastSlide, -1);
-  // }
+  
+  btnNext.onclick = function() {
+    slideChange(lastSlide, 0, 1);
+  }
+  
+  btnPrev.onclick = function() {
+    slideChange(0, lastSlide, -1);
+  }
 
   //skillup last page, faq buttons
   const question = document.querySelectorAll(".faq__question");
