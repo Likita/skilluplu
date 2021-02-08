@@ -18,14 +18,6 @@ if (document.querySelector(".frontend-course-page")) {
       }
     }
   };
-  
-  btnNext.onclick = function() {
-    slideChange(lastSlide, 0, 1);
-  }
-  
-  btnPrev.onclick = function() {
-    slideChange(0, lastSlide, -1);
-  }
 
   //skillup last page, faq buttons
   const question = document.querySelectorAll(".faq__question");
@@ -52,6 +44,16 @@ if (document.querySelector(".frontend-course-page")) {
         block: "start",
       });
     });
+  }
+}
+
+if (btnNext) {
+  btnNext.onclick = function() {
+    slideChange(lastSlide, 0, 1);
+  }
+
+  btnPrev.onclick = function() {
+    slideChange(0, lastSlide, -1);
   }
 }
 
