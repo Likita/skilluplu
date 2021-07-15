@@ -1833,6 +1833,7 @@ input.popup__input::placeholder {
   display: flex;
   max-width: 1365px;
   margin: 0 auto;
+  padding-bottom: 127px;
 }
 
 .children__title {
