@@ -174,7 +174,7 @@ ul {
 }
 
 .header .nav__register,
-.header .header__register{
+.header .header__register {
   margin-bottom: 5px;
 }
 
@@ -996,7 +996,7 @@ input.popup__input::placeholder {
 }
 
 .policy-page .contacts {
- padding-top: 0;
+  padding-top: 0;
 }
 
 .policy-page .contacts__title {
@@ -1821,4 +1821,75 @@ input.popup__input::placeholder {
     background-position: 0 0, calc(100% + 38px) 0;
     background-size: auto, auto;
   }
+}
+
+.children__header {
+  background-image: url("../img/skillup/triangles-children-right-bottom.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+.children__wrapper {
+  display: flex;
+  max-width: 1365px;
+  margin: 0 auto;
+}
+
+.children__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 64px;
+  line-height: 94.85px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.children__bold {
+  font-weight: 700;
+}
+
+.children__lightblue {
+  color: #0398df;
+}
+
+.children__purple {
+  color: #6600ff;
+}
+
+.children__description {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: right;
+}
+
+.children__register {
+  background-color: #ff9900;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0 30px;
+  background-image: url("../img/skillup/triangles-children-register.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.children__register-button {
+  margin: auto;
+  background-color: #ffffff;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.children__register-button:hover,
+.children__register-button:focus {
+  background-color: #6600ff;
+}
+
+.children__register-price {
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 700;
 }
