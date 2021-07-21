@@ -1,8 +1,6 @@
 const openPopupBtn = document.querySelectorAll('.js-open-popup');
 const discountPopup = document.getElementById('discount-popup');
-const signupPopup = document.getElementById('signup-popup');
-const webinarPopup = document.getElementById('webinar-popup');
-const body = document.querySelector('.body');
+const body = document.querySelector('.js-body');
 const closePopup = document.querySelectorAll('.popup__close');
 
 for(let i = 0; i < openPopupBtn.length; i++) {
