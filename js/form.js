@@ -3,6 +3,8 @@ const signupUrl =
   "https://script.google.com/macros/s/AKfycbxJOD0hzk901LqjtdVn1atb9Twts0FbMtTrWbcy5ddpB-lw9aXj/exec";
 
 if (signupForm) {
+  const signupPopup = document.getElementById('signup-popup');
+
   signupForm.addEventListener("submit", function (e) {
     e.preventDefault();
     const xmlhttp = new XMLHttpRequest();
@@ -67,6 +69,7 @@ const webinarUrl =
   "https://script.google.com/macros/s/AKfycbxSKrp82GXu8afBjtPB6gN7Df0NWlIbww3vvXLwZg/exec";
 
 if (webinarForm) {
+  const webinarPopup = document.getElementById('webinar-popup');
   webinarForm.addEventListener("submit", function (e) {
     e.preventDefault();
     const xmlhttp = new XMLHttpRequest();
@@ -88,6 +91,40 @@ if (webinarForm) {
           webinarPopup.classList.add("visually-hidden");
           body.classList.remove("body__overlay");
           webinarPopup.querySelector(".popup__success").classList.add("hidden");
+        }, 3000);
+      }
+    };
+  });
+}
+
+const kidsForm = document.querySelector(".kids-form");
+const kidsUrl =
+  "https://script.google.com/macros/s/AKfycbz9GIbAJJnIF-aUcOXpqPJDI1wBJCxo-C1prk-DMj2BaG2M3b8N6z_9azDljLTbUYDz/exec";
+if (kidsForm) {
+  const kidsPopup = document.getElementById('kids-popup');
+
+  kidsForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const xmlhttp = new XMLHttpRequest();
+    const email = kidsForm.email.value;
+    const phone = kidsForm.phone.value;
+    const fullname = kidsForm.fullname.value;
+    const promocode = kidsForm.promocode.value;
+    xmlhttp.open(
+      "GET",
+      `${kidsUrl}?email=${email}&phone=${phone}&fullname=${fullname}&promocode=${promocode}`,
+      true
+    );
+    xmlhttp.send();
+
+    xmlhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        let response = JSON.parse(this.responseText);
+        kidsPopup.querySelector(".popup__success").classList.remove("hidden");
+        setTimeout(function () {
+          kidsPopup.classList.add("visually-hidden");
+          body.classList.remove("body__overlay");
+          kidsPopup.querySelector(".popup__success").classList.add("hidden");
         }, 3000);
       }
     };

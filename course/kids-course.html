@@ -26,7 +26,7 @@
       name="description"
       content="Get the Profession of the Future! SkillUp School web course will help you enter the IT field very easily. You will learn how to create a website. It is very interesting and it could be your future job!"
     />
-    <title>Children course</title>
+    <title>Kids Geeks course</title>
     <link rel="canonical" href="https://skillup.lu/" />
     <meta name="robots" content="index, follow" />
     <link
@@ -37,16 +37,16 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/skillup.css" />
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/popup.css" />
+    <link rel="stylesheet" href="../css/skillup.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/popup.css" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="SkillUp School Luxembourg" />
+    <meta property="og:title" content="Kids Geeks coding course" />
     <meta
       property="og:description"
-      content="Get the Profession of the Future! SkillUp School web course will help you enter the IT field very easily. You will learn how to create a website. It is very interesting and it could be your future job!"
+      content="Kids Geeks coding course in Luxembourg ПО-РУССКИ! 2-weeks intensive course in August!"
     />
-    <meta property="og:image" content="https://skillup.lu/share.png" />
+    <meta property="og:image" content="https://skillup.lu/img/kids-geeks.png" />
     <meta property="og:url" content="https://skillup.lu/" />
     <meta property="og:site_name" content="SkillUp School" />
     <link rel="icon" type="image/png" href="../favicon.png" />
@@ -80,7 +80,7 @@
       });
     </script>
   </head>
-  <body>
+  <body class="js-body">
     <div class="wrapper">
       <nav class="nav">
         <div class="nav__wrapper">
@@ -99,19 +99,19 @@
           </div>
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__item-link" href="#description">About SkillUp</a>
+              <a class="nav__item-link" href="../index.html#about">About SkillUp</a>
             </li>
-            <li class="nav__item">
+            <!-- <li class="nav__item">
               <a class="nav__item-link" href="#course">About Course</a>
-            </li>
+            </li> -->
             <li class="nav__item">
-              <a class="nav__item-link" href="#instructors">Instructors</a>
+              <a class="nav__item-link" href="../index.html#instructors">Instructors</a>
             </li>
             <li class="nav__item">
               <a class="nav__item-link" href="#contacts">Contacts</a>
             </li>
           </ul>
-          <button class="nav__register js-open-popup" data-popup="signup">
+          <button class="nav__register js-open-popup" data-popup="kids">
             Register
           </button>
         </div>
@@ -121,28 +121,87 @@
           <div class="children__left">
             <h1 class="children__title">
               <span class="children__lightblue children__bold"
-                >Детский курс</span
+                >Kids Geeks</span
               >
-              <span class="children__lightblue">программирования</span>
-              <span class="children__purple children__bold">в Люксембурге</span>
+              <span class="children__lightblue">coding course</span>
+              <span class="children__purple children__bold">in Luxembourg</span>
               <span class="children__purple">по-русски!</span>
             </h1>
             <p class="children__description">
-              2х недельный интенсивный курс в августе.
+              2-weeks intensive course in August
             </p>
           </div>
           <div class="children__right">
-            <img src="/img/children-animate.svg" alt="children pic" />
+            <img src="../img/children-animate.svg" alt="children pic" />
           </div>
         </div>
       </header>
       <main class="main">
         <section class="children__register">
-          <h2 class="visually-hidden">Записаться</h2>
-          <button class="nav__register children__register-button">
-            Записаться как early birds
+          <h2 class="visually-hidden">Apply</h2>
+          <button class="nav__register children__register-button js-open-popup" data-popup="kids">
+            Ask for details
           </button>
-          <p class="children__register-price">500 евро</p>
+          <p class="children__register-price">550 euro</p>
+          <p class="children__register-description">Take for this price until August, 5</p>
+        </section>
+        <section class="faq">
+          <h2 class="faq__title">QnA</h2>
+          <ul class="faq__wrapper">
+            <li class="faq__question">
+              When does the course start?</li>
+            <li class="faq__answer">
+              Course for kids starts in August.</li>
+            <li class="faq__question">
+              How long will the course last?</li>
+            <li class="faq__answer">
+              The course consists of 10 lessons, giving you 20 hours of immersion in web development.
+            </li>
+            <li class="faq__question">
+              How long is one lesson?</li>
+            <li class="faq__answer">
+              Each lesson is 2 hours.</li>
+            <li class="faq__question">
+              On which days and times will the classes be held?</li>
+            <li class="faq__answer">
+              Schedule is very flexible.
+            </li>
+            <li class="faq__question">
+              How many people will be in my group?</li>
+            <li class="faq__answer">
+              Small groups with up to 5 people.</li>
+            <li class="faq__question">
+              Will the lessons be recorded?</li>
+            <li class="faq__answer">
+              No.</li>
+            <li class="faq__question">
+              Can I pay for the course in several installments?</li>
+            <li class="faq__answer">
+              Yes, certainly. The payment can be divided into 2 or 3 parts.
+            </li>
+            <li class="faq__question">
+              Will I receive a certificate of completion?
+            </li>
+            <li class="faq__answer">
+              Yes, every student will receive a personal certificate confirming their knowledge.</li>
+            <li class="faq__question">
+              What is given more emphasis in the classroom: practice or theory?</li>
+            <li class="faq__answer">
+              In the classroom, we will study both theory and practice from day one. Students will also be given a
+              hands-on homework project.
+            </li>
+            <li class="faq__question">
+              Is this course suitable for a teenager who wants to focus on web development?
+            </li>
+            <li class="faq__answer">
+              Yes! We already have teenagers who have successfully completed the course.</li>
+            <li class="faq__question">
+              Can I have an individual lesson with the teacher?
+            </li>
+            <li class="faq__answer">
+              If you want the focus and concentration that a one-on-one learning experience can deliver, an individual lesson is perfect for you. 
+              Our experienced Teaching Professionals offer private 60-minute one-time sessions. The price per lesson is <mark>€95</mark>. For more information, please, write here: <a href="mailto:info@skillup.lu">info@skillup.lu</a></li>
+          </ul>
         </section>
         <section class="contacts" id="contacts">
           <div class="contacts__title-container">
@@ -223,6 +282,23 @@
           </li>
         </ul>
       </footer>
+      <section class="popup visually-hidden" id='kids-popup'>
+        <h2 class="popup__title">Yeah, great choice!</h2>
+        <p class="popup__description">Please fill the quick form to attend Kids Geeks course and we'll get back to you as soon as possible.</p>
+        <form action="#" class="popup__form kids-form">
+          <input required class="popup__input" type="text" name="fullname" placeholder="FullName">
+          <input required class="popup__input" type="email" name="email" placeholder="Email">
+          <input required class="popup__input" type="tel" name="phone" placeholder="International phone number format">
+          <input class="popup__input" type="text" name="promocode" placeholder="Promo code">
+          <p class="popup__success hidden">Thank you for subscribing to our course. We will contact you shortly!</p>
+          <button type="submit" class="header__register">Send</button>
+        </form>
+        <div class="popup__close">&#10006;</div>
+      </section>
     </div>
+    
+    <script src="../js/script.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/form.js"></script>
   </body>
 </html>
