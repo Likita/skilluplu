@@ -1823,6 +1823,8 @@ input.popup__input::placeholder {
   }
 }
 
+/* kids-course styles */
+
 .children__header {
   background-image: url("../img/skillup/triangles-children-right-bottom.png");
   background-position: right bottom;
@@ -1870,7 +1872,7 @@ input.popup__input::placeholder {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 0 30px;
+  padding: 60px 15px 30px;
   background-image: url("../img/skillup/triangles-children-register.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -1899,4 +1901,43 @@ input.popup__input::placeholder {
   color: #ffffff;
   font-size: 30px;
   opacity: 0.7;
+}
+
+@media (max-width: 1200px) {
+  .children__right img {
+    width: 100%;
+  }
+
+  .children__title {
+    font-size: 43px;
+    line-height: 64.85px;
+  }
+}
+
+@media (max-width: 810px) {
+  .children__header {
+    background-size: 28%;
+  }
+
+  .children__wrapper {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .children__left {
+    margin: 0 auto;
+  }
+
+  .children__register-button {
+    font-size: 22px;
+  }
+
+  .children__register-price {
+    font-size: 32px;
+  }
+
+  .children__register-description {
+    text-align: center;
+    font-size: 28px;
+  }
 }
