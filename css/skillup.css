@@ -216,8 +216,8 @@ ul {
 }
 
 .header {
-  background-image: url("../img/skillup/triangle-mobile-header-right-middle.png"),
-    url("../img/skillup/triangle-mobile-header-right-bottom.png"),
+  background-image: url("../img/skillup/triangle-mobile-header-right-middle.svg"),
+    url("../img/skillup/triangle-mobile-header-right-bottom.svg"),
     url("../img/skillup/header-picture-mobile.png");
   background-repeat: no-repeat;
   background-position: right center, right bottom, right 180px;
@@ -302,7 +302,7 @@ ul {
 .roadmap {
   background-color: #ffffff;
   padding: 65px 15px 15px;
-  background-image: url("../img/skillup/triangle-mobile-roadmap-right-top.png");
+  background-image: url("../img/skillup/triangle-mobile-roadmap-right-top.svg");
   background-repeat: no-repeat;
   background-position: 100% -44px;
 }
@@ -332,7 +332,7 @@ ul {
 .technology {
   padding: 15px;
   background-color: #ffffff;
-  background-image: url("../img/skillup/triangle-mobile-technology-right-bottom.png");
+  background-image: url("../img/skillup/triangle-mobile-technology-right-bottom.svg");
   background-repeat: no-repeat;
   background-position: right bottom;
 }
@@ -377,7 +377,7 @@ ul {
   margin: 0 auto;
   padding: 15px;
   background-color: #ffffff;
-  background-image: url("../img/skillup/triangle-mobile-web-is-right-top.png");
+  background-image: url("../img/skillup/triangle-mobile-web-is-right-top.svg");
   background-repeat: no-repeat;
   background-position: right top;
 }
@@ -463,7 +463,7 @@ ul {
 
 .certificate {
   padding: 15px;
-  background-image: url("../img/skillup/triangle-mobile-certificate-left-middle.png");
+  background-image: url("../img/skillup/triangle-mobile-certificate-left-middle.svg");
   background-repeat: no-repeat;
   background-position: left center;
 }
@@ -502,7 +502,7 @@ ul {
 
 .meet {
   padding: 15px 15px 45px;
-  background-image: url("../img/skillup/triangle-mobile-meet-right-bottom.png");
+  background-image: url("../img/skillup/triangle-mobile-meet-right-bottom.svg");
   background-repeat: no-repeat;
   background-position: right bottom;
 }
@@ -527,8 +527,8 @@ ul {
   padding: 15px;
   background-color: #0398df;
   color: #ffffff;
-  background-image: url("../img/skillup/triangle-mobile-mentor-right-top.png"),
-    url("../img/skillup/triangle-mobile-mentor-right-bottom.png");
+  background-image: url("../img/skillup/triangle-mobile-mentor-right-top.svg"),
+    url("../img/skillup/triangle-mobile-mentor-right-bottom.svg");
   background-repeat: no-repeat;
   background-position: right top, right bottom;
 }
@@ -872,8 +872,8 @@ ul {
   overflow-y: auto;
   border-radius: 10px;
   background-color: #ffffff;
-  background-image: url("../img/skillup/triangle-mobile-popup-left.png"),
-    url("../img/skillup/triangle-mobile-popup-right.png");
+  background-image: url("../img/skillup/triangle-mobile-popup-left.svg"),
+    url("../img/skillup/triangle-mobile-popup-right.svg");
   background-repeat: no-repeat;
   background-position: left top, right bottom;
   box-shadow: 0px 5px 50px 1px rgba(102, 0, 255, 0.1);
@@ -1072,7 +1072,7 @@ input.popup__input::placeholder {
 
   .header {
     background-image: url("../img/skillup/header-picture.png"),
-      url("../img/skillup/triangle-mobile-header-right-bottom.png");
+      url("../img/skillup/triangle-mobile-header-right-bottom.svg");
     background-size: 270px;
   }
 
@@ -1252,7 +1252,7 @@ input.popup__input::placeholder {
 
   .header {
     background-image: url("../img/skillup/header-picture.png"),
-      url("../img/skillup/triangles-header.png");
+      url("../img/skillup/triangle-header.svg");
     background-position: 103% 34%, 93% 100%;
     background-size: 35%, auto;
   }
@@ -1283,8 +1283,8 @@ input.popup__input::placeholder {
   }
 
   .roadmap {
-    background-image: url("../img/skillup/triangles-roadmap-left-top.png"),
-      url("../img/skillup/triangles-roadmap-left-bottom.png");
+    background-image: url("../img/skillup/triangle-roadmap-left-top.svg"),
+      url("../img/skillup/triangle-roadmap-left-bottom.svg");
     background-repeat: no-repeat;
     background-position: left top, left bottom;
     background-size: 17%;
@@ -1305,9 +1305,9 @@ input.popup__input::placeholder {
   }
 
   .technology {
-    background-image: url("../img/skillup/triangles-technology-left-top.png"),
-      url("../img/skillup/triangles-technology-right.png"),
-      url("../img/skillup/triangles-technology-left-bottom.png");
+    background-image: url("../img/skillup/triangle-technology-left-top.svg"),
+      url("../img/skillup/triangle-technology-right.svg"),
+      url("../img/skillup/triangle-technology-left-bottom.svg");
     background-repeat: no-repeat;
     background-position: 0 39px, right bottom, left bottom;
     background-size: 15%, 30%, 12%;
@@ -1338,9 +1338,9 @@ input.popup__input::placeholder {
 
   .web-is {
     padding: 35px 88px;
-    background-image: url("../img/skillup/triangles-web-is-left-top.png"),
-      url("../img/skillup/triangles-web-is-right.png"),
-      url("../img/skillup/triangles-web-is-left-bottom.png");
+    background-image: url("../img/skillup/triangle-web-is-left-top.svg"),
+      url("../img/skillup/triangle-web-is-right.svg"),
+      url("../img/skillup/triangle-web-is-left-bottom.svg");
     background-repeat: no-repeat;
     background-position: 16px 0, 100% 0, 0 100%;
     background-size: 12%, 30%, 30%;
@@ -1348,8 +1348,8 @@ input.popup__input::placeholder {
 
   .course-for {
     padding: 35px 88px;
-    background-image: url("../img/skillup/triangles-course-for-left.png"),
-      url("../img/skillup/triangles-course-for-right.png");
+    background-image: url("../img/skillup/triangle-course-for-left.svg"),
+      url("../img/skillup/triangle-course-for-right.svg");
     background-repeat: no-repeat;
     background-position: 0% 100%, 100% -99px;
     background-size: 11%, auto;
@@ -1379,8 +1379,8 @@ input.popup__input::placeholder {
 
   .certificate {
     padding: 35px 88px;
-    background-image: url("../img/skillup/triangles-certificate-left.png"),
-      url("../img/skillup/triangles-certificate-right.png");
+    background-image: url("../img/skillup/triangle-certificate-left.svg"),
+      url("../img/skillup/triangle-certificate-right.svg");
     background-repeat: no-repeat;
     background-size: 294px, 220px;
     background-position: left bottom, right bottom;
@@ -1388,8 +1388,8 @@ input.popup__input::placeholder {
 
   .meet {
     padding: 93px 168px;
-    background-image: url("../img/skillup/triangles-meet-left.png"),
-      url("../img/skillup/triangles-meet-right.png");
+    background-image: url("../img/skillup/triangle-meet-left.svg"),
+      url("../img/skillup/triangle-meet-right.svg");
     background-repeat: no-repeat;
     background-position: 0% 100.6%, 95.7% 100.6%;
     background-size: 15%, 60%;
@@ -1438,10 +1438,10 @@ input.popup__input::placeholder {
 
   .buy {
     padding: 35px 88px;
-    background-image: url("../img/skillup/triangles-buy-left-top.png"),
-      url("../img/skillup/triangles-buy-right-top.png"),
-      url("../img/skillup/triangles-buy-right-bottom.png"),
-      url("../img/skillup/triangles-buy-left-bottom.png");
+    background-image: url("../img/skillup/triangle-buy-left-top.svg"),
+      url("../img/skillup/triangle-buy-right-top.svg"),
+      url("../img/skillup/triangle-buy-right-bottom.svg"),
+      url("../img/skillup/triangle-buy-left-bottom.svg");
     background-repeat: no-repeat;
     background-position: 0 0, calc(100% - 190px) 0, 100% 100%, 0 100%;
     background-size: auto;
@@ -1713,8 +1713,8 @@ input.popup__input::placeholder {
 
   .course-join {
     padding: 35px 118px;
-    background-image: url("../img/skillup/triangles-course-join-left.png"),
-      url("../img/skillup/triangles-course-join-right.png");
+    background-image: url("../img/skillup/triangle-course-join-left.svg"),
+      url("../img/skillup/triangle-course-join-right.svg");
     background-repeat: no-repeat;
     background-position: left top, right top;
   }
@@ -1815,8 +1815,8 @@ input.popup__input::placeholder {
   }
 
   .mentor {
-    background-image: url("../img/skillup/triangles-mentor-left.png"),
-      url("../img/skillup/triangles-mentor-right.png");
+    background-image: url("../img/skillup/triangle-mentor-left.svg"),
+      url("../img/skillup/triangle-mentor-right.svg");
     background-repeat: no-repeat;
     background-position: 0 0, calc(100% + 38px) 0;
     background-size: auto, auto;
@@ -1826,7 +1826,7 @@ input.popup__input::placeholder {
 /* kids-course styles */
 
 .children__header {
-  background-image: url("../img/skillup/triangles-children-right-bottom.png");
+  background-image: url("../img/skillup/triangle-children-right-bottom.svg");
   background-position: right bottom;
   background-repeat: no-repeat;
 }

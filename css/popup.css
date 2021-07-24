@@ -139,9 +139,9 @@
 
 @media (min-width: 1024px) {
   .popup {
-    background-image: url("../img/skillup/triangles-popup-left-top.png"),
-      url("../img/skillup/triangles-popup-left-bottom.png"),
-      url("../img/skillup/triangles-popup-right-bottom.png");
+    background-image: url("../img/skillup/triangle-popup-left-top.svg"),
+      url("../img/skillup/triangle-popup-left-bottom.svg"),
+      url("../img/skillup/triangle-popup-right-bottom.svg");
     background-position: left top, left bottom, right bottom;
     background-repeat: no-repeat;
   }

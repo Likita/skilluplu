@@ -1,0 +1,17 @@
+<svg width="184" height="158" viewBox="0 0 184 158" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.7" d="M123.136 105.087L153.361 53.0005H92.9102L123.136 105.087Z" fill="#0398DF">
+  <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='3.1s' repeatCount='indefinite' />
+</path>
+<path opacity="0.5" d="M31.6311 53.0002L62.2705 105.087H0.991699L31.6311 53.0002Z" fill="#0398DF">
+  <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='3.2s' repeatCount='indefinite' />
+</path>
+<path d="M153.361 53.0002L184 0.913635H122.721L153.361 53.0002Z" fill="#0398DF">
+  <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='3.3s' repeatCount='indefinite' />
+</path>
+<path d="M153.361 158L184 105.087H122.721L153.361 158Z" fill="#0398DF">
+  <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='3.4s' repeatCount='indefinite' />
+</path>
+<path opacity="0.4" d="M92.4959 158L122.721 105.087H62.2705L92.4959 158Z" fill="#0398DF">
+  <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='3.5s' repeatCount='indefinite' />
+</path>
+</svg>

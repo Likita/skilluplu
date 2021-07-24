@@ -36,7 +36,7 @@ mark {
 }
 
 .webinar__top-content {
-  background-color: #E0F2FB;
+  background-color: #e0f2fb;
   padding: 15px 0;
 }
 
@@ -244,7 +244,7 @@ mark {
   .webinar__top-content {
     margin: 0 -35px;
     padding: 20px 35px;
-    background-image: url('../img/skillup/free.png');
+    background-image: url("../img/skillup/free.png");
     background-repeat: no-repeat;
     background-position: right center;
   }
@@ -266,7 +266,7 @@ mark {
   .webinar {
     max-width: 1314px;
     margin: 0 auto;
-    background-image: url('../img/skillup/triangles-webinar-right-top.png');
+    background-image: url("../img/skillup/triangles-webinar-right-top.png");
     background-repeat: no-repeat;
     background-position: right top;
   }
@@ -275,7 +275,6 @@ mark {
     background-position: calc(100% - 100px) 50%;
     position: relative;
     z-index: -1;
-
   }
 }
 

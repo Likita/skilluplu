@@ -1,0 +1,62 @@
+<svg width="993" height="189" viewBox="0 0 993 189" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.4" d="M597.785 186.993L562 125.235H633.569L597.785 186.993Z" fill="#ECF7FD">
+  <animate attributeName='fill' values='#ECF7FD;#0398DF;#ECF7FD' dur='3.1s' repeatCount='indefinite' />
+</path>
+<path d="M885.024 62.4966L957.083 186.993H812.964L885.024 62.4966Z" fill="#0398DF">
+  <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='3.2s' repeatCount='indefinite' />
+</path>
+<path d="M920.808 125.235L992.377 0.738632L849.238 0.738632L920.808 125.235Z" fill="#68C1EC">
+  <animate attributeName='fill' values='#68C1EC;#68C1EC00;#68C1EC' dur='3.3s' repeatCount='indefinite' />
+</path>
+<path d="M777.108 125.993L741.323 63.2547H812.893L777.108 125.993Z" fill="#68C1EC">
+  <animate attributeName='fill' values='#68C1EC;#68C1EC00;#68C1EC' dur='3.4s' repeatCount='indefinite' />
+</path>
+<path d="M920.808 125.235L884.533 62.4969H957.083L920.808 125.235Z" fill="#E0F2FB">
+  <animate attributeName='fill' values='#E0F2FB;#0398DF;#E0F2FB' dur='3.5s' repeatCount='indefinite' />
+</path>
+<path d="M885.024 186.993L849.239 125.235H920.809L885.024 186.993Z" fill="#68C1EC">
+  <animate attributeName='fill' values='#68C1EC;#68C1EC00;#68C1EC' dur='3.6s' repeatCount='indefinite' />
+</path>
+<path d="M210.808 125L174.533 187.738H247.083L210.808 125Z" fill="#68C1EC">
+  <animate attributeName='fill' values='#68C1EC;#68C1EC00;#68C1EC' dur='3.7s' repeatCount='indefinite' />
+</path>
+<path d="M495.275 124L459 186.738H531.55L495.275 124Z" fill="#0398DF">
+  <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='3.8s' repeatCount='indefinite' />
+</path>
+<path opacity="0.6" d="M740.785 63.4971L705 0.758572H776.569L740.785 63.4971Z" fill="#68C1EC">
+  <animate attributeName='fill' values='#68C1EC;#68C1EC00;#68C1EC' dur='3.9s' repeatCount='indefinite' />
+</path>
+<path d="M633.059 125.235L597.274 186.994H668.844L633.059 125.235Z" fill="#0398DF">
+  <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='4s' repeatCount='indefinite' />
+</path>
+<path opacity="0.5" d="M849.749 0.738281L813.964 62.4965H885.533L849.749 0.738281Z" fill="#EBF7FC">
+  <animate attributeName='fill' values='#EBF7FC;#0398DF;#EBF7FC' dur='4.1s' repeatCount='indefinite' />
+</path>
+<path opacity="0.5" d="M286.785 126.738L251 188.496H322.569L286.785 126.738Z" fill="#EBF7FC">
+  <animate attributeName='fill' values='#EBF7FC;#0398DF;#EBF7FC' dur='4.2s' repeatCount='indefinite' />
+</path>
+<path d="M777.179 125.235L741.394 186.994H812.964L777.179 125.235Z" fill="#CCEAF8">
+  <animate attributeName='fill' values='#CCEAF8;#68C1EC;#CCEAF8' dur='4.3s' repeatCount='indefinite' />
+</path>
+<path d="M848.749 125.235L812.964 186.994H884.533L848.749 125.235Z" fill="#E0F2FB">
+  <animate attributeName='fill' values='#E0F2FB;#68C1EC;#E0F2FB' dur='4.4s' repeatCount='indefinite' />
+</path>
+<path opacity="0.4" d="M740.904 62.4966L705.119 125.235H776.688L740.904 62.4966Z" fill="#E0F2FB">
+  <animate attributeName='fill' values='#E0F2FB;#68C1EC;#E0F2FB' dur='4.5s' repeatCount='indefinite' />
+</path>
+<path d="M956.592 62.4966L920.807 125.235H992.377L956.592 62.4966Z" fill="#EBF7FC">
+  <animate attributeName='fill' values='#EBF7FC;#68C1EC;#EBF7FC' dur='4.6s' repeatCount='indefinite' />
+</path>
+<path d="M956.592 186.993L920.807 125.235H992.377L956.592 186.993Z" fill="#68C1EC">
+  <animate attributeName='fill' values='#68C1EC;#68C1EC00;#68C1EC' dur='4.7s' repeatCount='indefinite' />
+</path>
+<path d="M742.108 186.993L706.323 125.235H777.27L742.108 186.993Z" fill="#0398DF">
+  <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='4.8s' repeatCount='indefinite' />
+</path>
+<path d="M35.7846 123L-0.00012207 185.738H71.5693L35.7846 123Z" fill="#EBF7FC">
+  <animate attributeName='fill' values='#EBF7FC;#68C1EC;#EBF7FC' dur='4.9s' repeatCount='indefinite' />
+</path>
+<path d="M920.808 0.738281L884.533 62.4965H957.083L920.808 0.738281Z" fill="#0398DF">
+  <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='5s' repeatCount='indefinite' />
+</path>
+</svg>
