@@ -1,0 +1,47 @@
+<svg width="440" height="380" viewBox="0 0 440 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.5" d="M44.0001 304L6.76793e-05 380L88.0001 380L44.0001 304Z" fill="#FF9900">
+  <animate attributeName='fill' values='#FF9900;#FF990000;#FF9900' dur='3s' repeatCount='indefinite' />
+</path>
+<path d="M220 304L176 380L264 380L220 304Z" fill="#FF9900">
+  <animate attributeName='fill' values='#FF9900;#FF990000;#FF9900' dur='3.1s' repeatCount='indefinite' />
+</path>
+<path opacity="0.5" d="M308 304L264 380L352 380L308 304Z" fill="#FF9900">
+  <animate attributeName='fill' values='#FF9900;#FF990000;#FF9900' dur='3.2s' repeatCount='indefinite' />
+</path>
+<path d="M352 380L308 304L396 304L352 380Z" fill="#FF8700">
+  <animate attributeName='fill' values='#ff8700;#ff870000;#ff8700' dur='3.4s' repeatCount='indefinite' />
+</path>
+<path d="M396 304L352 380L440 380L396 304Z" fill="#FF9900">
+  <animate attributeName='fill' values='#FF9900;#FF990000;#FF9900' dur='3.5s' repeatCount='indefinite' />
+</path>
+<path d="M176 228L132 304L220 304L176 228Z" fill="#FF8700">
+  <animate attributeName='fill' values='#FF8700;#FF870000;#FF8700' dur='3.6s' repeatCount='indefinite' />
+</path>
+<path d="M308 152L264 228L352 228L308 152Z" fill="#FF7600">
+  <animate attributeName='fill' values='#FF7600;#FF760000;#FF7600' dur='3.7s' repeatCount='indefinite' />
+</path>
+<path opacity="0.5" d="M264 228L220 152L308 152L264 228Z" fill="#FF9900">
+  <animate attributeName='fill' values='#FF9900;#FF990000;#FF9900' dur='3.8s' repeatCount='indefinite' />
+</path>
+<path d="M440 228L396 152L440 152L440 228Z" fill="#FF7600">
+  <animate attributeName='fill' values='#FF7600;#FF760000;#FF7600' dur='3.9s' repeatCount='indefinite' />
+</path>
+<path d="M88.0001 380L44.0001 304L132 304L88.0001 380Z" fill="#FF9900">
+  <animate attributeName='fill' values='#FF9900;#FF990000;#FF9900' dur='4s' repeatCount='indefinite' />
+</path>
+<path d="M440 228L396 304L440 304L440 228Z" fill="#FF9900">
+  <animate attributeName='fill' values='#FF9900;#FF990000;#FF9900' dur='4.1s' repeatCount='indefinite' />
+</path>
+<path opacity="0.5" d="M396 152L352 228L440 228L396 152Z" fill="#FF9900">
+  <animate attributeName='fill' values='#FF9900;#FF990000;#FF9900' dur='4.2s' repeatCount='indefinite' />
+</path>
+<path opacity="0.5" d="M440 76L396 152L440 152L440 76Z" fill="#FF9900">
+  <animate attributeName='fill' values='#FF9900;#FF990000;#FF9900' dur='4.3s' repeatCount='indefinite' />
+</path>
+<path d="M396 3.8466e-06L352 76L440 76L396 3.8466e-06Z" fill="#FF6800">
+  <animate attributeName='fill' values='#FF6800;#FF680000;#FF6800' dur='4.4s' repeatCount='indefinite' />
+</path>
+<path opacity="0.5" d="M440 380L396 304L440 304L440 380Z" fill="#FF9900">
+  <animate attributeName='fill' values='#FF9900;#FF990000;#FF9900' dur='4.5s' repeatCount='indefinite' />
+</path>
+</svg>

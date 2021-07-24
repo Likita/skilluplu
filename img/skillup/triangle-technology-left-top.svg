@@ -1,0 +1,47 @@
+<svg width="304" height="315" viewBox="0 0 304 315" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.9" d="M212.496 105L151.631 0L273.361 0L212.496 105Z" fill="#6301D4">
+  <animate attributeName='fill' values='#6301D4;#6301D400;#6301D4' dur='3.1s' repeatCount='indefinite' />
+</path>
+<path d="M182.271 52.9133L212.91 -6.10352e-05H151.631L182.271 52.9133Z" fill="#6301D4">
+  <animate attributeName='fill' values='#6301D4;#6301D400;#6301D4' dur='3.2s' repeatCount='indefinite' />
+</path>
+<path opacity="0.9" d="M90.7664 0L120.992 52.9134H60.541L90.7664 0Z" fill="#6301D4">
+  <animate attributeName='fill' values='#6301D4;#6301D400;#6301D4' dur='3.4s' repeatCount='indefinite' />
+</path>
+<path opacity="0.8" d="M242.635 53.1256L273.361 105H212.479L242.635 53.1256Z" fill="#6301D4">
+  <animate attributeName='fill' values='#6301D4;#6301D400;#6301D4' dur='3.3s' repeatCount='indefinite' />
+</path>
+<path d="M60.5411 52.9133L91.1805 -6.10352e-05H29.9016L60.5411 52.9133Z" fill="#6301D4">
+  <animate attributeName='fill' values='#6301D4;#6301D400;#6301D4' dur='3.5s' repeatCount='indefinite' />
+</path>
+<path d="M212.496 0L242.721 52.9134H182.271L212.496 0Z" fill="#6301D4">
+  <animate attributeName='fill' values='#6301D4;#6301D400;#6301D4' dur='3.6s' repeatCount='indefinite' />
+</path>
+<path opacity="0.8" d="M182.271 157.913L212.515 105H151.631L182.271 157.913Z" fill="#6301D4">
+  <animate attributeName='fill' values='#6301D4;#6301D400;#6301D4' dur='3.7s' repeatCount='indefinite' />
+</path>
+<path opacity="0.7" d="M243.135 262.087L273.361 210H212.91L243.135 262.087Z" fill="#6301D4">
+  <animate attributeName='fill' values='#6301D4;#6301D400;#6301D4' dur='3.8s' repeatCount='indefinite' />
+</path>
+<path opacity="0.5" d="M30.3155 105L60.541 157.913H0.0900879L30.3155 105Z" fill="#6301D4">
+  <animate attributeName='fill' values='#6301D4;#6301D400;#6301D4' dur='3.9s' repeatCount='indefinite' />
+</path>
+<path opacity="0.5" d="M151.631 210L182.271 262.087H120.992L151.631 210Z" fill="#6301D4">
+  <animate attributeName='fill' values='#6301D4;#6301D400;#6301D4' dur='4s' repeatCount='indefinite' />
+</path>
+<path opacity="0.8" d="M151.631 105L182.271 52.9134H120.992L151.631 105Z" fill="#6301D4">
+  <animate attributeName='fill' values='#6301D4;#6301D400;#6301D4' dur='4.1s' repeatCount='indefinite' />
+</path>
+<path d="M273.361 210L304 157.913H242.721L273.361 210Z" fill="#6301D4">
+  <animate attributeName='fill' values='#6301D4;#6301D400;#6301D4' dur='4.2s' repeatCount='indefinite' />
+</path>
+<path d="M273.361 315L304 262.087H242.721L273.361 315Z" fill="#6301D4">
+  <animate attributeName='fill' values='#6301D4;#6301D400;#6301D4' dur='4.3s' repeatCount='indefinite' />
+</path>
+<path opacity="0.4" d="M121.406 157.913L151.631 105H91.1804L121.406 157.913Z" fill="#6301D4">
+  <animate attributeName='fill' values='#6301D4;#6301D400;#6301D4' dur='4.4s' repeatCount='indefinite' />
+</path>
+<path opacity="0.4" d="M212.496 315L242.721 262.087H182.271L212.496 315Z" fill="#6301D4">
+  <animate attributeName='fill' values='#6301D4;#6301D400;#6301D4' dur='4.5s' repeatCount='indefinite' />
+</path>
+</svg>

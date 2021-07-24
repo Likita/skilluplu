@@ -1,0 +1,83 @@
+<svg width="325" height="623" viewBox="0 0 325 623" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.4" d="M288.318 186.255L324.103 124.497H252.533L288.318 186.255Z" fill="#ECF7FD">
+  <animate attributeName='fill' values='#ECF7FD;#0398DF;#ECF7FD' dur='3.1s' repeatCount='indefinite' />
+</path>
+<path opacity="0.6" d="M252.533 124.497L288.808 186.255H216.258L252.533 124.497Z" fill="#0398DF">
+  <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='3.2s' repeatCount='indefinite' />
+</path>
+<path d="M36.3542 124.497L-35.7055 0.000114441L108.414 0.000114441L36.3542 124.497Z" fill="#5BBCEA">
+  <animate attributeName='fill' values='#5BBCEA;#5BBCEA00;#5BBCEA' dur='3.3s' repeatCount='indefinite' />
+</path>
+<path d="M0.56945 61.7585L-71 186.255H72.1389L0.56945 61.7585Z" fill="#0398DF">
+  <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='3.4s' repeatCount='indefinite' />
+</path>
+<path d="M144.27 61.0002L180.055 123.739H108.485L144.27 61.0002Z" fill="#68C1EC">
+  <animate attributeName='fill' values='#68C1EC;#68C1EC00;#68C1EC' dur='3.5s' repeatCount='indefinite' />
+</path>
+<path opacity="0.6" d="M36.3543 372.51L72.1391 310.752H0.56958L36.3543 372.51Z" fill="#E0F2FB">
+  <animate attributeName='fill' values='#E0F2FB;#0398DF;#E0F2FB' dur='3.6s' repeatCount='indefinite' />
+</path>
+<path opacity="0.6" d="M144.199 310.752L179.983 248.994H108.414L144.199 310.752Z" fill="#E0F2FB">
+  <animate attributeName='fill' values='#E0F2FB;#0398DF;#E0F2FB' dur='3.7s' repeatCount='indefinite' />
+</path>
+<path d="M0.569622 61.7585L36.8446 124.497H-35.7053L0.569622 61.7585Z" fill="#0398DF">
+  <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='3.8s' repeatCount='indefinite' />
+</path>
+<path d="M36.3543 0.000244141L72.1391 61.7585H0.56958L36.3543 0.000244141Z" fill="#E0F2FB">
+  <animate attributeName='fill' values='#E0F2FB;#68C1EC;#E0F2FB' dur='3.9s' repeatCount='indefinite' />
+</path>
+<path d="M0.569622 186.255L36.8446 248.993H-35.7053L0.569622 186.255Z" fill="#0398DF">
+  <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='4s' repeatCount='indefinite' />
+</path>
+<path opacity="0.6" d="M36.3543 372.51L72.1391 435.248H0.56958L36.3543 372.51Z" fill="#68C1EC">
+  <animate attributeName='fill' values='#68C1EC;#68C1EC00;#68C1EC' dur='4.1s' repeatCount='indefinite' />
+</path>
+<path opacity="0.6" d="M288.318 61.7585L324.103 124.497H252.533L288.318 61.7585Z" fill="#68C1EC">
+  <animate attributeName='fill' values='#68C1EC;#68C1EC00;#68C1EC' dur='4.2s' repeatCount='indefinite' />
+</path>
+<path opacity="0.6" d="M252.533 0.000244141L288.808 61.7585H216.258L252.533 0.000244141Z" fill="#68C1EC">
+  <animate attributeName='fill' values='#68C1EC;#68C1EC00;#68C1EC' dur='4.3s' repeatCount='indefinite' />
+</path>
+<path d="M288.318 61.7585L324.103 0.000331879H252.533L288.318 61.7585Z" fill="#0398DF">
+  <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='4.4s' repeatCount='indefinite' />
+</path>
+<path opacity="0.5" d="M71.6292 186.255L107.414 124.497H35.8445L71.6292 186.255Z" fill="#ECF7FD">
+  <animate attributeName='fill' values='#ECF7FD;#0398DF;#ECF7FD' dur='4.5s' repeatCount='indefinite' />
+</path>
+<path d="M144.199 61.7585L179.983 0.000331879H108.414L144.199 61.7585Z" fill="#0398DF">
+  <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='4.6s' repeatCount='indefinite' />
+</path>
+<path d="M72.6292 61.7585L108.414 0.000331879H36.8445L72.6292 61.7585Z" fill="#0398DF">
+  <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='4.7s' repeatCount='indefinite' />
+</path>
+<path opacity="0.4" d="M180.474 124.497L216.258 61.7583H144.689L180.474 124.497Z" fill="#A4DAF4">
+  <animate attributeName='fill' values='#A4DAF4;#A4DAF400;#A4DAF4' dur='4.8s' repeatCount='indefinite' />
+</path>
+<path opacity="0.4" d="M144.199 186.255L179.983 248.993H108.414L144.199 186.255Z" fill="#0398DF">
+  <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='4.9s' repeatCount='indefinite' />
+</path>
+<path opacity="0.4" d="M0.569622 435.248L36.8446 497.006H-35.7053L0.569622 435.248Z" fill="#A4DAF4">
+  <animate attributeName='fill' values='#A4DAF4;#A4DAF400;#A4DAF4' dur='5s' repeatCount='indefinite' />
+</path>
+<path opacity="0.4" d="M72.6292 310.752L108.414 248.994H36.8445L72.6292 310.752Z" fill="#A4DAF4">
+  <animate attributeName='fill' values='#A4DAF4;#A4DAF400;#A4DAF4' dur='5.1s' repeatCount='indefinite' />
+</path>
+<path d="M0.569622 310.752L36.8446 248.994H-35.7053L0.569622 310.752Z" fill="#0398DF">
+  <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='5.2s' repeatCount='indefinite' />
+</path>
+<path d="M179.27 0.000244141L215.055 61.7585H144.108L179.27 0.000244141Z" fill="#68C1EC">
+  <animate attributeName='fill' values='#68C1EC;#68C1EC00;#68C1EC' dur='5.3s' repeatCount='indefinite' />
+</path>
+<path d="M0.569622 186.255L36.8446 124.497H-35.7053L0.569622 186.255Z" fill="#A4DAF4">
+  <animate attributeName='fill' values='#A4DAF4;#A4DAF400;#A4DAF4' dur='5.4s' repeatCount='indefinite' />
+</path>
+<path opacity="0.5" d="M73.3347 559.758L109.119 622.496H37.55L73.3347 559.758Z" fill="#9AD6F2">
+  <animate attributeName='fill' values='#9AD6F2;#9AD6F200;#9AD6F2' dur='5.5s' repeatCount='indefinite' />
+</path>
+<path d="M37.0596 622.496L72.8444 559.758H1.2749L37.0596 622.496Z" fill="#0398DF">
+  <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='5.6s' repeatCount='indefinite' />
+</path>
+<path opacity="0.4" d="M37.0596 498L72.8444 559.758H1.2749L37.0596 498Z" fill="#0398DF">
+  <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='5.7s' repeatCount='indefinite' />
+</path>
+</svg>

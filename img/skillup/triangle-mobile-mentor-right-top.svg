@@ -1,0 +1,14 @@
+<svg width="81" height="48" viewBox="0 0 81 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.6" d="M13.776 48L0.105396 24.4278H27.4465L13.776 48Z" fill="#9AD6F2">
+  <animate attributeName='fill' values='#9AD6F2;#9AD6F200;#9AD6F2' dur='3s' repeatCount='indefinite' />
+</path>
+<path d="M68.1341 47.9924L54.4635 24.0461H81.8047L68.1341 47.9924Z" fill="#68C1EC">
+  <animate attributeName='fill' values='#68C1EC;#68C1EC00;#68C1EC' dur='4s' repeatCount='indefinite' />
+</path>
+<path opacity="0.4" d="M54.9351 23.9463L41.4492 -3.05176e-05H68.4209L54.9351 23.9463Z" fill="#68C1EC">
+  <animate attributeName='fill' values='#68C1EC;#68C1EC00;#68C1EC' dur='4.5s' repeatCount='indefinite' />
+</path>
+<path d="M81.6196 24.0461L68.1338 47.9925H95.1055L81.6196 24.0461Z" fill="#EBF7FC">
+  <animate attributeName='fill' values='#EBF7FC;#68C1EC;#EBF7FC' dur='3.5s' repeatCount='indefinite' />
+</path>
+</svg>

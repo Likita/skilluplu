@@ -1,0 +1,8 @@
+<svg width="37" height="105" viewBox="0 0 37 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.5" d="M0 21L37 0L37 42L0 21Z" fill="#81CBEF">
+  <animate attributeName='fill' values='#81CBEF;#81CBEF00;#81CBEF' dur='3s' repeatCount='indefinite' />
+</path>
+<path opacity="0.8" d="M37 84L0 63L0 105L37 84Z" fill="#0398DF">
+  <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='4s' repeatCount='indefinite' />
+</path>
+</svg>

@@ -1,0 +1,32 @@
+<svg width="146" height="190" viewBox="0 0 146 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.9" d="M73 63.5L0 106L0 21L73 63.5Z" fill="#7301D2">
+  <animate attributeName='fill' values='#7301D2;#7301D200;#7301D2' dur='3.1s' repeatCount='indefinite' />
+</path>
+<path d="M37 84.5L0 63L0 106L37 84.5Z" fill="#6600FF">
+  <animate attributeName='fill' values='#6600FF;#6600FF00;#6600FF' dur='3.2s' repeatCount='indefinite' />
+</path>
+<path opacity="0.9" d="M0 148L37 127L37 169L0 148Z" fill="#0398DF">
+  <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='3.3s' repeatCount='indefinite' />
+</path>
+<path opacity="0.8" d="M37 42.1628L73 21L73 63L37 42.1628Z" fill="#2B01D4">
+  <animate attributeName='fill' values='#2B01D4;#2B01D400;#2B01D4' dur='3.4s' repeatCount='indefinite' />
+</path>
+<path d="M37 168.5L0 147L0 190L37 168.5Z" fill="#6600FF">
+  <animate attributeName='fill' values='#6600FF;#6600FF00;#6600FF' dur='3.5s' repeatCount='indefinite' />
+</path>
+<path d="M0 63.3386L37 43L37 84L0 63.3386Z" fill="#5101D7">
+  <animate attributeName='fill' values='#5101D7;#5101D700;#5101D7' dur='3.6s' repeatCount='indefinite' />
+</path>
+<path opacity="0.8" d="M110 84.1929L73 63V106L110 84.1929Z" fill="#0398DF">
+  <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='3.7s' repeatCount='indefinite' />
+</path>
+<path opacity="0.8" d="M73 105.5L37 84L37 127L73 105.5Z" fill="#5C01D7">
+  <animate attributeName='fill' values='#5C01D7;#5C01D700;#5C01D7' dur='3.8s' repeatCount='indefinite' />
+</path>
+<path d="M146 21L110 0V42L146 21Z" fill="#5C01D7">
+  <animate attributeName='fill' values='#5C01D7;#5C01D700;#5C01D7' dur='3.9s' repeatCount='indefinite' />
+</path>
+<path opacity="0.4" d="M110 126.5L73 106V147L110 126.5Z" fill="#3423F7">
+  <animate attributeName='fill' values='#3423F7;#3423F700;#3423F7' dur='4s' repeatCount='indefinite' />
+</path>
+</svg>
