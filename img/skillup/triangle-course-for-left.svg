@@ -27,7 +27,7 @@
   <animate attributeName='fill' values='#68C1EC;#68C1EC00;#68C1EC' dur='3.9s' repeatCount='indefinite' />
 </path>
 <path opacity="0.6" d="M0.000461578 185.758L-36.2745 124H36.2754L0.000461578 185.758Z" fill="#68C1EC">
-  <animate attributeName='fill' values='#68C1E;#68C1E00;#68C1E' dur='4s' repeatCount='indefinite' />
+  <animate attributeName='fill' values='#68C1EC;#68C1EC00;#68C1EC' dur='4s' repeatCount='indefinite' />
 </path>
 <path d="M-35.2154 186.235L-71.0001 247.994H0.569336L-35.2154 186.235Z" fill="#0398DF">
   <animate attributeName='fill' values='#0398DF;#0398DF00;#0398DF' dur='4.1s' repeatCount='indefinite' />
