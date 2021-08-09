@@ -77,6 +77,14 @@
   text-align: right;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.course-item-title-description {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  text-align: right;
+  color: #ffffff;
   margin-bottom: 50px;
 }
 
@@ -156,14 +164,14 @@
   bottom: 0;
   left: 0;
   background-color: #0398df;
-  visibility: hidden;
-  transform: scaleX(0);
   transition: all 0.2s ease-in-out 0s;
+  visibility: visible;
+  transform: scaleX(1);
 }
 
 .course-item-link:hover::before {
-  visibility: visible;
-  transform: scaleX(1);
+  visibility: hidden;
+  transform: scaleX(0);
 }
 
 @media screen and (min-width: 770px) {

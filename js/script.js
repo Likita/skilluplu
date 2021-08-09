@@ -3,12 +3,12 @@ let btnPrev = document.querySelector(".review__prev");
 let btnNext = document.querySelector(".review__next");
 let lastSlide = slider.length - 1;
 
-if (document.querySelector(".frontend-course-page")) {
+if (document.querySelector(".js-body")) {
   let slideChange = function (side, sideChange, count) {
     for (let i = 0; i <= lastSlide; i++) {
       if (slider[i].classList.contains("active")) {
         slider[i].classList.remove("active");
-
+        
         if (i === side) {
           slider[sideChange].classList.add("active");
         } else {
@@ -18,14 +18,6 @@ if (document.querySelector(".frontend-course-page")) {
       }
     }
   };
-
-  // btnNext.onclick = function() {
-  //   slideChange(lastSlide, 0, 1);
-  // }
-
-  // btnPrev.onclick = function() {
-  //   slideChange(0, lastSlide, -1);
-  // }
 
   //skillup last page, faq buttons
   const question = document.querySelectorAll(".faq__question");
@@ -39,7 +31,7 @@ if (document.querySelector(".frontend-course-page")) {
   }
 
   // animated scroll for anchors
-  const anchors = document.querySelectorAll('a[href*="#"]');
+  const anchors = document.querySelectorAll('a[href^="#"]');
 
   for (let anchor of anchors) {
     anchor.addEventListener("click", function (e) {
@@ -52,6 +44,16 @@ if (document.querySelector(".frontend-course-page")) {
         block: "start",
       });
     });
+  }
+}
+
+if (btnNext) {
+  btnNext.onclick = function() {
+    slideChange(lastSlide, 0, 1);
+  }
+
+  btnPrev.onclick = function() {
+    slideChange(0, lastSlide, -1);
   }
 }
 
