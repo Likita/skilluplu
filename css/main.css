@@ -910,6 +910,10 @@ h3 {
   right: 21px;
 }
 
+.location-section iframe {
+  width: 100%;
+}
+
 @media (min-width: 425px) {
   .freelance-section {
     background-size: 107%, 100%;
