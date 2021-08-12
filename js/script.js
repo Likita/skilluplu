@@ -45,15 +45,15 @@ if (document.querySelector(".js-body")) {
       });
     });
   }
-}
 
-if (btnNext) {
-  btnNext.onclick = function() {
-    slideChange(lastSlide, 0, 1);
-  }
-
-  btnPrev.onclick = function() {
-    slideChange(0, lastSlide, -1);
+  if (btnNext) {
+    btnNext.onclick = function() {
+      slideChange(lastSlide, 0, 1);
+    }
+  
+    btnPrev.onclick = function() {
+      slideChange(0, lastSlide, -1);
+    }
   }
 }
 

@@ -829,45 +829,16 @@ ul {
   margin: 0 18px;
 }
 
-.footer__social-link {
-  cursor: pointer;
-  display: block;
-  font-size: 0;
-  width: 42px;
-  height: 42px;
-  background-repeat: no-repeat;
-}
-
-.footer__social-link,
 .mentor__social-item {
   transition: all 0.3s;
   border-radius: 5px;
 }
 
-.footer__social-link:hover,
-.footer__social-link:focus,
-.footer__social-link:active,
 .mentor__social-item:hover,
 .mentor__social-item:focus,
 .mentor__social-item:active {
   transform: translate(2px, 2px);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-}
-
-.footer__social-link--facebook {
-  background-image: url("../img/skillup/icon-facebook.svg");
-}
-
-.footer__social-link--instagram {
-  background-image: url("../img/skillup/icon-instagram.svg");
-}
-
-.footer__social-link--youtube {
-  background-image: url("../img/skillup/icon-youtube.svg");
-}
-
-.footer__social-link--twitter {
-  background-image: url("../img/skillup/icon-twitter.svg");
 }
 
 .popup {
@@ -959,18 +930,6 @@ input.popup__input::placeholder {
 .popup__button:focus {
   background-color: #6600ff;
   color: #ffffff;
-}
-
-.footer__social-link--instagram {
-  background-image: url("../img/skillup/icon-instagram.svg");
-}
-
-.footer__social-link--youtube {
-  background-image: url("../img/skillup/icon-youtube.svg");
-}
-
-.footer__social-link--twitter {
-  background-image: url("../img/skillup/icon-twitter.svg");
 }
 
 .popup__close {
