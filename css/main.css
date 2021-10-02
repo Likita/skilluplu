@@ -56,6 +56,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .logo {
@@ -64,15 +65,9 @@ h3 {
   margin-bottom: 20px;
 }
 
-.school {
-  background-image: url("../img/svg/school.svg");
-  width: 105px;
-  height: 33px;
-  display: block;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  position: relative;
-  left: 10px;
+.logo img {
+  width: 177px;
+  height: 123px;
 }
 
 .menu {
@@ -140,10 +135,9 @@ h3 {
 
 .php-parallax {
   position: absolute !important;
-  top: unset !important;
+  right: 50px;
+  top: 50px !important;
   left: unset !important;
-  right: 20px;
-  bottom: 20px;
   width: 150px;
   height: 80px;
   background-image: url(../img/svg/php.svg);
@@ -151,9 +145,10 @@ h3 {
 
 .java-parallax {
   position: absolute !important;
-  right: 50px;
-  top: 50px !important;
+  top: unset !important;
   left: unset !important;
+  right: 20px;
+  bottom: 20px;
   width: 200px;
   height: 80px;
   background-image: url(../img/svg/java.svg);
@@ -161,10 +156,11 @@ h3 {
 
 .css-parallax {
   position: absolute !important;
-  left: 80px !important;
-  top: 250px !important;
   width: 150px;
   height: 80px;
+  top: unset !important;
+  left: 30px !important;
+  bottom: 20px !important;
   background-image: url(../img/svg/css.svg);
 }
 
@@ -209,27 +205,37 @@ h3 {
   color: #ff6005;
   text-shadow: 0px 8px 24px rgba(0, 0, 0, 0.8);
   text-align: left;
-  top: unset !important;
-  left: 324px !important;
-  bottom: 30px;
+  left: 30px !important;
+  top: 10px !important;
   z-index: 2;
 }
 
 .main-img {
   z-index: 1;
   height: 100%;
+  right: 0 !important;
 }
 
 .main-img img {
   object-fit: cover;
-  height: 115%;
-  width: 130%;
-  transform: translateY(-5%);
+  max-width: 140%;
+  max-height: 130%;
 }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 400px) {
+  .main-img img {
+    transform: translateY(-8%) translateX(8%);
+  }
+}
+
+
+@media screen and (min-width: 750px) {
   .parallax {
     height: 500px;
+  }
+
+  .main-img img {
+    transform: translateY(-15%) translateX(15%);
   }
 
   .course-section {
@@ -239,40 +245,55 @@ h3 {
 
 @media screen and (min-width: 850px) {
   .main-img img {
-    transform: translateY(-5%) translateX(5%);
-    height: 115%;
+    transform: translateY(-15%) translateX(15%);
+    /* height: 115%; */
   }
 }
 
 @media screen and (min-width: 1000px) {
+  
+}
+
+@media screen and (min-width: 1100px) {
   .parallax {
-    height: 800px;
+    height: 900px;
+  }
+
+  .main-img img {
+    transform: translateY(-5%) translateX(8%);
+    max-width: 120%;
+  }
+
+  .parallax:after {
+    background-position: center;
   }
 
   .main-slogan {
     font-size: 72px;
     line-height: 107px;
+    left: 80px !important;
+    top: 100px !important;
   }
 
   .php-parallax {
-    width: 402px;
-    height: 234px;
-    right: 20px;
-    bottom: 20px;
-  }
-
-  .java-parallax {
     width: 426px;
     height: 234px;
     right: 140px;
     top: 120px !important;
   }
 
+  .java-parallax {
+    width: 402px;
+    height: 234px;
+    right: 20px;
+    bottom: 20px;
+  }
+
   .css-parallax {
     width: 382px;
     height: 200px;
-    left: 60px !important;
-    top: 250px !important;
+    left: 50px !important;
+    bottom: 60px !important;
   }
 
   .html-parallax {
@@ -283,23 +304,15 @@ h3 {
   }
 
   .main-img img {
-    transform: translateY(-5%) translateX(7%);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .main-img img {
-    transform: translateY(-5%) translateX(10%);
-  }
-
-  .parallax:after {
-    background-position: center;
+    max-width: 127%;
+    transform: translateY(-5%) translateX(6%);
   }
 }
 
 @media screen and (min-width: 1530px) {
   .main-img img {
-    transform: translateY(-5%) translateX(15%);
+    transform: translateY(-20%) translateX(16%);
+    max-width: 113%;
   }
 
   .parallax:after {
@@ -311,7 +324,7 @@ h3 {
   background: #f5f5f5;
   box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 200px 0px 0px 0px;
-  padding: 100px 0;
+  padding: 1px 0 50px;
 }
 
 .course-item {
@@ -856,11 +869,6 @@ h3 {
     width: 108px;
   }
 
-  .school {
-    width: 75px;
-    left: 7px;
-  }
-
   .menu {
     width: auto;
     padding-top: 36px;
@@ -937,7 +945,7 @@ h3 {
   .feature-text {
     width: 50%;
     font-size: 18px;
-    margin-left: 5px;
+    margin-left: 15px;
     text-align: left;
   }
 
@@ -1114,7 +1122,7 @@ h3 {
   .instructor__link:hover .instructor__photo,
   .instructor__link:focus .instructor__photo {
     transition: .3s all;
-    box-shadow: 0 0 25px 0.8px #6600ff;
+    /* box-shadow: 0 0 25px 0.8px #6600ff; */
     text-decoration: none;
   }
 
@@ -1235,19 +1243,19 @@ h3 {
   }
 
   .mentor__title {
-    padding: 48px 63px 0 19px;
+    padding: 48px 0 0 20px;
     font-size: 47px;
     text-align: left;
     line-height: 68px;
   }
 
   .mentor__description {
-    padding: 48px 63px 0 19px;
+    padding: 48px 0 0 20px;
     font-size: 30px;
   }
 
   .mentor__about {
-    padding: 48px 63px 0 19px;
+    padding: 48px 0 0 20px;
     font-size: 26px;
     font-weight: 400;
   }
@@ -1311,12 +1319,6 @@ h3 {
 
   .footer .logo img {
     width: 100px;
-  }
-
-  .footer .logo .school {
-    width: 70px;
-    left: 5px;
-    bottom: 3px;
   }
 
   .footer .logo .current-year {
@@ -1563,11 +1565,6 @@ h3 {
 
   .logo img {
     width: 148px;
-  }
-
-  .school {
-    width: 105px;
-    left: 30px;
   }
 
   .menu {
@@ -1860,12 +1857,6 @@ h3 {
 
   .footer .logo img {
     width: 150px;
-  }
-
-  .footer .logo .school {
-    width: 110px;
-    left: 32px;
-    bottom: 0;
   }
 
   .footer .logo .current-year {
