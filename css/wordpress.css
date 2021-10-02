@@ -741,7 +741,7 @@ margin: 0;
 }
 
 .subscribe-now-text1 {
-  justify-self: center;
+ 
     width: 100%;
     height: auto;
     font-size: 10vw;
@@ -750,6 +750,7 @@ margin: 0;
     margin: 20px 0 0 0;
     box-sizing: border-box;
     padding-right: 10px;
+    
    
     
 }
@@ -762,6 +763,7 @@ margin: 0;
     margin: 20px 0 0 0;
     text-align: left;
    box-sizing: border-box;
+   align-self: start;
    padding-left: 10px;
    
    
@@ -781,8 +783,8 @@ margin: 0;
   justify-content: center;
   
     box-sizing: border-box;
-    width: 90vw;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
 }
 
 .lessons-type h1 {
@@ -862,7 +864,7 @@ font-size: 6vw;
 
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .wordpress__wrapper {
 
     max-width: 1024px;
@@ -1063,6 +1065,9 @@ text-transform: uppercase;
   transform: translate(-80%, 60%);
 }
 
+.studing ul {
+  max-width: 600px;
+}
 .studing li {
   font-size: 20px;
 }
@@ -1080,12 +1085,13 @@ height: 50vw;
 }
 
 .subscribe-now-text1 {
-  max-width: 330px;
+  max-width: 350px;
   width: 100%;
 height: auto;
-font-size: 4vw;
+font-size: 4.5vw;
 line-height: 6vw;
 margin-right: 6vw;
+
 
 }
 
@@ -1102,6 +1108,7 @@ height: auto;
   font-size: 3vw;
 line-height: 5vw;
 margin-left: 6vw;
+
   
 }
 
@@ -1152,6 +1159,7 @@ height: max-content;
  .lessons-frame {
     width: 40vw;
 height: 40vw;
+
     
  }
 
@@ -1177,7 +1185,7 @@ font-size: 4vw;
 
 .lessons-frame img {
     width: 15vw;
-    height: 13vh;
+    height: 11vw;
 }
 
 .subscribe p {
@@ -1192,7 +1200,7 @@ font-size: 4vw;
 
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
   .wordpress__wrapper {
     display: flex;
     flex-direction: row;
@@ -1349,7 +1357,7 @@ height: 50vw;
   max-width: 330px;
   width: 100%;
 height: auto;
-font-size: 4vw;
+font-size: 3.5vw;
 line-height: 6vw;
 margin-right: 6vw;
 
@@ -1399,6 +1407,8 @@ justify-content: center;
    max-width: 1200px;
     width: 100%;
   height: auto;
+  box-sizing: border-box;
+padding-left: 3vw;
   
 }
 
@@ -1421,6 +1431,7 @@ height: max-content;
  .lessons-frame {
     width: 25vw;
 height: 25vw;
+margin: 0 1vw;
     
  }
 
@@ -1430,7 +1441,7 @@ height: 25vw;
  }
 
  .lessons .purple {
-bottom: 30%;
+bottom: 20%;
 font-size: 2vw;
  }
 
@@ -1440,13 +1451,13 @@ font-size: 2vw;
  }
 
  .lessons-frame p {
-    bottom: 15%;
+    bottom: 12%;
     font-size: 1vw;
 }
 
 .lessons-frame img {
     width: 13vw;
-    height: 13vh;
+    height: auto;
 }
 
 .subscribe p {
@@ -1461,15 +1472,43 @@ font-size: 2vw;
 }
 }
 
-@media (min-width: 1440px) and (max-width: 1920px) {
-  * {
-    max-width: 95%;
+@media (min-width: 1441px) and (max-width: 1920px) {
+  body {
+    max-width: 1920px;
+    width: 100%;
     height: auto;
+  }
+
+  .wordpress__header {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  .subscribe-now {
+  padding: 20px 0;
+  background-size: cover;
+  }
+
+  .lessons-container {
+    padding-left: 3vw;
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1921px) {
 * {
   max-width: 100%;
 }
+
+.orange-block {
+  min-width: 1920px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  background-size: cover;
+}
+
+.lessons-container {
+  padding-left: 3vw;
+}
+
 }
