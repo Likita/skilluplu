@@ -418,6 +418,7 @@ position: relative;
 .frame-wrap {
   overflow: hidden;
   border-radius: 30px;
+  border: 13px solid transparent;
   width: 480px;
  
    
@@ -425,7 +426,7 @@ position: relative;
 }
 
   .border-gradient {
-    
+  
     border: 12px solid transparent;
     border-image: linear-gradient(#6600FF, #0398DF);
     border-image-slice: 1;
@@ -517,6 +518,7 @@ text-transform: uppercase;
 color: #FFFFFF;
   }
 
+  
 
  @media(max-width: 768px) {
 
@@ -749,7 +751,7 @@ margin: 0;
  text-align: right;
     margin: 20px 0 0 0;
     box-sizing: border-box;
-    padding-right: 10px;
+    padding-right: 5%;
     
    
     
@@ -764,7 +766,7 @@ margin: 0;
     text-align: left;
    box-sizing: border-box;
    align-self: start;
-   padding-left: 10px;
+   padding-left: 5%;
    
    
 
@@ -773,7 +775,7 @@ margin: 0;
 .subscribe-now img {
     width: 15vw;
     height: 30vw;
-    margin-top: 10px;
+    margin-top: 40%;
 }
 
 .lessons-type {
@@ -804,7 +806,8 @@ justify-content: center;
 
 .lessons {
     
-width: 60vw;
+max-width: 60vw;
+width: 100%;
 height: max-content;
 
 
@@ -819,13 +822,15 @@ height: max-content;
 }
 
  .lessons-frame {
-    width: 60vw;
+    max-width: 60vw;
+    width: 100%;
 height: 60vw;
     
  }
 
  .frame-wrap {
-   width: 64vw;
+   max-width: 63vw;
+   border: 10px solid transparent;
 
  }
 
@@ -860,7 +865,10 @@ font-size: 6vw;
   transform: translateY(-20%);
     margin: 0;
 }
-
+.contacts__wrapper {
+  box-sizing: border-box;
+  margin: 0;
+}
 
 }
 
@@ -1297,7 +1305,7 @@ font-size: 20px;
   min-height: 150px;
   height: auto;
   background-color: orange;
-  background-position: contain;
+  background-position: cover;
   box-sizing: border-box;
   margin: 0;
 
@@ -1403,12 +1411,12 @@ margin-left: 6vw;
 .lessons-container {
     flex-direction: row;
    align-items: center;
-justify-content: center;
+justify-content: space-evenly;
    max-width: 1200px;
     width: 100%;
   height: auto;
   box-sizing: border-box;
-padding-left: 3vw;
+padding-left: 1vw;
   
 }
 
@@ -1429,14 +1437,22 @@ height: max-content;
 }
 
  .lessons-frame {
-    width: 25vw;
-height: 25vw;
-margin: 0 1vw;
+    width: 22.8vw;
+height: 24vw;
+margin: 0;
     
  }
 
  .frame-wrap {
-   width: 27vw;
+  
+    max-width: 24.8vw;
+    min-height: 25vw;
+    width: 100%;
+    height: 100%;
+    border: 5px solid transparent;
+    padding-left: 0;
+   
+ 
 
  }
 
@@ -1465,6 +1481,19 @@ font-size: 2vw;
     line-height: 25px;
 }
 
+.lessons {
+  max-width: 26vw;
+  min-height: 25vw;
+  width: 100%;
+  height: 100%;
+align-items: center;
+
+padding: 0;
+margin: 0;
+
+}
+
+
 .contacts {
   transform: translateY(-220%);
     margin: 0;
@@ -1484,20 +1513,84 @@ font-size: 2vw;
     margin: 0;
   }
 
+  .orange-block {
+    background-size: cover;
+  }
+
   .subscribe-now {
   padding: 20px 0;
   background-size: cover;
   }
 
+.lessons-type {
+  max-width: 1900px;
+  align-items: center;
+}
+
   .lessons-container {
-    padding-left: 3vw;
+    max-width: 1900px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+   box-sizing: border-box;
+  align-items: center;
+  justify-content: space-evenly;
+
+    
   }
+  .lessons {
+    max-width: 26vw;
+    min-height: 25vw;
+    width: 100%;
+    height: 100%;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+
+  }
+
+  .lessons-frame {
+    max-width: 24vw;
+    min-height: 25vw;
+    width: 100%;
+    height: 100%;
+  }
+
+  .lessons .purple {
+    bottom: 20%;
+    font-size: 2vw;
+  }
+
+  .lessons .lightblue {
+    font-size: 2vw;
+  }
+
+  .lessons-frame p {
+    bottom: 10%;
+    font-size: 1.5vw;
+  }
+
+  .lessons img {
+    top: 5%;
+  }
+
+
+  .frame-wrap {
+    max-width: 25.5vw;
+    min-height: 25vw;
+    width: 100%;
+    height: 100%;
+    border: 7px solid transparent;
+   
+  }
+
+
 }
 
 @media (min-width: 1921px) {
-* {
-  max-width: 100%;
-}
+
 
 .orange-block {
   min-width: 1920px;
@@ -1507,8 +1600,13 @@ font-size: 2vw;
   background-size: cover;
 }
 
-.lessons-container {
-  padding-left: 3vw;
+
+
+
+footer {
+ 
+  box-sizing: border-box;
+  margin: 0;
 }
 
 }

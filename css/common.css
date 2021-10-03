@@ -445,9 +445,26 @@ mark {
 }
 
 @media (max-width: 767px) {
-  .social {
-    width: 100%;
+
+  .contacts__wrapper {
+    box-sizing: border-box;
+    margin: 0;
   }
+
+footer__social-list{
+  max-width: 700px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+  
+.footer__social-item {
+  margin: 0 5px;
+}
+  }
+  .social {
+    
+    width: 100%;
+  
 }
 
 @media (min-width: 768px) {
