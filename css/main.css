@@ -20,7 +20,8 @@ main {
 }
 
 body {
-  font-family: "Muller", sans-serif;
+  font-family: 'Cambay', sans-serif;
+  font-weight: 400;
 }
 
 ul {
