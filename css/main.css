@@ -10,6 +10,10 @@
   font-weight: 400;
 }
 
+@font-face {
+  src: local("Cambay"), url(../fonts/roboto.woff2) format("woff2");
+}
+
 header,
 footer,
 main {
